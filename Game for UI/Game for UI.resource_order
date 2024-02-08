@@ -23,6 +23,7 @@
     {"name":"SP_Fountain","order":32,"path":"sprites/SP_Fountain/SP_Fountain.yy",},
     {"name":"SP_VolumeSettings","order":16,"path":"sprites/SP_VolumeSettings/SP_VolumeSettings.yy",},
     {"name":"TS_Shop","order":3,"path":"tilesets/TS_Shop/TS_Shop.yy",},
+    {"name":"SP_Check","order":40,"path":"sprites/SP_Check/SP_Check.yy",},
     {"name":"SP_Placements","order":20,"path":"sprites/SP_Placements/SP_Placements.yy",},
     {"name":"RM_LocalView","order":14,"path":"rooms/RM_LocalView/RM_LocalView.yy",},
     {"name":"RM_Store","order":10,"path":"rooms/RM_Store/RM_Store.yy",},

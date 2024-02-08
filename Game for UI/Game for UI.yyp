@@ -40,6 +40,7 @@
     {"id":{"name":"SP_Fountain","path":"sprites/SP_Fountain/SP_Fountain.yy",},},
     {"id":{"name":"SP_VolumeSettings","path":"sprites/SP_VolumeSettings/SP_VolumeSettings.yy",},},
     {"id":{"name":"TS_Shop","path":"tilesets/TS_Shop/TS_Shop.yy",},},
+    {"id":{"name":"SP_Check","path":"sprites/SP_Check/SP_Check.yy",},},
     {"id":{"name":"SP_Placements","path":"sprites/SP_Placements/SP_Placements.yy",},},
     {"id":{"name":"RM_LocalView","path":"rooms/RM_LocalView/RM_LocalView.yy",},},
     {"id":{"name":"RM_Store","path":"rooms/RM_Store/RM_Store.yy",},},
@@ -47,6 +48,7 @@
     {"id":{"name":"SP_CPUScript","path":"sprites/SP_CPUScript/SP_CPUScript.yy",},},
     {"id":{"name":"SP_ScreenBtns","path":"sprites/SP_ScreenBtns/SP_ScreenBtns.yy",},},
     {"id":{"name":"RM_Settings","path":"rooms/RM_Settings/RM_Settings.yy",},},
+    {"id":{"name":"OBJ_Player1","path":"objects/OBJ_Player1/OBJ_Player1.yy",},},
     {"id":{"name":"RM_InstructionSample","path":"rooms/RM_InstructionSample/RM_InstructionSample.yy",},},
     {"id":{"name":"SP_ButtonDecals","path":"sprites/SP_ButtonDecals/SP_ButtonDecals.yy",},},
     {"id":{"name":"SP_Bucket","path":"sprites/SP_Bucket/SP_Bucket.yy",},},
@@ -92,6 +94,11 @@
     {"id":{"name":"RM_BoilermakerExpress","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},},
   ],
   "RoomOrderNodes": [
+<<<<<<< Updated upstream
+=======
+    {"roomId":{"name":"RM_LocalView","path":"rooms/RM_LocalView/RM_LocalView.yy",},},
+    {"roomId":{"name":"RM_ElevenFiftyNine","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},},
+>>>>>>> Stashed changes
     {"roomId":{"name":"RM_MainMap","path":"rooms/RM_MainMap/RM_MainMap.yy",},},
     {"roomId":{"name":"RM_GameSettings","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},},
     {"roomId":{"name":"RM_CPUSettings","path":"rooms/RM_CPUSettings/RM_CPUSettings.yy",},},
@@ -103,7 +110,6 @@
     {"roomId":{"name":"RM_InstructionSample","path":"rooms/RM_InstructionSample/RM_InstructionSample.yy",},},
     {"roomId":{"name":"RM_Title","path":"rooms/RM_Title/RM_Title.yy",},},
     {"roomId":{"name":"RM_BoilermakerExpress","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},},
-    {"roomId":{"name":"RM_LocalView","path":"rooms/RM_LocalView/RM_LocalView.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
