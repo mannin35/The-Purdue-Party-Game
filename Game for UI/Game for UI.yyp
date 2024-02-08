@@ -50,6 +50,11 @@
     {"id":{"name":"RM_InstructionSample","path":"rooms/RM_InstructionSample/RM_InstructionSample.yy",},},
     {"id":{"name":"SP_ButtonDecals","path":"sprites/SP_ButtonDecals/SP_ButtonDecals.yy",},},
     {"id":{"name":"SP_Bucket","path":"sprites/SP_Bucket/SP_Bucket.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"RM_ElevenFiftyNine","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},},
+    {"id":{"name":"Sp_Laptop","path":"sprites/Sp_Laptop/Sp_Laptop.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"SP_Train","path":"sprites/SP_Train/SP_Train.yy",},},
     {"id":{"name":"TS_MainMap","path":"tilesets/TS_MainMap/TS_MainMap.yy",},},
     {"id":{"name":"RM_MainMap","path":"rooms/RM_MainMap/RM_MainMap.yy",},},
