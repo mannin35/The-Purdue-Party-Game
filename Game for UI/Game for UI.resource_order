@@ -35,7 +35,7 @@
     {"name":"SP_ButtonDecals","order":1,"path":"sprites/SP_ButtonDecals/SP_ButtonDecals.yy",},
     {"name":"SP_Bucket","order":28,"path":"sprites/SP_Bucket/SP_Bucket.yy",},
     {"name":"RM_ElevenFiftyNine","order":13,"path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},
-    {"name":"Sprite34","order":39,"path":"sprites/Sprite34/Sprite34.yy",},
+    {"name":"Sp_Laptop","order":39,"path":"sprites/Sp_Laptop/Sp_Laptop.yy",},
     {"name":"SP_Train","order":5,"path":"sprites/SP_Train/SP_Train.yy",},
     {"name":"SP_Player1159","order":38,"path":"sprites/SP_Player1159/SP_Player1159.yy",},
     {"name":"TS_MainMap","order":4,"path":"tilesets/TS_MainMap/TS_MainMap.yy",},
