@@ -21,16 +21,20 @@
     {"name":"SP_ToyTrain","order":29,"path":"sprites/SP_ToyTrain/SP_ToyTrain.yy",},
     {"name":"SP_Items","order":30,"path":"sprites/SP_Items/SP_Items.yy",},
     {"name":"SP_Fountain","order":32,"path":"sprites/SP_Fountain/SP_Fountain.yy",},
+    {"name":"SP_Stadium","order":46,"path":"sprites/SP_Stadium/SP_Stadium.yy",},
     {"name":"SP_VolumeSettings","order":16,"path":"sprites/SP_VolumeSettings/SP_VolumeSettings.yy",},
 <<<<<<< Updated upstream
 =======
     {"name":"SP_TipsyTunnel","order":44,"path":"sprites/SP_TipsyTunnel/SP_TipsyTunnel.yy",},
     {"name":"TS_ElevenFiftyNine","order":4,"path":"tilesets/TS_ElevenFiftyNine/TS_ElevenFiftyNine.yy",},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+    {"name":"SP_Mack","order":48,"path":"sprites/SP_Mack/SP_Mack.yy",},
 >>>>>>> Stashed changes
     {"name":"TS_Shop","order":3,"path":"tilesets/TS_Shop/TS_Shop.yy",},
     {"name":"SP_Check","order":40,"path":"sprites/SP_Check/SP_Check.yy",},
     {"name":"SP_Placements","order":20,"path":"sprites/SP_Placements/SP_Placements.yy",},
-    {"name":"RM_LocalView","order":14,"path":"rooms/RM_LocalView/RM_LocalView.yy",},
     {"name":"RM_Store","order":10,"path":"rooms/RM_Store/RM_Store.yy",},
     {"name":"TS_Frogger","order":5,"path":"tilesets/TS_Frogger/TS_Frogger.yy",},
     {"name":"RM_GameSettings","order":12,"path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
@@ -38,6 +42,8 @@
     {"name":"SP_ScreenBtns","order":12,"path":"sprites/SP_ScreenBtns/SP_ScreenBtns.yy",},
     {"name":"RM_Settings","order":6,"path":"rooms/RM_Settings/RM_Settings.yy",},
     {"name":"RM_InstructionSample","order":5,"path":"rooms/RM_InstructionSample/RM_InstructionSample.yy",},
+    {"name":"RM_LocalView","order":17,"path":"rooms/RM_LocalView/RM_LocalView.yy",},
+    {"name":"SP_Cary","order":49,"path":"sprites/SP_Cary/SP_Cary.yy",},
     {"name":"SP_ButtonDecals","order":1,"path":"sprites/SP_ButtonDecals/SP_ButtonDecals.yy",},
     {"name":"SP_Bucket","order":28,"path":"sprites/SP_Bucket/SP_Bucket.yy",},
 <<<<<<< Updated upstream
@@ -59,6 +65,8 @@
     {"name":"SP_CPUSettingsTitle","order":23,"path":"sprites/SP_CPUSettingsTitle/SP_CPUSettingsTitle.yy",},
     {"name":"SP_StoreText","order":33,"path":"sprites/SP_StoreText/SP_StoreText.yy",},
     {"name":"SP_MainMap","order":37,"path":"sprites/SP_MainMap/SP_MainMap.yy",},
+    {"name":"SP_Sidewalk","order":45,"path":"sprites/SP_Sidewalk/SP_Sidewalk.yy",},
+    {"name":"SP_FountainMap","order":47,"path":"sprites/SP_FountainMap/SP_FountainMap.yy",},
     {"name":"SP_GameSettingsTitle","order":24,"path":"sprites/SP_GameSettingsTitle/SP_GameSettingsTitle.yy",},
     {"name":"SP_FirstLogo","order":3,"path":"sprites/SP_FirstLogo/SP_FirstLogo.yy",},
     {"name":"RM_Frogger","order":14,"path":"rooms/RM_Frogger/RM_Frogger.yy",},
@@ -68,11 +76,14 @@
     {"name":"RM_About","order":7,"path":"rooms/RM_About/RM_About.yy",},
     {"name":"SP_GameSetupScript","order":35,"path":"sprites/SP_GameSetupScript/SP_GameSetupScript.yy",},
     {"name":"SP_Helmet","order":27,"path":"sprites/SP_Helmet/SP_Helmet.yy",},
+    {"name":"Room16","order":16,"path":"rooms/Room16/Room16.yy",},
     {"name":"SP_FinalResultsTitle","order":21,"path":"sprites/SP_FinalResultsTitle/SP_FinalResultsTitle.yy",},
     {"name":"TS_ButtonLayout","order":1,"path":"tilesets/TS_ButtonLayout/TS_ButtonLayout.yy",},
     {"name":"SP_SettingsTitle","order":15,"path":"sprites/SP_SettingsTitle/SP_SettingsTitle.yy",},
     {"name":"SP_Frogger","order":41,"path":"sprites/SP_Frogger/SP_Frogger.yy",},
+    {"name":"SP_GamplayButtons","order":50,"path":"sprites/SP_GamplayButtons/SP_GamplayButtons.yy",},
     {"name":"SP_StoreTiles","order":25,"path":"sprites/SP_StoreTiles/SP_StoreTiles.yy",},
+    {"name":"TS_Sidewalk","order":7,"path":"tilesets/TS_Sidewalk/TS_Sidewalk.yy",},
     {"name":"SP_GRR","order":26,"path":"sprites/SP_GRR/SP_GRR.yy",},
     {"name":"SP_TimesUpGame","order":2,"path":"sprites/SP_TimesUpGame/SP_TimesUpGame.yy",},
     {"name":"SP_RaceInstr","order":14,"path":"sprites/SP_RaceInstr/SP_RaceInstr.yy",},

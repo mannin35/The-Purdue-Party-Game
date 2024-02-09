@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "SP_Spaces",
-  "bbox_bottom": 63,
-  "bbox_left": 10,
-  "bbox_right": 127,
-  "bbox_top": 0,
+  "name": "SP_Cary",
+  "bbox_bottom": 111,
+  "bbox_left": 12,
+  "bbox_right": 115,
+  "bbox_top": 27,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"95f1816e-7df4-453d-a087-a0fddd048b34",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ac17dc1e-5193-4aec-bdda-560239d9a34e",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e17e2000-89bc-4529-9f74-59ad77923508","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1ba0216e-4814-4c6e-a6e6-da4355e4f3fc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "SP_Spaces",
+    "name": "SP_Cary",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"95f1816e-7df4-453d-a087-a0fddd048b34","path":"sprites/SP_Spaces/SP_Spaces.yy",},},},"Disabled":false,"id":"74a32527-9aee-40f4-9610-80667df3c76b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ac17dc1e-5193-4aec-bdda-560239d9a34e","path":"sprites/SP_Cary/SP_Cary.yy",},},},"Disabled":false,"id":"5fea8803-7b98-49c2-a8ad-565a98d29b2f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
