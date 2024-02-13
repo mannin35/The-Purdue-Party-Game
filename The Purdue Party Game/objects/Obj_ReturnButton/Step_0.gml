@@ -24,7 +24,11 @@ if((Obj_ReturnButton.current) && (right_key)){
 //show_debug_message("CanReturn: {0}", canReturn);
 if(canReturn){
 	if ((Obj_ReturnButton.current) && button_x) {
-		room_goto(RM_Title);
+		if(room == RM_CPUSettings){
+			room_goto(RM_Title);
+		} else if(room == RM_GameSettings){
+			room_goto(RM_CPUSettings);	
+		}
 		Obj_ReturnButton.current = false;
 	}
 }
