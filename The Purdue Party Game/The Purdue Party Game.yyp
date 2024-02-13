@@ -128,6 +128,7 @@
     {"id":{"name":"SP_Placements","path":"sprites/SP_Placements/SP_Placements.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"RM_Title","path":"rooms/RM_Title/RM_Title.yy",},},
     {"roomId":{"name":"RM_About","path":"rooms/RM_About/RM_About.yy",},},
     {"roomId":{"name":"RM_BoilermakerExpress","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},},
     {"roomId":{"name":"RM_CPUSettings","path":"rooms/RM_CPUSettings/RM_CPUSettings.yy",},},
@@ -142,7 +143,6 @@
     {"roomId":{"name":"RM_Store","path":"rooms/RM_Store/RM_Store.yy",},},
     {"roomId":{"name":"RM_StreetMinigame","path":"rooms/RM_StreetMinigame/RM_StreetMinigame.yy",},},
     {"roomId":{"name":"RM_TipsyTunnel","path":"rooms/RM_TipsyTunnel/RM_TipsyTunnel.yy",},},
-    {"roomId":{"name":"RM_Title","path":"rooms/RM_Title/RM_Title.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

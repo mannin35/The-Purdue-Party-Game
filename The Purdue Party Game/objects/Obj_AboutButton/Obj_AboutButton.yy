@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Obj_AboutButton",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,6 +31,9 @@
     "name": "SP_ScreenBtns",
     "path": "sprites/SP_ScreenBtns/SP_ScreenBtns.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "SP_BoilerUpButton",
+    "path": "sprites/SP_BoilerUpButton/SP_BoilerUpButton.yy",
+  },
   "visible": true,
 }
