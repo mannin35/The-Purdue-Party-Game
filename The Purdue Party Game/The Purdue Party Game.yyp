@@ -71,7 +71,6 @@
     {"id":{"name":"SP_StoreText","path":"sprites/SP_StoreText/SP_StoreText.yy",},},
     {"id":{"name":"Sp_Laptop","path":"sprites/Sp_Laptop/Sp_Laptop.yy",},},
     {"id":{"name":"SP_GameLogo","path":"sprites/SP_GameLogo/SP_GameLogo.yy",},},
-    {"id":{"name":"Sprite52","path":"sprites/Sprite52/Sprite52.yy",},},
     {"id":{"name":"TileSet11","path":"tilesets/TileSet11/TileSet11.yy",},},
     {"id":{"name":"TS_Spaces","path":"tilesets/TS_Spaces/TS_Spaces.yy",},},
     {"id":{"name":"SP_RaceInstr","path":"sprites/SP_RaceInstr/SP_RaceInstr.yy",},},

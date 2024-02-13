@@ -50,7 +50,6 @@
     {"name":"SP_StoreText","order":9,"path":"sprites/SP_StoreText/SP_StoreText.yy",},
     {"name":"Sp_Laptop","order":3,"path":"sprites/Sp_Laptop/Sp_Laptop.yy",},
     {"name":"SP_GameLogo","order":5,"path":"sprites/SP_GameLogo/SP_GameLogo.yy",},
-    {"name":"Sprite52","order":16,"path":"sprites/Sprite52/Sprite52.yy",},
     {"name":"TS_Spaces","order":8,"path":"tilesets/TS_Spaces/TS_Spaces.yy",},
     {"name":"SP_RaceInstr","order":2,"path":"sprites/SP_RaceInstr/SP_RaceInstr.yy",},
     {"name":"RM_Title","order":15,"path":"rooms/RM_Title/RM_Title.yy",},
