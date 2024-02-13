@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_PlayGameButton",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "Obj_AboutButton",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_BoilerUpButton",
-    "path": "sprites/SP_BoilerUpButton/SP_BoilerUpButton.yy",
+    "name": "SP_ScreenBtns",
+    "path": "sprites/SP_ScreenBtns/SP_ScreenBtns.yy",
   },
   "spriteMaskId": null,
   "visible": true,
