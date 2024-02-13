@@ -25,6 +25,7 @@
     {"name":"Title and Settings","order":55,"path":"folders/Sprites/Title and Settings.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Title and Settings","order":1,"path":"folders/Objects/Title and Settings.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SP_ToyTrain","order":8,"path":"sprites/SP_ToyTrain/SP_ToyTrain.yy",},
@@ -73,6 +74,7 @@
     {"name":"SP_PlayerUp","order":3,"path":"sprites/SP_PlayerUp/SP_PlayerUp.yy",},
     {"name":"RM_FinalResults","order":5,"path":"rooms/RM_FinalResults/RM_FinalResults.yy",},
     {"name":"SP_FirstLogo","order":4,"path":"sprites/SP_FirstLogo/SP_FirstLogo.yy",},
+    {"name":"SP_BoilerUpButton","order":12,"path":"sprites/SP_BoilerUpButton/SP_BoilerUpButton.yy",},
     {"name":"RM_StreetMinigame","order":13,"path":"rooms/RM_StreetMinigame/RM_StreetMinigame.yy",},
     {"name":"TS_ElevenFiftyNine","order":3,"path":"tilesets/TS_ElevenFiftyNine/TS_ElevenFiftyNine.yy",},
     {"name":"SP_GRR","order":2,"path":"sprites/SP_GRR/SP_GRR.yy",},
