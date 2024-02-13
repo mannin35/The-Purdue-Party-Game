@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Title and Settings",
-    "path": "folders/Sprites/Title and Settings.yy",
+    "name": "CPU Settings",
+    "path": "folders/Sprites/Title and Settings/CPU Settings.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

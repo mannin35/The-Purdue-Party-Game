@@ -1,14 +1,10 @@
 /// @description Checks for Button movement
 // You can write your code in this editor
-//dead-zone ensures stickdrift isn't an issue
-var dead_zone = .2;
-
 //Checks for moving to the right
 var right_key = (gamepad_axis_value(4, gp_axislh) > dead_zone);
 //Checks for moving up
 var up_key = (gamepad_axis_value(4, gp_axislv) > dead_zone);
 var button_x = (gamepad_button_check(4,gp_face1));
-
 
 
 //Go to the next CPU difficulty
@@ -25,8 +21,10 @@ if((Obj_ReturnButton.current) && (right_key)){
 }
 
 //Return is pressed and goes back to main menu
-if ((Obj_ReturnButton.current) && button_x) {
-	room_goto(RM_Title);
-	Obj_ReturnButton.current = false;
-	
+//show_debug_message("CanReturn: {0}", canReturn);
+if(canReturn){
+	if ((Obj_ReturnButton.current) && button_x) {
+		room_goto(RM_Title);
+		Obj_ReturnButton.current = false;
+	}
 }
