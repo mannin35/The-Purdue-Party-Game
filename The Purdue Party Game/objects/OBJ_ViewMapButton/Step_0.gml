@@ -32,7 +32,7 @@ if(left_key && OBJ_ViewScoreboardButton.current) {
 if(button_x && OBJ_ViewMapButton.current){
 	if(room == RM_LocalView) {
 		OBJ_ViewMapButton.current = false;
-		room_goto(RM_MainMap)
+		room_goto(RM_MainMap);
 	}
 }
 
