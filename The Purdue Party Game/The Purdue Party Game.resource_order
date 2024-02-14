@@ -26,6 +26,7 @@
     {"name":"Title and Settings","order":55,"path":"folders/Sprites/Title and Settings.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Full Map View","order":3,"path":"folders/Objects/Full Map View.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SP_ToyTrain","order":8,"path":"sprites/SP_ToyTrain/SP_ToyTrain.yy",},
@@ -36,6 +37,7 @@
     {"name":"SP_GRRTextBox","order":3,"path":"sprites/SP_GRRTextBox/SP_GRRTextBox.yy",},
     {"name":"SP_Spaces","order":5,"path":"sprites/SP_Spaces/SP_Spaces.yy",},
     {"name":"SP_CPUSettingsTitle","order":3,"path":"sprites/SP_CPUSettingsTitle/SP_CPUSettingsTitle.yy",},
+    {"name":"SP_ReturnButton","order":12,"path":"sprites/SP_ReturnButton/SP_ReturnButton.yy",},
     {"name":"SP_ElevenFiftyNine","order":1,"path":"sprites/SP_ElevenFiftyNine/SP_ElevenFiftyNine.yy",},
     {"name":"SP_StreetMinigame","order":1,"path":"sprites/SP_StreetMinigame/SP_StreetMinigame.yy",},
     {"name":"RM_BoilermakerExpress","order":2,"path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
