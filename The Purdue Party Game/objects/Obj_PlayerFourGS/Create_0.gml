@@ -3,6 +3,6 @@
 disabled = true;
 playerIndex = 3;
 
-if(realPlayerCount >= 4){
+if(global.realPlayerCount >= 4){
 		disabled = false;
 }

@@ -4,7 +4,7 @@
 //Dead zone to account for misaligned controllers
 dead_zone = .2;
 //Knows if it is the current button we are on
-current = true;
+current = false;
 //Pervents quick flipping through screens
 canReturn = false;
 //Changes canReturn to true after .25 second
