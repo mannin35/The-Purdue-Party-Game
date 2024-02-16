@@ -13,6 +13,9 @@
     {"name":"inst_778C5618","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
     {"name":"inst_414028DB","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
     {"name":"inst_50941D3","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
+    {"name":"inst_7039ED08","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
+    {"name":"inst_8FF1BF1","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
+    {"name":"inst_78C00589","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -25,6 +28,9 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Buttons","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1EDE57E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_ReturnButton","path":"objects/Obj_ReturnButton/Obj_ReturnButton.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":192.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26776489","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_ContinueButton","path":"objects/Obj_ContinueButton/Obj_ContinueButton.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":192.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7039ED08","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_LeftArrow","path":"objects/Obj_LeftArrow/Obj_LeftArrow.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":290.0,"y":23.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8FF1BF1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_RightArrow","path":"objects/Obj_RightArrow/Obj_RightArrow.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":350.0,"y":20.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78C00589","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":10,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_TurnNumber","path":"objects/Obj_TurnNumber/Obj_TurnNumber.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":320.0,"y":20.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Text","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_69BA056B","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"SP_GameSettingsTitle","path":"sprites/SP_GameSettingsTitle/SP_GameSettingsTitle.yy",},"x":128.0,"y":14.0,},

@@ -3,4 +3,4 @@
 global.realPlayerCount = 0;
 dead_zone = .2;
 current = false;
-canIncrease = true;
+global.turns = 10;

@@ -5,12 +5,16 @@ var dead_zone = .2;
 //Checks for moving to the left
 var left_key = (gamepad_axis_value(4, gp_axislh) < -dead_zone);
 //Checks for moving up
-var up_key = (gamepad_axis_value(4, gp_axislv) > dead_zone);
+var up_key = (gamepad_axis_value(4, gp_axislv) < -dead_zone);
 
-var button_x = (gamepad_button_check(4,gp_face1));
+var button_x = (gamepad_button_check_pressed(4,gp_face1));
 
-if(up_key  && Obj_ReturnButton.current){
-	//Go to the next CPU difficulty
+if(up_key  && Obj_ContinueButton.current && (global.realPlayerCount == 0)){
+	show_debug_message("going up")
+	current = false;
+	image_index--;
+	Obj_RightArrow.current = true;
+	Obj_RightArrow.image_index++;
 }
 
 if(left_key && Obj_ContinueButton.current){
@@ -23,6 +27,7 @@ if(left_key && Obj_ContinueButton.current){
 
 if(button_x  && Obj_ContinueButton.current){
 		if(room == RM_CPUSettings){
+			Obj_ReturnButton.current = true;
 			room_goto(RM_GameSettings);
 		} else if(room == RM_GameSettings){
 			room_goto(RM_LocalView);	

@@ -4,8 +4,9 @@
 //Dead zone to account for misaligned controllers
 dead_zone = .2;
 //Knows if it is the current button we are on
-current = false;
-//Pervents quick flipping through screens
-canReturn = false;
-//Changes canReturn to true after .25 second
-alarm_set(0,15);
+current = false
+if(room == RM_GameSettings){
+current = true;	
+}
+
+
