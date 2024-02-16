@@ -16,7 +16,7 @@ if(current && button_x && room == RM_GameSettings && (global.turns != 10)){
 	Obj_TurnNumber.image_index--;
 }
 //Moves down to return button/CPU settings
-if((global.realPlayerCount == 0) && key_down && current){
+if((global.realPlayerCount == 4) && key_down && current){
 	current = false;
 	image_index--;
 	Obj_ReturnButton.image_index++;

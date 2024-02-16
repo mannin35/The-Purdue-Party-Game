@@ -9,7 +9,7 @@ var up_key = (gamepad_axis_value(4, gp_axislv) < -dead_zone);
 
 var button_x = (gamepad_button_check_pressed(4,gp_face1));
 
-if(up_key  && Obj_ContinueButton.current && (global.realPlayerCount == 0)){
+if(up_key  && Obj_ContinueButton.current && (global.realPlayerCount == 4)){
 	show_debug_message("going up")
 	current = false;
 	image_index--;

@@ -9,7 +9,7 @@ var button_x = (gamepad_button_check_pressed(4,gp_face1));
 
 //Go to the next CPU difficulty
 
-if((Obj_ReturnButton.current) && up_key && global.realPlayerCount == 0){
+if((Obj_ReturnButton.current) && up_key && global.realPlayerCount == 4){
 	current = false;
 	image_index--;
 	Obj_LeftArrow.current = true;
