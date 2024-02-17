@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_PlayerArrow",
+  "name": "OBJ_Player4Local",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Full Map View",
-    "path": "folders/Objects/Full Map View.yy",
+    "name": "Local View",
+    "path": "folders/Objects/Local View.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_Arrow",
-    "path": "sprites/SP_Arrow/SP_Arrow.yy",
+    "name": "SP_Players",
+    "path": "sprites/SP_Players/SP_Players.yy",
   },
   "spriteMaskId": null,
   "visible": true,

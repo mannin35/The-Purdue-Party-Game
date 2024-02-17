@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //update with current player
-var current_player = 1;
+current_player = 4;
 
 if (current_player == 1) {
 	x = global.player1x - 17;

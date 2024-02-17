@@ -16,8 +16,10 @@ TO ADD: ENSURING INPUT ONLY FROM CURRENT PLAYER COUNTS
 */
 
 //checks for moving to the left and pressing button
-var left_key = gamepad_axis_value(4,gp_axislh);
-var button_x = gamepad_button_check_pressed(4, gp_face1);
+var left_key = -1*keyboard_check_pressed(vk_left);
+var button_x = keyboard_check_pressed(vk_space);
+//var left_key = gamepad_axis_value(4,gp_axislh);
+//var button_x = gamepad_button_check_pressed(4, gp_face1);
 
 //change rooms to full map view if button pressed
 if(button_x && OBJ_ViewMapButton.current){

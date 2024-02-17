@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite56",
+  "name": "SP_Arrow",
   "bbox_bottom": 62,
   "bbox_left": 13,
   "bbox_right": 51,
@@ -33,7 +33,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite56",
+    "name": "SP_Arrow",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"36961430-af6f-44a3-a7b0-19cd412f83c3","path":"sprites/Sprite56/Sprite56.yy",},},},"Disabled":false,"id":"0b3e082e-e9b1-4d6e-829e-902a08bf554f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a123495c-ab49-4ad7-9115-5d88768b0e6d","path":"sprites/Sprite56/Sprite56.yy",},},},"Disabled":false,"id":"e4102c23-9cb7-4f91-ba96-110623878600","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"36961430-af6f-44a3-a7b0-19cd412f83c3","path":"sprites/SP_Arrow/SP_Arrow.yy",},},},"Disabled":false,"id":"0b3e082e-e9b1-4d6e-829e-902a08bf554f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a123495c-ab49-4ad7-9115-5d88768b0e6d","path":"sprites/SP_Arrow/SP_Arrow.yy",},},},"Disabled":false,"id":"e4102c23-9cb7-4f91-ba96-110623878600","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
