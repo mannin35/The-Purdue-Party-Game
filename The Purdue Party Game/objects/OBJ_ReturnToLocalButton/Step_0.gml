@@ -15,11 +15,10 @@ var dead_zone = .2;
 TO ADD: ENSURING INPUT ONLY FROM CURRENT PLAYER COUNTS
 */
 
-show_debug_message("RETURN");
 
 //checks for pressing button
-var button_x = keyboard_check_pressed(vk_space);
-//var button_x = gamepad_button_check_pressed(4, gp_face1);
+//var button_x = keyboard_check_pressed(vk_space);
+var button_x = gamepad_button_check_pressed(4, gp_face1);
 
 //return to local view of map if button pressed
 if(button_x && OBJ_ReturnToLocalButton.current){

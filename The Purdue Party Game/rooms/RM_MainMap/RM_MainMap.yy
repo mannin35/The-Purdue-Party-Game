@@ -18,6 +18,7 @@
     {"name":"inst_1A493AC7","path":"rooms/RM_MainMap/RM_MainMap.yy",},
     {"name":"inst_771A234D","path":"rooms/RM_MainMap/RM_MainMap.yy",},
     {"name":"inst_30918091","path":"rooms/RM_MainMap/RM_MainMap.yy",},
+    {"name":"inst_105C91B0","path":"rooms/RM_MainMap/RM_MainMap.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -33,6 +34,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A493AC7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Player3Marker","path":"objects/OBJ_Player3Marker/OBJ_Player3Marker.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":1376.0,"y":192.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_771A234D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Player4Marker","path":"objects/OBJ_Player4Marker/OBJ_Player4Marker.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":1312.0,"y":192.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30918091","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_DegreeFull","path":"objects/OBJ_DegreeFull/OBJ_DegreeFull.yy",},"properties":[],"rotation":0.0,"scaleX":0.8,"scaleY":0.8,"x":1344.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_105C91B0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_FullMapTester","path":"objects/OBJ_FullMapTester/OBJ_FullMapTester.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":32.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_2","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3B78F5C9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":18.0,"scaleX":1.5,"scaleY":1.5,"spriteId":{"name":"SP_Stadium","path":"sprites/SP_Stadium/SP_Stadium.yy",},"x":729.0,"y":82.0,},
