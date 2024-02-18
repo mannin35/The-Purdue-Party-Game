@@ -4,7 +4,7 @@
 var right_key = (gamepad_axis_value(4, gp_axislh) > dead_zone);
 //Checks for moving up
 var up_key = (gamepad_axis_value(4, gp_axislv) > dead_zone);
-var button_x = (gamepad_button_check(4,gp_face1));
+var button_x = (gamepad_button_check(4,gp_face1)) || (keyboard_check_pressed(vk_space));
 
 
 //Go to the next CPU difficulty
@@ -22,13 +22,15 @@ if((Obj_ReturnButton.current) && (right_key)){
 
 //Return is pressed and goes back to main menu
 //show_debug_message("CanReturn: {0}", canReturn);
-if(canReturn){
+//if(canReturn){
 	if ((Obj_ReturnButton.current) && button_x) {
-		if(room == RM_CPUSettings){
+		if(room == RM_CPUSettings) {
 			room_goto(RM_Title);
-		} else if(room == RM_GameSettings){
-			room_goto(RM_CPUSettings);	
+		} else if(room == RM_GameSettings) {
+			room_goto(RM_CPUSettings);
+		} else if(room == RM_About) {
+			room_goto(RM_Title);
 		}
 		Obj_ReturnButton.current = false;
 	}
-}
+//}

@@ -9,30 +9,28 @@ var button_x = (gamepad_button_check(4,gp_face1)) || keyboard_check_pressed(vk_s
 
 //show_debug_message("{0} {1}\n", button_x, Obj_PlayGameButton.current);
 
-if Obj_PlayGameButton.current {
-if key_right {
-	Obj_PlayGameButton.current = false;
-	image_index = 0;
-	Obj_AboutButton.current = true;
-	Obj_AboutButton.image_index = 1;
-}
-else if key_down {
-	Obj_PlayGameButton.current = false;
+if Obj_ExitButton.current {
+if key_left {
+	Obj_ExitButton.current = false;
 	image_index = 0;
 	Obj_SettingsButton.current = true;
 	Obj_SettingsButton.image_index = 1;
 }
-else if key_right && key_down {
-	Obj_PlayGameButton.current = false;
+else if key_up {
+	Obj_ExitButton.current = false;
 	image_index = 0;
-	Obj_ExitButton.current = true;
-	Obj_ExitButton.image_index = 1;
+	Obj_AboutButton.current = true;
+	Obj_AboutButton.image_index = 1;
 }
-if(canPlay){
-if ((Obj_PlayGameButton.current) && button_x) {
-	Obj_PlayGameButton.current = false;
-	room_goto(RM_CPUSettings);
+else if key_left && key_up {
+	Obj_ExitButton.current = false;
+	image_index = 0;
+	Obj_PlayGameButton.current = true;
+	Obj_PlayGameButton.image_index = 1;
 }
+if ((Obj_ExitButton.current) && button_x) {
+	Obj_ExitButton.current = false;
+	game_end()
 }
 }
 
