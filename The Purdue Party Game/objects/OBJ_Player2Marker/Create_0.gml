@@ -3,8 +3,8 @@
 
 if(OBJ_PlayerArrow.current_player != 2) {
 	visible = true;
-	x = global.player2x;
-	y = global.player2y;
+	x = global.player2x - 2;
+	y = global.player2y + 7;
 	image_blend = global.player2color;
 } else {
 	visible = false;	
