@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+//0 is easy, 1 is medium, 2 is hard
+global.difficultyTwo = 0;
 
-canIncrease = true;
-alarm[0]=-1;
 

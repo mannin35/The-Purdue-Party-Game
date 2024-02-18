@@ -3,7 +3,7 @@
 
 if(!disabled){
 	//Triangle button
-	var button_y = gamepad_button_check(5,gp_face4);
+	var button_y = gamepad_button_check_pressed(5,gp_face4);
 	if(button_y){
 		var newSpriteSet = false;
 		global.playersUsed[playerIndex] = 0;
