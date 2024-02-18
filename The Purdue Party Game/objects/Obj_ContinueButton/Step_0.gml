@@ -9,12 +9,38 @@ var up_key = (gamepad_axis_value(4, gp_axislv) < -dead_zone);
 
 var button_x = (gamepad_button_check_pressed(4,gp_face1));
 
-if(up_key  && Obj_ContinueButton.current && (global.realPlayerCount == 4)){
-	show_debug_message("going up")
-	current = false;
-	image_index--;
-	Obj_RightArrow.current = true;
-	Obj_RightArrow.image_index++;
+if(room == RM_CPUSettings){
+	if(up_key  && Obj_ContinueButton.current && (global.realPlayerCount == 4)){
+		current = false;
+		image_index--;
+		Obj_RightArrow.current = true;
+		Obj_RightArrow.image_index++;
+	} else if(up_key && Obj_ContinueButton.current){
+		global.isMoving = true;
+		current = false;
+		image_index--;
+		if(global.realPlayerCount == 3){
+			Obj_PlayerOneHard.current = true;
+			Obj_PlayerOneHard.image_index = 5;
+		} else if(global.realPlayerCount == 2){
+			Obj_PlayerTwoHard.current = true;
+			Obj_PlayerTwoHard.image_index = 5;	
+		} else if (global.realPlayerCount == 1){
+			Obj_PlayerThreeHard.current = true;
+			Obj_PlayerThreeHard.image_index = 5;		
+		} else {
+			Obj_PlayerFourHard.current = true;
+			Obj_PlayerFourHard.image_index = 5;		
+		}
+		
+	}
+} else {
+	if(up_key && Obj_ContinueButton.current){
+		current = false;
+		image_index--;
+		Obj_RightArrow.current = true;
+		Obj_RightArrow.image_index++;
+	}
 }
 
 if(left_key && Obj_ContinueButton.current){

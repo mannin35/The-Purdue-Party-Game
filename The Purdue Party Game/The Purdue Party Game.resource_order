@@ -6,6 +6,8 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Title and Settings","order":1,"path":"folders/Objects/Title and Settings.yy",},
+    {"name":"CPU Text","order":12,"path":"folders/Objects/Title and Settings/CPU Text.yy",},
+    {"name":"Difficulties","order":4,"path":"folders/Objects/Title and Settings/CPU Text/Difficulties.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
@@ -27,8 +29,6 @@
     {"name":"CPU and Game Settings","order":15,"path":"folders/Sprites/Title and Settings/CPU and Game Settings.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"CPU Text","order":12,"path":"folders/Objects/Title and Settings/CPU Text.yy",},
-    {"name":"Difficulties","order":4,"path":"folders/Objects/Title and Settings/CPU Text/Difficulties.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SP_ToyTrain","order":8,"path":"sprites/SP_ToyTrain/SP_ToyTrain.yy",},

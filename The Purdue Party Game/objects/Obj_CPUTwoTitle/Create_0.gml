@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-current = false
-if(room == RM_CPUSettings){
-current = true;
-}
-dead_zone = .2;
+//0 is easy, 1 is medium, 2 is hard
+global.difficultyTwo = 0;
+
+

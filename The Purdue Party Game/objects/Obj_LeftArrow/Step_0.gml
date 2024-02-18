@@ -16,11 +16,26 @@ if(current && button_x && room == RM_GameSettings && (global.turns != 10)){
 	Obj_TurnNumber.image_index--;
 }
 //Moves down to return button/CPU settings
+if(room == RM_CPUSettings){
 if((global.realPlayerCount == 4) && key_down && current){
 	current = false;
 	image_index--;
 	Obj_ReturnButton.image_index++;
 	Obj_ReturnButton.current = true;
+} else if (key_down && current){
+	current = false;
+	image_index--;
+	Obj_PlayerOneEasy.current = true;
+	Obj_PlayerOneEasy.image_index = 1;
+	global.isMoving = true;
+}
+} else {
+	if(key_down && current){
+		current = false;
+		image_index--;
+		Obj_ReturnButton.image_index++;
+		Obj_ReturnButton.current = true;
+	}
 }
 
 //Shifts to right arrow
