@@ -1,0 +1,4 @@
+hovering = false;
+clicked = false;
+
+
