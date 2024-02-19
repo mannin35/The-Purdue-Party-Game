@@ -2,6 +2,8 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"SP_TimesUp2","order":2,"path":"sprites/SP_TimesUp2/SP_TimesUp2.yy",},
+    {"name":"oElevenFiftyNineTimer","order":1,"path":"objects/oElevenFiftyNineTimer/oElevenFiftyNineTimer.yy",},
+    {"name":"SP_Clock","order":1,"path":"sprites/SP_Clock/SP_Clock.yy",},
     {"name":"SP_TimesUp","order":1,"path":"sprites/SP_TimesUp/SP_TimesUp.yy",},
   ],
 }
