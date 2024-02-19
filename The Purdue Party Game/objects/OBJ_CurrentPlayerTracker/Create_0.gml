@@ -5,4 +5,3 @@ global.currentplayer = 1;
 
 
 
-

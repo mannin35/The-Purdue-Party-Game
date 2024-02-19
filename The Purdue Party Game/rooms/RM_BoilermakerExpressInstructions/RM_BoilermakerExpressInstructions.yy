@@ -1,7 +1,7 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "RM_InstructionSample",
+  "name": "RM_BoilermakerExpressInstructions",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,

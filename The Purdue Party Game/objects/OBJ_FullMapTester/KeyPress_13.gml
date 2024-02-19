@@ -9,26 +9,26 @@ show_debug_message("_____________________________________________\n");
 
 //TEST: that player characters are in correct position
 show_debug_message("Character Location Tests: ");
-if (abs(OBJ_Player1Full.x - global.player1x) < moe
-	&& abs(OBJ_Player1Full.y - global.player1y) < moe) {
+if (abs(OBJ_Player1Full.x - global.player1position[0]) < moe
+	&& abs(OBJ_Player1Full.y - global.player1position[1]) < moe) {
 	show_debug_message("\tPlayer 1 character in correct location");
 } else {
 	show_debug_message("\tPlayer 1 character NOT in correct location");
 }
-if (abs(OBJ_Player2Full.x - global.player2x) < moe
-	&& abs(OBJ_Player2Full.y - global.player2y) < moe) {
+if (abs(OBJ_Player2Full.x - global.player2position[0]) < moe
+	&& abs(OBJ_Player2Full.y - global.player2position[1]) < moe) {
 	show_debug_message("\tPlayer 2 character in correct location");
 } else {
 	show_debug_message("\tPlayer 2 character NOT in correct location");
 }
-if (abs(OBJ_Player3Full.x - global.player3x) < moe
-	&& abs(OBJ_Player3Full.y - global.player3y) < moe) {
+if (abs(OBJ_Player3Full.x - global.player3position[0]) < moe
+	&& abs(OBJ_Player3Full.y - global.player3position[1]) < moe) {
 	show_debug_message("\tPlayer 3 character in correct location");
 } else {
 	show_debug_message("\tPlayer 3 character NOT in correct location");
 }
-if (abs(OBJ_Player4Full.x - global.player4x) < moe
-	&& abs(OBJ_Player4Full.y - global.player4y) < moe) {
+if (abs(OBJ_Player4Full.x - global.player4position[0]) < moe
+	&& abs(OBJ_Player4Full.y - global.player4position[1]) < moe) {
 	show_debug_message("\tPlayer 4 character in correct location");
 } else {
 	show_debug_message("\tPlayer 4 character NOT in correct location");
@@ -105,8 +105,8 @@ if (OBJ_PlayerArrow.current_player != 4) {
 
 //TEST: that degree marker is placed in right location
 show_debug_message("Degree Location Tests: ");
-if (abs(OBJ_DegreeFull.x - (global.degreex - 3)) < moe 
-	&& abs(OBJ_DegreeFull.y - global.degreey) < moe) {
+if (abs(OBJ_DegreeFull.x - (global.degreeposition[0] - 3)) < moe 
+	&& abs(OBJ_DegreeFull.y - global.degreeposition[1]) < moe) {
 	show_debug_message("\tDegree marker correctly shows current degree location");
 } else {
 	show_debug_message("\tDegree marker NOT in correct location");	
