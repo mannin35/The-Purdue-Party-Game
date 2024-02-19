@@ -19,15 +19,15 @@ if(current && button_x && room == RM_GameSettings && (global.turns != 30)){
 }
 
 if(room == RM_CPUSettings){
-if((global.realPlayerCount == 4) && key_down && current){
-	current = false;
-	image_index--;
-	Obj_ReturnButton.image_index++;
-	Obj_ReturnButton.current = true;
-} else if (key_down && current){
-	current = false;
-	image_index--;
-	if(global.realPlayerCount == 3){
+	if((global.realPlayerCount == 4) && key_down && current){
+		current = false;
+		image_index--;
+		Obj_ReturnButton.image_index++;
+		Obj_ReturnButton.current = true;
+	} else if (key_down && current){
+		current = false;
+		image_index--;
+		if(global.realPlayerCount == 3){
 			Obj_PlayerOneEasy.current = true;
 			Obj_PlayerOneEasy.image_index = 1;
 		} else if(global.realPlayerCount == 2){
@@ -40,8 +40,8 @@ if((global.realPlayerCount == 4) && key_down && current){
 			Obj_PlayerFourEasy.current = true;
 			Obj_PlayerFourEasy.image_index = 1;		
 		}
-	global.isMoving = true;
-}
+		global.isMoving = true;
+	}
 } else {
 	if(key_down && current){
 		current = false;

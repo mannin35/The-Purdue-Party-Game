@@ -51,14 +51,15 @@ if(left_key && Obj_ContinueButton.current){
 	Obj_ContinueButton.current = false;
 }
 
-if(button_x  && Obj_ContinueButton.current){
-		if(room == RM_CPUSettings){
-			Obj_ReturnButton.current = true;
-			room_goto(RM_GameSettings);
-		} else if(room == RM_GameSettings){
-			room_goto(RM_LocalView);	
-		}
-		Obj_ReturnButton.current = false;
+if(button_x  && Obj_ContinueButton.current) {
+	if(room == RM_CPUSettings){
+		Obj_ReturnButton.current = true;
+		room_goto(RM_GameSettings);
+	} else if(room == RM_GameSettings) {
+		global.turns = 5 + (5 * Obj_TurnNumber.image_index);
+		room_goto(RM_LocalView);
+	}
+	Obj_ReturnButton.current = false;
 }
 
 
