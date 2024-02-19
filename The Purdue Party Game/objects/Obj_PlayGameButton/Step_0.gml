@@ -6,7 +6,7 @@ var key_right = (gamepad_axis_value(4, gp_axislh) > dead_zone) || keyboard_check
 var key_left = (gamepad_axis_value(4, gp_axislh) < -dead_zone) || keyboard_check_pressed(vk_left)
 var key_up = (gamepad_axis_value(4, gp_axislv) < -dead_zone) || keyboard_check_pressed(vk_up)
 var key_down = (gamepad_axis_value(4, gp_axislv) > dead_zone) || keyboard_check_pressed(vk_down)
-var button_x = (gamepad_button_check(4,gp_face1)) || keyboard_check_pressed(vk_space);
+var button_x = (gamepad_button_check_pressed(4,gp_face1)) || keyboard_check_pressed(vk_space);
 
 //show_debug_message("{0} {1}\n", button_x, Obj_PlayGameButton.current);
 if (Obj_PlayGameButton.current) {
