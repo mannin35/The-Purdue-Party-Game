@@ -1,3 +1,4 @@
+
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
