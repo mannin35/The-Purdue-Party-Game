@@ -5,7 +5,7 @@ var button_x = gamepad_button_check_pressed(4, gp_face1);
 
 if(current){
 	if(key_left){
-		selected = false;
+		current = false;
 		Obj_DemoButton.current = true
 		Obj_PlayButton.image_index--;
 		Obj_DemoButton.image_index++;

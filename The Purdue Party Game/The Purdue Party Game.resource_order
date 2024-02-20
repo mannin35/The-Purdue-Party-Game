@@ -1,8 +1,8 @@
 {
   "FolderOrderSettings": [
-    {"name":"Main and Local View","order":4,"path":"folders/Sprites/Player Sprites/Main and Local View.yy",},
     {"name":"Instructions","order":2,"path":"folders/Objects/Instructions.yy",},
     {"name":"Instructions","order":2,"path":"folders/Sprites/Instructions.yy",},
+    {"name":"Main and Local View","order":4,"path":"folders/Sprites/Player Sprites/Main and Local View.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SP_Laptop","order":4,"path":"sprites/SP_Laptop/SP_Laptop.yy",},
