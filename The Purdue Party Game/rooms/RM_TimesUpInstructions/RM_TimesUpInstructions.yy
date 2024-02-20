@@ -1,7 +1,7 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "TimesUpInstructions",
+  "name": "RM_TimesUpInstructions",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
