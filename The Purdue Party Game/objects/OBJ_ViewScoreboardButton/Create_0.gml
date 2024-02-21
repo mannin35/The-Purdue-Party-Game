@@ -1,3 +1,9 @@
 // @description Sets initial state of scoreboard button
-
-current = true
+current = false;
+is_next = false;
+dead_zone = .2;
+left_key= false;
+right_key = false;
+button_x = false;
+prev = OBJ_ViewMapButton;
+next = OBJ_RollDiceButton;

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_RollDiceButton",
+  "name": "OBJ_UseItemButton",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_RollDieButton",
-    "path": "sprites/SP_RollDieButton/SP_RollDieButton.yy",
+    "name": "SP_UseItemButton",
+    "path": "sprites/SP_UseItemButton/SP_UseItemButton.yy",
   },
   "spriteMaskId": null,
   "visible": true,
