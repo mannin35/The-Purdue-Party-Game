@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// TESTER FUNCTION - sets current player to 3
 
 global.currentplayer = 3;
 
