@@ -9,8 +9,18 @@ var key_down = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv)
 //Checks if more players can be added, if so, cheanges UI
 
 if(current && button_x && (global.realPlayerCount != 4) && room == RM_CPUSettings){
-	global.realPlayerCount++;
-	Obj_PlayerNumber.image_index++;
+	//check if supported controller for another player
+	exists = -1;
+	try {
+		exists = global.playercontrollerindices[global.realPlayerCount];
+	}catch(e) {
+		//no controller for new player
+		exists = -1;
+	}
+	if(exists != -1) {
+		global.realPlayerCount++;
+		Obj_PlayerNumber.image_index++;
+	}
 }
 
 if(current && button_x && room == RM_GameSettings && (global.turns != 30)){
