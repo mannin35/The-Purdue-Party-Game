@@ -20,6 +20,7 @@ if (end_of_round) {
 	last_minigame = minigame;
 	
 	//go to corresponding minigame screen
+	if(test_case==0) {
 	if (minigame == 0) {
 		room = RM_BoilermakerExpressInstructions;
 	} else if (minigame == 1) {
@@ -32,6 +33,7 @@ if (end_of_round) {
 		room = RM_TipsyTunnelInstructions;
 	} else {
 		show_debug_message("ERROR: Invalid number generated for minigame selection");
+	}
 	}
 }
 
