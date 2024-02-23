@@ -3,11 +3,11 @@
 var dead_zone = .2;
 
 //Checks for moving to the left
-var left_key = (gamepad_axis_value(4, gp_axislh) < -dead_zone);
+var left_key = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) < -dead_zone);
 //Checks for moving up
-var up_key = (gamepad_axis_value(4, gp_axislv) < -dead_zone);
+var up_key = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) < -dead_zone);
 
-var button_x = (gamepad_button_check_pressed(4,gp_face1));
+var button_x = (gamepad_button_check_pressed(global.playercontrollerindices[0],gp_face1));
 
 if(room == RM_CPUSettings){
 	if(up_key  && Obj_ContinueButton.current && (global.realPlayerCount == 4)){
