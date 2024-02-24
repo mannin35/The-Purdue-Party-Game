@@ -17,10 +17,10 @@ if (end_of_round) {
 		show_debug_message("loop");
 		minigame = irandom(4);	
 	}
-	last_minigame = minigame;
-	
+
 	//go to corresponding minigame screen
 	if(test_case==0) {
+		last_minigame = minigame;
 	if (minigame == 0) {
 		room = RM_BoilermakerExpressInstructions;
 	} else if (minigame == 1) {
@@ -34,6 +34,17 @@ if (end_of_round) {
 	} else {
 		show_debug_message("ERROR: Invalid number generated for minigame selection");
 	}
+	}
+	else {
+		if(last_minigame==minigame) {
+			show_debug_message("ERROR: chose same minigame twice in a row");	
+		} else if (minigame < 0 || minigame > 4) {
+			show_debug_message("ERROR: Invalid minigame number generated");
+		} else {
+			show_debug_message("Valid Minigame:");
+			show_debug_message(minigame);
+		}
+		last_minigame = minigame;
 	}
 }
 
