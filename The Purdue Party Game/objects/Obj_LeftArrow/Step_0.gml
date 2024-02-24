@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var key_right = (gamepad_axis_value(4, gp_axislh) > dead_zone)
-var button_x = (gamepad_button_check_pressed(4,gp_face1));
-var key_down = (gamepad_axis_value(4, gp_axislv) > dead_zone)
+var key_right = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) > dead_zone)
+var button_x = (gamepad_button_check_pressed(global.playercontrollerindices[0],gp_face1));
+var key_down = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) > dead_zone)
 
 //Checks if more players can be removed, if so, cheanges UI
 if(current && button_x && (global.realPlayerCount != 0) && room == RM_CPUSettings){

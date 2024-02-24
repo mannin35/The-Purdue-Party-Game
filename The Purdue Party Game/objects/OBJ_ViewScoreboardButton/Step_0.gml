@@ -14,12 +14,13 @@ TO ADD: ENSURING INPUT ONLY FROM CURRENT PLAYER COUNTS
 */
 
 var dead_zone = .2;
+var current_player_index = global.playercontrollerindices[0];
 
 //checks for moving to the right and pressing button
 //var right_key = keyboard_check_pressed(vk_right);
 //var button_x = keyboard_check_pressed(vk_space);
-var right_key = gamepad_axis_value(0,gp_axislh);
-var button_x = gamepad_button_check_pressed(0, gp_face1);
+var right_key = gamepad_axis_value(current_player_index,gp_axislh);
+var button_x = gamepad_button_check_pressed(current_player_index, gp_face1);
 
 
 //display scoreboard if button pressed
