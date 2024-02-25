@@ -20,15 +20,19 @@ var current_player_index = global.playercontrollerindices[0];
 //var right_key = keyboard_check_pressed(vk_right);
 //var button_x = keyboard_check_pressed(vk_space);
 var right_key = gamepad_axis_value(current_player_index,gp_axislh);
-var button_x = gamepad_button_check_pressed(current_player_index, gp_face1);
+var button_x = gamepad_button_check(current_player_index, gp_face1);
 
 
 //display scoreboard if button pressed
 if(button_x && OBJ_ViewScoreboardButton.current){
 	if(room == RM_LocalView) {
-		show_message("Pressed");
+		//set scoreboard display to visible, trigger rank calculation
+		//in scoreboard object
+		OBJ_Scoreboard.visible = true;
 	}
-} 
+} else {
+	OBJ_Scoreboard.visible = false;	
+}
 
 if(right_key > dead_zone && OBJ_ViewMapButton.current) {
 	//switch active button to view scoreboard
