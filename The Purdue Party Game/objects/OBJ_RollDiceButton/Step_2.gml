@@ -1,7 +1,9 @@
 //roll dice if button pressed
 if(button_x && OBJ_RollDiceButton.current){
 	if(room == RM_LocalView) {
-		show_message("Pressed");
+		player = global.localPlayers[global.currentplayer];
+		instance_create_layer(player.x , player.y - 25, layer, OBJ_Dice);
+		current = false;
 	}
 } 
 
