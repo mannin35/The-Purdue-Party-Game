@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [
-    {"name":"Scoreboard","order":1,"path":"folders/Sprites/Scoreboard.yy",},
     {"name":"Scoreboard","order":10,"path":"folders/Objects/Local View/Scoreboard.yy",},
+    {"name":"Scoreboard","order":1,"path":"folders/Sprites/Scoreboard.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"OBJ_Player1st","order":5,"path":"objects/OBJ_Player1st/OBJ_Player1st.yy",},
@@ -10,6 +10,7 @@
     {"name":"OBJ_DegreeLocal","order":6,"path":"objects/OBJ_DegreeLocal/OBJ_DegreeLocal.yy",},
     {"name":"OBJ_Player2nd","order":6,"path":"objects/OBJ_Player2nd/OBJ_Player2nd.yy",},
     {"name":"OBJ_Placement4","order":4,"path":"objects/OBJ_Placement4/OBJ_Placement4.yy",},
+    {"name":"Ft_CooperBlack","order":1,"path":"fonts/Ft_CooperBlack/Ft_CooperBlack.yy",},
     {"name":"OBJ_Player3Local","order":5,"path":"objects/OBJ_Player3Local/OBJ_Player3Local.yy",},
     {"name":"OBJ_ViewScoreboardButton","order":3,"path":"objects/OBJ_ViewScoreboardButton/OBJ_ViewScoreboardButton.yy",},
     {"name":"OBJ_ViewMapButton","order":4,"path":"objects/OBJ_ViewMapButton/OBJ_ViewMapButton.yy",},
@@ -20,6 +21,7 @@
     {"name":"OBJ_CurrentPlayerTracker","order":1,"path":"objects/OBJ_CurrentPlayerTracker/OBJ_CurrentPlayerTracker.yy",},
     {"name":"OBJ_Player3rd","order":7,"path":"objects/OBJ_Player3rd/OBJ_Player3rd.yy",},
     {"name":"OBJ_Placement3","order":3,"path":"objects/OBJ_Placement3/OBJ_Placement3.yy",},
+    {"name":"SP_Grass","order":1,"path":"sprites/SP_Grass/SP_Grass.yy",},
     {"name":"SP_BoilerBuck","order":1,"path":"sprites/SP_BoilerBuck/SP_BoilerBuck.yy",},
   ],
 }

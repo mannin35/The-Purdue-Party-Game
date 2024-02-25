@@ -5,3 +5,6 @@
 
 global.player2position[0] = x;
 global.player2position[1] = y;
+
+boilerBucks = 10;
+degrees = 2;
