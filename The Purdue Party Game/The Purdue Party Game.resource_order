@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Minigame Results","order":1,"path":"folders/Objects/Minigame Results.yy",},
+  ],
   "ResourceOrderSettings": [
     {"name":"OBJ_PlayerTurn","order":1,"path":"objects/OBJ_PlayerTurn/OBJ_PlayerTurn.yy",},
     {"name":"SP_PlayerTurn","order":1,"path":"sprites/SP_PlayerTurn/SP_PlayerTurn.yy",},
