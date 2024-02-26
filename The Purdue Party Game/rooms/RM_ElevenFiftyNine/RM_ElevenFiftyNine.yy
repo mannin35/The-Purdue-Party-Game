@@ -7,7 +7,7 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_1AA46B08","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},
+    {"name":"time_logic","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},
     {"name":"player_one","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},
     {"name":"player_two","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},
     {"name":"player_three","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},
@@ -21,7 +21,7 @@
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1AA46B08","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oElevenFiftyNineTimer","path":"objects/oElevenFiftyNineTimer/oElevenFiftyNineTimer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"time_logic","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oElevenFiftyNineTimer","path":"objects/oElevenFiftyNineTimer/oElevenFiftyNineTimer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":64.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"player_one_hand","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLaptop","path":"objects/oLaptop/oLaptop.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":88.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"player_two_hand","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":2,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLaptop","path":"objects/oLaptop/oLaptop.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":171.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"player_three_hand","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":4,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLaptop","path":"objects/oLaptop/oLaptop.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":256.0,"y":96.0,},
