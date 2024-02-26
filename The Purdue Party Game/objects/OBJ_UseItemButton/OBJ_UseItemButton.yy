@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Local View",
-    "path": "folders/Objects/Local View.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/Local View/Buttons.yy",
   },
   "parentObjectId": null,
   "persistent": false,

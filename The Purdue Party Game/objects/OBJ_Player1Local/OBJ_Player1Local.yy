@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Local View",
-    "path": "folders/Objects/Local View.yy",
+    "name": "Players",
+    "path": "folders/Objects/Local View/Players.yy",
   },
   "parentObjectId": {
     "name": "OBJ_Player",
