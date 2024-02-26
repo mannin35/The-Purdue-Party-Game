@@ -4,11 +4,13 @@
   ],
   "ResourceOrderSettings": [
     {"name":"SP_TimesUp2","order":2,"path":"sprites/SP_TimesUp2/SP_TimesUp2.yy",},
+    {"name":"oInput","order":4,"path":"objects/oInput/oInput.yy",},
     {"name":"oPlayerEFN","order":1,"path":"objects/oPlayerEFN/oPlayerEFN.yy",},
     {"name":"SP_Clock","order":1,"path":"sprites/SP_Clock/SP_Clock.yy",},
     {"name":"SP_Sweat","order":2,"path":"sprites/SP_Sweat/SP_Sweat.yy",},
     {"name":"oLaptop","order":2,"path":"objects/oLaptop/oLaptop.yy",},
     {"name":"oSweat","order":3,"path":"objects/oSweat/oSweat.yy",},
     {"name":"SP_TimesUp","order":1,"path":"sprites/SP_TimesUp/SP_TimesUp.yy",},
+    {"name":"Ft_ElevenFiftyNineTest","order":1,"path":"fonts/Ft_ElevenFiftyNineTest/Ft_ElevenFiftyNineTest.yy",},
   ],
 }
