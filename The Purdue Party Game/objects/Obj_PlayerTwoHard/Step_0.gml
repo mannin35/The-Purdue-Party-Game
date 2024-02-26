@@ -1,9 +1,9 @@
 dead_zone = .2;
-key_up = (gamepad_axis_value(4, gp_axislv) < -dead_zone)
-key_down = (gamepad_axis_value(4, gp_axislv) > dead_zone)
-button_x = (gamepad_button_check_pressed(4,gp_face1));
-key_right = (gamepad_axis_value(4,gp_axislh) > dead_zone)
-key_left = (gamepad_axis_value(4,gp_axislh) < -dead_zone)
+key_up = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) < -dead_zone)
+key_down = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) > dead_zone)
+button_x = (gamepad_button_check_pressed(global.playercontrollerindices[0],gp_face1));
+key_right = (gamepad_axis_value(global.playercontrollerindices[0],gp_axislh) > dead_zone)
+key_left = (gamepad_axis_value(global.playercontrollerindices[0],gp_axislh) < -dead_zone)
 
 
 if(current && !global.isMoving){
@@ -48,8 +48,8 @@ if(current && !global.isMoving){
 		global.difficultyTwo = 2;
 	}
 }
-if(gamepad_axis_value(4, gp_axislv) < dead_zone && gamepad_axis_value(4,gp_axislv) > -dead_zone
-&& gamepad_axis_value(4, gp_axislh) < dead_zone && gamepad_axis_value(4,gp_axislh) > -dead_zone){
+if(gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) < dead_zone && gamepad_axis_value(global.playercontrollerindices[0],gp_axislv) > -dead_zone
+&& gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) < dead_zone && gamepad_axis_value(global.playercontrollerindices[0],gp_axislh) > -dead_zone){
 	global.isMoving = false;	
 }
 

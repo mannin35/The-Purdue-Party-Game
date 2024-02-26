@@ -2,15 +2,25 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var key_left = (gamepad_axis_value(4, gp_axislh) < -dead_zone)
-var button_x = (gamepad_button_check_pressed(4,gp_face1));
-var key_down = (gamepad_axis_value(4, gp_axislv) > dead_zone);
+var key_left = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) < -dead_zone)
+var button_x = (gamepad_button_check_pressed(global.playercontrollerindices[0],gp_face1));
+var key_down = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) > dead_zone);
 
 //Checks if more players can be added, if so, cheanges UI
 
 if(current && button_x && (global.realPlayerCount != 4) && room == RM_CPUSettings){
-	global.realPlayerCount++;
-	Obj_PlayerNumber.image_index++;
+	//check if supported controller for another player
+	exists = -1;
+	try {
+		exists = global.playercontrollerindices[global.realPlayerCount];
+	}catch(e) {
+		//no controller for new player
+		exists = -1;
+	}
+	if(exists != -1) {
+		global.realPlayerCount++;
+		Obj_PlayerNumber.image_index++;
+	}
 }
 
 if(current && button_x && room == RM_GameSettings && (global.turns != 30)){

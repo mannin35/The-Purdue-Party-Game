@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_index = global.player4index;
-x = global.player4x;
-y = global.player4y;
+
+image_index = 3;
+
+x = global.player4position[0];
+y = global.player4position[1];

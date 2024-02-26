@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.player4color = c_fuchsia;
+//image_index = global.playersUsed[3];
 
-global.player4x = x;
-global.player4y = y;
+global.player4position[0] = x;
+global.player4position[1] = y;
 
-global.player4index = image_index;
+boilerBucks = 0;
+degrees = 5;

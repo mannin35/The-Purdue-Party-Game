@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.player2color = c_aqua;
+//image_index = global.playersUsed[1];
 
-global.player2x = x;
-global.player2y = y;
+global.player2position[0] = x;
+global.player2position[1] = y;
 
-global.player2index = image_index;
+boilerBucks = 10;
+degrees = 2;
