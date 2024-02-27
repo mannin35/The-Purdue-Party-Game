@@ -15,6 +15,7 @@ if(!disabled){
 			if(global.playersUsed[playerIndex] == 0){
 				Obj_PlayerTwoGS.image_index = playerIndex;
 				global.playersUsed[playerIndex] = 1;
+				global.playerTwoIndex = playerIndex;
 				newSpriteSet = true;	
 			}
 		}

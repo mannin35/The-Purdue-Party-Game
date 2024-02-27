@@ -5,6 +5,6 @@
 
 global.player3position[0] = x;
 global.player3position[1] = y;
-
+image_index = global.playerThreeIndex;
 boilerBucks =  0;
 degrees =  5;
