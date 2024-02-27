@@ -6,9 +6,7 @@
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
-  "instanceCreationOrder": [
-    {"name":"inst_1AA46B08","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},
-  ],
+  "instanceCreationOrder": [],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_3","assets":[
@@ -17,9 +15,7 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_1FF2C08F","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":3.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.7,"scaleY":1.7,"spriteId":{"name":"SP_Laptop","path":"sprites/SP_Laptop/SP_Laptop.yy",},"x":264.0,"y":115.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_50998D50","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":1.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.7,"scaleY":1.7,"spriteId":{"name":"SP_Laptop","path":"sprites/SP_Laptop/SP_Laptop.yy",},"x":367.0,"y":110.0,},
       ],"depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1AA46B08","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oElevenFiftyNineTimer","path":"objects/oElevenFiftyNineTimer/oElevenFiftyNineTimer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":64.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_2","assets":[],"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":18,"SerialiseWidth":32,"TileCompressedData":[
 -355,-2147483648,1,1073741836,-24,1073741837,1,805306380,-6,-2147483648,2,13,1073741838,-22,1879048205,2,805306382,805306381,-6,-2147483648,2,13,805306381,-22,-2147483648,2,13,805306381,-6,-2147483648,2,13,

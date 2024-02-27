@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_speed = 0;
-stopped = true;
-
+event_inherited();
+hasDegree = false;
+if (hasDegree) {
+	
+}
 
 
 
