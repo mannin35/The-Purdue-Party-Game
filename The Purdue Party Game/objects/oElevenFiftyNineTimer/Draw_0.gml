@@ -26,7 +26,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 	if keyboard_check(vk_up) {
 		if !(player_one.over) {
 			player_one.end_time = t
-		
+			player_one_hand.over = true
+			instance_destroy(player_one.sweat)
 			player_one.end_time += ":" + string(t_msec)
 			player_one.over = true
 		}
@@ -35,6 +36,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 	if keyboard_check(vk_down) {
 		if !(player_two.over) {
 			player_two.end_time = t
+			player_two_hand.over = true
+			instance_destroy(player_two.sweat)
 			player_two.end_time += ":" + string(t_msec)
 			player_two.over = true
 		}
@@ -43,6 +46,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 	if keyboard_check(vk_left) {
 		if !(player_three.over) {
 			player_three.end_time = t
+			player_three_hand.over = true
+			instance_destroy(player_three.sweat)
 			player_three.end_time += ":" + string(t_msec)
 			player_three.over = true
 		}
@@ -51,6 +56,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 	if keyboard_check(vk_right) {
 		if !(player_four.over) {
 			player_four.end_time = t
+			player_four_hand.over = true
+			instance_destroy(player_four.sweat)
 			player_four.end_time += ":" + string(t_msec)
 			player_four.over = true
 		}

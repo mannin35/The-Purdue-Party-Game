@@ -14,7 +14,7 @@ if keyboard_check_pressed(vk_down) {
     draw_time_at_position(360, 288);
 }*/
 
-if (time_logic.t_sec >= 50 || time_logic.t_sec <= 5) {
+/*if (time_logic.t_sec >= 50 || time_logic.t_sec <= 5) {
 	if keyboard_check(vk_up) {
 		//player_one.over = true
 		player_one_hand.over = true
@@ -38,4 +38,4 @@ if (time_logic.t_sec >= 50 || time_logic.t_sec <= 5) {
 		player_four_hand.over = true
 		instance_destroy(player_four.sweat)
 	}
-}
+}/*
