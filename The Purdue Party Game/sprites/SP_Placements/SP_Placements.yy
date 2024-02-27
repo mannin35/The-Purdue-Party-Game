@@ -4,7 +4,7 @@
   "name": "SP_Placements",
   "bbox_bottom": 29,
   "bbox_left": 0,
-  "bbox_right": 40,
+  "bbox_right": 39,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
