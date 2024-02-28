@@ -5,6 +5,7 @@ var numSpaces = floor(image_index + 1) ;
 * due to how player movement was implemented
 */
 player.numSpaces = numSpaces + 1;
+HideButtons();
 instance_destroy();
 
 

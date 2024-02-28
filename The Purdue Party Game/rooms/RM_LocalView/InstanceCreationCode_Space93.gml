@@ -1,3 +1,3 @@
 prev = Space92;
-next[0] = Space94;
-next[1] = Space108;
+next[0] = Space108;
+ifLanded = Space94;

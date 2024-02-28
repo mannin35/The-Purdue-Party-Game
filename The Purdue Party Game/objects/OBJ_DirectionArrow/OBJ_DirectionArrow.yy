@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_Arrow",
-  "eventList": [],
+  "name": "OBJ_DirectionArrow",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -25,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "SP_DirectionArrow",
+    "path": "sprites/SP_DirectionArrow/SP_DirectionArrow.yy",
+  },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

@@ -1,100 +1,101 @@
 /// @ Update player position as needed
-if (numSpaces > 0) {
-	if (!isMoving) {
-		// TODO change space.next[0] to player decision
-		index = 0;
-		if (array_length(space.next) > 1) {
-			if (space == SpaceFountain) {
-				numSpaces++;
-			}
-		}
-		nextSpace = space.next[index];
-		// Variables for determining where to move
-		xFinal = nextSpace.x;
-		yFinal = nextSpace.y;
-		xDiff = xFinal - x;
-		yDiff = yFinal - y;
-		var up = false;
-		var down = false;
-		var right = false;
-		var left = false;
-		if (xDiff > 0) {
-			right = true;
-		}
-		else if (xDiff < 0) {
-			left = true;
-		}
-		if (yDiff > 0) {
-			down = true;
-		}
-		else if (yDiff < 0) {
-			up = true;	
-		}
-		// TODO set sprites
-		if (right) {
-			if (up) {
-				// UpRight
-			}
-			else if (down) {
-				// DownRight
-			}
-			else {
-				// Right
-			}
-		}
-		else if (left) {
-			if (up) {
-				// UpLeft
-			}
-			else if (down) {
-				// DownLeft
-			}
-			else {
-				// Left
-			}
+pathChosen = false;
+index = 0;
+// Check for input
+if (awaitingInput) {
+	var left_key = keyboard_check_pressed(vk_left);
+	var right_key = keyboard_check_pressed(vk_right);
+	var up_key = keyboard_check_pressed(vk_up);
+	var down_key = keyboard_check_pressed(vk_down);
+	var button_x = keyboard_check_pressed(vk_space);
+	// Confirm path if space is pressed
+	if (button_x) {
+		pathChosen = true;
+		awaitingInput = false;
+		activeArrow.visible = false;
+		activeArrow.image_index = 0;
+		inactiveArrow.visible = false;
+		// Get path index
+		if (activeArrow == arrows[0]) {
+			index = 0;
 		}
 		else {
-			if (up) {
-				// Up
+			index = 1;
+		}
+	}
+	// Else change active arrow if any arrow is pressed
+	else if (left_key || right_key || up_key || down_key) {
+		temp = activeArrow;
+		activeArrow = inactiveArrow;
+		inactiveArrow = temp;
+		activeArrow.image_index = 1;
+		inactiveArrow.image_index = 0;
+	}
+}
+
+// Move only if number of spaces to go is at least one
+if (numSpaces > 0 && !awaitingInput) {
+	if (!isMoving) {
+		// Get player decision if there is a branching path
+		if ((array_length(space.next) > 1) && (!pathChosen)) {
+			if (numSpaces > 1) {
+				speed = 0;
+				// Fountain space isn't a real space, just a placeholder to get player decision
+				if (space == SpaceFountain) {
+					// Make player move one more space
+					numSpaces++;
+				}
+				arrows = space.arrows;
+				// Default path is arrows[0]
+				activeArrow = arrows[0];
+				inactiveArrow = arrows[1];
+				activeArrow.image_index = 1;
+				activeArrow.visible = true;
+				inactiveArrow.visible = true;
+				awaitingInput = true;
 			}
-			else  {
-				// Down
+			// If landing on space which branches, continue to execution for ending player turn
+			else {
+				pathChosen = true;
 			}
 		}
-		isMoving = true;
-		numSpaces--;
-		if (numSpaces == 0) {
-			OBJ_RollDiceButton.is_next = true;
-			global.currentplayer = (global.currentplayer + 1) % 4;
-			isMoving = false;
+		// Path is chosen if there is only one space to go 
+		else if (array_length(space.next) ==1) {
+			pathChosen = true;
+		}
+		// If the next space has been determined
+		if (pathChosen) {
+			nextSpace = space.next[index];
+			// Variables for determining where to move
+			xFinal = nextSpace.x;
+			yFinal = nextSpace.y;
+			xDiff = xFinal - x;
+			yDiff = yFinal - y;
+			// Set the correct walking sprite
+			//SetWalkingSprite(self, xDiff, yDiff);
+			isMoving = true;
+			numSpaces--;
+			// Stop moving if reached final space
+			if (numSpaces == 0) {
+				OBJ_RollDiceButton.is_next = true;
+				global.currentplayer = (global.currentplayer + 1) % 4;
+				isMoving = false;
+				ResetButtons(global.currentplayer);
+				ShowButtons();
+			}
 		}
 	}
 	else if (point_distance(x, y, xFinal, yFinal) > 5) {
     move_towards_point(xFinal, yFinal, speedMultiplier);
 	}
 	else { 
+		// Set speed to 0 when reaching final space (numSpaces == 1)
 		if (numSpaces == 1) {
 			speed = 0;
 		}
 		isMoving = false;
 		space = nextSpace;
 	}
-	
-	/*
-	else
-		if (xCurrent < abs(xDiff)) {
-			xCurrent += abs(xSpeed);
-			x += xSpeed;
-		}
-		else {
-			isMoving = false;
-		}
-		if (yCurrent < abs(yDiff)) {
-			yCurrent += abs(ySpeed);
-			y+= ySpeed;
-			isMoving = true;
-		}
-		*/
 }
 
 

@@ -4,6 +4,7 @@ self.space = Space0;
 x = space.x;
 y = space.y;
 color = c_red;
+ResetButtons(0);
 
 
 
