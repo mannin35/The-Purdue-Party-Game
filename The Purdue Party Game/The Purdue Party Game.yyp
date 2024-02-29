@@ -169,7 +169,6 @@
     {"id":{"name":"OBJ_Player","path":"objects/OBJ_Player/OBJ_Player.yy",},},
     {"id":{"name":"Obj_ContinueButton","path":"objects/Obj_ContinueButton/Obj_ContinueButton.yy",},},
     {"id":{"name":"Obj_CPUThreeTitle","path":"objects/Obj_CPUThreeTitle/Obj_CPUThreeTitle.yy",},},
-    {"id":{"name":"Obj_PlayerTwoGS","path":"objects/Obj_PlayerTwoGS/Obj_PlayerTwoGS.yy",},},
     {"id":{"name":"SP_Bus","path":"sprites/SP_Bus/SP_Bus.yy",},},
     {"id":{"name":"OBJ_YellowSpace","path":"objects/OBJ_YellowSpace/OBJ_YellowSpace.yy",},},
     {"id":{"name":"TS_Sidewalk","path":"tilesets/TS_Sidewalk/TS_Sidewalk.yy",},},
