@@ -1,4 +1,3 @@
-/// @description Insert description here
 // You can write your code in this editor
 
 global.currentplayer = 1;
@@ -8,3 +7,13 @@ last_minigame = -1;
 minigame = -1;
 
 test_case = 1;
+
+
+
+
+
+
+
+
+
+
