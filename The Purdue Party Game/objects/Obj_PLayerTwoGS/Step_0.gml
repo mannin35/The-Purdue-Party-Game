@@ -3,7 +3,7 @@
 
 if(!disabled){
 	//Triangle button
-	var button_y = gamepad_button_check_pressed(5,gp_face4);
+	var button_y = gamepad_button_check_pressed(global.playercontrollerindices[1],gp_face4);
 	if(button_y){
 		var newSpriteSet = false;
 		global.playersUsed[playerIndex] = 0;
@@ -15,6 +15,7 @@ if(!disabled){
 			if(global.playersUsed[playerIndex] == 0){
 				Obj_PlayerTwoGS.image_index = playerIndex;
 				global.playersUsed[playerIndex] = 1;
+				global.playerTwoIndex = playerIndex;
 				newSpriteSet = true;	
 			}
 		}

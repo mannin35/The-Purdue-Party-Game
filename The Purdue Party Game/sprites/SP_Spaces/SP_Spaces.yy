@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Spaces",
-    "path": "folders/Sprites/Main and Local View/Spaces.yy",
+    "name": "Main and Local View",
+    "path": "folders/Sprites/Player Sprites/Main and Local View.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -47,7 +47,7 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 0.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
