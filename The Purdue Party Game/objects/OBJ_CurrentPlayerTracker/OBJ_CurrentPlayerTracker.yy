@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_Placement1",
+  "name": "OBJ_CurrentPlayerTracker",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Scoreboard",
-    "path": "folders/Objects/Local View/Scoreboard.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "SP_Placements",
-    "path": "sprites/SP_Placements/SP_Placements.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
