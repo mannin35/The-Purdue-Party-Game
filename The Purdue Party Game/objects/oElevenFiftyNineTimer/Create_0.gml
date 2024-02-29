@@ -7,6 +7,7 @@ t_min = 59
 t_sec = 45
 t_msec = 0 // 1/60 of a frame
 
+done = false
 
 p_one = global.playerOneIndex;
 p_two = global.playerTwoIndex;
