@@ -7,9 +7,9 @@ if(!end_of_round){
 		y = player.y;
 	}
 	else if (room == RM_MainMap) {
-		var player = global.fullPlayers[global.currentplayer];
-		player.x = playerSpaces[global.currentplayer].x;
-		player.y = playerSpaces[global.currentplayer].y;
+		//var player = global.fullPlayers[global.currentplayer];
+		//player.x = playerSpaces[global.currentplayer].x;
+		//player.y = playerSpaces[global.currentplayer].y;
 	}
 	
 }
