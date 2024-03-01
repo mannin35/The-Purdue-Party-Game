@@ -21,23 +21,33 @@ if(visible && !calculated) {
 	//calculate current player placements
 	players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
 	//sort list of players by number of boiler bucks
+	swapped = false;
 	for(i=0; i<3; i++) {
-		for(j=i; j<4;j++) {
-			if(players[i].boilerBucks < players[j].boilerBucks) {
-				temp = players[i];
-				players[i] = players[j];
-				players[j] = temp;
+		for(j=0; j<3-i;j++) {
+			if(players[j].boilerBucks < players[j+1].boilerBucks) {
+				temp = players[j];
+				players[j] = players[j+1];
+				players[j+1] = temp;
+				swapped = true;
 			}
+		}
+		if(swapped==false) {
+			break;	
 		}
 	}
 	//sort list of players by number of degrees
+	swapped = false;
 	for(i=0; i<3; i++) {
-		for(j=i; j<4;j++) {
-			if(players[i].degrees < players[j].degrees) {
-				temp = players[i];
-				players[i] = players[j];
-				players[j] = temp;
+		for(j=0; j<3-i;j++) {
+			if(players[j].degrees < players[j+1].degrees) {
+				temp = players[j];
+				players[j] = players[j+1];
+				players[j+1] = temp;
+				swapped = true;
 			}
+		}
+		if(swapped==false) {
+			break;	
 		}
 	}
 	
