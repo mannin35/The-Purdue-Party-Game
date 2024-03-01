@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Main and Local View",
-    "path": "folders/Sprites/Player Sprites/Main and Local View.yy",
+    "name": "Buttons",
+    "path": "folders/Sprites/Main and Local View/Buttons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
