@@ -5,7 +5,6 @@ if(!disabled){
 	//Triangle button
 	var button_y = gamepad_button_check_pressed(global.playercontrollerindices[0],gp_face4);
 	if(button_y){
-		show_debug_message("Here")
 		var newSpriteSet = false;
 		global.playersUsed[playerIndex] = 0;
 		while(!newSpriteSet){
