@@ -1,9 +1,10 @@
 /// @Track player position and deal with end of rounds
+if(!end_of_round){
 var player = global.localPlayers[global.currentplayer];
 x = player.x;
 y = player.y;
-
-if (end_of_round) {
+}
+if (end_of_round && !occured) {
 	//TODO: add if condition for if end of game is reached
 	
 	//set random seed for randomization of minigames
@@ -16,10 +17,12 @@ if (end_of_round) {
 	
 	//ensure same minigame isnt picked twice
 	while (minigame == last_minigame) {
-		show_debug_message("loop");
+		//show_debug_message("loop");
 		minigame = irandom(4);	
 	}
-
+	//camera_set_view_size(view_camera[0], 512,288);
+	
+	
 	//go to corresponding minigame screen
 	if(test_case==0) {
 		last_minigame = minigame;
@@ -36,6 +39,7 @@ if (end_of_round) {
 	} else {
 		show_debug_message("ERROR: Invalid number generated for minigame selection");
 	}
+	occured = true;
 	}
 	else {
 		if(last_minigame==minigame) {
@@ -47,7 +51,7 @@ if (end_of_round) {
 			show_debug_message(minigame);
 		}
 		last_minigame = minigame;
-	}
+}
 }
 
 
