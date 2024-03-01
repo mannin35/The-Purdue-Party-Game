@@ -1,4 +1,9 @@
 // @description Sets initial state of scoreboard button
-global.minigameResults = [1,2,4,3];
-global.minigamePlacements = [1,2,3,4];
 current = false;
+is_next = false;
+dead_zone = 0.2;
+left_key= false;
+right_key = false;
+button_x = false;
+prev = OBJ_ViewMapButton;
+next = OBJ_RollDiceButton;

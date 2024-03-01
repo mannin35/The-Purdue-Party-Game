@@ -7,18 +7,20 @@ if (end_of_round) {
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
-	minigame = irandom(4);
+	//minigame = irandom(4); // COMMENTED OUT FOR NOW
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
 	
 	//ensure same minigame isnt picked twice
-	while (minigame == last_minigame) {
+	/*while (minigame == last_minigame) {
 		show_debug_message("loop");
 		minigame = irandom(4);	
-	}
-
+	}*/
+	minigame = 1
 	//go to corresponding minigame screen
+	
+	
 	if(test_case==0) {
 		last_minigame = minigame;
 	if (minigame == 0) {
