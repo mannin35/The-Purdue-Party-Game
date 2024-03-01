@@ -1,8 +1,17 @@
 /// @Track player position and deal with end of rounds
 if(!end_of_round){
-var player = global.localPlayers[global.currentplayer];
-x = player.x;
-y = player.y;
+	if (room == RM_LocalView) {
+		var player = global.localPlayers[global.currentplayer];
+		playerSpaces[global.currentplayer] = player.space;
+		x = player.x;
+		y = player.y;
+	}
+	else if (room == RM_MainMap) {
+		var player = global.fullPlayers[global.currentplayer];
+		player.x = playerSpaces[global.currentplayer].x;
+		player.y = playerSpaces[global.currentplayer].y;
+	}
+	
 }
 if (end_of_round && !occured) {
 	//TODO: add if condition for if end of game is reached
@@ -26,20 +35,22 @@ if (end_of_round && !occured) {
 	//go to corresponding minigame screen
 	if(test_case==0) {
 		last_minigame = minigame;
-	if (minigame == 0) {
-		room_goto(RM_BoilermakerExpressInstructions);
-	} else if (minigame == 1) {
-		room_goto(RM_ElevenFiftyNineInstructions);
-	} else if (minigame == 2) {
-		room_goto(RM_StateStreetInstructions);
-	} else if (minigame == 3) {
-		room_goto(RM_TimesUpInstructions);
-	} else if (minigame == 4) {
-		room_goto(RM_TipsyTunnelInstructions);
-	} else {
-		show_debug_message("ERROR: Invalid number generated for minigame selection");
-	}
+		if (minigame == 0) {
+			room_goto(RM_BoilermakerExpressInstructions);
+		} else if (minigame == 1) {
+			room_goto(RM_ElevenFiftyNineInstructions);
+		} else if (minigame == 2) {
+			room_goto(RM_StateStreetInstructions);
+		} else if (minigame == 3) {
+			room_goto(RM_TimesUpInstructions);
+		} else if (minigame == 4) {
+			room_goto(RM_TipsyTunnelInstructions);
+		} else {
+			show_debug_message("ERROR: Invalid number generated for minigame selection");
+		}
 	occured = true;
+	// Return to local view
+	alarm[0] = 120;
 	}
 	else {
 		if(last_minigame==minigame) {

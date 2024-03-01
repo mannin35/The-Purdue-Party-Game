@@ -34,8 +34,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Main and Local View",
-    "path": "folders/Sprites/Main and Local View.yy",
+    "name": "Gameplay Elements",
+    "path": "folders/Sprites/Main and Local View/Gameplay Elements.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -56,7 +56,7 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 15.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,

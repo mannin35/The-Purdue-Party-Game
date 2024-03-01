@@ -5,6 +5,8 @@ index = 0;
 space = Space0;
 
 // Movement info
+dead_zone = 0.2; 
+walkingIndex = 0;
 numSpaces = 0;
 isMoving = false;
 speedMultiplier = 4;
