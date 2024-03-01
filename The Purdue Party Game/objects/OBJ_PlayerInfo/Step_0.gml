@@ -24,15 +24,15 @@ if (end_of_round) {
 	if(test_case==0) {
 		last_minigame = minigame;
 	if (minigame == 0) {
-		room = RM_BoilermakerExpressInstructions;
+		room_goto(RM_BoilermakerExpressInstructions);
 	} else if (minigame == 1) {
-		room = RM_ElevenFiftyNineInstructions;
+		room_goto(RM_ElevenFiftyNineInstructions);
 	} else if (minigame == 2) {
-		room = RM_StateStreetInstructions;
+		room_goto(RM_StateStreetInstructions);
 	} else if (minigame == 3) {
-		room = RM_TimesUpInstructions;
+		room_goto(RM_TimesUpInstructions);
 	} else if (minigame == 4) {
-		room = RM_TipsyTunnelInstructions;
+		room_goto(RM_TipsyTunnelInstructions);
 	} else {
 		show_debug_message("ERROR: Invalid number generated for minigame selection");
 	}
