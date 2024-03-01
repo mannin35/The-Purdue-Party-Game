@@ -17,8 +17,12 @@ function CheckButtonState(button){
 				(gamepad_axis_value(global.playercontrollerindices[index], gp_axislh) < -dead_zone) ;
 			button.right_key = (keyboard_check_pressed(vk_right)) ||
 				(gamepad_axis_value(global.playercontrollerindices[index], gp_axislh) > dead_zone);
-			button.button_x =(keyboard_check_pressed(vk_space)) ||
-				(gamepad_button_check_pressed(global.playercontrollerindices[index],gp_face1));
+			if (button != OBJ_ViewScoreboardButton) {
+				button.button_x =(keyboard_check_pressed(vk_space)) ||
+					(gamepad_button_check_pressed(global.playercontrollerindices[index],gp_face1));
+			}
+		
+			
 		}
 	}
 	else {

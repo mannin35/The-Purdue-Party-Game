@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings": [
-    {"name":"Spaces","order":32,"path":"folders/Sprites/Main and Local View/Spaces.yy",},
-    {"name":"Buttons","order":33,"path":"folders/Sprites/Main and Local View/Buttons.yy",},
-    {"name":"Buildings","order":34,"path":"folders/Sprites/Main and Local View/Buildings.yy",},
-    {"name":"Gameplay Elements","order":36,"path":"folders/Sprites/Main and Local View/Gameplay Elements.yy",},
     {"name":"Background","order":38,"path":"folders/Sprites/Main and Local View/Background.yy",},
+    {"name":"Buildings","order":34,"path":"folders/Sprites/Main and Local View/Buildings.yy",},
+    {"name":"Buttons","order":33,"path":"folders/Sprites/Main and Local View/Buttons.yy",},
+    {"name":"Gameplay Elements","order":36,"path":"folders/Sprites/Main and Local View/Gameplay Elements.yy",},
+    {"name":"Spaces","order":32,"path":"folders/Sprites/Main and Local View/Spaces.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SP_PUSH","order":25,"path":"sprites/SP_PUSH/SP_PUSH.yy",},

@@ -4,6 +4,3 @@
 
 visible = false;
 
-x = OBJ_Scoreboard.x + 5;
-y = OBJ_Scoreboard.y + 94;
-
