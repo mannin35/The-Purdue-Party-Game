@@ -3,10 +3,9 @@
 
 //image_index = global.playersUsed[1];
 event_inherited();
-self.space = Space0;
+self.space = OBJ_PlayerInfo.playerPostions[1];
 x = space.x;
 y = space.y;
-color = c_aqua;
 
 global.player2position[0] = x;
 global.player2position[1] = y;

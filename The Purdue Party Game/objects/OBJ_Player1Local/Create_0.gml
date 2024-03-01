@@ -1,9 +1,8 @@
 /// @Local Player 1
 event_inherited();
-self.space = Space0;
+self.space = OBJ_PlayerInfo.playerPostions[0];
 x = space.x;
 y = space.y;
-color = c_red;
 ResetButtons(0);
 
 //image_index = global.playersUsed[0];

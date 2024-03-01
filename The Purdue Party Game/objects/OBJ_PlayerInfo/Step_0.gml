@@ -1,7 +1,16 @@
 /// @Track player position and deal with end of rounds
-var player = global.localPlayers[global.currentplayer];
-x = player.x;
-y = player.y;
+if (room == RM_LocalView) {
+	var player = global.localPlayers[global.currentplayer];
+	x = player.x;
+	y = player.y
+	for (i = 0; i < array_length(playerPostions); i++) {
+		playerPostions[i] = global.localPlayers[i].space;
+	}
+}
+if (room == RM_MainMap) {
+	global.fullPlayers[global.currentplayer].x = x;
+	global.fullPlayers[global.currentplayer].y = y;
+}
 
 if (end_of_round) {
 	//TODO: add if condition for if end of game is reached
@@ -19,20 +28,19 @@ if (end_of_round) {
 		show_debug_message("loop");
 		minigame = irandom(4);	
 	}
-
 	//go to corresponding minigame screen
 	if(test_case==0) {
 		last_minigame = minigame;
 	if (minigame == 0) {
-		room = RM_BoilermakerExpressInstructions;
+		room_goto(RM_BoilermakerExpressInstructions);
 	} else if (minigame == 1) {
-		room = RM_ElevenFiftyNineInstructions;
+		room_goto(RM_ElevenFiftyNineInstructions);
 	} else if (minigame == 2) {
-		room = RM_StateStreetInstructions;
+		room_goto(RM_StateStreetInstructions);
 	} else if (minigame == 3) {
-		room = RM_TimesUpInstructions;
+		room_goto(RM_TimesUpInstructions);
 	} else if (minigame == 4) {
-		room = RM_TipsyTunnelInstructions;
+		room_goto(RM_TipsyTunnelInstructions);
 	} else {
 		show_debug_message("ERROR: Invalid number generated for minigame selection");
 	}

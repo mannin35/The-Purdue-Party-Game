@@ -3,7 +3,7 @@
 
 //image_index = global.playersUsed[3];
 event_inherited();
-self.space = Space0;
+self.space = OBJ_PlayerInfo.playerPostions[3];
 x = space.x;
 y = space.y;
 color = c_fuchsia;

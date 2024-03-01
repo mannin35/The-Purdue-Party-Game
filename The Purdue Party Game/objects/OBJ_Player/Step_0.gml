@@ -78,9 +78,11 @@ if (numSpaces > 0 && !awaitingInput) {
 			// Stop moving if reached final space
 			if (numSpaces == 0) {
 				OBJ_RollDiceButton.is_next = true;
+				if (global.currentplayer == 3) {
+					OBJ_PlayerInfo.end_of_round = true;
+				}
 				global.currentplayer = (global.currentplayer + 1) % 4;
 				isMoving = false;
-				OBJ_PlayerInfo.end_of_round = true;
 				ResetButtons(global.currentplayer);
 				ShowButtons();
 			}

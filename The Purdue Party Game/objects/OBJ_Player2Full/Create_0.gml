@@ -2,6 +2,4 @@
 // You can write your code in this editor
 
 image_index = global.playerTwoIndex;
-
-x = global.player2position[0];
-y = global.player2position[1];
+color = c_aqua;
