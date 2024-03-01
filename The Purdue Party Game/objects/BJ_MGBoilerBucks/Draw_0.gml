@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(visible && OBJ_PlayerOneMGR.calculated) {
+if(visible && OBJ_MGPlacementOne.calculated) {
 	
 	draw_set_color($68F5FF);
 	draw_set_font(Ft_CooperBlackMG);

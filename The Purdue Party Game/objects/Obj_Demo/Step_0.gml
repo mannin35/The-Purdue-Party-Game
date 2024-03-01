@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(global.minigameOver == 1){
-	if(global.isDemo == 1){
+if(global.minigameOver = 1){
+	global.minigameOver = 0
+	if(global.isDemo = 1){
 		if(room == RM_TipsyTunnel){
 			room_goto(RM_TipsyTunnelInstructions)
 		} else if (room == RM_BoilermakerExpress){

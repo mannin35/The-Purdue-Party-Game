@@ -181,15 +181,15 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 	if player_four.end_time = "12:00:05:0" {
 		global.minigameResults[3] = 4
 	}
-		for (var i = 0; i < array_length(times); i++) {
+		/*for (var i = 0; i < array_length(times); i++) {
 			//show_debug_message(array_length(times))
 			show_debug_message(times[i])
 			show_debug_message(global.minigameResults[i])
 			
-		}
+		}*/
 	
-	
-	global.minigameOver = 1	
+	//alarm[1] = 180
+	global.minigameOver = 1
 }
 	
 	
