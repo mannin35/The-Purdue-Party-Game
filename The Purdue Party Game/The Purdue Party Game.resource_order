@@ -2,5 +2,6 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"OBJ_CurrentPlayerTracker","order":1,"path":"objects/OBJ_CurrentPlayerTracker/OBJ_CurrentPlayerTracker.yy",},
+    {"name":"Obj_PlayerTwoGS","order":1,"path":"objects/Obj_PlayerTwoGS/Obj_PlayerTwoGS.yy",},
   ],
 }
