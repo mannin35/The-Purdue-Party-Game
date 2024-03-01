@@ -8,10 +8,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Local View",
-    "path": "folders/Objects/Local View.yy",
+    "name": "Players",
+    "path": "folders/Objects/Local View/Players.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "OBJ_Player",
+    "path": "objects/OBJ_Player/OBJ_Player.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
