@@ -2,7 +2,7 @@
 if (visible) {
 	if(button_x && OBJ_ViewScoreboardButton.current){
 		if(room == RM_LocalView) {
-			show_message("Pressed");
+			OBJ_Scoreboard.visible = true;
 		}
 	} 
 

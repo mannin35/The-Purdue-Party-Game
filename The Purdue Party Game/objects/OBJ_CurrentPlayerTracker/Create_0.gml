@@ -1,5 +1,5 @@
 // You can write your code in this editor
-
+/*
 global.currentplayer = 1;
 
 end_of_round = false;

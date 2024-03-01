@@ -1,6 +1,6 @@
 /// @Player parent class
 // General info
-color = 0;
+color = pointer_null;
 index = 0;
 space = Space0;
 
