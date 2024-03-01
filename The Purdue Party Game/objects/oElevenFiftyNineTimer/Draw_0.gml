@@ -22,7 +22,7 @@ t += string(t_sec)
 }
 //t += string(t_msec)*/
 
-//global.realPlayerCount = 1
+global.realPlayerCount = 1
 var players = global.realPlayerCount
 
 if (t_sec >= 50 || t_sec <= 5) {
@@ -140,8 +140,9 @@ var compareTimes = function(time_one, time_two) {
 }
 
 if (player_one.over && player_two.over && player_three.over && player_four.over) {
-	//player_three.end_time = "11:59:50:000"
-	//player_four.end_time = "12:00:03:000"
+	player_two.end_time = "11:59:52:0"
+	player_three.end_time = "12:00:04:0"
+	player_four.end_time = "12:00:05:0"
 	var times = [player_one.end_time, player_two.end_time, player_three.end_time, player_four.end_time]
 	res = [1, 2, 3, 4]
 	for (var i = 0; i < array_length(times) - 1; i++) { // good ol' bubble sort :]
@@ -160,13 +161,13 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 		}
 	}
 	
-		/*temp = [0, 0, 0, 0]
+		temp = [0, 0, 0, 0]
 		for (var i = 0; i < array_length(res); i++) {
 			temp[i] = res[i]
 		}
 		for (var i = 0; i < array_length(res); i++) {
 			res[temp[i] - 1] = i + 1
-		}*/
+		}
 	
 	if player_one.end_time = "12:00:05:0" { // if multiple people dont submit they tie for last
 		res[0] = 4
@@ -177,14 +178,16 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 	if player_three.end_time = "12:00:05:0" {
 		res[2] = 4
 	}
-	if player_one.end_time = "12:00:05:0" {
+	if player_four.end_time = "12:00:05:0" {
 		res[3] = 4
 	}
-	for (var i = 0; i < array_length(times); i++) {
-		//show_debug_message(array_length(times))
-		show_debug_message(times[i])
-		show_debug_message(res[i])
-	}
+		for (var i = 0; i < array_length(times); i++) {
+			//show_debug_message(array_length(times))
+			show_debug_message(times[i])
+			show_debug_message(res[i])
+			
+		}
+	
 	
 	global.minigameOver = 1	
 }
