@@ -19,16 +19,17 @@ if (end_of_round && !occured) {
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
-	minigame = irandom(4);
+	//minigame = irandom(4);
+	minigame = 1
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
 	
 	//ensure same minigame isnt picked twice
-	while (minigame == last_minigame) {
+	/*while (minigame == last_minigame) {
 		//show_debug_message("loop");
 		minigame = irandom(4);	
-	}
+	}*/
 	//camera_set_view_size(view_camera[0], 512,288);
 	
 	
@@ -50,7 +51,7 @@ if (end_of_round && !occured) {
 		}
 	occured = true;
 	// Return to local view
-	alarm[0] = 120;
+	//alarm[0] = 120;
 	}
 	else {
 		if(last_minigame==minigame) {

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "SP_Laptop",
-    "path": "sprites/SP_Laptop/SP_Laptop.yy",
+    "name": "SP_LaptopFinal",
+    "path": "sprites/SP_LaptopFinal/SP_LaptopFinal.yy",
   },
   "spriteMaskId": null,
   "visible": true,
