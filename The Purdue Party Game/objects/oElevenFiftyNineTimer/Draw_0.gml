@@ -22,7 +22,7 @@ t += string(t_sec)
 }
 //t += string(t_msec)*/
 
-global.realPlayerCount = 1
+//global.realPlayerCount = 1
 var players = global.realPlayerCount
 
 if (t_sec >= 50 || t_sec <= 5) {
