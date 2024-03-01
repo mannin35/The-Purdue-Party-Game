@@ -18,6 +18,7 @@
     {"name":"OBJ_ViewMapButton","order":4,"path":"objects/OBJ_ViewMapButton/OBJ_ViewMapButton.yy",},
     {"name":"oPlayerEFN","order":1,"path":"objects/oPlayerEFN/oPlayerEFN.yy",},
     {"name":"OBJ_Player1Local","order":2,"path":"objects/OBJ_Player1Local/OBJ_Player1Local.yy",},
+    {"name":"SP_Laptop","order":3,"path":"sprites/SP_Laptop/SP_Laptop.yy",},
     {"name":"OBJ_Placement2","order":2,"path":"objects/OBJ_Placement2/OBJ_Placement2.yy",},
     {"name":"SP_Clock","order":1,"path":"sprites/SP_Clock/SP_Clock.yy",},
     {"name":"SP_Players_Heads","order":1,"path":"sprites/SP_Players_Heads/SP_Players_Heads.yy",},

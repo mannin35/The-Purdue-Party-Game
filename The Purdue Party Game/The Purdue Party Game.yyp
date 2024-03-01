@@ -58,7 +58,6 @@
   },
   "resources": [
     {"id":{"name":"SP_Dot","path":"sprites/SP_Dot/SP_Dot.yy",},},
-    {"id":{"name":"SP_Laptop","path":"sprites/SP_Laptop/SP_Laptop.yy",},},
     {"id":{"name":"SP_ToyTrain","path":"sprites/SP_ToyTrain/SP_ToyTrain.yy",},},
     {"id":{"name":"Obj_PlayerFourEasy","path":"objects/Obj_PlayerFourEasy/Obj_PlayerFourEasy.yy",},},
     {"id":{"name":"SP_WALC","path":"sprites/SP_WALC/SP_WALC.yy",},},
@@ -183,6 +182,7 @@
     {"id":{"name":"RM_GameSettings","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},},
     {"id":{"name":"SP_Ford","path":"sprites/SP_Ford/SP_Ford.yy",},},
     {"id":{"name":"Obj_PlayerFourGS","path":"objects/Obj_PlayerFourGS/Obj_PlayerFourGS.yy",},},
+    {"id":{"name":"SP_Laptop","path":"sprites/SP_Laptop/SP_Laptop.yy",},},
     {"id":{"name":"SP_RightButton","path":"sprites/SP_RightButton/SP_RightButton.yy",},},
     {"id":{"name":"RM_About","path":"rooms/RM_About/RM_About.yy",},},
     {"id":{"name":"SP_MainMap","path":"sprites/SP_MainMap/SP_MainMap.yy",},},
