@@ -325,7 +325,6 @@
     {"id":{"name":"SP_GamplayButtons","path":"sprites/SP_GamplayButtons/SP_GamplayButtons.yy",},},
     {"id":{"name":"SP_AboutText","path":"sprites/SP_AboutText/SP_AboutText.yy",},},
     {"id":{"name":"SP_SelectCursor","path":"sprites/SP_SelectCursor/SP_SelectCursor.yy",},},
-
     {"id":{"name":"Ft_CooperBlackMG","path":"fonts/Ft_CooperBlackMG/Ft_CooperBlackMG.yy",},},
     {"id":{"name":"TS_TipsyTunnel","path":"tilesets/TS_TipsyTunnel/TS_TipsyTunnel.yy",},},
     {"id":{"name":"OBJ_Player4Local","path":"objects/OBJ_Player4Local/OBJ_Player4Local.yy",},},
