@@ -13,9 +13,9 @@ if(!disabled){
 				playerIndex	= 0;
 			}
 			if(global.playersUsed[playerIndex] == 0){
-				Obj_PlayerTwoGS.image_index = playerIndex;
+				Obj_PlayerThreeGS.image_index = playerIndex;
 				global.playersUsed[playerIndex] = 1;
-				global.playerTwoIndex = playerIndex;
+				global.playerThreeIndex = playerIndex;
 				newSpriteSet = true;	
 			}
 		}

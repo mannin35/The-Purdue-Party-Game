@@ -3,5 +3,5 @@
 
 image_index = global.playerOneIndex;
 
-x = global.player1position[0];
-y = global.player1position[1];
+x = OBJ_Player1Local.x;
+y = OBJ_Player1Local.y;
