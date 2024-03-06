@@ -1,8 +1,13 @@
 {
   "FolderOrderSettings": [
     {"name":"Minigame Results","order":1,"path":"folders/Objects/Minigame Results.yy",},
+    {"name":"ElevenFiftyNine","order":2,"path":"folders/Objects/ElevenFiftyNine.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"oPlayerEFN","order":3,"path":"objects/oPlayerEFN/oPlayerEFN.yy",},
+    {"name":"oLaptop","order":2,"path":"objects/oLaptop/oLaptop.yy",},
+    {"name":"oSweat","order":4,"path":"objects/oSweat/oSweat.yy",},
+    {"name":"oInput","order":1,"path":"objects/oInput/oInput.yy",},
     {"name":"SP_BoilerBuck","order":1,"path":"sprites/SP_BoilerBuck/SP_BoilerBuck.yy",},
     {"name":"SP_PlayerTurn","order":1,"path":"sprites/SP_PlayerTurn/SP_PlayerTurn.yy",},
     {"name":"SP_Grass","order":1,"path":"sprites/SP_Grass/SP_Grass.yy",},
