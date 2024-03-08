@@ -144,7 +144,7 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 	//player_three.end_time = "12:00:04:0"
 	//player_four.end_time = "12:00:05:0"
 	var times = [player_one.end_time, player_two.end_time, player_three.end_time, player_four.end_time]
-	res = [1, 2, 3, 4]
+	global.minigameResults = [1, 2, 3, 4]
 	for (var i = 0; i < array_length(times) - 1; i++) { // good ol' bubble sort :]
 		for (var j = 0; j < array_length(times) - i - 1; j++) {
 			if (compareTimes(times[j], times[j + 1]) > 0) {
@@ -152,9 +152,9 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 				times[j] = times[j + 1]
 				times[j + 1] = temp
 				
-				temp = res[j]
-				res[j] = res[j + 1]
-				res[j + 1] = temp			
+				temp = global.minigameResults[j]
+				global.minigameResults[j] = global.minigameResults[j + 1]
+				global.minigameResults[j + 1] = temp			
 			} else if (compareTimes(times[j], times[j + 1]) = 0) { // frame perfect tie (or didnt submit)
 				//res[j] = res[j + 1]		
 			}
@@ -162,34 +162,34 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 	}
 	
 		temp = [0, 0, 0, 0]
-		for (var i = 0; i < array_length(res); i++) {
-			temp[i] = res[i]
+		for (var i = 0; i < array_length(global.minigameResults); i++) {
+			temp[i] = global.minigameResults[i]
 		}
-		for (var i = 0; i < array_length(res); i++) {
-			res[temp[i] - 1] = i + 1
+		for (var i = 0; i < array_length(global.minigameResults); i++) {
+			global.minigameResults[temp[i] - 1] = i + 1
 		}
 	
 	if player_one.end_time = "12:00:05:0" { // if multiple people dont submit they tie for last
-		res[0] = 4
+		global.minigameResults[0] = 4
 	}
 	if player_two.end_time = "12:00:05:0" {
-		res[1] = 4
+		global.minigameResults[1] = 4
 	}
 	if player_three.end_time = "12:00:05:0" {
-		res[2] = 4
+		global.minigameResults[2] = 4
 	}
 	if player_four.end_time = "12:00:05:0" {
-		res[3] = 4
+		global.minigameResults[3] = 4
 	}
-		for (var i = 0; i < array_length(times); i++) {
+		/*for (var i = 0; i < array_length(times); i++) {
 			//show_debug_message(array_length(times))
 			show_debug_message(times[i])
-			show_debug_message(res[i])
+			show_debug_message(global.minigameResults[i])
 			
-		}
+		}*/
 	
-	
-	global.minigameOver = 1	
+	//alarm[1] = 180
+	global.minigameOver = 1
 }
 	
 	

@@ -4,8 +4,8 @@
 
 if(OBJ_PlayerArrow.current_player != 4) {
 	visible = true;
-	x = global.player4position[0] - 2;
-	y = global.player4position[1] + 7;
+	x = OBJ_Player4Local.x - 15;
+	y =OBJ_Player4Local.y - 15;
 	image_blend = global.playerColors[global.playerFourIndex];
 } else {
 	visible = false;	

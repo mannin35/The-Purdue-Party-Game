@@ -5,3 +5,4 @@ if (visible) {
 		is_next = false;
 	}
 }
+	//ResetButtons(global.currentplayer)
