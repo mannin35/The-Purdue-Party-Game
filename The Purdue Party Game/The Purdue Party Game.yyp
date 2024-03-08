@@ -67,7 +67,6 @@
   "resources": [
     {"id":{"name":"oPlayerEFN","path":"objects/oPlayerEFN/oPlayerEFN.yy",},},
     {"id":{"name":"oElevenFiftyNineTimer","path":"objects/oElevenFiftyNineTimer/oElevenFiftyNineTimer.yy",},},
-    {"id":{"name":"SP_Laptop","path":"sprites/SP_Laptop/SP_Laptop.yy",},},
     {"id":{"name":"SP_TimesUpInstructionText","path":"sprites/SP_TimesUpInstructionText/SP_TimesUpInstructionText.yy",},},
     {"id":{"name":"SP_PlayerLookStraight","path":"sprites/SP_PlayerLookStraight/SP_PlayerLookStraight.yy",},},
     {"id":{"name":"SP_Sweat","path":"sprites/SP_Sweat/SP_Sweat.yy",},},
