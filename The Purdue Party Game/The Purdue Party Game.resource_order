@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [
-    {"name":"Minigame Results","order":1,"path":"folders/Objects/Minigame Results.yy",},
     {"name":"ElevenFiftyNine","order":2,"path":"folders/Objects/ElevenFiftyNine.yy",},
+    {"name":"Minigame Results","order":1,"path":"folders/Objects/Minigame Results.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oPlayerEFN","order":3,"path":"objects/oPlayerEFN/oPlayerEFN.yy",},

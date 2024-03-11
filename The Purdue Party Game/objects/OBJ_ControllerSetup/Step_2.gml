@@ -3,7 +3,7 @@
 
 if(controllercount == 0) {
 	
-	show_message("Please connect at least one controller to play");	
+	//show_message("Please connect at least one controller to play");	
 	
 	//check again for controllers
 	for(i=0;i<8;i++) 
