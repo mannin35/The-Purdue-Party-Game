@@ -140,9 +140,9 @@ var compareTimes = function(time_one, time_two) {
 }
 
 if (player_one.over && player_two.over && player_three.over && player_four.over) {
-	//player_two.end_time = "11:59:52:0"
-	//player_three.end_time = "12:00:04:0"
-	//player_four.end_time = "12:00:05:0"
+	player_two.end_time = "11:59:52:0"
+	player_three.end_time = "12:00:04:0"
+	player_four.end_time = "12:00:05:0"
 	var times = [player_one.end_time, player_two.end_time, player_three.end_time, player_four.end_time]
 	global.minigameResults = [1, 2, 3, 4]
 	for (var i = 0; i < array_length(times) - 1; i++) { // good ol' bubble sort :]

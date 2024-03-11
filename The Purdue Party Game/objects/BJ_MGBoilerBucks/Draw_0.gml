@@ -17,7 +17,8 @@ if(visible && OBJ_MGPlacementOne.calculated) {
 	draw_text(165, 195, OBJ_MGPlacementOne.degreeArray[2]);
 	//Fourth
 	draw_text(390, 195, OBJ_MGPlacementOne.degreeArray[3]);
-	//draw number of bouler bucks for each player
+	
+	//draw number of boiler bucks for each player
 	//First
 	draw_text(165, 70, OBJ_MGPlacementOne.boilerBuckArray[0]);
 	//Second
@@ -26,6 +27,18 @@ if(visible && OBJ_MGPlacementOne.calculated) {
 	draw_text(165, 165, OBJ_MGPlacementOne.boilerBuckArray[2]);
 	//Fourth
 	draw_text(390, 165, OBJ_MGPlacementOne.boilerBuckArray[3]);
+	
+	//Draw increase for players, erases when it begins to give coins to player
+	if(counter < 0){
+		//First
+		draw_text(195, 70, "+" + string(OBJ_MGPlacementOne.increase[0]));
+	//Second
+	draw_text(420, 70, "+" + string(OBJ_MGPlacementOne.increase[1]));
+	//Third
+	draw_text(195, 165, "+" + string(OBJ_MGPlacementOne.increase[2]));
+	//Fourth
+	draw_text(420, 165, "+" + string(OBJ_MGPlacementOne.increase[3]));
+	}
 }
 
 
