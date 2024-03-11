@@ -32,8 +32,8 @@ if(counterTwo >= 240){
 			OBJ_Player4Local.degrees = OBJ_MGPlacementOne.degreeArray[p];
 		}
 	}
-	show_debug_message("BB: {0} {1} {2} {3}", players[0].boilerBucks, players[1].boilerBucks, players[2].boilerBucks, players[3].boilerBucks)
-	show_debug_message("Degrees: {0} {1} {2} {3}", players[0].degrees, players[1].degrees, players[2].degrees, players[3].degrees)
+	//show_debug_message("BB: {0} {1} {2} {3}", players[0].boilerBucks, players[1].boilerBucks, players[2].boilerBucks, players[3].boilerBucks)
+	//show_debug_message("Degrees: {0} {1} {2} {3}", players[0].degrees, players[1].degrees, players[2].degrees, players[3].degrees)
 	//sort list of players by number of boiler bucks
 	swapped = false;
 	for(i=0; i<3; i++) {
@@ -64,9 +64,9 @@ if(counterTwo >= 240){
 			break;	
 		}
 	}
-	show_debug_message("AFTER")
-	show_debug_message("BB: {0} {1} {2} {3}", players[0].boilerBucks, players[1].boilerBucks, players[2].boilerBucks, players[3].boilerBucks)
-	show_debug_message("Degrees: {0} {1} {2} {3}", players[0].degrees, players[1].degrees, players[2].degrees, players[3].degrees)
+	//show_debug_message("AFTER")
+	//show_debug_message("BB: {0} {1} {2} {3}", players[0].boilerBucks, players[1].boilerBucks, players[2].boilerBucks, players[3].boilerBucks)
+	//("Degrees: {0} {1} {2} {3}", players[0].degrees, players[1].degrees, players[2].degrees, players[3].degrees)
 	//set player head indices to reflect positioning
 	OBJ_PlayerOneMGR.image_index = players[0].image_index;
 	OBJ_PlayerTwoMGR.image_index = players[1].image_index;
