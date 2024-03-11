@@ -125,6 +125,7 @@
     {"id":{"name":"SP_Armstrong","path":"sprites/SP_Armstrong/SP_Armstrong.yy",},},
     {"id":{"name":"OBJ_PlayerTurn","path":"objects/OBJ_PlayerTurn/OBJ_PlayerTurn.yy",},},
     {"id":{"name":"RM_TimesUpInstructions","path":"rooms/RM_TimesUpInstructions/RM_TimesUpInstructions.yy",},},
+    {"id":{"name":"OBJ_BoilerBuckTemp","path":"objects/OBJ_BoilerBuckTemp/OBJ_BoilerBuckTemp.yy",},},
     {"id":{"name":"OBJ_Placement4","path":"objects/OBJ_Placement4/OBJ_Placement4.yy",},},
     {"id":{"name":"SP_ME","path":"sprites/SP_ME/SP_ME.yy",},},
     {"id":{"name":"SP_TipsyTunnelInstructionsText","path":"sprites/SP_TipsyTunnelInstructionsText/SP_TipsyTunnelInstructionsText.yy",},},

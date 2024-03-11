@@ -4,7 +4,7 @@
 
 if(counter >= 0){
 	if(counter == 0){
-		show_debug_message("Once")
+		//show_debug_message("Once")
 		for(var l = 0; l < 4; l++){
 				OBJ_MGPlacementOne.boilerBuckArray[l]++;
 		
@@ -29,7 +29,6 @@ if(counter >= 0){
 		}	
 	} else if (counter > 37) {
 		done = true;
-		alarm[0] = -1;
 	}
 }
 

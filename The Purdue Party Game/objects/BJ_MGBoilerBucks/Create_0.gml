@@ -3,3 +3,4 @@
 counter = -150;
 alarm[0] = 1;
 done = false;
+counterTwo = 0;

@@ -21,6 +21,7 @@
     {"name":"OBJ_Placement2","order":2,"path":"objects/OBJ_Placement2/OBJ_Placement2.yy",},
     {"name":"Ft_CooperBlack","order":1,"path":"fonts/Ft_CooperBlack/Ft_CooperBlack.yy",},
     {"name":"OBJ_PlayerTurn","order":1,"path":"objects/OBJ_PlayerTurn/OBJ_PlayerTurn.yy",},
+    {"name":"OBJ_BoilerBuckTemp","order":11,"path":"objects/OBJ_BoilerBuckTemp/OBJ_BoilerBuckTemp.yy",},
     {"name":"OBJ_Placement4","order":4,"path":"objects/OBJ_Placement4/OBJ_Placement4.yy",},
     {"name":"OBJ_Player2nd","order":6,"path":"objects/OBJ_Player2nd/OBJ_Player2nd.yy",},
     {"name":"OBJ_Player4th","order":8,"path":"objects/OBJ_Player4th/OBJ_Player4th.yy",},
