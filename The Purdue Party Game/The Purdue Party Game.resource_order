@@ -17,6 +17,7 @@
     {"name":"OBJ_MGPlacementFour","order":8,"path":"objects/OBJ_MGPlacementFour/OBJ_MGPlacementFour.yy",},
     {"name":"OBJ_Player3rd","order":7,"path":"objects/OBJ_Player3rd/OBJ_Player3rd.yy",},
     {"name":"SP_Players_Heads","order":1,"path":"sprites/SP_Players_Heads/SP_Players_Heads.yy",},
+    {"name":"SpaceFunction","order":1,"path":"scripts/SpaceFunction/SpaceFunction.yy",},
     {"name":"OBJ_Placement1","order":1,"path":"objects/OBJ_Placement1/OBJ_Placement1.yy",},
     {"name":"OBJ_Placement2","order":2,"path":"objects/OBJ_Placement2/OBJ_Placement2.yy",},
     {"name":"Ft_CooperBlack","order":1,"path":"fonts/Ft_CooperBlack/Ft_CooperBlack.yy",},

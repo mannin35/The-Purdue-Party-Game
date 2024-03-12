@@ -43,7 +43,7 @@ if(visible && OBJ_MGPlacementOne.calculated) {
 	draw_text(420, 165, "+" + string(OBJ_MGPlacementOne.increase[3]));
 	}
 	
-	if(counterTwo >= 245){
+	if(counterTwo >= 212){
 	//draw number of degrees for each player
 	//First
 	draw_text(165,100, players[0].degrees);

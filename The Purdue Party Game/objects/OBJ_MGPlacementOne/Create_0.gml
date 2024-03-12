@@ -30,14 +30,26 @@ for (i = 0; i < 3; i++){
 		break;
 	}
 }
+playerObjects = [OBJ_PlayerOneMGR, OBJ_PlayerTwoMGR, OBJ_PlayerThreeMGR, OBJ_PlayerFourMGR];
+for(i = 0; i < 4; i++){
+	if(players[i] == 1){
+		playerObjects[i].image_index = global.playerOneIndex;		
+	} else if (players[i] == 2){
+		playerObjects[i].image_index = global.playerTwoIndex;	
+	} else if (players[i] == 3){
+		playerObjects[i].image_index = global.playerThreeIndex;	
+	} else{ 
+		playerObjects[i].image_index = global.playerFourIndex;	
+	}
+}
 image_index = global.minigameResults[0] - 1;
-OBJ_PlayerOneMGR.image_index = players[0] - 1;
+//OBJ_PlayerOneMGR.image_index = players[0] - 1;
 OBJ_MGPlacementTwo.image_index = global.minigameResults[1] - 1;
-OBJ_PlayerTwoMGR.image_index = players[1] - 1;
+//OBJ_PlayerTwoMGR.image_index = players[1] - 1;
 OBJ_MGPlacementThree.image_index = global.minigameResults[2] - 1;
-OBJ_PlayerThreeMGR.image_index = players[2] - 1;
+//OBJ_PlayerThreeMGR.image_index = players[2] - 1;
 OBJ_MGPlacementFour.image_index = global.minigameResults[3] - 1;
-OBJ_PlayerFourMGR.image_index = players[3] - 1;
+//OBJ_PlayerFourMGR.image_index = players[3] - 1;
 
 increase = [0,0,0,0];
 imageIndexArray = [image_index, global.minigameResults[1] - 1, global.minigameResults[2] - 1, global.minigameResults[3] - 1];

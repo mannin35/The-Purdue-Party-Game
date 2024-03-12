@@ -95,6 +95,7 @@
     {"id":{"name":"SP_Stewart","path":"sprites/SP_Stewart/SP_Stewart.yy",},},
     {"id":{"name":"SP_PlayerLeft","path":"sprites/SP_PlayerLeft/SP_PlayerLeft.yy",},},
     {"id":{"name":"SP_Players_Heads","path":"sprites/SP_Players_Heads/SP_Players_Heads.yy",},},
+    {"id":{"name":"SpaceFunction","path":"scripts/SpaceFunction/SpaceFunction.yy",},},
     {"id":{"name":"OBJ_Placement1","path":"objects/OBJ_Placement1/OBJ_Placement1.yy",},},
     {"id":{"name":"OBJ_ControllerSetup","path":"objects/OBJ_ControllerSetup/OBJ_ControllerSetup.yy",},},
     {"id":{"name":"Obj_Demo","path":"objects/Obj_Demo/Obj_Demo.yy",},},
