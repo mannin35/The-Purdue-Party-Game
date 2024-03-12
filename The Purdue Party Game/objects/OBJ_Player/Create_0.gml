@@ -21,5 +21,3 @@ awaitingInput = false;
 pathChosen = false;
 
 
-
-

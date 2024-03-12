@@ -7,4 +7,8 @@ if(timer == 180 && current.numSpaces == 0){
 }
 */
 
-
+/*
+if(playerObjNames[global.currentplayer].lastSpace.x == self.x && playerObjNames[global.currentplayer].lastSpace.y == self.y){
+	SpaceFunction("store");
+}
+*/

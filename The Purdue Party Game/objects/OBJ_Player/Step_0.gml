@@ -116,13 +116,10 @@ if (numSpaces > 0 && !awaitingInput) {
 		// Set speed to 0 when reaching final space (numSpaces == 1)
 		if (numSpaces == 1) {
 			speed = 0;
-			show_debug_message("{0} {1}", nextSpace.x, nextSpace.y)
-			//nextSpace is the space the players land on, will need to implement for each type of spcae
 		}
 		
 		isMoving = false;
 		space = nextSpace;
-		
 	}
 }
 
