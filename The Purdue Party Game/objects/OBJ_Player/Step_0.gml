@@ -89,6 +89,7 @@ if (numSpaces > 0 && !awaitingInput) {
 			numSpaces--;
 			// Stop moving if reached final space
 			if (numSpaces == 0) {
+				SpaceFunction(str(space.spaceType));
 				OBJ_RollDiceButton.is_next = true;
 				image_index = walkingIndex / 2;
 				global.currentplayer = (global.currentplayer + 1) % 4;
@@ -117,7 +118,6 @@ if (numSpaces > 0 && !awaitingInput) {
 		if (numSpaces == 1) {
 			speed = 0;
 		}
-		
 		isMoving = false;
 		space = nextSpace;
 	}
