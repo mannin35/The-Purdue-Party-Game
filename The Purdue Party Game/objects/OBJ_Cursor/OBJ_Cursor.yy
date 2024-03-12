@@ -1,20 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_WhiteSpace",
+  "name": "OBJ_Cursor",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Spaces",
-    "path": "folders/Objects/Local View/Spaces.yy",
+    "name": "Store",
+    "path": "folders/Objects/Store.yy",
   },
-  "parentObjectId": {
-    "name": "OBJ_Space",
-    "path": "objects/OBJ_Space/OBJ_Space.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_SpacesWhite",
-    "path": "sprites/SP_SpacesWhite/SP_SpacesWhite.yy",
+    "name": "SP_SelectCursor",
+    "path": "sprites/SP_SelectCursor/SP_SelectCursor.yy",
   },
   "spriteMaskId": null,
   "visible": true,

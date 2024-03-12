@@ -1,20 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_WhiteSpace",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "OBJ_SwapStore",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Spaces",
-    "path": "folders/Objects/Local View/Spaces.yy",
+    "name": "Store",
+    "path": "folders/Objects/Store.yy",
   },
-  "parentObjectId": {
-    "name": "OBJ_Space",
-    "path": "objects/OBJ_Space/OBJ_Space.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_SpacesWhite",
-    "path": "sprites/SP_SpacesWhite/SP_SpacesWhite.yy",
+    "name": "SP_Items",
+    "path": "sprites/SP_Items/SP_Items.yy",
   },
   "spriteMaskId": null,
   "visible": true,

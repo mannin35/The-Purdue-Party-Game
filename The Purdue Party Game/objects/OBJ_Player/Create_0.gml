@@ -20,4 +20,3 @@ inactiveArrow = pointer_null;
 awaitingInput = false;
 pathChosen = false;
 
-
