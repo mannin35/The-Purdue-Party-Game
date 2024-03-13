@@ -1,8 +1,8 @@
-//TODO Implement using items
+ //TODO Implement using items
 if (visible) {
 	if(button_x && OBJ_UseItemButton.current){
 		if(room == RM_LocalView) {
-			show_message("Pressed");
+			OBJ_ItemMenu.visible = true;
 		}
 	} 
 
