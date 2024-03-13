@@ -30,21 +30,27 @@
 		//Doing swap players
 		if(visible && image_index == 0 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face1)){
 			//Do the stuff for swapping players
+			OBJ_ItemMenu.itemSelected = true;
 			show_debug_message("Swap")
 			OBJ_Items.visible = false;
+			swap = true;
 			
 			
 		
 		}
+		
+	
 	//Doing double dice
 	if(visible && image_index == 1 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face3)){
 		//Do the stuff for double dice
+		OBJ_ItemMenu.itemSelected = true;
 		show_debug_message("Double")
 	}
 	
 	//Doing slow dice
 	if(visible && image_index == 2 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face4)){
 		//Do the stuff for slowing down dice
+		OBJ_ItemMenu.itemSelected = true;
 		show_debug_message("Slow")
 	}
 	
@@ -54,6 +60,9 @@
 	}
 	}
 
+	if(OBJ_ButtonIcons.swap == true){
+		visible = true;	
+	}
 
 
 
