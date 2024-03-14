@@ -26,8 +26,55 @@
 	}
 	
 	if(global.swap){
-		visible = true;	
+	counter++;	
 	}
+	if(global.swap && counter >= 2){
+		visible = true;
+		if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face1)){
+			if(global.currentplayer == 0){
+				playerToSwap = 1	
+			}else {
+				playerToSwap = 0
+			}
+		} else if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face3)){
+			if(global.currentplayer == 0){
+				playerToSwap = 2	
+			} else {
+				playerToSwap = 1
+			}
+		} else if (gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face4)){
+			if(global.currentplayer == 3){
+				playerToSwap = 2	
+			}else {
+				playerToSwap = 3
+			}
+		}
+		if(playerToSwap != -1){
+		tempX = players[playerToSwap].x
+		tempY = players[playerToSwap].y
+		players[playerToSwap].x = players[global.currentplayer].x;
+		players[playerToSwap].y = players[global.currentplayer].y
+		players[global.currentplayer].x = tempX
+		players[global.currentplayer].y = tempY;
+		ResetButtons(global.currentplayer)
+		global.swap = false;
+		OBJ_Items.visible = false;
+		OBJ_ItemMenu.visible = false;
+		OBJ_PlayerSwap1.visible = false;
+		OBJ_PlayerSwap2.visible = false;
+		OBJ_PlayerSwap3.visible = false;
+		OBJ_ButtonIcons.visible = false;
+		players[global.currentplayer].items[0]--;
+		
+		tempSpace = players[global.currentplayer].space
+		players[global.currentplayer].space = players[playerToSwap].space
+		players[playerToSwap].space = tempSpace;
+		
+		counter = 0;
+		}
+	}
+	
+	
 	if(OBJ_Items.visible){
 		//Doing swap players
 		if(visible && image_index == 0 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face1)){
