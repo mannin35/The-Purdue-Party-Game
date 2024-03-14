@@ -33,35 +33,33 @@
 			OBJ_ItemMenu.itemSelected = true;
 			show_debug_message("Swap")
 			OBJ_Items.visible = false;
-			swap = true;
-			
-			
-		
+			global.swap = true;
 		}
 		
+		//Doing double dice
+		if(visible && image_index == 1 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face3)){
+			//Do the stuff for double dice
+			OBJ_ItemMenu.itemSelected = true;
+			show_debug_message("Double")
+		}
 	
-	//Doing double dice
-	if(visible && image_index == 1 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face3)){
-		//Do the stuff for double dice
-		OBJ_ItemMenu.itemSelected = true;
-		show_debug_message("Double")
-	}
+		//Doing slow dice
+		if(visible && image_index == 2 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face4)){
+			//Do the stuff for slowing down dice
+			OBJ_ItemMenu.itemSelected = true;
+			show_debug_message("Slow")
+		}
 	
-	//Doing slow dice
-	if(visible && image_index == 2 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face4)){
-		//Do the stuff for slowing down dice
-		OBJ_ItemMenu.itemSelected = true;
-		show_debug_message("Slow")
-	}
-	
-	//Exiting the item menu with circle
-	if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face2)){
+		//Exiting the item menu with circle
+		if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face2)){
 			visible = false;
-	}
+		}
 	}
 
-	if(OBJ_ButtonIcons.swap == true){
-		visible = true;	
+
+	//Things to occur in a swap
+	if(global.swap == true){
+		visible = true;		
 	}
 
 
