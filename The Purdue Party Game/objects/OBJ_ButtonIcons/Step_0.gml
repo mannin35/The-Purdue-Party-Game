@@ -32,7 +32,7 @@
 		//Doing swap players
 		if(visible && image_index == 0 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face1)){
 			//Do the stuff for swapping players
-			show_debug_message("Swap")
+			//show_debug_message("Swap")
 			OBJ_Items.visible = false;
 			global.swap = true;
 			visible = true;

@@ -7,7 +7,7 @@
 	var vheight = camera_get_view_height(view_camera[0]);
 	x = vx + ((vwidth - sprite_width)/2);
 	y = vy + ((vheight - sprite_height)/2) - 15;
-	if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face2)){
+	if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face2) && !global.swap){
 			visible = false;
 	}
 
