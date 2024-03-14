@@ -54,10 +54,20 @@ if(left_key && Obj_ContinueButton.current){
 if(button_x  && Obj_ContinueButton.current) {
 	if(room == RM_CPUSettings){
 		Obj_ReturnButton.current = true;
-		room_goto(RM_GameSettings);
+		//transition to RM_GameSettings
+		//room_goto(RM_GameSettings);
+		if(!instance_exists(OBJ_Transition)) {
+			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+			inst.target_rm = RM_GameSettings;
+		}
 	} else if(room == RM_GameSettings) {
 		global.turns = 5 + (5 * Obj_TurnNumber.image_index);
-		room_goto(RM_LocalView);
+		//transition to RM_LocalView
+		//room_goto(RM_LocalView);
+		if(!instance_exists(OBJ_Transition)) {
+			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+			inst.target_rm = RM_LocalView;
+		}
 	}
 	Obj_ReturnButton.current = false;
 }

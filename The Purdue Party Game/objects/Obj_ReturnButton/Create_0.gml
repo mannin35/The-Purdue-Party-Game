@@ -5,7 +5,7 @@
 dead_zone = .2;
 //Knows if it is the current button we are on
 current = false
-if(room == RM_GameSettings){
+if(room == RM_GameSettings || room = RM_Settings){
 current = true;	
 }
 

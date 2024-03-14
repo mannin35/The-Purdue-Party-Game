@@ -18,13 +18,22 @@ button_x = gamepad_button_check_pressed(0, gp_face1);
 if (button_x && room == RM_MinigameResults) {
 	
 	if (global.turns == 0) {
-		room = RM_FinalResults;
-		room_goto(RM_FinalResults);
+		//room = RM_FinalResults;
+		//room_goto(RM_FinalResults);
+		//transition to RM_FinalResults
+		if(!instance_exists(OBJ_Transition)) {
+			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+			inst.target_rm = RM_FinalResults;
+		}
 	} else if (global.turns > 0) {
 		OBJ_PlayerInfo.end_of_round = false;
 		OBJ_PlayerInfo.occured = false;
-		room = RM_LocalView;
-		room_goto(RM_LocalView);
-		
+		//room = RM_LocalView;
+		//room_goto(RM_LocalView);
+		//transition to RM_LocalView
+		if(!instance_exists(OBJ_Transition)) {
+			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+			inst.target_rm = RM_LocalView;
+		}
 	}
 }

@@ -24,7 +24,12 @@ var button_x = gamepad_button_check_pressed(current_player_index, gp_face1);
 if(button_x && OBJ_ReturnToLocalButton.current){
 	if(room == RM_MainMap) {
 		OBJ_ReturnToLocalButton.current = false;
-		room_goto(RM_LocalView);
+		//transition to RM_LocalView
+		//room_goto(RM_LocalView);
+		if(!instance_exists(OBJ_Transition)) {
+			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+			inst.target_rm = RM_LocalView;
+		}
 	}
 }
 
