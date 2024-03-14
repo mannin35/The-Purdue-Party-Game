@@ -15,7 +15,7 @@
 		x = vx + ((vwidth - sprite_width)/2) + 69;
 		y = vy + ((vheight - sprite_height)/2) + 3;
 	}
-	if(OBJ_ItemMenu.visible){
+	if(OBJ_ItemMenu.visible && !global.swap){
 			if(players[global.currentplayer].items[0] >= 1 && image_index == 0){
 				visible = true;
 			} else if (players[global.currentplayer].items[1] >= 1 && image_index == 1){
@@ -25,14 +25,17 @@
 			}	
 	}
 	
-	
+	if(global.swap){
+		visible = true;	
+	}
 	if(OBJ_Items.visible){
 		//Doing swap players
 		if(visible && image_index == 0 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face1)){
 			//Do the stuff for swapping players
 			show_debug_message("Swap")
 			OBJ_Items.visible = false;
-			
+			global.swap = true;
+			visible = true;
 			
 		
 		}

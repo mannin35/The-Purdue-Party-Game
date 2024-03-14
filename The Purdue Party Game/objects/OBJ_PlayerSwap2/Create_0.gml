@@ -10,7 +10,11 @@ var vheight = camera_get_view_height(view_camera[0]);
 x = vx + ((vwidth - sprite_width)/2);
 y = vy + ((vheight - sprite_height)/2) - 15;
 players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
-global.swap = false;
+
+
+
+
+
 
 
 
