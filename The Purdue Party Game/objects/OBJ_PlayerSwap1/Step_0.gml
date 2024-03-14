@@ -6,7 +6,7 @@
 	var vheight = camera_get_view_height(view_camera[0]);
 	x = vx + ((vwidth - sprite_width)/2) - 46;
 	y = vy + ((vheight - sprite_height)/2) - 8;
-
+	playerIndex = [0,0,0,0]
 	playerIndex[global.currentplayer] = 1;
 	for(i = 0; i < 4; i++){
 		if(playerIndex[i] == 0){
