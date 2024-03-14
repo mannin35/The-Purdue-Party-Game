@@ -15,7 +15,7 @@
 		x = vx + ((vwidth - sprite_width)/2) + 62;
 		y = vy + ((vheight - sprite_height)/2) - 31;
 	}
-	if((!OBJ_ItemMenu.itemSelected) && OBJ_ItemMenu.visible){
+	if(OBJ_ItemMenu.visible){
 			if(players[global.currentplayer].items[0] >= 1 && image_index == 0){
 				visible = true;
 			} else if (players[global.currentplayer].items[1] >= 1 && image_index == 1){
