@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if(OBJ_PlayerArrow.current_player != 3) {
+if(OBJ_PlayerArrow.current_player != 2) {
 	visible = true;
 	x = OBJ_Player3Local.x - 15;
 	y =OBJ_Player3Local.y - 15;

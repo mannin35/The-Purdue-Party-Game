@@ -32,7 +32,7 @@ if (Obj_PlayGameButton.current) {
 		Obj_ExitButton.image_index = 1;
 	}*/
 }
-if (button_x) {
+if (Obj_PlayGameButton.current && button_x) {
 	Obj_PlayGameButton.current = false;
 	room_goto(RM_CPUSettings);
 }
