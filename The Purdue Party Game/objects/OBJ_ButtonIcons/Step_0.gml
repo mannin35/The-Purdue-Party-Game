@@ -50,6 +50,7 @@
 			}
 		}
 		if(playerToSwap != -1){
+		show_debug_message(playerToSwap)
 		tempX = players[playerToSwap].x
 		tempY = players[playerToSwap].y
 		players[playerToSwap].x = players[global.currentplayer].x;
@@ -100,10 +101,12 @@
 	
 	//Exiting the item menu with circle
 	if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face2)){
-			visible = false;
+			OBJ_ButtonIcons.visible = false;
 	}
 	}
-
+	if(OBJ_ItemMenu.visible == false){
+		OBJ_ButtonIcons.visible = false;
+	}
 
 
 
