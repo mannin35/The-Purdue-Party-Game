@@ -9,8 +9,8 @@ if (visible) {
 	} 
 
 	//change current button to next/prev if needed
-	if (self.current) {
-		CheckChangeButton(self)
+	if (OBJ_RollDiceButton.current) {
+		CheckChangeButton(OBJ_RollDiceButton)
 	}
 }
 

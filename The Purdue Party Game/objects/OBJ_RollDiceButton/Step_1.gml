@@ -3,6 +3,7 @@ if (visible) {
 	if (is_next) {
 		current = true;
 		is_next = false;
+		
 	}
 }
 	//ResetButtons(global.currentplayer)
