@@ -254,7 +254,7 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 	
 	//alarm[1] = 180
 	
-	global.minigameOver = 1
+	global.minigameOver = 1;
 }
 	
 	
