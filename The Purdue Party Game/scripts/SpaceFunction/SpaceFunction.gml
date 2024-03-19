@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function SpaceFunction(type){
 	if(type == "store"){
-		if(global.playercontrollerindices[global.currentplayer] != -1){
+		if(global.playercontrollerindices[global.currentplayer] != -1 && global.currentplayer < global.realPlayerCount){
 			room_goto(RM_Store)	
 		}
 	} 
