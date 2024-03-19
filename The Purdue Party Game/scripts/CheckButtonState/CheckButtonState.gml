@@ -12,8 +12,8 @@ function CheckButtonState(button){
 		TODO FOR ALL INPUT
 		CHANGE INDEX 0 TO CURRENT PLAYER
 		*/
-		show_debug_message(button)
-		show_debug_message("Left: {0} Right: {1}", button.left_key, button.right_key)
+		//show_debug_message(button)
+		//show_debug_message("Left: {0} Right: {1}", button.left_key, button.right_key)
 		if (!global.delayInput) {
 			dead_zone = .2
 			var index = 0;
