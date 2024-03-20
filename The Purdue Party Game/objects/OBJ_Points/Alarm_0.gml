@@ -3,7 +3,7 @@
 
 
 			OBJ_Points.visible = false;
-			OBJ_Points.image_alpha = 100;
+			OBJ_Points.image_alpha = 1;
 
 
 
