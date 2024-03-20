@@ -12,6 +12,10 @@ if(!end_of_round){
 		//player.y = playerSpaces[global.currentplayer].y;
 	}
 	
+	if (keyboard_check(ord("E"))) { // debug
+		end_of_round = true;
+	}
+	
 }
 if (end_of_round && !occured && (room==RM_LocalView)) {
 	//TODO: add if condition for if end of game is reached
@@ -20,7 +24,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	randomize();
 	//randomly select minigame
 	//minigame = irandom(4);
-	minigame = 1
+	minigame = 4
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
