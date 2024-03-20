@@ -30,7 +30,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
+  "solid": true,
   "spriteId": {
     "name": "SP_BoilerBuck",
     "path": "sprites/SP_BoilerBuck/SP_BoilerBuck.yy",
