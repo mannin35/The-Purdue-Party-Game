@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (player_one.over && player_two.over && player_three.over && player_four.over) {
-	
-}
+cn_swap = irandom_range(0, 3);
+alarm[0] = irandom_range(300, 600);
+
+
 
 
 

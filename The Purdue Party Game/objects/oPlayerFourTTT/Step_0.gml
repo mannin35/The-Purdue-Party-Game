@@ -1,33 +1,56 @@
-var dead_zone = .2;
-left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone);
-right_input =(gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone); 
-up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone);
-down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone); 
+/// @description Insert description here
+// You can write your code in this editor
+if !(over) {
+	if (TTT_Controller.cn_swap = 0) { // default
+		left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone);
+		right_input =(gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone); 
+		up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone);
+		down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone);
+	} else if (TTT_Controller.cn_swap = 1) { // 90
+		left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone);
+		right_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone);
+		up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone); 
+		down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone);
+	} else if (TTT_Controller.cn_swap = 2) { // 180
+		left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone);
+		right_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone);
+		up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone);
+		down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone); 
+	}  else if (TTT_Controller.cn_swap = 3) { // 270
+		left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone); 
+		right_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone);
+		up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone);
+		down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone);
+	}
 
 
-hsp = (right_input - left_input) * walksp;
-vsp = (down_input - up_input) * walksp;
+	hsp = (right_input - left_input) * walksp;
+	vsp = (down_input - up_input) * walksp;
 
-if (left_input) {
-	//image_xscale = -1.5;
+	if (left_input) {
+		//image_xscale = -1.5;
+	}
+	if (right_input) {
+		//image_xscale = 1.5;
+	}
+	if (up_input) {
+		//image_xscale = -1;
+	}
+	if (down_input) {
+		//image_xscale = -1;
+	}
+} else {
+	hsp = vsp = 0;	
 }
-if (right_input) {
-	//image_xscale = 1.5;
-}
-if (up_input) {
-	//image_xscale = -1;
-}
-if (down_input) {
-	//image_xscale = -1;
-}
-
 if place_meeting(x + hsp, y, oMaze) {	
 	hsp = 0;	
 }
 if place_meeting(x, y + vsp, oMaze) {
 	vsp = 0;	
 }
-
+if place_meeting(x, y, oFinish) {
+	over = true;	
+}
 
 //hsp = moveH * walksp;
 //vsp = moveV * walksp;
@@ -60,3 +83,6 @@ if (place_meeting(x, y + vsp, oMaze))
 {
 	vsp = 0;
 }*/
+
+
+
