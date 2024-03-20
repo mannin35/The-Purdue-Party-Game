@@ -43,14 +43,15 @@ if (t_sec >= 50 || t_sec <= 5) {
 		if(t_sec == aiTimes[0]) {
 			if (!player_one.over) {
 			player_one.end_time = t;
-			player_one.end_time+=":"+string(t_msec);
+			rand_ms = irandom(59)
+			player_one.end_time+=":"+string(rand_ms);
 			player_one_hand.over = true;
 			if(instance_exists(player_one.sweat)){
 			instance_destroy(player_one.sweat);
 			}
 			player_one.over = true;
-			//show_debug_message("PLAYER 1 DONE");
-			//show_debug_message(player_one.end_time);
+			show_debug_message("PLAYER 1 DONE");
+			show_debug_message(player_one.end_time);
 			}
 		}
 	}
@@ -71,14 +72,15 @@ if (t_sec >= 50 || t_sec <= 5) {
 		if(t_sec == aiTimes[1]) {
 			if(!player_two.over) {
 			player_two.end_time = t;
-			player_two.end_time+=":"+string(t_msec);
+			rand_ms = irandom(59)
+			player_two.end_time+=":"+string(rand_ms);
 			player_two_hand.over = true;
 			if(instance_exists(player_two.sweat)){
 			instance_destroy(player_two.sweat);
 			}
 			player_two.over = true;
-			//show_debug_message("PLAYER 2 DONE");
-			//show_debug_message(player_two.end_time);
+			show_debug_message("PLAYER 2 DONE");
+			show_debug_message(player_two.end_time);
 			}
 		}
 	}
@@ -99,14 +101,15 @@ if (t_sec >= 50 || t_sec <= 5) {
 		if(t_sec == aiTimes[2]) {
 			if(!player_three.over) {
 			player_three.end_time = t;
-			player_three.end_time+=":"+string(t_msec);
+			rand_ms = irandom(59)
+			player_three.end_time+=":"+string(rand_ms);
 			player_three_hand.over = true;
 			if(instance_exists(player_three.sweat)){
 			instance_destroy(player_three.sweat);
 			}
 			player_three.over = true;
-			//show_debug_message("PLAYER 3 DONE");
-			//show_debug_message(player_three.end_time);
+			show_debug_message("PLAYER 3 DONE");
+			show_debug_message(player_three.end_time);
 			}
 		}
 	}
@@ -127,14 +130,15 @@ if (t_sec >= 50 || t_sec <= 5) {
 		if(t_sec == aiTimes[3]) {
 			if(!player_four.over) {
 			player_four.end_time = t;
-			player_four.end_time+=":"+string(t_msec);
+			rand_ms = irandom(59)
+			player_four.end_time+=":"+string(rand_ms);
 			player_four_hand.over = true;
 			if(instance_exists(player_four.sweat)){
 			instance_destroy(player_four.sweat);
 			}
 			player_four.over = true;
-			//show_debug_message("PLAYER 4 DONE");
-			//show_debug_message(player_four.end_time);
+			show_debug_message("PLAYER 4 DONE");
+			show_debug_message(player_four.end_time);
 			}
 		}
 	}
