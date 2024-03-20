@@ -21,7 +21,11 @@ function SpaceFunction(type){
 	}
 	if(type == "red"){
 		//if(global.playercontrollerindices[global.currentplayer] != -1){
+		if(global.playerObjects[global.currentplayer].boilerBucks >=3){
 			global.playerObjects[global.currentplayer].boilerBucks -= 3;
+		} else {
+			global.playerObjects[global.currentplayer].boilerBucks = 0;
+		}
 			OBJ_Points.image_index = 1;
 			OBJ_Points.visible = true;
 			/*while (OBJ_Points.image_alpha > 0){
