@@ -15,8 +15,7 @@ function SpaceFunction(type){
 			while (OBJ_Points.image_alpha > 0){
 				OBJ_Points.image_alpha -= 0.05;
 			}
-			OBJ_Points.visible = false;
-			OBJ_Points.image_alpha = 100;
+			OBJ_Points.alarm[0] = 120;
 		}
 	}
 	if(type == "red"){
@@ -27,8 +26,7 @@ function SpaceFunction(type){
 			while (OBJ_Points.image_alpha > 0){
 				OBJ_Points.image_alpha -= 0.05;
 			}
-			OBJ_Points.visible = false;
-			OBJ_Points.image_alpha = 100;
+			OBJ_Points.alarm[0] = 120;
 		}
 	}
 	//Add else statements to help with what you want the space to do and make up your own keywords
