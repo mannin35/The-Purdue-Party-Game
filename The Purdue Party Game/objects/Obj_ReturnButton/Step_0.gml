@@ -24,9 +24,19 @@ if((Obj_ReturnButton.current) && key_up && global.realPlayerCount == 4){
 		Obj_PlayerOneHard.image_index = 5;
 }
 } else if (room == RM_About && button_x) {
-	room_goto(RM_Title);
+	//transition to RM_Title
+	//room_goto(RM_Title);
+	if(!instance_exists(OBJ_Transition)) {
+		var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+		inst.target_rm = RM_Title;
+	}
 } else if (room == RM_Settings && button_x && Obj_ReturnButton.current) {
-	room_goto(RM_Title);
+	//transition to RM_Title
+	//room_goto(RM_Title);
+	if(!instance_exists(OBJ_Transition)) {
+		var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+		inst.target_rm = RM_Title;
+	}
 } else {
 	if(key_up && Obj_ReturnButton.current){
 		current = false;
@@ -48,9 +58,19 @@ if((Obj_ReturnButton.current) && (key_right)){
 //Return is pressed and goes back to main menu
 	if ((Obj_ReturnButton.current) && button_x) {
 		if(room == RM_CPUSettings){
-			room_goto(RM_Title);
+			//transition to RM_Title
+			//room_goto(RM_Title);
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_Title;
+			}
 		} else if(room == RM_GameSettings){
-			room_goto(RM_CPUSettings);	
+			//transition to RM_CPUSettings
+			//room_goto(RM_CPUSettings);
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_CPUSettings;
+			}
 		}
 		Obj_ReturnButton.current = false;
 	}

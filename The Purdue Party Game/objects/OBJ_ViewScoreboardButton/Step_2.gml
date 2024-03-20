@@ -12,7 +12,7 @@ if (visible) {
 
 
 	//change current button to next/prev if needed
-	if (self.current) {
-		CheckChangeButton(self)
+	if (OBJ_ViewScoreboardButton.current) {
+		CheckChangeButton(OBJ_ViewScoreboardButton)
 	}
 }

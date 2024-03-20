@@ -13,7 +13,7 @@ if(!end_of_round){
 	}
 	
 }
-if (end_of_round && !occured) {
+if (end_of_round && !occured && (room==RM_LocalView)) {
 	//TODO: add if condition for if end of game is reached
 	
 	//set random seed for randomization of minigames
@@ -37,15 +37,40 @@ if (end_of_round && !occured) {
 	if(test_case==0) {
 		last_minigame = minigame;
 		if (minigame == 0) {
-			room_goto(RM_BoilermakerExpressInstructions);
+			//room_goto(RM_BoilermakerExpressInstructions);
+			//transition to RM_BoilermakerExpressInstructions
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_BoilermakerExpressInstructions;
+			}
 		} else if (minigame == 1) {
-			room_goto(RM_ElevenFiftyNineInstructions);
+			//room_goto(RM_ElevenFiftyNineInstructions);
+			//transition to RM_ElevenFiftyNineInstructions
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_ElevenFiftyNineInstructions;
+			}
 		} else if (minigame == 2) {
-			room_goto(RM_StateStreetInstructions);
+			//room_goto(RM_StateStreetInstructions);
+			//transition to RM_StateStreetInstructions
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_StateStreetInstructions;
+			}
 		} else if (minigame == 3) {
-			room_goto(RM_TimesUpInstructions);
+			//room_goto(RM_TimesUpInstructions);
+			//transition to RM_TimesUpInstructions
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_TimesUpInstructions;
+			}
 		} else if (minigame == 4) {
 			room_goto(RM_TipsyTunnelInstructions);
+			//transition to RM_TipsyTunnelInstructions
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_TipsyTunnelInstructions;
+			}
 		} else {
 			show_debug_message("ERROR: Invalid number generated for minigame selection");
 		}

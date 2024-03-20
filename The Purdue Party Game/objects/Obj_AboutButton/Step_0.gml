@@ -30,7 +30,13 @@ else if key_down {
 }*/
 if ((Obj_AboutButton.current) && button_x) {
 	Obj_AboutButton.current = false;
-	room_goto(RM_About);
+	
+	//transition to RM_About
+	//room_goto(RM_About);
+	if(!instance_exists(OBJ_Transition)) {
+		var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+		inst.target_rm = RM_About;
+	}
 }
 }
 

@@ -31,7 +31,12 @@ else if key_up {
 }*/
 if ((Obj_SettingsButton.current) && button_x) {
 	Obj_SettingsButton.current = false;
-	room_goto(RM_Settings);
+	//transition to RM_Settings
+	//room_goto(RM_Settings);
+	if(!instance_exists(OBJ_Transition)) {
+		var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+		inst.target_rm = RM_Settings;
+	}
 }
 }
 

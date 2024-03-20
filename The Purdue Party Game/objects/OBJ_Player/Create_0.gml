@@ -20,6 +20,5 @@ inactiveArrow = pointer_null;
 awaitingInput = false;
 pathChosen = false;
 
-
-
-
+//Store and items
+items = [1,1,1]		//Swaps, Double, Slowdown

@@ -3,6 +3,8 @@
 function CheckButtonState(button){
 	//update sprite if current and check for input
 	//update sprite to reflect activity
+	button.left_key = 0;
+	button.right_key = 0;
 	if(button.current) {
 		button.image_index = 1;	
 		//checks for moving to the left and pressing button
@@ -10,7 +12,10 @@ function CheckButtonState(button){
 		TODO FOR ALL INPUT
 		CHANGE INDEX 0 TO CURRENT PLAYER
 		*/
+		//show_debug_message(button)
+		//show_debug_message("Left: {0} Right: {1}", button.left_key, button.right_key)
 		if (!global.delayInput) {
+			dead_zone = .2
 			var index = 0;
 			var input = gamepad_axis_value(global.playercontrollerindices[index], gp_axislh);
 			button.left_key = (keyboard_check_pressed(vk_left)) || 
@@ -21,7 +26,7 @@ function CheckButtonState(button){
 				button.button_x =(keyboard_check_pressed(vk_space)) ||
 					(gamepad_button_check_pressed(global.playercontrollerindices[index],gp_face1));
 			}
-		
+	
 			
 		}
 	}
