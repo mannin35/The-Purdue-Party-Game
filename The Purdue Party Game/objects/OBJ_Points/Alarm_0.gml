@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-ResetButtons(global.currentplayer);
-ShowButtons();
-spaceType = "start";
 
+
+			OBJ_Points.visible = false;
+			OBJ_Points.image_alpha = 1;
 
 
 
