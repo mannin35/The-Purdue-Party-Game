@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
+global.playerObjects = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
 function SpaceFunction(type){
 	if(type == "store"){
 		if(global.playercontrollerindices[global.currentplayer] != -1 && global.currentplayer < global.realPlayerCount){
@@ -9,7 +9,7 @@ function SpaceFunction(type){
 	} 
 	if(type == "blue"){
 		if(global.playercontrollerindices[global.currentplayer] != -1){
-			players[global.currentplayer].boilerBucks += 3;
+			global.playerObjects[global.currentplayer].boilerBucks += 3;
 			OBJ_Points.image_index = 0;
 			OBJ_Points.visible = true;
 			while (OBJ_Points.image_alpha > 0){
@@ -21,7 +21,7 @@ function SpaceFunction(type){
 	}
 	if(type == "red"){
 		if(global.playercontrollerindices[global.currentplayer] != -1){
-			players[global.currentplayer].boilerBucks -= 3;
+			global.playerObjects[global.currentplayer].boilerBucks -= 3;
 			OBJ_Points.image_index = 1;
 			OBJ_Points.visible = true;
 			while (OBJ_Points.image_alpha > 0){
