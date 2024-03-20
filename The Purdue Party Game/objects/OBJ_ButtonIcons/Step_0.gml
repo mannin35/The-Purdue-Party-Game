@@ -31,23 +31,53 @@
 	if(global.swap && counter >= 2){
 		visible = true;
 		if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face1)){
-			if(global.currentplayer == 0){
+			temp = OBJ_PlayerSwap1.image_index;
+			if(global.playerOneIndex == temp){
+				playerToSwap = 0;
+			} else if (global.playerTwoIndex == temp){
+				playerToSwap = 1;
+			} else if (global.playerThreeIndex == temp){
+				playerToSwap = 2;
+			} else {
+				playerToSwap = 3;
+			}
+			/*if(global.currentplayer < 1){
 				playerToSwap = 1	
 			}else {
 				playerToSwap = 0
-			}
+			}*/
 		} else if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face3)){
-			if(global.currentplayer == 0){
-				playerToSwap = 2	
+			temp = OBJ_PlayerSwap2.image_index;
+			if(global.playerOneIndex == temp){
+				playerToSwap = 0;
+			} else if (global.playerTwoIndex == temp){
+				playerToSwap = 1;
+			} else if (global.playerThreeIndex == temp){
+				playerToSwap = 2;
 			} else {
-				playerToSwap = 1
+				playerToSwap = 3;
 			}
-		} else if (gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face4)){
-			if(global.currentplayer == 3){
-				playerToSwap = 2	
+			/*if(global.currentplayer < 1){
+				playerToSwap = 1	
 			}else {
-				playerToSwap = 3
+				playerToSwap = 0
+			}*/
+		} else if (gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face4)){
+			temp = OBJ_PlayerSwap3.image_index;
+			if(global.playerOneIndex == temp){
+				playerToSwap = 0;
+			} else if (global.playerTwoIndex == temp){
+				playerToSwap = 1;
+			} else if (global.playerThreeIndex == temp){
+				playerToSwap = 2;
+			} else {
+				playerToSwap = 3;
 			}
+			/*if(global.currentplayer < 1){
+				playerToSwap = 1	
+			}else {
+				playerToSwap = 0
+			}*/
 		}
 		if(playerToSwap != -1){
 		show_debug_message(playerToSwap)

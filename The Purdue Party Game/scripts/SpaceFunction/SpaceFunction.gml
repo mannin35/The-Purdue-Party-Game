@@ -3,7 +3,7 @@
 players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
 function SpaceFunction(type){
 	if(type == "store"){
-		if(global.playercontrollerindices[global.currentplayer] != -1){
+		if(global.playercontrollerindices[global.currentplayer] != -1 && global.currentplayer < global.realPlayerCount){
 			room_goto(RM_Store)	
 		}
 	} 

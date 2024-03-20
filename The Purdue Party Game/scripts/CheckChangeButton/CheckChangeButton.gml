@@ -9,7 +9,7 @@ function CheckChangeButton(button){
 		button.image_index = 0;
 		button.next.is_next = true;
 		global.delayInput = true;
-		OBJ_LocalButtonInfo.alarm[0] = 30;
+		OBJ_LocalButtonInfo.alarm[0] = 15;
 	}
 
 	if(button.left_key && button.current) {
@@ -18,7 +18,7 @@ function CheckChangeButton(button){
 	button.image_index = 0;
 	button.prev.is_next = true;
 	global.delayInput = true;
-	OBJ_LocalButtonInfo.alarm[0] = 30;
+	OBJ_LocalButtonInfo.alarm[0] = 15;
 	}
 	}
 }
