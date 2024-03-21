@@ -49,7 +49,13 @@ if place_meeting(x, y + vsp, oMaze) {
 	vsp = 0;	
 }
 if place_meeting(x, y, oFinish) {
-	over = true;	
+	if !(over) {
+		global.minigameResults[1] = oController.pos;
+		show_debug_message("player 2 pos = " + string(oController.pos));
+		oController.pos++;
+	}
+	timer.visible = false;
+	over = true;
 }
 
 //hsp = moveH * walksp;

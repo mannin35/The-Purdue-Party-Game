@@ -3,7 +3,7 @@
 if !(over) {
 	if (TTT_Controller.cn_swap = 0) {
 		left_input = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) < -dead_zone);
-		right_input =(gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) > dead_zone); 
+		right_input = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) > dead_zone); 
 		up_input = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) < -dead_zone);
 		down_input = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) > dead_zone);
 	} else if (TTT_Controller.cn_swap = 1) {
@@ -42,14 +42,21 @@ if !(over) {
 } else {
 	hsp = vsp = 0;	
 }
-if place_meeting(x + hsp, y, oMaze) {	
+if place_meeting(x + hsp, y, oMaze) { // collision
 	hsp = 0;	
 }
 if place_meeting(x, y + vsp, oMaze) {
 	vsp = 0;	
 }
 if place_meeting(x, y, oFinish) {
-	over = true;	
+	if !(over) {
+		global.minigameResults[0] = oController.pos;
+		show_debug_message("player 1 pos = " + string(oController.pos));
+		oController.pos++;
+		timer.visible = false;
+	}
+	
+	over = true;
 }
 
 //hsp = moveH * walksp;
