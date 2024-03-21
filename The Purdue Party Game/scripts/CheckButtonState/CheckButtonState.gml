@@ -8,26 +8,29 @@ function CheckButtonState(button){
 	if(button.current) {
 		button.image_index = 1;	
 		//checks for moving to the left and pressing button
-		/*
-		TODO FOR ALL INPUT
-		CHANGE INDEX 0 TO CURRENT PLAYER
-		*/
-		//show_debug_message(button)
-		//show_debug_message("Left: {0} Right: {1}", button.left_key, button.right_key)
 		if (!global.delayInput) {
-			dead_zone = .2
-			var index = 0;
-			var input = gamepad_axis_value(global.playercontrollerindices[index], gp_axislh);
-			button.left_key = (keyboard_check_pressed(vk_left)) || 
-				(gamepad_axis_value(global.playercontrollerindices[index], gp_axislh) < -dead_zone) ;
-			button.right_key = (keyboard_check_pressed(vk_right)) ||
-				(gamepad_axis_value(global.playercontrollerindices[index], gp_axislh) > dead_zone);
-			if (button != OBJ_ViewScoreboardButton) {
-				button.button_x =(keyboard_check_pressed(vk_space)) ||
-					(gamepad_button_check_pressed(global.playercontrollerindices[index],gp_face1));
+			var index = global.currentplayer;
+			var player = global.localPlayers[index];
+			var input = global.playercontrollerindices[index];
+			// Check if player is cpu or not
+			// Player is cpu if playercontrollerinces[index] = -1;
+			if (!player.isCPU) {
+				button.left_key = (keyboard_check_pressed(vk_left)) || 
+					(gamepad_axis_value(input, gp_axislh) < -dead_zone) ;
+				button.right_key = (keyboard_check_pressed(vk_right)) ||
+					(gamepad_axis_value(input, gp_axislh) > dead_zone);
+				if (button != OBJ_ViewScoreboardButton) {
+					button.button_x =(keyboard_check_pressed(vk_space)) ||
+						(gamepad_button_check_pressed(input, gp_face1));
+				}
 			}
-	
-			
+			else {
+				// Initiate cpu rolling dice
+				global.delayInput = true;
+				// Prevent input for a few seconds
+				OBJ_LocalButtonInfo.alarm[0] = 120;
+				OBJ_LocalButtonInfo.alarm[1] = 45;
+			}
 		}
 	}
 	else {

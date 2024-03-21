@@ -5,6 +5,7 @@ if (visible) {
 			player = global.localPlayers[global.currentplayer];
 			instance_create_layer(player.x , player.y - 25, layer, OBJ_Dice);
 			current = false;
+			button_x = false;
 		}
 	} 
 
