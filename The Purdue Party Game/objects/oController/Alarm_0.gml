@@ -8,7 +8,7 @@ if !(global.minigameOver) { // does the dizzy effect and control swap
 	alarm[1] = 180;
 }
 
-if !(player_one_TTT.over) { // these 4 make the visible true
+if !(player_one_TTT.over) { // these 4 make the dizziness visible 
 	player_one_TTT.dizzy.visible = true;	
 }
 if !(player_two_TTT.over) {

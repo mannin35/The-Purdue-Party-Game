@@ -19,7 +19,7 @@ player_three_TTT.timer.y = player_three_TTT.y - 25;
 player_four_TTT.timer.x = player_four_TTT.x - 20;
 player_four_TTT.timer.y = player_four_TTT.y - 25;
 
-if (!timer_active && (player_one_TTT.over || player_two_TTT.over || player_three_TTT.over || player_four_TTT.over)) {
+if (!timer_active && (player_one_TTT.over || player_two_TTT.over || player_three_TTT.over || player_four_TTT.over)) { // start timer visuals if someone is done
 	alarm[2] = 1;
 	timer_active = true;
 }
