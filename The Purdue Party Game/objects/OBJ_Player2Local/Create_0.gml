@@ -7,10 +7,12 @@ self.space = OBJ_PlayerInfo.playerSpaces[1];
 x = space.x;
 y = space.y;
 color = c_aqua;
+isCPU = (global.realPlayerCount <= 1);
 
 global.player2position[0] = x;
 global.player2position[1] = y;
-image_index = global.playerTwoIndex;
-walkingIndex = image_index * 2;
+startIndex = global.playerTwoIndex;
+image_index = startIndex;
+walkingIndex = startIndex * 3;
 boilerBucks = 10;
 degrees = 2;

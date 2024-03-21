@@ -3,13 +3,18 @@
 color = pointer_null;
 index = 0;
 space = Space0;
+isCPU = false;
+currentPlayer = pointer_null;
 
 // Movement info
 dead_zone = 0.2; 
+startIndex = 0;
 walkingIndex = 0;
+walkAnimationSpeed = 10; //fps
+increasePerFrame = walkAnimationSpeed / 60;
 numSpaces = 0;
 isMoving = false;
-speedMultiplier = 4;
+speedMultiplier = 3;
 x = space.x;
 y = space.y;
 

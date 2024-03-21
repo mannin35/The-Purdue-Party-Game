@@ -26,27 +26,27 @@ function SetWalkingSprite(player, xDiff, yDiff) {
 		// UpRight
 			if (xDiff > yDiff) {
 				// Right
-				object_set_sprite(player, SP_PlayerRight);
+				player.sprite_index =  SP_PlayerRight;
 			}
 			else {
 				// Up
-				object_set_sprite(player, SP_PlayerUp);
+				player.sprite_index =  SP_PlayerUp;
 			}
 		}
 		else if (down) {
 			// DownRight
 			if (xDiff > yDiff) {
 				// Right
-				object_set_sprite(player, SP_PlayerRight);
+				player.sprite_index =  SP_PlayerRight;
 			}
 			else {
 				// Down
-				object_set_sprite(player, SP_PlayersDown);
+				player.sprite_index =  SP_PlayersDown;
 			}
 		}
 		else {
 			// Right
-			object_set_sprite(player, SP_PlayerRight);
+			player.sprite_index =  SP_PlayerRight;
 		}
 	}
 	else if (left) {
@@ -54,37 +54,38 @@ function SetWalkingSprite(player, xDiff, yDiff) {
 			// UpLeft
 			if (xDiff > yDiff) {
 				// Left
-				object_set_sprite(player, SP_PlayerLeft);
+				player.sprite_index =  SP_PlayerLeft;
 			}
 			else {
 				// Up
-				object_set_sprite(player, SP_PlayerUp);
+				player.sprite_index =  SP_PlayerUp;
 			}
 		}
 		else if (down) {
 			// DownLeft
 			if (xDiff > yDiff) {
 				// Left
-				object_set_sprite(player, SP_PlayerLeft);
+				player.sprite_index =  SP_PlayerLeft;
 			}
 			else {
 				// Down
-				object_set_sprite(player, SP_PlayersDown);
+				player.sprite_index =  SP_PlayersDown;
 			}
 		}
 		else {
 			// Left
-			object_set_sprite(player, SP_PlayerLeft);
+			player.sprite_index = SP_PlayerLeft;
 		}
 	}
 	else {
 		if (up) {
 			// Up
-			object_set_sprite(player, SP_PlayerUp)
+			player.sprite_index = SP_PlayerUp;
 		}
 		else  {
 			// Down
-			object_set_sprite(player, SP_PlayersDown)
+			player.sprite_index = SP_PlayersDown;
 		}
 	}
+	show_debug_message(sprite_get_name(player.sprite_index));
 }
