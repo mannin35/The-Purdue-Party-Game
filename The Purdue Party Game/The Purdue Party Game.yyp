@@ -201,7 +201,7 @@
     {"id":{"name":"Obj_ContinueButton","path":"objects/Obj_ContinueButton/Obj_ContinueButton.yy",},},
     {"id":{"name":"Obj_CPUThreeTitle","path":"objects/Obj_CPUThreeTitle/Obj_CPUThreeTitle.yy",},},
     {"id":{"name":"SP_Bus","path":"sprites/SP_Bus/SP_Bus.yy",},},
-    {"id":{"name":"OBJ_YellowSpace","path":"objects/OBJ_YellowSpace/OBJ_YellowSpace.yy",},},
+    {"id":{"name":"OB_DegreeSpace","path":"objects/OB_DegreeSpace/OB_DegreeSpace.yy",},},
     {"id":{"name":"TS_Sidewalk","path":"tilesets/TS_Sidewalk/TS_Sidewalk.yy",},},
     {"id":{"name":"SP_SpacesRed","path":"sprites/SP_SpacesRed/SP_SpacesRed.yy",},},
     {"id":{"name":"SP_Track","path":"sprites/SP_Track/SP_Track.yy",},},

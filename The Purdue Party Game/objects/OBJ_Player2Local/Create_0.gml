@@ -6,11 +6,13 @@ event_inherited();
 self.space = OBJ_PlayerInfo.playerSpaces[1];
 x = space.x;
 y = space.y;
-color = c_aqua;
+isCPU = (global.realPlayerCount <= 1);
 
 global.player2position[0] = x;
 global.player2position[1] = y;
-image_index = global.playerTwoIndex;
-walkingIndex = image_index * 2;
+startIndex = global.playerTwoIndex;
+color = global.playerColors[startIndex];
+image_index = startIndex;
+walkingIndex = startIndex * 3;
 boilerBucks = 0;
 degrees = 0;

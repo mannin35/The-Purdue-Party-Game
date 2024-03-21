@@ -47,13 +47,13 @@ for(i = 0; i < 4; i++){
 	}
 }
 image_index = tempArray[0] - 1;
-OBJ_PlayerOneMGR.image_index = players[0] - 1;
+//OBJ_PlayerOneMGR.image_index = players[0] - 1;
 OBJ_MGPlacementTwo.image_index = tempArray[1] - 1;
-OBJ_PlayerTwoMGR.image_index = players[1] - 1;
+//OBJ_PlayerTwoMGR.image_index = players[1] - 1;
 OBJ_MGPlacementThree.image_index = tempArray[2] - 1;
-OBJ_PlayerThreeMGR.image_index = players[2] - 1;
+//OBJ_PlayerThreeMGR.image_index = players[2] - 1;
 OBJ_MGPlacementFour.image_index = tempArray[3] - 1;
-OBJ_PlayerFourMGR.image_index = players[3] - 1;
+//OBJ_PlayerFourMGR.image_index = players[3] - 1;
 
 increase = [0,0,0,0];
 imageIndexArray = [image_index, tempArray[1] - 1, tempArray[2] - 1, tempArray[3] - 1];

@@ -106,7 +106,7 @@
 	}
 	
 	
-	if(OBJ_Items.visible){
+	//if(OBJ_Items.visible){
 		//Doing swap players
 		if(visible && image_index == 0 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face1)){
 			//Do the stuff for swapping players
@@ -120,7 +120,13 @@
 	//Doing double dice
 	if(visible && image_index == 1 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face3)){
 		//Do the stuff for double dice
-		show_debug_message("Double")
+		//show_debug_message("Double")
+		global.doubleDice = true;
+		OBJ_Items.visible = false;
+		OBJ_ItemMenu.visible = false;
+		OBJ_ButtonIcons.visible = false;
+		players[global.currentplayer].items[1]--;
+		
 	}
 	
 	//Doing slow dice
@@ -129,11 +135,15 @@
 		show_debug_message("Slow")
 	}
 	
+	if(!OBJ_PlayerSwap1.visible){
 	//Exiting the item menu with circle
 	if(gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face2)){
 			OBJ_ButtonIcons.visible = false;
 	}
 	}
+	//}
+	
+	
 	if(OBJ_ItemMenu.visible == false){
 		OBJ_ButtonIcons.visible = false;
 	}

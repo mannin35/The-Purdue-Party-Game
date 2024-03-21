@@ -10,7 +10,7 @@ if(visible) {
 	
 	draw_self();
 	
-	draw_text(42,21, players[global.currentplayer - 1].boilerBucks);
+	draw_text(42,21, players[global.currentplayer].boilerBucks);
 }
 
 
