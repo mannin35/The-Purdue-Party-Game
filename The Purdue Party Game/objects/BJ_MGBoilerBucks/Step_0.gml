@@ -14,8 +14,9 @@ if(counterTwo >= 180){
 	OBJ_MinigameDegree.visible = false;
 	BJ_MGBoilerBucks.visible = false;
 }
-if(counterTwo >= 210){
+if(counterTwo >= 240){
 		//calculate current player placements
+		show_debug_message("Players: {0}", OBJ_MGPlacementOne.players)
 	players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
 	for(p = 0; p < 4; p++){
 		if(OBJ_MGPlacementOne.players[p] == 1){

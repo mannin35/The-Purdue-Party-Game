@@ -8,8 +8,11 @@ if (!hasPressed) {
 		hasPressed = true;
 		/// @Stop dice from rolling
 		image_speed = 0; 
-		// Delete dice and move player after 30 frames
-		alarm[0] = 30;
+		if(global.doubleDice){
+			alarm[0] = 60;
+		} else {
+			alarm[0] = 30;
+		}
 	}
 	else if (button_back) {
 		instance_destroy();

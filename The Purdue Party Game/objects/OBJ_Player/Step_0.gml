@@ -105,19 +105,14 @@ if (numSpaces > 0 && !awaitingInput) {
 			numSpaces--;
 			// Stop moving if reached final space
 			if (numSpaces == 0) {
-				
 				//Calls function using spaceType on last space where the type is a string to dictate what to do
-				SpaceFunction(string(space.spaceType));
 				OBJ_RollDiceButton.is_next = true;
-				global.currentplayer = (global.currentplayer + 1) % 4;
-				isMoving = false;
 				currentPlayer.image_speed = 0;
 				sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
-				if(object_get_name(object_index) == "OBJ_Player4Local"){
-					OBJ_PlayerInfo.end_of_round = true;
+				SpaceFunction(string(space.spaceType));
+				if (space != OBJ_ShopSpace) {
+					alarm[0] = 180;
 				}
-				ResetButtons(global.currentplayer);
-				ShowButtons();
 			}
 		}
 	}

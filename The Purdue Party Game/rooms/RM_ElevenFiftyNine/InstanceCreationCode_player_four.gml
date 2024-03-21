@@ -1,0 +1,1 @@
+sweat = instance_create_layer(x + 24, y + 52, "Instances_1", oSweat);

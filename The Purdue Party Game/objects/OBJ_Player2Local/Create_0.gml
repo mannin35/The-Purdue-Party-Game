@@ -14,5 +14,5 @@ global.player2position[1] = y;
 startIndex = global.playerTwoIndex;
 image_index = startIndex;
 walkingIndex = startIndex * 3;
-boilerBucks = 10;
-degrees = 2;
+boilerBucks = 0;
+degrees = 0;

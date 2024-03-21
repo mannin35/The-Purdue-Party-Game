@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "SP_Points",
-  "bbox_bottom": 59,
-  "bbox_left": 2,
-  "bbox_right": 59,
-  "bbox_top": 4,
+  "bbox_bottom": 54,
+  "bbox_left": 4,
+  "bbox_right": 56,
+  "bbox_top": 24,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -14,7 +14,7 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7fa83269-eaf8-4943-b4e0-92913ff6d883",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"328e9c41-a991-4b8a-b3cd-eb7be7185682",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2bee4bd-3196-4b69-9ac7-f7cbd8b22651",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -56,7 +56,7 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7fa83269-eaf8-4943-b4e0-92913ff6d883","path":"sprites/SP_Points/SP_Points.yy",},},},"Disabled":false,"id":"9bdb4e72-bd41-418a-94b7-3bfb0ac4ff25","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"328e9c41-a991-4b8a-b3cd-eb7be7185682","path":"sprites/SP_Points/SP_Points.yy",},},},"Disabled":false,"id":"ebc3942a-10f5-4d4d-9785-44ccecd4d178","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f2bee4bd-3196-4b69-9ac7-f7cbd8b22651","path":"sprites/SP_Points/SP_Points.yy",},},},"Disabled":false,"id":"b67dc6a6-c42a-4ccc-858c-34fa74c5f6d8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -2,12 +2,15 @@
 // You can write your code in this editor
 
 //show_debug_message("Current player: {0}", global.playercontrollerindices[global.currentplayer])
-buttonCircle = gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer-1], gp_face2)
-xButton = gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer-1], gp_face1)
-right = gamepad_axis_value(global.playercontrollerindices[global.currentplayer-1], gp_axislh) > deadzone
-left = gamepad_axis_value(global.playercontrollerindices[global.currentplayer-1], gp_axislh) < -deadzone
+playerIndex = global.currentplayer;
+buttonCircle = gamepad_button_check_pressed(global.playercontrollerindices[playerIndex], gp_face2)
+xButton = gamepad_button_check_pressed(global.playercontrollerindices[playerIndex], gp_face1)
+right = gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh) > deadzone
+left = gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh) < -deadzone
 if(buttonCircle){
-	room_goto(RM_LocalView);	
+	room_goto(RM_LocalView);
+	currentPlayer = global.localPlayers[playerIndex];
+	currentPlayer.alarm[0] = 120;
 }
 
 //Cursor movement
@@ -46,25 +49,25 @@ if(!moved){
 }
 
 //Purchase processing
-if(xButton && x == 284 && players[global.currentplayer - 1].boilerBucks >= 20){
+if(xButton && x == 284 && players[playerIndex].boilerBucks >= 20){
 	OBJ_SwapStore.visible = false;
-	players[global.currentplayer - 1].boilerBucks = players[global.currentplayer - 1].boilerBucks - 20;
-	players[global.currentplayer - 1].items[0]++;
+	players[playerIndex].boilerBucks = players[playerIndex].boilerBucks - 20;
+	players[playerIndex].items[0]++;
 	OBJ_StoreText.image_index = 3;
-} else if(xButton && x == 354 && players[global.currentplayer - 1].boilerBucks >= 15){
+} else if(xButton && x == 354 && players[playerIndex].boilerBucks >= 15){
 	OBJ_DoubleStore.visible = false;
-	players[global.currentplayer - 1].boilerBucks = players[global.currentplayer - 1].boilerBucks - 15;
-	 players[global.currentplayer - 1].items[1]++;
+	players[playerIndex].boilerBucks = players[playerIndex].boilerBucks - 15;
+	 players[playerIndex].items[1]++;
 	OBJ_StoreText.image_index = 3;
-} else if(xButton && x == 424 && players[global.currentplayer - 1].boilerBucks >= 10){
+} else if(xButton && x == 424 && players[playerIndex].boilerBucks >= 10){
 	OBJ_SlowStore.visible = false;
-	players[global.currentplayer - 1].boilerBucks = players[global.currentplayer - 1].boilerBucks - 10;
-	 players[global.currentplayer - 1].items[2]++;
+	players[playerIndex].boilerBucks = players[playerIndex].boilerBucks - 10;
+	 players[playerIndex].items[2]++;
 	OBJ_StoreText.image_index = 3
 }
 
 //Allows reset of movement
-if(gamepad_axis_value(global.playercontrollerindices[global.currentplayer-1], gp_axislh) < deadzone && gamepad_axis_value(global.playercontrollerindices[global.currentplayer-1], gp_axislh) > -deadzone){
+if(gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh) < deadzone && gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh) > -deadzone){
 	moved = false;
 }
 

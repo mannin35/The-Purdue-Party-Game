@@ -14,4 +14,4 @@ startIndex = global.playerOneIndex;
 image_index = startIndex;
 walkingIndex = startIndex * 3;
 boilerBucks = 0;
-degrees = 10;
+degrees = 0;

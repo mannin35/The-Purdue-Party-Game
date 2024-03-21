@@ -53,6 +53,25 @@ if(left_key && Obj_ContinueButton.current){
 
 if(button_x  && Obj_ContinueButton.current) {
 	if(room == RM_CPUSettings){
+		global.CPUSettings = [-1, -1, -1, -1];
+		if(global.realPlayerCount == 3) {
+			global.CPUSettings[3] = global.difficultyOne;
+		}
+		if(global.realPlayerCount == 2) {
+			global.CPUSettings[2] = global.difficultyOne;
+			global.CPUSettings[3] = global.difficultyTwo;
+		}
+		if(global.realPlayerCount == 1) {
+			global.CPUSettings[1] = global.difficultyOne;
+			global.CPUSettings[2] = global.difficultyTwo;
+			global.CPUSettings[3] = global.difficultyThree;
+		}
+		if(global.realPlayerCount == 0) {
+			global.CPUSettings[0] = global.difficultyOne;
+			global.CPUSettings[1] = global.difficultyTwo;
+			global.CPUSettings[2] = global.difficultyThree;
+			global.CPUSettings[3] = global.difficultyFour;
+		}
 		Obj_ReturnButton.current = true;
 		//transition to RM_GameSettings
 		//room_goto(RM_GameSettings);
