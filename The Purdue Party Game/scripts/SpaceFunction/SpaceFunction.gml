@@ -6,7 +6,10 @@ function SpaceFunction(type){
 	OBJ_Points.alarm[0] = -1;
 	if(type == "store"){
 		if(global.playercontrollerindices[playerIndex] != -1 && playerIndex < global.realPlayerCount){
+			HideButtons()
 			room_goto(RM_Store)	
+		} else {
+			global.localPlayers[global.currentplayer].alarm[0] = 120;
 		}
 	} 
 	

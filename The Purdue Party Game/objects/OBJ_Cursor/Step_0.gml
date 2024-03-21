@@ -9,8 +9,7 @@ right = gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axisl
 left = gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh) < -deadzone
 if(buttonCircle){
 	room_goto(RM_LocalView);
-	currentPlayer = global.localPlayers[playerIndex];
-	currentPlayer.alarm[0] = 120;
+	global.localPlayers[playerIndex].alarm[0] = 120;
 }
 
 //Cursor movement

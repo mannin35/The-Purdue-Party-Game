@@ -7,3 +7,9 @@ right_key = false;
 button_x = false;
 prev = OBJ_UseItemButton;
 next = OBJ_ViewScoreboardButton;
+
+if (global.isStartOfGame) {
+	visible = true;
+} else {
+	visible = false;
+}

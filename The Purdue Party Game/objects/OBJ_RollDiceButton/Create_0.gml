@@ -8,6 +8,12 @@ button_x = false;
 prev = OBJ_ViewScoreboardButton;
 next = OBJ_UseItemButton;
 
+if (global.isStartOfGame) {
+	visible = true;
+} else {
+	visible = false;
+}
+
 
 
 

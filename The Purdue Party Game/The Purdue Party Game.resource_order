@@ -1,11 +1,11 @@
 {
   "FolderOrderSettings": [
     {"name":"ElevenFiftyNine","order":2,"path":"folders/Objects/ElevenFiftyNine.yy",},
+    {"name":"Bus","order":9,"path":"folders/Objects/Local View/Bus.yy",},
     {"name":"ItemMenu","order":7,"path":"folders/Objects/Local View/ItemMenu.yy",},
     {"name":"Minigame Results","order":1,"path":"folders/Objects/Minigame Results.yy",},
     {"name":"Store","order":3,"path":"folders/Objects/Store.yy",},
     {"name":"ItemMenu","order":1,"path":"folders/Sprites/ItemMenu.yy",},
-    {"name":"Bus","order":9,"path":"folders/Objects/Local View/Bus.yy",},
     {"name":"Bus","order":1,"path":"folders/Sprites/Main and Local View/Bus.yy",},
   ],
   "ResourceOrderSettings": [
