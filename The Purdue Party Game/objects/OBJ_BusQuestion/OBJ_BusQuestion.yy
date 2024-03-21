@@ -1,20 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_BusSpace",
+  "name": "OBJ_BusQuestion",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Spaces",
-    "path": "folders/Objects/Local View/Spaces.yy",
+    "name": "Bus",
+    "path": "folders/Objects/Local View/Bus.yy",
   },
-  "parentObjectId": {
-    "name": "OBJ_Space",
-    "path": "objects/OBJ_Space/OBJ_Space.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_SpacesBus",
-    "path": "sprites/SP_SpacesBus/SP_SpacesBus.yy",
+    "name": "SP_BusQuestion",
+    "path": "sprites/SP_BusQuestion/SP_BusQuestion.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -110,7 +110,7 @@ if (numSpaces > 0 && !awaitingInput) {
 				currentPlayer.image_speed = 0;
 				sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 				SpaceFunction(string(space.spaceType));
-				if (space != OBJ_ShopSpace) {
+				if (space.object_index != OBJ_ShopSpace && space.object_index != OBJ_BusSpace) {
 					alarm[0] = 180;
 				}
 			}
