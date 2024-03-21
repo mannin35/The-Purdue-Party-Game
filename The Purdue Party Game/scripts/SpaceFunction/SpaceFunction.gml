@@ -2,15 +2,20 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 global.playerObjects = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
 function SpaceFunction(type){
+	var playerIndex = global.currentplayer;
 	OBJ_Points.alarm[0] = -1;
 	if(type == "store"){
-		if(global.playercontrollerindices[global.currentplayer] != -1 && global.currentplayer < global.realPlayerCount){
+		if(global.playercontrollerindices[playerIndex] != -1 && playerIndex < global.realPlayerCount){
 			room_goto(RM_Store)	
 		}
 	} 
+	
 	if(type == "blue"){
 		//if(global.playercontrollerindices[global.currentplayer] != -1){
-			global.playerObjects[global.currentplayer].boilerBucks += 3;
+			current = global.localPlayers[playerIndex];
+			OBJ_Points.x = current.x + 6;
+			OBJ_Points.y = current.y - 26;
+			current.boilerBucks += 3;
 			OBJ_Points.image_index = 0;
 			OBJ_Points.visible = true;
 			/*while (OBJ_Points.image_alpha > 0){
@@ -21,10 +26,13 @@ function SpaceFunction(type){
 	}
 	if(type == "red"){
 		//if(global.playercontrollerindices[global.currentplayer] != -1){
-		if(global.playerObjects[global.currentplayer].boilerBucks >=3){
-			global.playerObjects[global.currentplayer].boilerBucks -= 3;
+		current = global.localPlayers[playerIndex];
+		OBJ_Points.x = current.x + 6;
+		OBJ_Points.y = current.y - 26;
+		if(current.boilerBucks >=3){
+			current.boilerBucks -= 3;
 		} else {
-			global.playerObjects[global.currentplayer].boilerBucks = 0;
+			current.boilerBucks = 0;
 		}
 			OBJ_Points.image_index = 1;
 			OBJ_Points.visible = true;

@@ -8,3 +8,4 @@ last_minigame = -1;
 minigame = -1;
 test_case = 0;
 occured = false;
+global.isStartOfGame = true;
