@@ -5,7 +5,11 @@ function SpaceFunction(type){
 	OBJ_Points.alarm[0] = -1;
 	if(type == "store"){
 		if(global.playercontrollerindices[global.currentplayer] != -1 && global.currentplayer < global.realPlayerCount){
-			room_goto(RM_Store)	
+			//room_goto(RM_Store)
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_Store;
+			}
 		}
 	} 
 	if(type == "blue"){
