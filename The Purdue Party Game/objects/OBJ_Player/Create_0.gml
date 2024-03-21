@@ -21,4 +21,5 @@ awaitingInput = false;
 pathChosen = false;
 
 //Store and items
-items = [1,1,1]		//Swaps, Double, Slowdown
+items = [1, 1, 1]		//Swaps, Double, Slowdown
+global.store = false;

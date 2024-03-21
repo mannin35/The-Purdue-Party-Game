@@ -5,8 +5,11 @@ var button_x =(keyboard_check_pressed(vk_space)) ||
 if (button_x) {
 	/// @Stop dice from rolling
 	image_speed = 0; 
-	// Delete dice and move player after 30 frames
+	if(global.doubleDice){
+		alarm[0] = 60;
+	} else {
 	alarm[0] = 30;
+	}
 }
 
 
