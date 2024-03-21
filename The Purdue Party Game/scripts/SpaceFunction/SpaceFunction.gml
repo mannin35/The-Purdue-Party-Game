@@ -5,13 +5,19 @@ function SpaceFunction(type){
 	var playerIndex = global.currentplayer;
 	OBJ_Points.alarm[0] = -1;
 	if(type == "store"){
+
 		if(global.playercontrollerindices[playerIndex] != -1 && playerIndex < global.realPlayerCount){
 			HideButtons()
 			room_goto(RM_Store)	
 		} else {
 			global.localPlayers[global.currentplayer].alarm[0] = 120;
+			//room_goto(RM_Store)
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_Store;
+			}
 		}
-	} 
+	}
 	
 	if(type == "blue"){
 		//if(global.playercontrollerindices[global.currentplayer] != -1){

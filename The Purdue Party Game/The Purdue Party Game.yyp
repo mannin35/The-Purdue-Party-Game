@@ -362,6 +362,8 @@
     {"id":{"name":"OBJ_Player4Full","path":"objects/OBJ_Player4Full/OBJ_Player4Full.yy",},},
     {"id":{"name":"OBJ_MGPlacementOne","path":"objects/OBJ_MGPlacementOne/OBJ_MGPlacementOne.yy",},},
     {"id":{"name":"SP_TimesUp","path":"sprites/SP_TimesUp/SP_TimesUp.yy",},},
+    {"id":{"name":"SP_ButtonMap","path":"sprites/SP_ButtonMap/SP_ButtonMap.yy",},},
+    {"id":{"name":"SP_ButtonMapText","path":"sprites/SP_ButtonMapText/SP_ButtonMapText.yy",},},
     {"id":{"name":"SP_ExpressGame","path":"sprites/SP_ExpressGame/SP_ExpressGame.yy",},},
     {"id":{"name":"OBJ_StoreText","path":"objects/OBJ_StoreText/OBJ_StoreText.yy",},},
     {"id":{"name":"SP_SpacesBlueStriped","path":"sprites/SP_SpacesBlueStriped/SP_SpacesBlueStriped.yy",},},
