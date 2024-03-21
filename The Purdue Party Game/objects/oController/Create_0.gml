@@ -23,3 +23,23 @@ timer = 15; // final timer for remaining players
 
 global.minigameResults = [4, 4, 4, 4];
 pos = 1; // position to play for
+
+mazes = [SP_MazeOne, SP_MazeTwo, SP_MazeThree, SP_MazeFour]; // array of maze sprites
+maze = irandom_range(0, 3); // rolling for random maze
+
+//maze = 2;
+player_one_maze.sprite_index = mazes[maze];
+player_two_maze.sprite_index = mazes[maze];
+player_three_maze.sprite_index = mazes[maze];
+player_four_maze.sprite_index = mazes[maze];
+if (maze = 2) { // maze 3, finish on bottom left
+	player_one_finish_TTT.x -= 570;
+	player_two_finish_TTT.x -= 570;
+	player_three_finish_TTT.x -= 570;
+	player_four_finish_TTT.x -= 570;
+} else if (maze = 3) { // maze 4, finish on top right
+	player_one_finish_TTT.y -= 510;
+	player_two_finish_TTT.y -= 510;
+	player_three_finish_TTT.y -= 510;
+	player_four_finish_TTT.y -= 510;
+}

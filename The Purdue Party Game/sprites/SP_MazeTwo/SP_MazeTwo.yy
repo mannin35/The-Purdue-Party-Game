@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "SP_MazeOne",
+  "name": "SP_MazeTwo",
   "bbox_bottom": 189,
   "bbox_left": 0,
   "bbox_right": 209,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed0bef1c-a356-4cec-a63f-4b2ce0c8b54c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e14c1b00-6942-4a3f-8aa4-552d01dc4941",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 190,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"15d8ec2f-d774-48e7-8ae8-fab0a4380665","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c9996f9f-e3c1-4552-8fc1-f83b2b7059cc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "SP_MazeOne",
+    "name": "SP_MazeTwo",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ed0bef1c-a356-4cec-a63f-4b2ce0c8b54c","path":"sprites/SP_MazeOne/SP_MazeOne.yy",},},},"Disabled":false,"id":"a0c853d8-adf1-4cab-bf2e-24d219150f2e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e14c1b00-6942-4a3f-8aa4-552d01dc4941","path":"sprites/SP_MazeTwo/SP_MazeTwo.yy",},},},"Disabled":false,"id":"cde86d0f-7da0-416d-a369-b4b0aa5b66a1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

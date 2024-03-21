@@ -40,7 +40,7 @@ if !(over) {
 		//image_xscale = -1;
 	}
 } else {
-	hsp = vsp = 0;	
+	walksp = hsp = vsp = 0;		
 }
 if place_meeting(x + hsp, y, oMaze) {	
 	hsp = 0;	
