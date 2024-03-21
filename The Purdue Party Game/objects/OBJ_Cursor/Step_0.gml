@@ -10,6 +10,10 @@ left = gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh
 if(buttonCircle){
 	room_goto(RM_LocalView);
 	global.localPlayers[playerIndex].alarm[0] = 120;
+	if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_LocalView;
+			}
 }
 
 //Cursor movement
