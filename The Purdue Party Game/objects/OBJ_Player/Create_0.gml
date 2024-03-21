@@ -14,7 +14,7 @@ walkAnimationSpeed = 10; //fps
 increasePerFrame = walkAnimationSpeed / 60;
 numSpaces = 0;
 isMoving = false;
-speedMultiplier = 3;
+speedMultiplier = 4;
 x = space.x;
 y = space.y;
 
