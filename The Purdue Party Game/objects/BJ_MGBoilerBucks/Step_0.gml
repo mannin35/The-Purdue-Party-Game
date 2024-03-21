@@ -69,10 +69,10 @@ if(counterTwo >= 240){
 	//show_debug_message("BB: {0} {1} {2} {3}", players[0].boilerBucks, players[1].boilerBucks, players[2].boilerBucks, players[3].boilerBucks)
 	//("Degrees: {0} {1} {2} {3}", players[0].degrees, players[1].degrees, players[2].degrees, players[3].degrees)
 	//set player head indices to reflect positioning
-	OBJ_PlayerOneMGR.image_index = players[0].image_index;
-	OBJ_PlayerTwoMGR.image_index = players[1].image_index;
-	OBJ_PlayerThreeMGR.image_index = players[2].image_index;
-	OBJ_PlayerFourMGR.image_index = players[3].image_index;
+	OBJ_PlayerOneMGR.image_index = players[0].startIndex;
+	OBJ_PlayerTwoMGR.image_index = players[1].startIndex;
+	OBJ_PlayerThreeMGR.image_index = players[2].startIndex;
+	OBJ_PlayerFourMGR.image_index = players[3].startIndex;
 	//set placement markers to reflect any ties
 	OBJ_MGPlacementOne.image_index = 0;
 	OBJ_MGPlacementTwo.image_index = 1;

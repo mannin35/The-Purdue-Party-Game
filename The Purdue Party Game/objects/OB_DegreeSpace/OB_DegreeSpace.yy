@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_MGPlacementOne",
+  "name": "OB_DegreeSpace",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Minigame Results",
-    "path": "folders/Objects/Minigame Results.yy",
+    "name": "Spaces",
+    "path": "folders/Objects/Local View/Spaces.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "OBJ_Space",
+    "path": "objects/OBJ_Space/OBJ_Space.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_Placements",
-    "path": "sprites/SP_Placements/SP_Placements.yy",
+    "name": "SP_SpacesYellow",
+    "path": "sprites/SP_SpacesYellow/SP_SpacesYellow.yy",
   },
   "spriteMaskId": null,
   "visible": true,
