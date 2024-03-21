@@ -53,8 +53,8 @@ if place_meeting(x, y, oFinish) {
 		global.minigameResults[3] = oController.pos;
 		show_debug_message("player 1 pos = " + string(oController.pos));
 		oController.pos++;
+		timer.visible = false;
 	}
-	timer.visible = false;
 	over = true;
 }
 
