@@ -80,7 +80,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 		}
 	occured = true;
 	// Return to local view
-	alarm[0] = 120;
+	//alarm[0] = 120;
 	}
 	else {
 		if(last_minigame==minigame) {

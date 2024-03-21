@@ -24,22 +24,82 @@ timer = 15; // final timer for remaining players
 global.minigameResults = [4, 4, 4, 4];
 pos = 1; // position to play for
 
-mazes = [SP_MazeOne, SP_MazeTwo, SP_MazeThree, SP_MazeFour]; // array of maze sprites
-maze = irandom_range(0, 3); // rolling for random maze
+mazes = [SP_MazeOne, SP_MazeTwo, SP_MazeThree, SP_MazeFour, SP_MazeFive, SP_MazeSix, SP_MazeSeven, SP_MazeEight, SP_MazeNine, SP_MazeTen]; // array of maze sprites
+maze = irandom_range(0, 9); // rolling for random maze
 
-//maze = 2;
+//maze =;
 player_one_maze.sprite_index = mazes[maze];
 player_two_maze.sprite_index = mazes[maze];
 player_three_maze.sprite_index = mazes[maze];
 player_four_maze.sprite_index = mazes[maze];
-if (maze = 2) { // maze 3, finish on bottom left
-	player_one_finish_TTT.x -= 570;
-	player_two_finish_TTT.x -= 570;
-	player_three_finish_TTT.x -= 570;
-	player_four_finish_TTT.x -= 570;
-} else if (maze = 3) { // maze 4, finish on top right
-	player_one_finish_TTT.y -= 510;
-	player_two_finish_TTT.y -= 510;
-	player_three_finish_TTT.y -= 510;
-	player_four_finish_TTT.y -= 510;
+
+// finish spawns
+if (maze = 2 || maze = 9) { // maze 3/10, finish on bottom left
+	player_one_finish_TTT.x -= 540;
+	player_two_finish_TTT.x -= 540;
+	player_three_finish_TTT.x -= 540;
+	player_four_finish_TTT.x -= 540;
+} else if (maze = 3 || maze = 4) { // maze 4/5, finish on top right
+	player_one_finish_TTT.y -= 480;
+	player_two_finish_TTT.y -= 480;
+	player_three_finish_TTT.y -= 480;
+	player_four_finish_TTT.y -= 480;
+} else if (maze = 5) { // maze 6, finish in middle
+	player_one_finish_TTT.y -= 240;
+	player_two_finish_TTT.y -= 240;
+	player_three_finish_TTT.y -= 240;
+	player_four_finish_TTT.y -= 240;
+} else if (maze = 7 || maze = 8) { // maze 8/9, finish in bottom middle
+	player_one_finish_TTT.x -= 270;
+	player_two_finish_TTT.x -= 270;
+	player_three_finish_TTT.x -= 270;
+	player_four_finish_TTT.x -= 270;
+	
+	player_one_finish_TTT.y += 30;
+	player_two_finish_TTT.y += 30;
+	player_three_finish_TTT.y += 30;
+	player_four_finish_TTT.y += 30;
+}
+
+// player spawns
+if (maze = 4) { // maze 5, player spawns on bottom right
+	player_one_TTT.y += 480;
+	player_two_TTT.y += 480;
+	player_three_TTT.y += 480;
+	player_four_TTT.y += 480;
+} else if (maze = 5) { // maze 6, player spawns in middle
+	player_one_TTT.y += 240;
+	player_two_TTT.y += 240;
+	player_three_TTT.y += 240;
+	player_four_TTT.y += 240;	
+} else if (maze = 7 || maze = 8) { // maze 8, player spawns in top middle
+	//player_one_start_TTT.image_index++; // this is heinous
+	//player_two_start_TTT.image_index++; // removes original spawn block
+	//player_three_start_TTT.image_index++;
+	//player_four_start_TTT.image_index++;
+	
+	player_one_TTT.x += 270;
+	player_two_TTT.x += 270;
+	player_three_TTT.x += 270;
+	player_four_TTT.x += 270;
+	
+	player_one_TTT.y -= 30;
+	player_two_TTT.y -= 30;
+	player_three_TTT.y -= 30;
+	player_four_TTT.y -= 30;
+	
+	player_one_maze.x += 30; // maze adjustment
+	player_two_maze.x += 30;
+	player_three_maze.x += 30;
+	player_four_maze.x += 30;
+	
+	player_one_maze.y -= 30;
+	player_two_maze.y -= 30;
+	player_three_maze.y -= 30;
+	player_four_maze.y -= 30;
+} else if (maze = 9) { // maze 10 player spawns on right side
+	player_one_TTT.x += 540;
+	player_two_TTT.x += 540;
+	player_three_TTT.x += 540;
+	player_four_TTT.x += 540;
 }

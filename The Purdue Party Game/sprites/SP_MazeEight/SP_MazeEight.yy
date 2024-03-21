@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "SP_MazeOne",
-  "bbox_bottom": 189,
+  "name": "SP_MazeEight",
+  "bbox_bottom": 209,
   "bbox_left": 0,
-  "bbox_right": 209,
+  "bbox_right": 189,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66dd1893-cd64-4071-880e-279c65df5582",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14cfa7e6-4f2d-4738-9e27-b15cdb437024",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 190,
+  "height": 210,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a9e6ad3d-bd45-4f4b-8e61-a3712c527154","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d235c6a7-e247-4fd3-bbbc-384993138de2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "SP_MazeOne",
+    "name": "SP_MazeEight",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"66dd1893-cd64-4071-880e-279c65df5582","path":"sprites/SP_MazeOne/SP_MazeOne.yy",},},},"Disabled":false,"id":"2c726e35-c55f-4f81-94ff-500de90b0941","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"14cfa7e6-4f2d-4738-9e27-b15cdb437024","path":"sprites/SP_MazeEight/SP_MazeEight.yy",},},},"Disabled":false,"id":"3ef79c16-4f7d-4b85-b36c-136f4e8ac673","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 210,
+  "width": 190,
 }
