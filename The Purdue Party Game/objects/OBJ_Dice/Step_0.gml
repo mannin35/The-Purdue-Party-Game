@@ -9,6 +9,7 @@ if (!hasPressed) {
 		/// @Stop dice from rolling
 		image_speed = 0; 
 		if(global.doubleDice){
+			hasPressed = false;
 			alarm[0] = 60;
 		} else {
 			alarm[0] = 30;
