@@ -25,7 +25,11 @@ if (!timer_active && (player_one_TTT.over || player_two_TTT.over || player_three
 }
 
 if (player_one_TTT.over && player_two_TTT.over && player_three_TTT.over && player_four_TTT.over) { // end game
-	global.minigameOver = 1;	
+	global.minigameOver = 1;
+	global.localPlayers[0].visible = false; // bugfix!!!
+	global.localPlayers[1].visible = false;
+	global.localPlayers[2].visible = false;
+	global.localPlayers[3].visible = false;
 }
 
 
