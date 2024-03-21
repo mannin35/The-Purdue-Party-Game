@@ -24,8 +24,12 @@ player_two_hand.image_index = p_two * 2;
 player_three_hand.image_index = p_three * 2;
 player_four_hand.image_index = p_four * 2;
 
+
 //show_debug_message(global.realPlayerCount)
 alarm[0] = 1
+
+//generate times for AI to submit [MOVED TO ROOM START EVENT]
+
 
 
 

@@ -12,4 +12,4 @@ global.player1position[1] = y;
 image_index = global.playerOneIndex;
 walkingIndex = image_index * 2;
 boilerBucks = 0;
-degrees = 10;
+degrees = 0;

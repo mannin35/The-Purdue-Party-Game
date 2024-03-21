@@ -5,7 +5,7 @@ if (global.isStartOfGame) {
 	ShowButtons();
 	global.isStartOfGame = false;
 }
-
+spaceType = "start";
 
 
 
