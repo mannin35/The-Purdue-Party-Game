@@ -6,6 +6,11 @@ if (global.doubleDice) {
 	global.doubleDice = false;
 	hasPressed = false;
 }
+if (global.slowDice) {
+	image_speed = 1;
+	global.slowDice = false;
+	hasPressed = false;
+}
 else {
 	/* note that  numSpaces is one more than you would expect
 	* due to how player movement was implemented
