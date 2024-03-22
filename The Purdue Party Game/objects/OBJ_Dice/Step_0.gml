@@ -1,5 +1,6 @@
 /// @Check for input
 index = global.currentplayer;
+global.isStartOfGame = false;
 if (!hasPressed) {
 	var button_x = (keyboard_check_pressed(vk_space)) || 
 			(gamepad_button_check_pressed(global.playercontrollerindices[index],gp_face1));

@@ -8,9 +8,15 @@ xButton = gamepad_button_check_pressed(global.playercontrollerindices[playerInde
 right = gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh) > deadzone
 left = gamepad_axis_value(global.playercontrollerindices[playerIndex], gp_axislh) < -deadzone
 if(buttonCircle){
-	room_goto(RM_LocalView);
-	currentPlayer = global.localPlayers[playerIndex];
-	currentPlayer.alarm[0] = 120;
+	if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_LocalView;
+			}
+	global.localPlayers[playerIndex].alarm[0] = 120;
+	if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_LocalView;
+			}
 }
 
 //Cursor movement

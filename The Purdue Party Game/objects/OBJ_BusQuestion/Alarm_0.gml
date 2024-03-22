@@ -3,7 +3,7 @@
 if (room == RM_LocalView) {
 	show_debug_message(global.currentplayer)
 	global.currentplayer = (global.currentplayer + 1) % 4;
-	isMoving = false;
+	OBJ_Player.isMoving = false;
 	if(global.currentplayer = 0){
 	//if(object_get_name(object_index) == "OBJ_Player4Local"){
 		OBJ_PlayerInfo.end_of_round = true;
@@ -11,3 +11,8 @@ if (room == RM_LocalView) {
 	ResetButtons(global.currentplayer);
 	ShowButtons();
 }
+
+
+
+
+

@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-ResetButtons(global.currentplayer);
-spaceType = "start";
 
+visible = false;
+counter = 0;
+counterTwo = 0;
+done = false
 
 
 
