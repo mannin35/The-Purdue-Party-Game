@@ -11,6 +11,11 @@ player_two_TTT.image_index = p_two;
 player_three_TTT.image_index = p_three;
 player_four_TTT.image_index = p_four;
 
+global.localPlayers[0].visible = false; // bugfix!!!
+global.localPlayers[1].visible = false;
+global.localPlayers[2].visible = false;
+global.localPlayers[3].visible = false;
+
 cn_swap = 0; // random swap for controls
 swap_prev = 0; // keeps track of previous swap
 
