@@ -15,13 +15,22 @@ if !(player_one_TTT.over) { // these 4 make the dizziness visible
 	}
 }
 if !(player_two_TTT.over) {
-	player_two_TTT.dizzy.visible = true;	
+	player_two_TTT.dizzy.visible = true;
+	if(global.localPlayers[1].isCPU) {
+		player_two_TTT.walksp = 0;	
+	}
 }
 if !(player_three_TTT.over) {
-	player_three_TTT.dizzy.visible = true;	
+	player_three_TTT.dizzy.visible = true;
+	if(global.localPlayers[2].isCPU) {
+		player_three_TTT.walksp = 0;	
+	}
 }
 if !(player_four_TTT.over) {
-	player_four_TTT.dizzy.visible = true;	
+	player_four_TTT.dizzy.visible = true;
+	if(global.localPlayers[3].isCPU) {
+		player_four_TTT.walksp = 0;	
+	}
 }
 while (cn_swap = swap_prev) { // makes sure same roll cant happen twice
 	cn_swap = irandom_range(0, 3);
