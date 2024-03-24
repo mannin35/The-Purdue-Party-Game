@@ -9,7 +9,10 @@ if !(global.minigameOver) { // does the dizzy effect and control swap
 }
 
 if !(player_one_TTT.over) { // these 4 make the dizziness visible 
-	player_one_TTT.dizzy.visible = true;	
+	player_one_TTT.dizzy.visible = true;
+	if(global.localPlayers[0].isCPU) {
+		player_one_TTT.walksp = 0;	
+	}
 }
 if !(player_two_TTT.over) {
 	player_two_TTT.dizzy.visible = true;	

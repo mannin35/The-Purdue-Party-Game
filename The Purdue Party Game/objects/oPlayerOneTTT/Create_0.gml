@@ -2,6 +2,9 @@
 hsp = 0;
 vsp = 0;
 walksp = 2;
+//for CPU
+direction = 180;
+randomize();
 
 over = false;
 //cn_swap = 0;
