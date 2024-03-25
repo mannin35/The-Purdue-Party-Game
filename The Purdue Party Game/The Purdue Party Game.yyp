@@ -148,6 +148,7 @@
     {"id":{"name":"OBJ_BoilerBuckTemp","path":"objects/OBJ_BoilerBuckTemp/OBJ_BoilerBuckTemp.yy",},},
     {"id":{"name":"OBJ_Placement4","path":"objects/OBJ_Placement4/OBJ_Placement4.yy",},},
     {"id":{"name":"SP_ME","path":"sprites/SP_ME/SP_ME.yy",},},
+    {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},},
     {"id":{"name":"SP_TipsyTunnelInstructionsText","path":"sprites/SP_TipsyTunnelInstructionsText/SP_TipsyTunnelInstructionsText.yy",},},
     {"id":{"name":"OBJ_LocalButtonInfo","path":"objects/OBJ_LocalButtonInfo/OBJ_LocalButtonInfo.yy",},},
     {"id":{"name":"OBJ_Player2nd","path":"objects/OBJ_Player2nd/OBJ_Player2nd.yy",},},

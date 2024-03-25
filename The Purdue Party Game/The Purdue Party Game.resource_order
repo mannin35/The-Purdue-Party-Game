@@ -26,6 +26,7 @@
     {"name":"OBJ_BusLocal","order":12,"path":"objects/OBJ_BusLocal/OBJ_BusLocal.yy",},
     {"name":"SP_BusLocal","order":14,"path":"sprites/SP_BusLocal/SP_BusLocal.yy",},
     {"name":"SP_BusQuestion","order":15,"path":"sprites/SP_BusQuestion/SP_BusQuestion.yy",},
+    {"name":"oGrid","order":1,"path":"objects/oGrid/oGrid.yy",},
     {"name":"OBJ_BusQuestion","order":13,"path":"objects/OBJ_BusQuestion/OBJ_BusQuestion.yy",},
     {"name":"OBJ_CurrentPlayerTracker","order":3,"path":"objects/OBJ_CurrentPlayerTracker/OBJ_CurrentPlayerTracker.yy",},
     {"name":"OBJ_Player","order":2,"path":"objects/OBJ_Player/OBJ_Player.yy",},

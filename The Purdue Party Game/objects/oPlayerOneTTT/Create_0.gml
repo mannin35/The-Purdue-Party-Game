@@ -5,6 +5,10 @@ walksp = 2;
 //for CPU
 direction = 180;
 randomize();
+if(global.CPUSettings[0]==0) {
+	walksp = 1.5;	
+}
+direct_path = false;																				
 
 over = false;
 //cn_swap = 0;

@@ -36,7 +36,7 @@ if(global.localPlayers[1].isCPU) {
 
 
 			if(direction!=0) {
-				if(place_meeting(x-5, y, oMaze) == false) {
+				if(place_meeting(x-8, y, oMaze) == false) {
 					choices[number_of_choices] = 180;
 					number_of_choices++;
 				}
@@ -44,7 +44,7 @@ if(global.localPlayers[1].isCPU) {
 
 
 			if(direction!=180) {
-				if(place_meeting(x+5, y, oMaze) == false) {
+				if(place_meeting(x+8, y, oMaze) == false) {
 					choices[number_of_choices] = 0;
 					number_of_choices++;
 				}

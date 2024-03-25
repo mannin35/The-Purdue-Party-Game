@@ -8,6 +8,9 @@ over = false;
 //for CPU
 direction = 180;
 randomize();
+if(global.CPUSettings[2]==0) {
+	walksp = 1.5;	
+}
 
 dead_zone = .2;
 left_input = (gamepad_axis_value(global.playercontrollerindices[1], gp_axislh) < -dead_zone);

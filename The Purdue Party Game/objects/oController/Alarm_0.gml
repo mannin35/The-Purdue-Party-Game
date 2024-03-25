@@ -11,25 +11,45 @@ if !(global.minigameOver) { // does the dizzy effect and control swap
 if !(player_one_TTT.over) { // these 4 make the dizziness visible 
 	player_one_TTT.dizzy.visible = true;
 	if(global.localPlayers[0].isCPU) {
-		player_one_TTT.walksp = 0;	
+		if(global.CPUSettings[0] == 0) {
+			player_one_TTT.walksp = 0;
+		}
+		if(global.CPUSettings[0] == 1) {
+			player_one_TTT.walksp = 1;
+		}
 	}
 }
 if !(player_two_TTT.over) {
 	player_two_TTT.dizzy.visible = true;
 	if(global.localPlayers[1].isCPU) {
-		player_two_TTT.walksp = 0;	
+		if(global.CPUSettings[1] == 0) {
+			player_two_TTT.walksp = 0;	
+		}
+		if(global.CPUSettings[1] == 1) {
+			player_two_TTT.walksp = 1;
+		}
 	}
 }
 if !(player_three_TTT.over) {
 	player_three_TTT.dizzy.visible = true;
 	if(global.localPlayers[2].isCPU) {
-		player_three_TTT.walksp = 0;	
+		if(global.CPUSettings[2] == 0) {
+			player_three_TTT.walksp = 0;
+		}
+		if(global.CPUSettings[2] == 1) {
+			player_three_TTT.walksp = 1;
+		}
 	}
 }
 if !(player_four_TTT.over) {
 	player_four_TTT.dizzy.visible = true;
-	if(global.localPlayers[3].isCPU) {
-		player_four_TTT.walksp = 0;	
+	if(global.localPlayers[3].isCPU){
+		if(global.CPUSettings[3] == 0) {
+			player_four_TTT.walksp = 0;
+		}
+		if(global.CPUSettings[3] == 1) {
+			player_four_TTT.walksp = 1;
+		}
 	}
 }
 while (cn_swap = swap_prev) { // makes sure same roll cant happen twice
