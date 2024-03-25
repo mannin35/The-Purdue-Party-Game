@@ -9,10 +9,11 @@ prev = OBJ_RollDiceButton;
 next = OBJ_ViewMapButton;
 players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local]
 
-if (global.isStartOfGame) {
+if (!global.fromStore) {
 	visible = true;
 } else {
 	visible = false;
 }
+
 
 

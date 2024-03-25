@@ -12,7 +12,9 @@ if(buttonCircle){
 				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 				inst.target_rm = RM_LocalView;
 			}
+	global.fromStore = true;
 	global.localPlayers[playerIndex].alarm[0] = 120;
+	
 	if(!instance_exists(OBJ_Transition)) {
 				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 				inst.target_rm = RM_LocalView;
