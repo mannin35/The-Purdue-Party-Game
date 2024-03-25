@@ -2,6 +2,9 @@
 pathChosen = false;
 index = 0;
 currentPlayer = global.localPlayers[global.currentplayer];
+if (waitForDegree) {
+	exit;
+}
 // Check for input
 if (awaitingInput) {
 	currentPlayer.image_speed = 0;
@@ -134,6 +137,12 @@ if (numSpaces > 0 && !awaitingInput) {
 		}
 		isMoving = false;
 		space = nextSpace;
+		// Check if there is a degree on current space
+		show_debug_message(object_get_name(space.object_index));
+		if ((object_get_name(space.object_index) == "OBJ_DegreeSpace") && (space.hasDegree)) {
+			speed = 0;
+			OBJ_DegreeLogic.passDegree(currentPlayer);
+		}
 	}
 }
 
