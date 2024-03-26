@@ -1,6 +1,6 @@
 /// @Destroy dice and start player movement
 var player = global.localPlayers[global.currentplayer];
-numSpaces += 3//floor(image_index + 1) ;
+numSpaces += floor(image_index + 1) ;
 if (global.doubleDice) {
 	image_speed = 1;
 	global.doubleDice = false;
