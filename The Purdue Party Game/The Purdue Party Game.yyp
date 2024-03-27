@@ -371,6 +371,7 @@
     {"id":{"name":"RM_ElevenFiftyNine","path":"rooms/RM_ElevenFiftyNine/RM_ElevenFiftyNine.yy",},},
     {"id":{"name":"TS_Frogger","path":"tilesets/TS_Frogger/TS_Frogger.yy",},},
     {"id":{"name":"SP_Items","path":"sprites/SP_Items/SP_Items.yy",},},
+    {"id":{"name":"OBJ_TriviaInfo","path":"objects/OBJ_TriviaInfo/OBJ_TriviaInfo.yy",},},
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"OBJ_Player2Full","path":"objects/OBJ_Player2Full/OBJ_Player2Full.yy",},},
     {"id":{"name":"SP_SettingsTitle","path":"sprites/SP_SettingsTitle/SP_SettingsTitle.yy",},},
