@@ -17,7 +17,7 @@ button_x = gamepad_button_check_pressed(0, gp_face1);
 }
 if (button_x && room == RM_MinigameResults) {
 	
-	if (global.turns == 0) {
+	if (global.turns == 1) {
 		//room = RM_FinalResults;
 		//room_goto(RM_FinalResults);
 		//transition to RM_FinalResults
@@ -25,7 +25,8 @@ if (button_x && room == RM_MinigameResults) {
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 			inst.target_rm = RM_FinalResultsDraft;
 		}
-	} else if (global.turns > 0) {
+	} else if (global.turns > 1) {
+		global.turns--;
 		OBJ_PlayerInfo.end_of_round = false;
 		OBJ_PlayerInfo.occured = false;
 		//room = RM_LocalView;

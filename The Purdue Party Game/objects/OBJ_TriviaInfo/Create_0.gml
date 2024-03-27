@@ -3,15 +3,15 @@
 
 //Rows is categories
 //Columns is Question
-HasAsked[11][10];
-TriviaQuestions[11][10];
-TriviaAnswerCorrect[11][10];
-TriviaAnswerIncorrectOne[11][10];
-TriviaAnswerIncorrectTwo[11][10];
-TriviaAnswerIncorrectThree[11][10];
+HasAsked = 0;
+TriviaQuestions = 0;
+TriviaAnswerCorrect = 0;
+TriviaAnswerIncorrectOne = 0;
+TriviaAnswerIncorrectTwo = 0;
+TriviaAnswerIncorrectThree = 0;
 for(i = 0; i < 11; i++){
 	for(j = 0; j < 10; j++){
-		HasAsked[i][j] = 0;	
+		HasAsked[i, j] = 0;	
 	}
 }
 
