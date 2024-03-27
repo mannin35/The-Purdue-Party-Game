@@ -29,7 +29,8 @@ if (button_x && room == RM_MinigameResults) {
 		OBJ_PlayerInfo.end_of_round = false;
 		OBJ_PlayerInfo.occured = false;
 		//room = RM_LocalView;
-		//room_goto(RM_LocalView);
+		//room_goto(RM_LocalView
+		OBJ_Player.visible = true;
 		//transition to RM_LocalView
 		if(!instance_exists(OBJ_Transition)) {
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
