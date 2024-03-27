@@ -24,7 +24,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	randomize();
 	//randomly select minigame
 	//minigame = irandom(4);
-	minigame = 4
+	minigame = 1;
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
@@ -80,7 +80,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 		}
 	occured = true;
 	// Return to local view
-	alarm[0] = 120;
+	//alarm[0] = 120;
 	}
 	else {
 		if(last_minigame==minigame) {

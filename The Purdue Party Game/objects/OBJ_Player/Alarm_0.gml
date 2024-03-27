@@ -8,6 +8,7 @@ if (room == RM_LocalView) {
 	//if(object_get_name(object_index) == "OBJ_Player4Local"){
 		OBJ_PlayerInfo.end_of_round = true;
 	}
+	OBJ_Player.degreeColided = false;
 	ResetButtons(global.currentplayer);
 	ShowButtons();
 }
