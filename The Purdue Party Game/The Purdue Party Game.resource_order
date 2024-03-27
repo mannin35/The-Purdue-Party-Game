@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"SP_Accolades","order":1,"path":"sprites/SP_Accolades/SP_Accolades.yy",},
+  ],
 }

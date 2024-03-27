@@ -319,6 +319,7 @@
     {"id":{"name":"Obj_PlayerTwoHard","path":"objects/Obj_PlayerTwoHard/Obj_PlayerTwoHard.yy",},},
     {"id":{"name":"SP_Bucket","path":"sprites/SP_Bucket/SP_Bucket.yy",},},
     {"id":{"name":"SP_Clock","path":"sprites/SP_Clock/SP_Clock.yy",},},
+    {"id":{"name":"SP_Accolades","path":"sprites/SP_Accolades/SP_Accolades.yy",},},
     {"id":{"name":"OBJ_Space","path":"objects/OBJ_Space/OBJ_Space.yy",},},
     {"id":{"name":"Obj_AboutButton","path":"objects/Obj_AboutButton/Obj_AboutButton.yy",},},
     {"id":{"name":"SP_StoreTiles","path":"sprites/SP_StoreTiles/SP_StoreTiles.yy",},},
