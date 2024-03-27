@@ -159,6 +159,7 @@
     {"id":{"name":"OBJ_BusQuestion","path":"objects/OBJ_BusQuestion/OBJ_BusQuestion.yy",},},
     {"id":{"name":"SP_Meredith","path":"sprites/SP_Meredith/SP_Meredith.yy",},},
     {"id":{"name":"OBJ_ContinueToNextRoundButton","path":"objects/OBJ_ContinueToNextRoundButton/OBJ_ContinueToNextRoundButton.yy",},},
+    {"id":{"name":"Ft_Trivia","path":"fonts/Ft_Trivia/Ft_Trivia.yy",},},
     {"id":{"name":"OBJ_Cursor","path":"objects/OBJ_Cursor/OBJ_Cursor.yy",},},
     {"id":{"name":"SP_Mariott","path":"sprites/SP_Mariott/SP_Mariott.yy",},},
     {"id":{"name":"oDizzy","path":"objects/oDizzy/oDizzy.yy",},},
