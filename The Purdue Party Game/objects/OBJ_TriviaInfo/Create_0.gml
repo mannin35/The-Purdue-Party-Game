@@ -203,51 +203,412 @@ MusicCorrect[10] = ["Cats",
 			   	    "Saxophone",
 				    "Tonys"];
 					
-GeographyCorrect[10] = ["",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""];
+GeographyCorrect[10] = ["7",
+						"Vatican City",
+						"5",
+						"Peru",
+						"Mount Denali",
+						"Africa",
+						"Indonesia",
+						"54",
+						"The Nile",
+						"The Pacific Ocean"];
 						
-CSCorrect[10] = ["",
-				 "",
-			     "",
-			     "",
-				 "",
-				 "",
-				 "",
-				 "",
-				 "",
-				 ""];
+CSCorrect[10] = ["Hypertext Markup Language",
+				 "0111",
+			     "Operating System",
+			     "Hyper sort",
+				 "Tree",
+				 "Alan Turing",
+				 ";",
+				 "2",
+				 "Recursion",
+				 "Terry Davis"];
 				 
-HealthCorrect[10] = ["",
-				     "",
-					 "",
-					 "",
-					 "",
-				     "",
-				     "",
-					 "",
-					 "",
-			   	     ""];
+HealthCorrect[10] = ["400 mg",
+				     "HPV",
+					 "A flu that goes around campus seemingly every fall",
+					 "Skin",
+					 "O-",
+				     "32",
+				     "FDA",
+					 "Femur",
+					 "Lyme disease",
+			   	     "Hypertension"];
 				   
-IndianaCorrect[10] = ["",
-					  "",
-					  "",
-			     	  "",
-					  "",
-					  "",
-					  "",
-					  "",
-					  "",
-					  ""];
+IndianaCorrect[10] = ["Hoosiers",
+					  "1816",
+					  "Indianapolis",
+			     	  "Indiana Dunes",
+					  "200",
+					  "Garfield",
+					  "Charles Curtis",
+					  "Belize",
+					  "Cardinal",
+					  "Corn"];
 					  
+EngineeringIncorrect1 = ["",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 ""];
+						 
+SportsIncorrect1 = ["",
+					"",
+				    "",
+			  	    "",
+				    "",
+				    "",
+				    "",
+				    "",
+				    "",
+				    ""];
+					  
+EnglishIncorrect1 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
 
+MathIncorrect1 = ["",
+				  "",
+				  "",
+			   	  "",
+				  "",
+				  "",
+			      "",
+				  "",
+				  "",
+			   	  ""];
+				  
+ScienceIncorrect1 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
+					 
+PurdueIncorrect1 = ["",
+					"",
+					"",
+			    	"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""];
+					
+MusicIncorrect1 = ["",
+				   "",
+				   "",
+			   	   "",
+				   "",
+			   	   "",
+				   "",
+				   "",
+				   "",
+				   ""];
+				   
+GeographyIncorrect1 = ["",
+					   "",
+					   "",
+			    	   "",
+					   "",
+					   "",
+					   "",
+					   "",
+					   "",
+					   ""];
+					   
+CSIncorrect1 = ["",
+				"",
+				"",
+			    "",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""];
+				
+HealthIncorrect1 = ["",
+					"",
+					"",
+			    	"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""];
+					
+IndianaIncorrect1 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
+					 
+EngineeringIncorrect2 = ["",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 ""];
+						 
+SportsIncorrect2 = ["",
+					"",
+				    "",
+			  	    "",
+				    "",
+				    "",
+				    "",
+				    "",
+				    "",
+				    ""];
+					  
+EnglishIncorrect2 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
+
+MathIncorrect2 = ["",
+				  "",
+				  "",
+			   	  "",
+				  "",
+				  "",
+			      "",
+				  "",
+				  "",
+			   	  ""];
+				  
+ScienceIncorrect2 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
+					 
+PurdueIncorrect2 = ["",
+					"",
+					"",
+			    	"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""];
+					
+MusicIncorrect2 = ["",
+				   "",
+				   "",
+			   	   "",
+				   "",
+			   	   "",
+				   "",
+				   "",
+				   "",
+				   ""];
+				   
+GeographyIncorrect2 = ["",
+					   "",
+					   "",
+			    	   "",
+					   "",
+					   "",
+					   "",
+					   "",
+					   "",
+					   ""];
+					   
+CSIncorrect2 = ["",
+				"",
+				"",
+			    "",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""];
+				
+HealthIncorrect2 = ["",
+					"",
+					"",
+			    	"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""];
+					
+IndianaIncorrect2 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
+					 
+EngineeringIncorrect3 = ["",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 "",
+						 ""];
+						 
+SportsIncorrect3 = ["",
+					"",
+				    "",
+			  	    "",
+				    "",
+				    "",
+				    "",
+				    "",
+				    "",
+				    ""];
+					  
+EnglishIncorrect3 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
+
+MathIncorrect3 = ["",
+				  "",
+				  "",
+			   	  "",
+				  "",
+				  "",
+			      "",
+				  "",
+				  "",
+			   	  ""];
+				  
+ScienceIncorrect3 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
+					 
+PurdueIncorrect3 = ["",
+					"",
+					"",
+			    	"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""];
+					
+MusicIncorrect3 = ["",
+				   "",
+				   "",
+			   	   "",
+				   "",
+			   	   "",
+				   "",
+				   "",
+				   "",
+				   ""];
+				   
+GeographyIncorrect3 = ["",
+					   "",
+					   "",
+			    	   "",
+					   "",
+					   "",
+					   "",
+					   "",
+					   "",
+					   ""];
+					   
+CSIncorrect3 = ["",
+				"",
+				"",
+			    "",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""];
+				
+HealthIncorrect3 = ["",
+					"",
+					"",
+			    	"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""];
+					
+IndianaIncorrect3 = ["",
+					 "",
+					 "",
+			    	 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 "",
+					 ""];
 
 				   
 //Sets TriviaQuestions to the 2d array
@@ -262,3 +623,19 @@ TriviaQuestions[7] = GeographyQuestions;
 TriviaQuestions[8] = CSQuestions;
 TriviaQuestions[9] = HealthQuestions;
 TriviaQuestions[10] = IndianaQuestions;
+TriviaAnserwerCorrect[0] = EngineeringCorrect;
+TriviaAnserwerCorrect[1] = SportCorrect;
+TriviaAnserwerCorrect[2] = EnglishCorrect;
+TriviaAnserwerCorrect[3] = MathCorrect;
+TriviaAnserwerCorrect[4] = ScienceCorrect;
+TriviaAnserwerCorrect[5] = PurdueCorrect;
+TriviaAnserwerCorrect[6] = MusicCorrect;
+TriviaAnserwerCorrect[7] = GeographyCorrect;
+TriviaAnserwerCorrect[8] = CSCorrect;
+TriviaAnserwerCorrect[9] = HealthCorrect;
+TriviaAnserwerCorrect[10] = IndianaCorrect;
+TriviaAnswerIncorrectOne[0] = EngineeringCorrect;
+TriviaAnswerIncorrectOne[1] = SportCorrect;
+TriviaAnswerIncorrectOne[2] = EnglishCorrect;
+TriviaAnswerIncorrectOne[3] = MathCorrect;
+TriviaAnswerIncorrectOne[4] = ScienceCorrect;
