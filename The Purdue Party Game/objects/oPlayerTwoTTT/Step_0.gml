@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
+show_debug_message("PLAYER 2 X");
+show_debug_message(x);
+show_debug_message("PLAYER 2 X");
+show_debug_message(y);
+
 if(global.localPlayers[1].isCPU) {
 	//CODE FOR CPU PLAYER
 	
-	if(walksp>=0) {
+	if(walksp>0) {
 		//see if at finish line
 		if place_meeting(x, y, oFinish) {
 			if !(over) {
