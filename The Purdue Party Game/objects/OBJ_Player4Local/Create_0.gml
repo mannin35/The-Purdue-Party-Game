@@ -16,4 +16,5 @@ image_index = startIndex;
 walkingIndex = startIndex * 3;
 boilerBucks = 0;
 degrees = 0;
+redSpaces = 0;
 //show_debug_message("{0} {1} {2} {3}", global.playercontrollerindices[0],  global.playercontrollerindices[1], global.playercontrollerindices[2],  global.playercontrollerindices[3])

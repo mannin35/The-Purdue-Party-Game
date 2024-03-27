@@ -35,6 +35,7 @@ function SpaceFunction(type){
 	if(type == "red"){
 		//if(global.playercontrollerindices[global.currentplayer] != -1){
 		current = global.localPlayers[playerIndex];
+		current.redSpaces++;
 		OBJ_Points.x = current.x + 6;
 		OBJ_Points.y = current.y - 26;
 		if(current.boilerBucks >=3){
