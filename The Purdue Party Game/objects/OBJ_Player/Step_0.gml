@@ -114,7 +114,7 @@ if (numSpaces > 0 && !awaitingInput) {
 				sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 				SpaceFunction(string(space.spaceType));
 				if (space.object_index != OBJ_ShopSpace && space.object_index != OBJ_BusSpace) {
-					alarm[0] = 180;
+					alarm[0] = 120;
 				}
 			}
 		}

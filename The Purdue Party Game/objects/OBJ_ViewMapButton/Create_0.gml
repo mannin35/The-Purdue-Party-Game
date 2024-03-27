@@ -8,7 +8,7 @@ button_x = false;
 prev = OBJ_UseItemButton;
 next = OBJ_ViewScoreboardButton;
 
-if (global.isStartOfGame) {
+if (!global.fromStore) {
 	visible = true;
 } else {
 	visible = false;

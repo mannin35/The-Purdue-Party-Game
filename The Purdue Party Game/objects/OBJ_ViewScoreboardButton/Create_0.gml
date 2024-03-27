@@ -8,8 +8,9 @@ button_x = false;
 prev = OBJ_ViewMapButton;
 next = OBJ_RollDiceButton;
 
-if (global.isStartOfGame) {
+if (!global.fromStore) {
 	visible = true;
 } else {
 	visible = false;
+	global.fromStore = false;
 }
