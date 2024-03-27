@@ -3,7 +3,7 @@
 if(global.localPlayers[2].isCPU) {
 	//CODE FOR CPU PLAYER
 	
-	if(walksp!=0) {
+	if(walksp>0) {
 		//see if at finish line
 		if place_meeting(x, y, oFinish) {
 			if !(over) {
@@ -15,48 +15,56 @@ if(global.localPlayers[2].isCPU) {
 			walksp = 0;
 			over = true;
 		} else {
-	
-			//decide next direction
-			choices = [];
-			number_of_choices = 0;
-
-			if(direction!=270) {
-				if(place_meeting(x, y-2, oMaze) == false) {
-					choices[number_of_choices] = 90;
-					number_of_choices++;
-				}
+			//calc distance to finish
+			dist_to_fin = point_distance(x,y, player_three_finish_TTT.x, player_three_finish_TTT.y);
+			
+			//cechk if close enough for direct route
+			if((dist_to_fin<250 && global.CPUSettings[2]==1) || (dist_to_fin<400 && global.CPUSettings[2]==2)) {
+				direct_path = true;	
 			}
+			if(!direct_path) {
+				//decide next direction
+				choices = [];
+				number_of_choices = 0;
 
-			if(direction!=90) {
-				if(place_meeting(x, y+2, oMaze) == false) {
-					choices[number_of_choices] = 270;
-					number_of_choices++;
+				if(direction!=270) {
+					if(place_meeting(x, y-2, oMaze) == false) {
+						choices[number_of_choices] = 90;
+						number_of_choices++;
+					}
 				}
-			}
 
-
-			if(direction!=0) {
-				if(place_meeting(x-8, y, oMaze) == false) {
-					choices[number_of_choices] = 180;
-					number_of_choices++;
+				if(direction!=90) {
+					if(place_meeting(x, y+2, oMaze) == false) {
+						choices[number_of_choices] = 270;
+						number_of_choices++;
+					}
 				}
-			}
 
 
-			if(direction!=180) {
-				if(place_meeting(x+8, y, oMaze) == false) {
-					choices[number_of_choices] = 0;
-					number_of_choices++;
+				if(direction!=0) {
+					if(place_meeting(x-8, y, oMaze) == false) {
+						choices[number_of_choices] = 180;
+						number_of_choices++;
+					}
 				}
-			}
 
-			if(number_of_choices==0) {
-				direction = (direction+180)%360;
-				move_contact_solid(direction, walksp);
-			} else {
-				new_direction = choices[irandom(number_of_choices-1)];
-				direction = new_direction;
-				move_contact_solid(direction, walksp);
+
+				if(direction!=180) {
+					if(place_meeting(x+8, y, oMaze) == false) {
+						choices[number_of_choices] = 0;
+						number_of_choices++;
+					}
+				}
+
+				if(number_of_choices==0) {
+					direction = (direction+180)%360;
+					move_contact_solid(direction, walksp);
+				} else {
+					new_direction = choices[irandom(number_of_choices-1)];
+					direction = new_direction;
+					move_contact_solid(direction, walksp);
+				}
 			}
 		}
 	}

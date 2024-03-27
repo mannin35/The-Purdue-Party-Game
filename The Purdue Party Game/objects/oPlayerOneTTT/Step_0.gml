@@ -19,7 +19,7 @@ if(global.localPlayers[0].isCPU) {
 			dist_to_fin = point_distance(x,y, player_one_finish_TTT.x, player_one_finish_TTT.y);
 			
 			//check if close enough for direct route
-			if((dist_to_fin<200 && global.CPUSettings[0]==1) || (dist_to_fin<400 && global.CPUSettings[0]==2)) {
+			if((dist_to_fin<250 && global.CPUSettings[0]==1) || (dist_to_fin<400 && global.CPUSettings[0]==2)) {
 			    direct_path = true;	
 			}
 			if(!direct_path) {

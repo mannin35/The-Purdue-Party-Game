@@ -8,7 +8,11 @@ randomize();
 if(global.CPUSettings[0]==0) {
 	walksp = 1.5;	
 }
-direct_path = false;																				
+direct_path = false;
+myPath = noone;
+pathCreated = false;
+dist_to_fin = 9999;
+
 
 over = false;
 //cn_swap = 0;
