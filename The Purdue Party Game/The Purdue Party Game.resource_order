@@ -30,5 +30,6 @@
     {"name":"OBJ_CurrentPlayerTracker","order":3,"path":"objects/OBJ_CurrentPlayerTracker/OBJ_CurrentPlayerTracker.yy",},
     {"name":"OBJ_Player","order":2,"path":"objects/OBJ_Player/OBJ_Player.yy",},
     {"name":"OBJ_Transition","order":1,"path":"objects/OBJ_Transition/OBJ_Transition.yy",},
+    {"name":"OBJ_TriviaInfo","order":14,"path":"objects/OBJ_TriviaInfo/OBJ_TriviaInfo.yy",},
   ],
 }
