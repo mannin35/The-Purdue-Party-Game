@@ -99,35 +99,156 @@ CSQuestions[10] = ["What does HTML stand for?",
 				   "What does OS stand for?",
 			   	   "Which is not a sorting algorithm?",
 			   	   "Which is not a data structure?",
-				   "",
-				   "",
-				   "",
-				   "",
-				   ""];	
+				   "Who is the father of computer science?",
+				   "What is the character used in Java to indicate the end of a line of code?",
+				   "According to Moore’s Law, computing power will double every ____ years.",
+				   "What is it called when a function calls itself?",
+				   "Who is the inventor of HolyC, a programming language used for the development of TempleOS?"];	
 				   
-HealthQuestions[10] = ["",
-				       "",
-					   "",
-					   "",
-					   "",
-					   "",
-			   	 	   "",
-					   "",
-					   "",
-					   ""];			
+HealthQuestions[10] = ["What is the recommended threshold for caffeine intake?",
+				       "What is the most common STD for college students?",
+					   "The Purdue Plague refers to what?",
+					   "What is the largest organ in the human body?",
+					   "What is the Universal Donor blood type?",
+					   "How many teeth do adult humans have?",
+			   	 	   "Which government agency is in charge of pharmaceutical regulation?",
+					   "What is the largest bone in the human body?",
+					   "Which of these is a bacterial infection?",
+					   "What is the medical term for high blood pressure?"];			
 					   
-IndianaQuestions[10] = ["",
-				        "",
-					    "",
-					    "",
-					    "",
-					    "",
-			   	 	    "",
-					    "",
-					    "",
-					    ""];	
+IndianaQuestions[10] = ["What are Indiana natives called?",
+				        "When was Indiana founded?",
+					    "What is the most dangerous city in Indiana?",
+					    "What is the name of Indiana’s single national park?",
+					    "How many laps are in the Indy 500?",
+					    "Which cartoon character(s) is/are canonically from Indiana?",
+			   	 	    "Which VP wasn’t from Indiana?",
+					    "Which of these is not the name of a city in indiana?",
+					    "What is the Indiana state bird?",
+					    "What is the top crop in Indiana (by value)?"];	
 				   
+EngineeringCorrect[10] = ["F = m*a",
+						  "E = mc^2",
+						  "An object at rest remains at rest, or if in motion, remains in motion at a constant velocity unless acted on by an external force,",
+						  "Computer Aided Design",
+						  "Resistance",
+						  "tension bridge",
+						  "hinge",
+						  "Psycho-Engineering",
+						  "The International Space Station",
+						  "February"];
+SportCorrect[10]= ["9",
+				   "26.2",
+		   		   "Bicycle Race",
+				   "4",
+				   "Soccer",
+				   "Baseball",
+				   "Michael Phelps",
+			 	   "Hockey",
+				   "Meta",
+				   "2 Strokes Below"];
 				   
+EnglishCorrect[10] = ["The Glass Menagerie",
+					  "Mary Shelly",
+					  "Jane Austin",
+					  "Predicate",
+					  "Novella",
+					  "Jane Austin",
+					  "Antonym",
+					  "Homer",
+					  "All listed",
+					  "Because"];
+			
+MathCorrect[10] = ["1",
+				   "2",
+				   "3",
+				   "4",
+				   "5",
+				   "6",
+				   "7",
+				   "8",
+				   "9",
+				   "10"];
+				   
+ScienceCorrect[10] = ["Au",
+					  "Sheep",
+					  "Radiation",
+					  "Electron",
+					  "7",
+					  "Nitrogen",
+					  "Mantle",
+					  "Venus",
+					  "H2O2",
+					  "X-rays"];
+					  
+PurdueCorrect[10] = ["10 ft",
+					 "27",
+					 "7",
+					 "Wiley",
+					 "University Hall",
+					 "1869",
+					 "Johnathan Banks",
+					 "18",
+					 "1940",
+				     "1924"];
+					 
+MusicCorrect[10] = ["Cats",
+					"Jonathan Larson",
+				    "Chicago",
+				    "Dolly Parton",
+				    "Help!",
+				    "Life on Mars?",
+				    "Beyonce",
+				    "Short",
+			   	    "Saxophone",
+				    "Tonys"];
+					
+GeographyCorrect[10] = ["",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						""];
+						
+CSCorrect[10] = ["",
+				 "",
+			     "",
+			     "",
+				 "",
+				 "",
+				 "",
+				 "",
+				 "",
+				 ""];
+				 
+HealthCorrect[10] = ["",
+				     "",
+					 "",
+					 "",
+					 "",
+				     "",
+				     "",
+					 "",
+					 "",
+			   	     ""];
+				   
+IndianaCorrect[10] = ["",
+					  "",
+					  "",
+			     	  "",
+					  "",
+					  "",
+					  "",
+					  "",
+					  "",
+					  ""];
+					  
+
+
 				   
 //Sets TriviaQuestions to the 2d array
 TriviaQuestions[0] = EngineeringQuestions;
@@ -136,4 +257,8 @@ TriviaQuestions[2] = EnglishQuestions;
 TriviaQuestions[3] = MathQuestions;
 TriviaQuestions[4] = ScienceQuestions;
 TriviaQuestions[5] = PurdueQuestions;
-
+TriviaQuestions[6] = MusicQuestions
+TriviaQuestions[7] = GeographyQuestions;
+TriviaQuestions[8] = CSQuestions;
+TriviaQuestions[9] = HealthQuestions;
+TriviaQuestions[10] = IndianaQuestions;
