@@ -13,7 +13,10 @@ if(buttonCircle){
 				inst.target_rm = RM_LocalView;
 			}
 	global.fromStore = true;
-	global.localPlayers[playerIndex].alarm[0] = 120;
+	global.localPlayers[playerIndex].alarm[0] = 90;
+	global.delayInput = true;
+	// Delay input for 90 frames
+	OBJ_LocalButtonInfo.alarm[0] = 90;
 	
 	if(!instance_exists(OBJ_Transition)) {
 				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
