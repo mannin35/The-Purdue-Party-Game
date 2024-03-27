@@ -50,7 +50,16 @@ EnglishQuestions = ["Which of these is not a play by Shakespeare?",
 						"Adverbs are a part of speech that can be used to modify which other part(s) of speech?",
 						"Which of these is a subordinating conjunction?"];
 						
-MathQuestions = ["1","2","3","4","5","6","7", "8", "9", "10"];
+MathQuestions = ["Which of these is a prime number?",
+				 "Who is credited with discovering calculus?",
+				 "How many sides does a rhombus have?",
+				 "What does the E in PEMDAS stand for?",
+				 "What is 187/11?",
+				 "What number does the roman numeral LXIX represent?",
+				 "What is a polygon with 7 sides called?", 
+				 "What is 2^6?", 
+				 "What is the mean of the following 4 numbers: 4, 8, 1, 3?",
+				 "What is 6% of 50?"];
 
 ScienceQuestions = ["What is the symbol for the element gold?",
 						"The first-ever living creature to be cloned, Dolly, was what type of animal?",
@@ -162,16 +171,16 @@ EnglishCorrect = ["The Glass Menagerie",
 					  "All listed",
 					  "Because"];
 			
-MathCorrect = ["1",
-				   "2",
-				   "3",
+MathCorrect = ["91",
+				   "Newton",
 				   "4",
-				   "5",
-				   "6",
-				   "7",
-				   "8",
-				   "9",
-				   "10"];
+				   "Exponentials",
+				   "17",
+				   "69",
+				   "Heptagon",
+				   "64",
+				   "4",
+				   "3"];
 				   
 ScienceCorrect = ["Au",
 					  "Sheep",
@@ -284,16 +293,16 @@ EnglishIncorrect1 = ["Othello",
 					 "Verbs",
 					 "And"];
 
-MathIncorrect1 = ["",
-				  "",
-				  "",
-			   	  "",
-				  "",
-				  "",
-			      "",
-				  "",
-				  "",
-			   	  ""];
+MathIncorrect1 = ["97",
+				  "Einstein",
+				  "3",
+			   	  "Exclamation",
+				  "18",
+				  "59",
+			      "Nonagon",
+				  "32",
+				  "7",
+			   	  "5"];
 				  
 ScienceIncorrect1 = ["Ag",
 					 "Pig",
@@ -361,16 +370,16 @@ HealthIncorrect1 = ["300 mg",
 					"Covid-19",
 					"Hypotension"];
 					
-IndianaIncorrect1 = ["",
-					 "",
-					 "",
-			    	 "",
-					 "",
-					 "",
-					 "",
-					 "",
-					 "",
-					 ""];
+IndianaIncorrect1 = ["Indianans",
+					 "1776",
+					 "Gary",
+			    	 "Yellowstone",
+					 "500",
+					 "Homer Simpson",
+					 "Thomas R. Marshall",
+					 "Mexico",
+					 "Blue Jay",
+					 "Soy beans"];
 				
 //Incorrect2 answer array assignments
 EngineeringIncorrect2 = ["F=m*v",
@@ -406,16 +415,16 @@ EnglishIncorrect2 = ["A Midsummer Night’s Dream",
 					 "Adjectives",
 					 "Or"];
 
-MathIncorrect2 = ["",
-				  "",
-				  "",
-			   	  "",
-				  "",
-				  "",
-			      "",
-				  "",
-				  "",
-			   	  ""];
+MathIncorrect2 = ["92",
+				  "Fermat",
+				  "5",
+			   	  "Equals",
+				  "16",
+				  "119",
+			      "Decagon",
+				  "128",
+				  "5",
+			   	  "6"];
 				  
 ScienceIncorrect2 = ["Gd",
 					 "Cow",
@@ -483,16 +492,16 @@ HealthIncorrect2 = ["250 mg",
 					"The flu",
 					"Hyperthermia"];
 					
-IndianaIncorrect2 = ["",
-					 "",
-					 "",
-			    	 "",
-					 "",
-					 "",
-					 "",
-					 "",
-					 "",
-					 ""];
+IndianaIncorrect2 = ["Boilermakers",
+					 "1812",
+					 "Lafayette",
+			    	 "Hoosier",
+					 "312",
+					 "The Rugrats",
+					 "Mike Pence",
+					 "Peru",
+					 "Turkey",
+					 "Pumpkins"];
 				
 //Incorrect3 answer array assignments				
 EngineeringIncorrect3 = ["F = d/t",
@@ -528,16 +537,16 @@ EnglishIncorrect3 = ["The Twelfth Night",
 					 "Adverbs",
 					 "But"];
 
-MathIncorrect3 = ["",
-				  "",
-				  "",
-			   	  "",
-				  "",
-				  "",
-			      "",
-				  "",
-				  "",
-			   	  ""];
+MathIncorrect3 = ["99",
+				  "Pascal",
+				  "7",
+			   	  "Evaluate",
+				  "19",
+				  "64",
+			      "Sevegon",
+				  "16",
+				  "3",
+			   	  "2"];
 				  
 ScienceIncorrect3 = ["G",
 					 "Rat",
@@ -597,24 +606,24 @@ CSIncorrect3 = ["Text Messaging Language",
 HealthIncorrect3 = ["200 mg",
 					"Herpes",
 					"A strain of the coronavirus that mutated on Purdue’s campus",
-			    	"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					""];
+			    	"Lungs",
+					"A-",
+					"30",
+					"CDC",
+					"Spine",
+					"Chicken pox",
+					"Hypothermia"];
 					
-IndianaIncorrect3 = ["",
-					 "",
-					 "",
-			    	 "",
-					 "",
-					 "",
-					 "",
-					 "",
-					 "",
-					 ""];
+IndianaIncorrect3 = ["Indys",
+					 "1796",
+					 "Bloomington",
+			    	 "Yankee Park",
+					 "250",
+					 "Casper the Friendly Ghost",
+					 "Charles W. Fairbanks",
+					 "Honduras",
+					 "Robin",
+					 "Wheat"];
 
 				   
 //Sets TriviaQuestions to the 2d array
