@@ -14,3 +14,4 @@ startIndex = global.playerTwoIndex;
 color = global.playerColors[startIndex];
 image_index = startIndex;
 walkingIndex = startIndex * 3;
+redSpaces = 0;

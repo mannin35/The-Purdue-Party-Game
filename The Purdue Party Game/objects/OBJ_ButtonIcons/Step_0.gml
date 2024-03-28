@@ -132,7 +132,11 @@
 	//Doing slow dice
 	if(visible && image_index == 2 && gamepad_button_check_pressed(global.playercontrollerindices[global.currentplayer], gp_face4)){
 		//Do the stuff for slowing down dice
-		show_debug_message("Slow")
+		global.slowDice = true;
+		OBJ_Items.visible = false;
+		OBJ_ItemMenu.visible = false;
+		OBJ_ButtonIcons.visible = false;
+		players[global.currentplayer].items[2]--;
 	}
 	
 	if(!OBJ_PlayerSwap1.visible){

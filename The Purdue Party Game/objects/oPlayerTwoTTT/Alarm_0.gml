@@ -3,18 +3,3 @@
 
 cn_swap = irandom_range(0, 3);
 alarm[0] = irandom_range(300, 600);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -48,5 +48,7 @@
     {"name":"OBJ_Transition","order":1,"path":"objects/OBJ_Transition/OBJ_Transition.yy",},
     {"name":"SP_Arrow","order":1,"path":"sprites/SP_Arrow/SP_Arrow.yy",},
     {"name":"OBJ_DegreeQuestion","order":10,"path":"objects/OBJ_DegreeQuestion/OBJ_DegreeQuestion.yy",},
+    {"name":"SP_Accolades","order":1,"path":"sprites/SP_Accolades/SP_Accolades.yy",},
+    {"name":"OBJ_TriviaInfo","order":14,"path":"objects/OBJ_TriviaInfo/OBJ_TriviaInfo.yy",},
   ],
 }

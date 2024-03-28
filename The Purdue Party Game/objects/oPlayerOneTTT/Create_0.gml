@@ -2,6 +2,17 @@
 hsp = 0;
 vsp = 0;
 walksp = 2;
+//for CPU
+direction = 180;
+randomize();
+if(global.CPUSettings[0]==0) {
+	walksp = 1.5;	
+}
+direct_path = false;
+myPath = noone;
+pathCreated = false;
+dist_to_fin = 9999;
+
 
 over = false;
 //cn_swap = 0;

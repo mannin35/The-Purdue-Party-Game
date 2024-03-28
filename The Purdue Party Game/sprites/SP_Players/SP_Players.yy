@@ -22,8 +22,8 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ac5db441-7587-4c1f-bcaa-b15157edb3a2",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c76f61e-252a-41a3-9ad9-597359368ac0",},
   ],
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 1,
+  "gridY": 1,
   "height": 32,
   "HTile": false,
   "layers": [

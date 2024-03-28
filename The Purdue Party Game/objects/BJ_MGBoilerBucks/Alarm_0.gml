@@ -2,6 +2,15 @@
 // You can write your code in this editor
 //show_debug_message("Counter: {0}", counter)
 
+if (room == RM_FinalResults) {
+	OBJ_Player1Local.visible = false;
+	OBJ_Player2Local.visible = false;
+	OBJ_Player3Local.visible = false;
+	OBJ_Player4Local.visible = false;
+	SP_BlankItemMenu.visible = false;
+	SP_Accolades.visible = false;
+}
+
 if(counter >= 0){
 	if(counter == 0){
 		//show_debug_message("Once")
