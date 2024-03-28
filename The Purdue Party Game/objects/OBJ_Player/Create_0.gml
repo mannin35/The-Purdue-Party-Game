@@ -7,6 +7,9 @@ isCPU = false;
 currentPlayer = pointer_null;
 boilerBucks = 10;
 degrees = 0;
+redSpaces = 0;
+wins = 0;
+triviaCorrect = 0;
 
 // Movement info
 dead_zone = 0.2; 
