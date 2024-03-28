@@ -1,4 +1,5 @@
-global.localPlayers[global.currentplayer].numSpaces = 6;
+global.localPlayers[global.currentplayer].numSpaces = 7;
+HideButtons();
 
 
 

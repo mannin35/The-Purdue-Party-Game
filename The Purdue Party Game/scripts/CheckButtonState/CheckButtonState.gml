@@ -24,7 +24,7 @@ function CheckButtonState(button){
 						(gamepad_button_check_pressed(input, gp_face1));
 				}
 			}
-			else {
+			else if (!OBJ_PlayerInfo.disableCPU) {
 				// Initiate cpu rolling dice
 				global.delayInput = true;
 				// Prevent input for a few seconds

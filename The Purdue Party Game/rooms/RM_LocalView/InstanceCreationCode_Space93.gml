@@ -1,3 +1,5 @@
 prev = Space92;
 next[0] = Space108;
-ifLanded = Space94;
+loopSpace = Space94;
+notLoopSpace = Space108;
+spaceType = "Stadium";

@@ -119,6 +119,7 @@ if (numSpaces > 0 && !awaitingInput) {
 			if (numSpaces == 0) {
 				//Calls function using spaceType on last space where the type is a string to dictate what to do
 				OBJ_RollDiceButton.is_next = true;
+				isMoving = false;
 				currentPlayer.image_speed = 0;
 				currentPlayer.image_index = currentPlayer.walkingIndex + numWalkingFrames;
 				sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);

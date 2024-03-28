@@ -1,5 +1,5 @@
 /// @Prompt for player obtaining degreOBJ_Player.waitForDegree = false;
-if (currentPlayer.boilerBucks < 25) {
+if (currentPlayer.boilerBucks < cost) {
 	image_index = 1;
 }
 else {
@@ -17,10 +17,12 @@ if (!currentPlayer.isCPU) {
 			OBJ_Player.waitForDegree = false;
 			// Give degree and subtract BB
 			currentPlayer.degrees++;
-			currentPlayer.boilerBucks -= 20;
-			instance_destroy(OBJ_DegreeLogic.degreeLocal);
-			instance_destroy(OBJ_DegreeLogic.degreeFull);
-			OBJ_DegreeLogic.createRandomDegree();
+			currentPlayer.boilerBucks -= cost
+			if (!permanent) {
+				instance_destroy(OBJ_DegreeLogic.degreeLocal);
+				instance_destroy(OBJ_DegreeLogic.degreeFull);
+				OBJ_DegreeLogic.createRandomDegree();
+			}
 			instance_destroy();
 		}
 	}
