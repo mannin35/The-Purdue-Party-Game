@@ -173,7 +173,7 @@ EnglishCorrect = ["The Glass Menagerie",
 					  "All listed",
 					  "Because"];
 			
-MathCorrect = ["91",
+MathCorrect = ["97",
 				   "Newton",
 				   "4",
 				   "Exponentials",
@@ -295,7 +295,7 @@ EnglishIncorrect1 = ["Othello",
 					 "Verbs",
 					 "And"];
 
-MathIncorrect1 = ["97",
+MathIncorrect1 = ["91",
 				  "Einstein",
 				  "3",
 			   	  "Exclamation",

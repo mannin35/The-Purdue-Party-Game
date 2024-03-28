@@ -4,8 +4,8 @@
   "name": "SP_Points",
   "bbox_bottom": 54,
   "bbox_left": 4,
-  "bbox_right": 60,
-  "bbox_top": 7,
+  "bbox_right": 56,
+  "bbox_top": 22,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -15,7 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7fa83269-eaf8-4943-b4e0-92913ff6d883",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2bee4bd-3196-4b69-9ac7-f7cbd8b22651",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a08c9a7d-0c33-4dab-a7c4-92edcb6298ba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69a30fce-2b6b-40df-bc33-a6f4a5fe92c0",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -58,7 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7fa83269-eaf8-4943-b4e0-92913ff6d883","path":"sprites/SP_Points/SP_Points.yy",},},},"Disabled":false,"id":"9bdb4e72-bd41-418a-94b7-3bfb0ac4ff25","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f2bee4bd-3196-4b69-9ac7-f7cbd8b22651","path":"sprites/SP_Points/SP_Points.yy",},},},"Disabled":false,"id":"b67dc6a6-c42a-4ccc-858c-34fa74c5f6d8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a08c9a7d-0c33-4dab-a7c4-92edcb6298ba","path":"sprites/SP_Points/SP_Points.yy",},},},"Disabled":false,"id":"9227cdca-b87a-4d43-9d73-7bcc4b5b8eec","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"69a30fce-2b6b-40df-bc33-a6f4a5fe92c0","path":"sprites/SP_Points/SP_Points.yy",},},},"Disabled":false,"id":"ffd8b3fd-5dea-4571-a7a9-742007d8edc2","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
