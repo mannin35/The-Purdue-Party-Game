@@ -1,6 +1,7 @@
 //Temp remove after merge
 //global.minigameResults = [2,2,1,4];
 //
+global.wins = [0,0,0,0];
 awardsGiven = [0,0,0,0];
 indexArray = [global.playerOneIndex, global.playerTwoIndex, global.playerThreeIndex, global.playerFourIndex];
 redSpacesArray = [OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces];
@@ -86,6 +87,7 @@ for (i = 0; i < 3; i++){
 		break;
 	}
 }
+global.wins[players[0]]++;
 playerObjects = [OBJ_PlayerOneMGR, OBJ_PlayerTwoMGR, OBJ_PlayerThreeMGR, OBJ_PlayerFourMGR];
 for(i = 0; i < 4; i++) {
 	if(players[i] == 1){

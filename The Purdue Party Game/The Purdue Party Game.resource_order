@@ -23,7 +23,6 @@
     {"name":"Title and Settings","order":13,"path":"folders/Sprites/Title and Settings.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"SP_Accolades","order":1,"path":"sprites/SP_Accolades/SP_Accolades.yy",},
     {"name":"OBJ_BusLocal","order":12,"path":"objects/OBJ_BusLocal/OBJ_BusLocal.yy",},
     {"name":"SP_BusLocal","order":14,"path":"sprites/SP_BusLocal/SP_BusLocal.yy",},
     {"name":"SP_BusQuestion","order":15,"path":"sprites/SP_BusQuestion/SP_BusQuestion.yy",},
@@ -31,6 +30,7 @@
     {"name":"OBJ_CurrentPlayerTracker","order":3,"path":"objects/OBJ_CurrentPlayerTracker/OBJ_CurrentPlayerTracker.yy",},
     {"name":"OBJ_Player","order":2,"path":"objects/OBJ_Player/OBJ_Player.yy",},
     {"name":"OBJ_Transition","order":1,"path":"objects/OBJ_Transition/OBJ_Transition.yy",},
+    {"name":"SP_Accolades","order":1,"path":"sprites/SP_Accolades/SP_Accolades.yy",},
     {"name":"OBJ_TriviaInfo","order":14,"path":"objects/OBJ_TriviaInfo/OBJ_TriviaInfo.yy",},
   ],
 }
