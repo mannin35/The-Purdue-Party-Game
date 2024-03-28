@@ -5,6 +5,10 @@ currentPlayer = global.localPlayers[global.currentplayer];
 if (waitForDegree) {
 	exit;
 }
+if (previousBoilerBucks < boilerBucks) {
+	totalBoilerBucks += boilerBucks - previousBoilerBucks;
+	previousBoilerBucks = boilerBucks;
+}
 // Check for input
 if (awaitingInput) {
 	currentPlayer.image_speed = 0;

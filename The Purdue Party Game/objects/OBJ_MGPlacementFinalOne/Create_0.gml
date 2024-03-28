@@ -1,11 +1,10 @@
 //Temp remove after merge
 //global.minigameResults = [2,2,1,4];
 //
-global.wins = [0,0,0,0];
 awardsGiven = [0,0,0,0];
 indexArray = [global.playerOneIndex, global.playerTwoIndex, global.playerThreeIndex, global.playerFourIndex];
 redSpacesArray = [OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces];
-
+totalBoilerBuckArray = [OBJ_Player1Local.totalBoilerBucks, OBJ_Player2Local.totalBoilerBucks, OBJ_Player3Local.totalBoilerBucks, OBJ_Player4Local.totalBoilerBucks];
 boilerBuckArray = [OBJ_Player1Local.boilerBucks, OBJ_Player2Local.boilerBucks, OBJ_Player3Local.boilerBucks, OBJ_Player4Local.boilerBucks];
 degreeArray = [OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees];
 
@@ -21,7 +20,7 @@ OBJ_LilPlayerPopUp1.image_index = indexArray[winIndex];
 // most BB accumulated
 bbIndex = 0;
 for (i = 1; i < 4; i++) {
-	if (boilerBuckArray[i] > boilerBuckArray[bbIndex]) {
+	if (totalBoilerBuckArray[i] > totalBoilerBuckArray[bbIndex]) {
 		bbIndex = i;
 	}
 }
