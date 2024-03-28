@@ -12,6 +12,7 @@ if (currentPlayer.isCPU) {
 	if (roll <= minRoll) {
 		// Correct!
 		currentPlayer.boilerBucks += 6;
+		currentPlayer.triviaCorrect++;
 		OBJ_Points.image_index = 2;
 	}
 	else {

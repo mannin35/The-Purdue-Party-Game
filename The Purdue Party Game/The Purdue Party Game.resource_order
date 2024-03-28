@@ -64,6 +64,7 @@
     {"name":"OBJ_BoilerBucksFinal","order":14,"path":"objects/OBJ_BoilerBucksFinal/OBJ_BoilerBucksFinal.yy",},
     {"name":"SP_DegreeQuestion","order":7,"path":"sprites/SP_DegreeQuestion/SP_DegreeQuestion.yy",},
     {"name":"OBJ_Transition","order":1,"path":"objects/OBJ_Transition/OBJ_Transition.yy",},
+    {"name":"SP_TriviaQuestion","order":7,"path":"sprites/SP_TriviaQuestion/SP_TriviaQuestion.yy",},
     {"name":"SP_Arrow","order":1,"path":"sprites/SP_Arrow/SP_Arrow.yy",},
     {"name":"OBJ_FinalPopUp","order":1,"path":"objects/OBJ_FinalPopUp/OBJ_FinalPopUp.yy",},
     {"name":"OBJ_MGPlacementFinalTwo","order":12,"path":"objects/OBJ_MGPlacementFinalTwo/OBJ_MGPlacementFinalTwo.yy",},
@@ -71,6 +72,5 @@
     {"name":"OBJ_Accolade4","order":5,"path":"objects/OBJ_Accolade4/OBJ_Accolade4.yy",},
     {"name":"OBJ_DegreeQuestion","order":10,"path":"objects/OBJ_DegreeQuestion/OBJ_DegreeQuestion.yy",},
     {"name":"OBJ_MGPlacementFinalOne","order":10,"path":"objects/OBJ_MGPlacementFinalOne/OBJ_MGPlacementFinalOne.yy",},
-    {"name":"SP_TriviaQuestion","order":7,"path":"sprites/SP_TriviaQuestion/SP_TriviaQuestion.yy",},
   ],
 }

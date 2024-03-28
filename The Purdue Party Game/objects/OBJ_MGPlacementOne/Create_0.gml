@@ -38,7 +38,7 @@ for (i = 0; i < 3; i++){
 		break;
 	}
 }
-global.wins[players[0]]++;
+global.wins[players[0] - 1]++;
 playerObjects = [OBJ_PlayerOneMGR, OBJ_PlayerTwoMGR, OBJ_PlayerThreeMGR, OBJ_PlayerFourMGR];
 for(i = 0; i < 4; i++) {
 	if(players[i] == 1){
