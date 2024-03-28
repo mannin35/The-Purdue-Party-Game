@@ -47,7 +47,11 @@ if (awardsGiven[loanIndex]++ < 2) awardsGiven[loanIndex]++;
 OBJ_LilPlayerPopUp4.image_index = indexArray[loanIndex];
 
 // gives bonus degrees to 
-
+OBJ_Player1Local.degrees += awardsGiven[0];
+OBJ_Player2Local.degrees += awardsGiven[1];
+OBJ_Player3Local.degrees += awardsGiven[2];
+OBJ_Player4Local.degrees += awardsGiven[3];
+alarm[0] = 3;
 //Sorts array given so we can determine which players will be placed where
 //Uses bubble sort
 players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];
