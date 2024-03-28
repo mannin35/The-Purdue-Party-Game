@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Spaces",
-    "path": "folders/Objects/Local View/Spaces.yy",
+    "name": "Local View",
+    "path": "folders/Objects/Local View.yy",
   },
   "parentObjectId": null,
   "persistent": true,

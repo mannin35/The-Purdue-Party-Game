@@ -32,5 +32,5 @@
     "path": "sprites/SP_Degree/SP_Degree.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

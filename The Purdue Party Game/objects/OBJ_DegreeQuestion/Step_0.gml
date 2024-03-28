@@ -18,12 +18,15 @@ if (!currentPlayer.isCPU) {
 			// Give degree and subtract BB
 			currentPlayer.degrees++;
 			currentPlayer.boilerBucks -= 20;
+			instance_destroy(OBJ_DegreeLogic.degreeLocal);
+			instance_destroy(OBJ_DegreeLogic.degreeFull);
+			OBJ_DegreeLogic.createRandomDegree();
 			instance_destroy();
 		}
 	}
 }
 else if (!alarmsSet) {
-	if (image_index = 1) {
+	if (image_index = 0) {
 		// Buy a degree
 		alarm[0] = 60;
 	}
