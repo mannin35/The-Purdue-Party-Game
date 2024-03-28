@@ -18,6 +18,11 @@
     {"name":"Instructions","order":3,"path":"folders/Sprites/Instructions.yy",},
     {"name":"ItemMenu","order":4,"path":"folders/Sprites/ItemMenu.yy",},
     {"name":"Main and Local View","order":5,"path":"folders/Sprites/Main and Local View.yy",},
+    {"name":"Buildings","order":1,"path":"folders/Sprites/Main and Local View/Buildings.yy",},
+    {"name":"Bus","order":2,"path":"folders/Sprites/Main and Local View/Bus.yy",},
+    {"name":"Buttons","order":3,"path":"folders/Sprites/Main and Local View/Buttons.yy",},
+    {"name":"Gameplay Elements","order":4,"path":"folders/Sprites/Main and Local View/Gameplay Elements.yy",},
+    {"name":"Spaces","order":5,"path":"folders/Sprites/Main and Local View/Spaces.yy",},
     {"name":"Player Sprites","order":6,"path":"folders/Sprites/Player Sprites.yy",},
     {"name":"Results","order":7,"path":"folders/Sprites/Results.yy",},
     {"name":"Scoreboard","order":8,"path":"folders/Sprites/Scoreboard.yy",},
@@ -28,6 +33,7 @@
     {"name":"Title and Settings","order":13,"path":"folders/Sprites/Title and Settings.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"OBJ_TriviaQuestion","order":12,"path":"objects/OBJ_TriviaQuestion/OBJ_TriviaQuestion.yy",},
     {"name":"OBJ_Accolade3","order":4,"path":"objects/OBJ_Accolade3/OBJ_Accolade3.yy",},
     {"name":"OBJ_MGPlacementFinalThree","order":11,"path":"objects/OBJ_MGPlacementFinalThree/OBJ_MGPlacementFinalThree.yy",},
     {"name":"OBJ_MGPlacementFinalFour","order":13,"path":"objects/OBJ_MGPlacementFinalFour/OBJ_MGPlacementFinalFour.yy",},
@@ -65,5 +71,6 @@
     {"name":"OBJ_Accolade4","order":5,"path":"objects/OBJ_Accolade4/OBJ_Accolade4.yy",},
     {"name":"OBJ_DegreeQuestion","order":10,"path":"objects/OBJ_DegreeQuestion/OBJ_DegreeQuestion.yy",},
     {"name":"OBJ_MGPlacementFinalOne","order":10,"path":"objects/OBJ_MGPlacementFinalOne/OBJ_MGPlacementFinalOne.yy",},
+    {"name":"SP_TriviaQuestion","order":7,"path":"sprites/SP_TriviaQuestion/SP_TriviaQuestion.yy",},
   ],
 }

@@ -9,4 +9,6 @@ last_minigame = -1;
 minigame = -1;
 test_case = 0;
 occured = false;
+skipMG = false;
+disableCPU = false;
 global.isStartOfGame = true;

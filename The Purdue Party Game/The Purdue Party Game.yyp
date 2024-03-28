@@ -73,6 +73,7 @@
   "resources": [
     {"id":{"name":"oPlayerEFN","path":"objects/oPlayerEFN/oPlayerEFN.yy",},},
     {"id":{"name":"oElevenFiftyNineTimer","path":"objects/oElevenFiftyNineTimer/oElevenFiftyNineTimer.yy",},},
+    {"id":{"name":"OBJ_TriviaQuestion","path":"objects/OBJ_TriviaQuestion/OBJ_TriviaQuestion.yy",},},
     {"id":{"name":"SP_TimesUpInstructionText","path":"sprites/SP_TimesUpInstructionText/SP_TimesUpInstructionText.yy",},},
     {"id":{"name":"SP_PlayerLookStraight","path":"sprites/SP_PlayerLookStraight/SP_PlayerLookStraight.yy",},},
     {"id":{"name":"SP_Sweat","path":"sprites/SP_Sweat/SP_Sweat.yy",},},
@@ -281,6 +282,7 @@
     {"id":{"name":"BJ_MGBoilerBucks","path":"objects/BJ_MGBoilerBucks/BJ_MGBoilerBucks.yy",},},
     {"id":{"name":"SP_Transition","path":"sprites/SP_Transition/SP_Transition.yy",},},
     {"id":{"name":"OBJ_MGPlacementThree","path":"objects/OBJ_MGPlacementThree/OBJ_MGPlacementThree.yy",},},
+    {"id":{"name":"SP_TriviaQuestion","path":"sprites/SP_TriviaQuestion/SP_TriviaQuestion.yy",},},
     {"id":{"name":"OBJ_Player1Full","path":"objects/OBJ_Player1Full/OBJ_Player1Full.yy",},},
     {"id":{"name":"SP_Fountain","path":"sprites/SP_Fountain/SP_Fountain.yy",},},
     {"id":{"name":"Ft_TimesUpTimer","path":"fonts/Ft_TimesUpTimer/Ft_TimesUpTimer.yy",},},

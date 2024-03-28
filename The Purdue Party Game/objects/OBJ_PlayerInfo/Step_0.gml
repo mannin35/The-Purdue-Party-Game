@@ -78,9 +78,12 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 		} else {
 			show_debug_message("ERROR: Invalid number generated for minigame selection");
 		}
-	occured = true;
-	// Return to local view
-	//alarm[0] = 120;
+		occured = true;
+		// Return to local view
+		// KEY PRESS  sets alarm
+		if (skipMG) {
+			alarm[0] = 120;
+		}
 	}
 	else {
 		if(last_minigame==minigame) {
