@@ -1,9 +1,9 @@
 /// @Check for input
 index = global.currentplayer;
 global.isStartOfGame = false;
-if (global.slowDice) {
+if (global.slowDice && !hasPressed) {
 	image_speed = 0.06;
-} else {
+} else if(!hasPressed){
 	image_speed = 1;
 }
 if (!hasPressed) {
@@ -13,13 +13,12 @@ if (!hasPressed) {
 	if (button_x) {
 		hasPressed = true;
 		/// @Stop dice from rolling
+		
+		
 		image_speed = 0;
 		if(global.doubleDice) {
 			hasPressed = false;
 			alarm[0] = 60;
-		} else if (global.slowDice) {
-			alarm[0] = 30;
-			show_debug_message("penis1")
 		} else {
 			alarm[0] = 30;
 			show_debug_message("penis2")
