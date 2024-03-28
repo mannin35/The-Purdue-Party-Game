@@ -7,7 +7,11 @@ if(done){
 	}
 } else {
 	counter++;
+	if (room == RM_FinalResults) {
+	alarm[0] = -1;
+} else {
 	alarm[0] = 1;
+}
 }
 
 

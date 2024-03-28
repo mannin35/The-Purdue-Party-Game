@@ -1,63 +1,8 @@
 //Temp remove after merge
 //global.minigameResults = [2,2,1,4];
 //
-global.wins = [0,0,0,0];
-awardsGiven = [0,0,0,0];
-indexArray = [global.playerOneIndex, global.playerTwoIndex, global.playerThreeIndex, global.playerFourIndex];
-redSpacesArray = [OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces];
-
-players = [1,2,3,4];
-boilerBuckArray = [OBJ_Player1Local.boilerBucks, OBJ_Player2Local.boilerBucks, OBJ_Player3Local.boilerBucks, OBJ_Player4Local.boilerBucks];
-degreeArray = [OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees];
-tempArray[4] = [0,0,0,0];
-
-if (room == RM_FinalResults) {
-
-	// most wins
-	winIndex = 0;
-	for (i = 1; i < 4; i++) {
-		if (global.wins[i] > global.wins[winIndex]) {
-			winIndex = i;
-		}
-	}
-	awardsGiven[winIndex]++;
-	OBJ_Player1Local.image_index = indexArray[winIndex];
-	// most BB accumulated
-	bbIndex = 0;
-	for (i = 1; i < 4; i++) {
-		if (boilerBuckArray[i] > boilerBuckArray[bbIndex]) {
-			bbIndex = i;
-		}
-	}
-	awardsGiven[bbIndex]++;
-	OBJ_Player2Local.image_index = indexArray[bbIndex];
-	// most trivia questions
-	/*winIndex = 0;
-	for (i = 1; i < 4; i++) {
-		if ([i] > global.wins[winIndex]) {
-			winIndex = i;
-		}
-	}
-	if (awardsGiven[winIndex]++ < 2) awardsGiven[winIndex]++;
-	OBJ_Player3Local.image_index = indexArray[winIndex];*/
-	// most student loan payment squares
-	loanIndex = 0;
-	for (i = 1; i < 4; i++) {
-		if (redSpacesArray[i] > redSpacesArray[loanIndex]) {
-			loanIndex = i;
-		}
-	}
-	if (awardsGiven[loanIndex]++ < 2) awardsGiven[loanIndex]++;
-	OBJ_Player4Local.image_index = indexArray[loanIndex];
-
-	for(i = 0; i < 4; i++){
-		tempArray[i] = awardsGiven[i];
-	}
-
-} else {
-	for(i = 0; i < 4; i++){
-		tempArray[i] = global.minigameResults[i];
-	}
+for(i = 0; i < 4; i++){
+	tempArray[i] = global.minigameResults[i];
 }
 
 // gives bonus degrees to 
@@ -87,7 +32,7 @@ for (i = 0; i < 3; i++){
 		break;
 	}
 }
-global.wins[players[0]]++;
+global.wins[players[0] - 1]++;
 playerObjects = [OBJ_PlayerOneMGR, OBJ_PlayerTwoMGR, OBJ_PlayerThreeMGR, OBJ_PlayerFourMGR];
 for(i = 0; i < 4; i++) {
 	if(players[i] == 1){

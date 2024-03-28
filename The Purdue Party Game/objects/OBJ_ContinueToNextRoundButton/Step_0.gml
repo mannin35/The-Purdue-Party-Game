@@ -23,7 +23,7 @@ if (button_x && room == RM_MinigameResults) {
 		//transition to RM_FinalResults
 		if(!instance_exists(OBJ_Transition)) {
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
-			inst.target_rm = RM_FinalResultsDraft;
+			inst.target_rm = RM_FinalResults;
 		}
 	} else if (global.turns > 1) {
 		global.turns--;

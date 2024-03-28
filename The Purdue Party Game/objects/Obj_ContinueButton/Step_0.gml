@@ -81,6 +81,7 @@ if(button_x  && Obj_ContinueButton.current) {
 		}
 	} else if(room == RM_GameSettings) {
 		global.turns = 5 + (5 * Obj_TurnNumber.image_index);
+		global.turns = 1;
 		//transition to RM_LocalView
 		//room_goto(RM_LocalView);
 		if(!instance_exists(OBJ_Transition)) {

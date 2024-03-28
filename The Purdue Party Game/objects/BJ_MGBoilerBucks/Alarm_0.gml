@@ -3,12 +3,15 @@
 //show_debug_message("Counter: {0}", counter)
 
 if (room == RM_FinalResults) {
-	OBJ_Player1Local.visible = false;
-	OBJ_Player2Local.visible = false;
-	OBJ_Player3Local.visible = false;
-	OBJ_Player4Local.visible = false;
-	SP_BlankItemMenu.visible = false;
-	SP_Accolades.visible = false;
+	OBJ_FinalPopUp.visible = false;
+	OBJ_Accolade1.visible = false;
+	OBJ_Accolade2.visible = false;
+	OBJ_Accolade3.visible = false;
+	OBJ_Accolade4.visible = false;
+	OBJ_LilPlayerPopUp1.visible = false;
+	OBJ_LilPlayerPopUp2.visible = false;
+	OBJ_LilPlayerPopUp3.visible = false;
+	OBJ_LilPlayerPopUp4.visible = false;
 }
 
 if(counter >= 0){
