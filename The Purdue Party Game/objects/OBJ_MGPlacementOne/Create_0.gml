@@ -1,6 +1,12 @@
 //Temp remove after merge
 //global.minigameResults = [2,2,1,4];
 //
+
+players = [1,2,3,4];
+boilerBuckArray = [OBJ_Player1Local.boilerBucks, OBJ_Player2Local.boilerBucks, OBJ_Player3Local.boilerBucks, OBJ_Player4Local.boilerBucks];
+degreeArray = [OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees];
+tempArray[4] = [0,0,0,0];
+
 for(i = 0; i < 4; i++){
 	tempArray[i] = global.minigameResults[i];
 }
@@ -32,7 +38,6 @@ for (i = 0; i < 3; i++){
 		break;
 	}
 }
-global.wins[players[0] - 1]++;
 playerObjects = [OBJ_PlayerOneMGR, OBJ_PlayerTwoMGR, OBJ_PlayerThreeMGR, OBJ_PlayerFourMGR];
 for(i = 0; i < 4; i++) {
 	if(players[i] == 1){

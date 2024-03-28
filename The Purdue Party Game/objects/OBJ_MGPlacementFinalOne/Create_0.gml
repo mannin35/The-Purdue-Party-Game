@@ -145,5 +145,5 @@ for(k = 0; k < 4; k++){
 	} else {
 		increase[k] = 1;	
 	}
-}
-calculated = true;*/
+}*/
+calculated = true;
