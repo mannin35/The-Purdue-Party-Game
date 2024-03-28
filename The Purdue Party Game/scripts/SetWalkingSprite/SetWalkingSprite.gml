@@ -87,5 +87,4 @@ function SetWalkingSprite(player, xDiff, yDiff) {
 			player.sprite_index = SP_PlayersDown;
 		}
 	}
-	show_debug_message(sprite_get_name(player.sprite_index));
 }

@@ -2,6 +2,9 @@
 pathChosen = false;
 index = 0;
 currentPlayer = global.localPlayers[global.currentplayer];
+if (waitForDegree) {
+	exit;
+}
 // Check for input
 if (awaitingInput) {
 	currentPlayer.image_speed = 0;
@@ -10,8 +13,8 @@ if (awaitingInput) {
 	 */
 	 var path = -1;
 	 if (isCPU) {
-		 button_x = true;
-		 path = ceil(random_range(0, 1));
+			 button_x = true;
+			 path = space.toNearestDegree[OBJ_DegreeLogic.degreeIndex];
 	 }
 	 else {
 		var controllerIndex = global.currentplayer;
@@ -71,12 +74,14 @@ if (numSpaces > 0 && !awaitingInput) {
 			if (numSpaces > 1) {
 				speed = 0;
 				arrows = space.arrows;
-				// Default path is arrows[0]
-				activeArrow = arrows[0];
-				inactiveArrow = arrows[1];
-				activeArrow.image_index = 1;
-				activeArrow.visible = true;
-				inactiveArrow.visible = true;
+				if (!currentPlayer.isCPU) {
+					// Default path is arrows[0]
+					activeArrow = arrows[0];
+					inactiveArrow = arrows[1];
+					activeArrow.image_index = 1;
+					activeArrow.visible = true;
+					inactiveArrow.visible = true;
+				}
 				awaitingInput = true;
 			}
 			// If landing on space which branches, continue to execution for ending player turn
@@ -86,6 +91,9 @@ if (numSpaces > 0 && !awaitingInput) {
 		}
 		// Path is chosen if there is only one space to go 
 		else if (array_length(space.next) ==1) {
+			if (space.isDegreeSpace) {
+				numSpaces++;
+			}
 			pathChosen = true;
 		}
 		// If the next space has been determined
@@ -98,9 +106,13 @@ if (numSpaces > 0 && !awaitingInput) {
 			yDiff = yFinal - y;
 			// Set the correct walking sprite
 			SetWalkingSprite(currentPlayer, xDiff, yDiff);
-			sprite_set_speed(sprite_index, walkAnimationSpeed, spritespeed_framespersecond);
-			currentPlayer.image_speed = 1;
-			currentPlayer.image_index = walkingIndex;
+			sprite_set_speed(sprite_index, lastImageSpeed, spritespeed_framespersecond);
+			if (image_index < currentPlayer.walkingIndex || image_index > currentPlayer. walkingIndex + numWalkingFrames) {
+				image_index = walkingIndex;
+			}
+			if (image_speed == 0) {
+				image_speed = 1;
+			}
 			isMoving = true;
 			numSpaces--;
 			// Stop moving if reached final space
@@ -108,6 +120,7 @@ if (numSpaces > 0 && !awaitingInput) {
 				//Calls function using spaceType on last space where the type is a string to dictate what to do
 				OBJ_RollDiceButton.is_next = true;
 				currentPlayer.image_speed = 0;
+				currentPlayer.image_index = currentPlayer.walkingIndex + numWalkingFrames;
 				sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 				SpaceFunction(string(space.spaceType));
 				if (space.object_index != OBJ_ShopSpace && space.object_index != OBJ_BusSpace) {
@@ -120,11 +133,13 @@ if (numSpaces > 0 && !awaitingInput) {
 	else if (point_distance(x, y, xFinal, yFinal) > 5) {
 	    move_towards_point(xFinal, yFinal, speedMultiplier);
 		// Change sprite walking index
-		if ((currentPlayer.image_index + 2*increasePerFrame) >= walkingIndex + 3) {
+		if ((currentPlayer.image_index + 3*increasePerFrame) >= currentPlayer.walkingIndex + numWalkingFrames) {
 			sprite_set_speed(sprite_index, -1 * walkAnimationSpeed, spritespeed_framespersecond);
+			lastImageSpeed = -1 * walkAnimationSpeed;
 		}
-		else if ((currentPlayer.image_index - 2*increasePerFrame) <= walkingIndex ) {
-						sprite_set_speed(sprite_index, walkAnimationSpeed, spritespeed_framespersecond);
+		else if ((currentPlayer.image_index - 3*increasePerFrame) <= currentPlayer.walkingIndex ) {
+			sprite_set_speed(sprite_index, walkAnimationSpeed, spritespeed_framespersecond);
+			lastImageSpeed = walkAnimationSpeed;
 		}
 	}
 	else { 

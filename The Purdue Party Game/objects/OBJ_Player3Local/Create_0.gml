@@ -14,6 +14,4 @@ startIndex = global.playerThreeIndex;
 color = global.playerColors[startIndex];
 image_index = startIndex;
 walkingIndex = startIndex * 3;
-boilerBucks =  0;
-degrees =  0;
 redSpaces = 0;

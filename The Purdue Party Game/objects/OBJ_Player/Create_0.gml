@@ -5,15 +5,21 @@ index = 0;
 space = Space0;
 isCPU = false;
 currentPlayer = pointer_null;
+boilerBucks = 10;
+degrees = 0;
 
 // Movement info
 dead_zone = 0.2; 
 startIndex = 0;
 walkingIndex = 0;
-walkAnimationSpeed = 10; //fps
+numWalkingFrames = 2;
+walkAnimationSpeed = 5; //fps
 increasePerFrame = walkAnimationSpeed / 60;
+lastImageSpeed = walkAnimationSpeed;
 numSpaces = 0;
 isMoving = false;
+waitForDegree = false;
+degreeCollided = false;
 speedMultiplier = 4;
 x = space.x;
 y = space.y;
