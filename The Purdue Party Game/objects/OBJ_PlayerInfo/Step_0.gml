@@ -80,6 +80,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 		}
 	occured = true;
 	// Return to local view
+	// KEY PRESS  sets alarm
 	//alarm[0] = 120;
 	}
 	else {

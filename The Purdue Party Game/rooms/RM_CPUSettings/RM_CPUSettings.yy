@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "RM_CPUSettings",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/RM_CPUSettings/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
