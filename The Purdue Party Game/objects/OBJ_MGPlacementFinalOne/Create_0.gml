@@ -51,7 +51,7 @@ OBJ_LilPlayerPopUp2.image_index = indexArray[global.bbIndex];
 OBJ_LilPlayerPopUp3.image_index = indexArray[global.triviaIndex];
 OBJ_LilPlayerPopUp4.image_index = indexArray[global.loanIndex];
 //show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees)
-alarm[0] = 60 * 3;
+alarm[0] = 60 * 12;
 //Sorts array given so we can determine which players will be placed where
 //Uses bubble sort
 players = [OBJ_Player1Local, OBJ_Player2Local, OBJ_Player3Local, OBJ_Player4Local];

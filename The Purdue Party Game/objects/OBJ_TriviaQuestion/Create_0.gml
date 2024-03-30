@@ -25,7 +25,8 @@ if (currentPlayer.isCPU) {
 	OBJ_Points.visible = true;
 	OBJ_Points.alarm[0] = 120;
 	currentPlayer.alarm[0] = 120;
-	instance_destroy()
+	instance_destroy();
+	exit;
 }
 
 image_xscale = 1.5;
@@ -50,6 +51,7 @@ questionNum = irandom_range(0,9);
 while (info.HasAsked[category, questionNum] == 1) {
 	questionNum = irandom_range(0,9);
 }
+info.HasAsked[category, questionNum] = 1;
 questionText = info.TriviaQuestions[category, questionNum];
 
 // Array of answers in order
