@@ -14,6 +14,10 @@
     {"name":"inst_6F5D4D26","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
     {"name":"inst_3546BC64","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
     {"name":"inst_7D00231B","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
+    {"name":"inst_2C552FE0","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
+    {"name":"inst_43EFA8F9","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
+    {"name":"inst_4AB38D37","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
+    {"name":"inst_13360A74","path":"rooms/RM_BoilermakerExpress/RM_BoilermakerExpress.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -25,6 +29,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F5D4D26","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_BMExpress","path":"objects/OBJ_BMExpress/OBJ_BMExpress.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-15.0,"y":176.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3546BC64","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OJB_BMEFinish","path":"objects/OJB_BMEFinish/OJB_BMEFinish.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D00231B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Buttons","path":"objects/OBJ_Buttons/OBJ_Buttons.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":18.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C552FE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Smoke","path":"objects/OBJ_Smoke/OBJ_Smoke.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":74.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43EFA8F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Smoke","path":"objects/OBJ_Smoke/OBJ_Smoke.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":122.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4AB38D37","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Smoke","path":"objects/OBJ_Smoke/OBJ_Smoke.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":170.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13360A74","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Smoke","path":"objects/OBJ_Smoke/OBJ_Smoke.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":218.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":18,"SerialiseWidth":32,"TileCompressedData":[
 -13,9,-5,8,-9,9,1,8,-7,9,-2,8,-6,9,-8,8,-6,9,-4,8,-5,9,-4,8,-4,9,-12,8,-4,9,-4,8,
