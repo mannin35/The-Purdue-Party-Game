@@ -34,6 +34,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"OBJ_TriviaQuestion","order":12,"path":"objects/OBJ_TriviaQuestion/OBJ_TriviaQuestion.yy",},
+    {"name":"TS_TimesUpGame","order":1,"path":"tilesets/TS_TimesUpGame/TS_TimesUpGame.yy",},
     {"name":"OBJ_Accolade3","order":4,"path":"objects/OBJ_Accolade3/OBJ_Accolade3.yy",},
     {"name":"OBJ_MGPlacementFinalThree","order":11,"path":"objects/OBJ_MGPlacementFinalThree/OBJ_MGPlacementFinalThree.yy",},
     {"name":"OBJ_MGPlacementFinalFour","order":13,"path":"objects/OBJ_MGPlacementFinalFour/OBJ_MGPlacementFinalFour.yy",},
@@ -62,6 +63,7 @@
     {"name":"SP_Dice","order":2,"path":"sprites/SP_Dice/SP_Dice.yy",},
     {"name":"OBJ_LilPlayerPopUp1","order":6,"path":"objects/OBJ_LilPlayerPopUp1/OBJ_LilPlayerPopUp1.yy",},
     {"name":"OBJ_Dice","order":1,"path":"objects/OBJ_Dice/OBJ_Dice.yy",},
+    {"name":"TS_TimesUpGameTwo","order":2,"path":"tilesets/TS_TimesUpGameTwo/TS_TimesUpGameTwo.yy",},
     {"name":"OBJ_CurrentPlayerTracker","order":3,"path":"objects/OBJ_CurrentPlayerTracker/OBJ_CurrentPlayerTracker.yy",},
     {"name":"OBJ_Player","order":2,"path":"objects/OBJ_Player/OBJ_Player.yy",},
     {"name":"OBJ_BoilerBucksFinal","order":14,"path":"objects/OBJ_BoilerBucksFinal/OBJ_BoilerBucksFinal.yy",},
