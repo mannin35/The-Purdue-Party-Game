@@ -86,7 +86,7 @@ PurdueQuestions = ["How tall is the world\'s largest bass drum?",
 					   "When was the Purdue Memorial Union Built?"];
 			
 MusicQuestions = ["What musical is the song\n \"Memory\" from?",
-				      "Who wrote Rent and\n Tick…Tick…Boom?",
+				      "Who wrote Rent and\n Tick...Tick...Boom?",
 					  "What musical is the song\n \"Cell Block Tango\" from?",
 					  "Who is the only country artist to have\n a Top 20 hit on the Billboard Hot Country Songs\n chart for six straight decades?",
 					  "Which of these is\n not a song by Elvis?",

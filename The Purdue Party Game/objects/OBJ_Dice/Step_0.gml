@@ -13,15 +13,11 @@ if (!hasPressed) {
 	if (button_x) {
 		hasPressed = true;
 		/// @Stop dice from rolling
-		
-		
 		image_speed = 0;
 		if(global.doubleDice) {
-			hasPressed = false;
 			alarm[0] = 60;
 		} else {
 			alarm[0] = 30;
-			show_debug_message("penis2")
 		}
 	}
 	else if (button_back) {

@@ -28,7 +28,7 @@ function CheckButtonState(button){
 				// Initiate cpu rolling dice
 				global.delayInput = true;
 				// Prevent input for a few seconds
-				OBJ_LocalButtonInfo.alarm[0] = 120;
+				OBJ_LocalButtonInfo.alarm[0] = 300;
 				OBJ_LocalButtonInfo.alarm[1] = 45;
 			}
 		}

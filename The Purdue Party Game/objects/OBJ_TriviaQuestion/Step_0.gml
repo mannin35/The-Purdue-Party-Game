@@ -27,7 +27,12 @@ if (answers[response] == answersNotRandom[0]) {
 }
 else {
 	// LMAO LOSERRRRR
-	currentPlayer.boilerBucks -= 3;
+	if (currentPlayer.boilerBucks >= 3) {
+		currentPlayer.boilerBucks -= 3;
+	}
+	else {
+		currentPlayer.boilerBucks = 0;
+	}
 	OBJ_Points.image_index = 1;
 }
 OBJ_Points.x = currentPlayer.x + 6;
