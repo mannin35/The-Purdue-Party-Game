@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_Smoke",
+  "name": "OBJ_BMEFinish",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_Smoke",
-    "path": "sprites/SP_Smoke/SP_Smoke.yy",
+    "name": "SP_BMEFinish",
+    "path": "sprites/SP_BMEFinish/SP_BMEFinish.yy",
   },
   "spriteMaskId": null,
   "visible": true,

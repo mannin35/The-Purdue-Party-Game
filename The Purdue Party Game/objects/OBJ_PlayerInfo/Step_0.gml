@@ -23,17 +23,17 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
-	minigame = irandom(1);
-	//minigame = 4
+	//minigame = irandom(1);
+	minigame = 4;
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
 	
 	//ensure same minigame isnt picked twice
-	while (minigame == last_minigame) {
+	/*while (minigame == last_minigame) {
 		//show_debug_message("loop");
 		minigame = irandom(1);	
-	}
+	}*/
 	//camera_set_view_size(view_camera[0], 512,288);
 	
 	

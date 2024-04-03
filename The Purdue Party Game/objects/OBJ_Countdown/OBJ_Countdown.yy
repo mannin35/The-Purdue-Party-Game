@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OJB_BMEFinish",
-  "eventList": [],
+  "name": "OBJ_Countdown",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_BMEFinish",
-    "path": "sprites/SP_BMEFinish/SP_BMEFinish.yy",
+    "name": "SP_Countdown",
+    "path": "sprites/SP_Countdown/SP_Countdown.yy",
   },
   "spriteMaskId": null,
   "visible": true,
