@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "SP_Player_Climb_Up",
   "bbox_bottom": 27,
-  "bbox_left": 5,
-  "bbox_right": 23,
+  "bbox_left": 4,
+  "bbox_right": 24,
   "bbox_top": 9,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -14,6 +14,7 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d1b45cfa-8ade-40b4-9e2d-d514d20b7ea7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"230c97c6-9131-4eab-92dd-adaa6b7ae226",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"39b220e2-e864-4c26-bd79-f62d9d6c6183",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c680d13-5354-4f40-ab9f-1bf09c375df9",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"efcad9f8-3d8e-405b-9e14-8170e9af3fe0",},
@@ -28,8 +29,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Time's Up",
+    "path": "folders/Sprites/Time's Up.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -46,7 +47,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 4.0,
+    "length": 5.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -58,9 +59,10 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d1b45cfa-8ade-40b4-9e2d-d514d20b7ea7","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"b6fcaa5d-b31d-4b61-acf5-c58bf1198684","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"39b220e2-e864-4c26-bd79-f62d9d6c6183","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"27a3eda4-99cf-41b6-8ba4-b87f30fad877","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1c680d13-5354-4f40-ab9f-1bf09c375df9","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"fde016c2-81a4-4d08-9c64-c7b59751f422","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"efcad9f8-3d8e-405b-9e14-8170e9af3fe0","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"d2464feb-1709-43de-8851-6a7c3be8dfd5","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"230c97c6-9131-4eab-92dd-adaa6b7ae226","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"66f15b9b-abd1-462d-88ee-f91c713f19f9","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"39b220e2-e864-4c26-bd79-f62d9d6c6183","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"27a3eda4-99cf-41b6-8ba4-b87f30fad877","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1c680d13-5354-4f40-ab9f-1bf09c375df9","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"fde016c2-81a4-4d08-9c64-c7b59751f422","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"efcad9f8-3d8e-405b-9e14-8170e9af3fe0","path":"sprites/SP_Player_Climb_Up/SP_Player_Climb_Up.yy",},},},"Disabled":false,"id":"d2464feb-1709-43de-8851-6a7c3be8dfd5","IsCreationKey":false,"Key":4.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

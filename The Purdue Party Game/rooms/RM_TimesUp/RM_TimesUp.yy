@@ -6,10 +6,15 @@
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
-  "instanceCreationOrder": [],
+  "instanceCreationOrder": [
+    {"name":"inst_221D4FF8","path":"rooms/RM_TimesUp/RM_TimesUp.yy",},
+  ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":128,"SerialiseWidth":32,"TileCompressedData":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_221D4FF8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_PlayerOneTimesUp","path":"objects/OBJ_PlayerOneTimesUp/OBJ_PlayerOneTimesUp.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":1.0,"y":1920.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":128,"SerialiseWidth":32,"TileCompressedData":[
 -7,-2147483648,2,1073741837,1610612749,-6,-2147483648,2,1073741837,1879048205,-6,-2147483648,3,1342177293,1879048205,-2147483648,-5,0,-3,-2147483648,28,12,13,13,1073741836,-2147483648,1073741837,1610612749,-2147483648,1610612748,13,13,
 1073741836,-2147483648,1073741837,1879048205,-2147483648,1610612748,13,13,1073741836,-2147483648,1342177293,1879048205,-2147483648,12,13,13,268435468,-4,-2147483648,28,1879048205,6,7,1342177293,-2147483648,1073741837,1610612749,-2147483648,1879048205,6,7,1342177293,
 -2147483648,1073741837,1879048205,-2147483648,1879048205,6,7,1073741837,-2147483648,1342177293,1879048205,-2147483648,1879048205,6,7,1342177293,-4,-2147483648,28,1879048205,10,11,1342177293,-2147483648,1073741837,1610612749,-2147483648,1879048205,10,11,1342177293,-2147483648,
@@ -134,10 +139,10 @@
 1073741837,-2147483648,1073741837,1610612749,-2147483648,1610612749,4,268435460,1073741837,-2147483648,1073741837,1879048205,-2147483648,1610612749,4,268435460,1073741837,-2147483648,1342177293,1879048205,0,1879048205,4,805306372,1342177293,-4,-2147483648,31,1879048204,1,268435457,805306380,
 -2147483648,1073741837,1610612749,-2147483648,536870924,1,268435457,805306380,-2147483648,1342177293,1879048205,-2147483648,1879048204,1,268435457,805306380,-2147483648,1342177293,1879048205,0,1879048204,1,268435457,805306380,-2147483648,-2147483648,1073741836,-6,-2147483648,-2,1073741832,-6,
 -2147483648,-2,1073741832,-6,-2147483648,-2,1073741832,1,0,-4,-2147483648,2,1073741837,13,],"TileDataFormat":1,},"tilesetId":{"name":"TS_TimesUpGameTwo","path":"tilesets/TS_TimesUpGameTwo/TS_TimesUpGameTwo.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":128,"SerialiseWidth":32,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":128,"SerialiseWidth":32,"TileCompressedData":[
 -3895,-2147483648,-2,0,-74,-2147483648,2,268435471,268435470,-6,-2147483648,2,268435471,268435470,-6,-2147483648,2,268435471,268435470,-6,-2147483648,2,14,15,-6,-2147483648,2,805306383,805306382,-6,-2147483648,2,
 805306383,805306382,-6,-2147483648,2,805306383,805306382,-6,-2147483648,2,805306383,805306382,-58,-2147483648,1,1073741832,-8,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TS_TimesUpGameTwo","path":"tilesets/TS_TimesUpGameTwo/TS_TimesUpGameTwo.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":128,"SerialiseWidth":32,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":128,"SerialiseWidth":32,"TileCompressedData":[
 -34,1,-4,9,-4,1,-4,9,-4,1,-4,9,-4,1,-4,9,-4,1,-4,9,-4,1,-4,9,-4,1,-4,9,-4,1,-4,9,
 -4,1,-4,9,-4,1,-4,9,-4,1,-4,9,-4,1,-4,9,-4,1,-4,10,-4,1,-4,10,-4,1,-4,10,-4,1,-4,10,
 -4,1,-4,5,-4,1,-4,5,-4,1,-4,5,-4,1,-4,5,-4,1,-4,5,-4,1,-4,5,-4,1,-4,5,-4,1,-4,5,
@@ -204,8 +209,8 @@
 4,4,13,13,4,-4,9,4,4,13,13,4,-4,9,4,4,13,13,4,-4,9,4,4,13,13,4,-4,9,4,4,13,13,
 4,-4,9,4,4,13,13,4,-4,9,4,4,13,13,4,-4,9,4,4,13,13,4,-4,9,4,4,13,13,4,-4,9,4,
 4,13,13,4,-4,9,7,4,13,13,4,9,9,12,-6,9,-2,12,-6,9,-2,12,-6,9,-2,12,-6,9,1,12,],"TileDataFormat":1,},"tilesetId":{"name":"TS_TimesUpGame","path":"tilesets/TS_TimesUpGame/TS_TimesUpGame.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
     "name": "Rooms",
@@ -227,10 +232,10 @@
   },
   "sequenceId": null,
   "views": [
-    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":400,"wview":128,"xport":0,"xview":0,"yport":0,"yview":1760,},
-    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":400,"wview":128,"xport":128,"xview":128,"yport":0,"yview":1760,},
-    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":400,"wview":128,"xport":256,"xview":256,"yport":0,"yview":1760,},
-    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":400,"wview":128,"xport":384,"xview":384,"yport":0,"yview":1760,},
+    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":{"name":"OBJ_PlayerOneTimesUp","path":"objects/OBJ_PlayerOneTimesUp/OBJ_PlayerOneTimesUp.yy",},"vborder":144,"visible":true,"vspeed":-1,"wport":400,"wview":128,"xport":0,"xview":0,"yport":0,"yview":1760,},
+    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":400,"wview":128,"xport":400,"xview":128,"yport":0,"yview":1760,},
+    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":400,"wview":128,"xport":800,"xview":256,"yport":0,"yview":1760,},
+    {"hborder":32,"hport":900,"hspeed":-1,"hview":288,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":400,"wview":128,"xport":1200,"xview":384,"yport":0,"yview":1760,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
