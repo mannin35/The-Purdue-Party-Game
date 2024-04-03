@@ -11,6 +11,7 @@
     {"name":"Spaces","order":9,"path":"folders/Objects/Local View/Spaces.yy",},
     {"name":"Minigame Results","order":8,"path":"folders/Objects/Minigame Results.yy",},
     {"name":"Store","order":9,"path":"folders/Objects/Store.yy",},
+    {"name":"TimesUp","order":15,"path":"folders/Objects/TimesUp.yy",},
     {"name":"TipsyTunnelTrek","order":10,"path":"folders/Objects/TipsyTunnelTrek.yy",},
     {"name":"Title and Settings","order":11,"path":"folders/Objects/Title and Settings.yy",},
     {"name":"Boilermaker Express","order":1,"path":"folders/Sprites/Boilermaker Express.yy",},
@@ -31,7 +32,6 @@
     {"name":"Time's Up","order":11,"path":"folders/Sprites/Time's Up.yy",},
     {"name":"Tipsy Tunnel","order":12,"path":"folders/Sprites/Tipsy Tunnel.yy",},
     {"name":"Title and Settings","order":13,"path":"folders/Sprites/Title and Settings.yy",},
-    {"name":"TimesUp","order":15,"path":"folders/Objects/TimesUp.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"OBJ_TriviaQuestion","order":12,"path":"objects/OBJ_TriviaQuestion/OBJ_TriviaQuestion.yy",},

@@ -12,8 +12,6 @@ if(counter % 30 == 0){
 left = gamepad_axis_value(0, gp_axislh) < -.2;
 right = gamepad_axis_value(0, gp_axislh) > .2;
 
-
-show_debug_message("{0}", right)
 if(!left && !right){
 	moved = false;	
 }
