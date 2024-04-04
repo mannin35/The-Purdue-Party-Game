@@ -8,9 +8,12 @@ if(counter % 30 == 0){
 } else if(counter % 15 == 0){
 	image_index++;	
 }
-
-left = gamepad_axis_value(0, gp_axislh) < -.2;
-right = gamepad_axis_value(0, gp_axislh) > .2;
+left = 0;
+right = 0;
+if(!global.playerOneTU){
+	left = gamepad_axis_value(0, gp_axislh) < -.2;
+	right = gamepad_axis_value(0, gp_axislh) > .2;
+}
 
 if(!left && !right){
 	moved = false;	
@@ -18,7 +21,9 @@ if(!left && !right){
 
 if(!moved){
 	if(left || right){
-		moved = true;	
+		moved = true;
+		global.playerOneTU = true;
+		alarm[0] = 30
 	}
 	
 	if(left && sprite == 2){ //Goes from middle to left

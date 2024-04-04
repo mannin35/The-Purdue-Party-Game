@@ -24,6 +24,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	randomize();
 	//randomly select minigame
 	minigame = irandom(1);
+	minigame = 3
 	//minigame = 4
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
