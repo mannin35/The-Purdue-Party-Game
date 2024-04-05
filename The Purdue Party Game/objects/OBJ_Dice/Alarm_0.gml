@@ -19,6 +19,12 @@ else {
 	/* note that  numSpaces is one more than you would expect
 	* due to how player movement was implemented
 	*/
+	/*
+	if (player.isCPU) {
+		// Very weird bug where cpus move an extra space 
+		numSpaces--;
+	}
+	*/
 	player.numSpaces = numSpaces + 1;
 	numSpaces = 0;
 	HideButtons();
