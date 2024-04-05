@@ -2,8 +2,11 @@
 // You can write your code in this editor
 
 //check if player finished
-if place_meeting(x, y, OBJ_BMEFinish) {
+if (place_meeting(x, y, OBJ_BMEFinish) && !over) {
 	over = true;
+	global.minigameResults[id.playerNum-1] = OBJ_BMEFinish.pos;
+	show_debug_message("player " + string(id.playerNum ) +  " pos = " + string(OBJ_BMEFinish.pos));
+	OBJ_BMEFinish.pos++;
 } else if (OBJ_BMEFinish.started && !over){
 	//check if current instance is real player
 	if(!global.localPlayers[id.playerNum-1].isCPU) {
@@ -60,5 +63,7 @@ if place_meeting(x, y, OBJ_BMEFinish) {
 				}
 			}
 		}
+	} else {
+		//CPU stuff	
 	}
 }
