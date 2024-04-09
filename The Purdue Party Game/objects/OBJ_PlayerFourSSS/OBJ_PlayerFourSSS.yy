@@ -1,15 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oFinish",
+  "name": "OBJ_PlayerFourSSS",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "TipsyTunnelTrek",
-    "path": "folders/Objects/TipsyTunnelTrek.yy",
+    "name": "StateStreet",
+    "path": "folders/Objects/StateStreet.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_Finish",
-    "path": "sprites/SP_Finish/SP_Finish.yy",
+    "name": "SP_PlayerUp",
+    "path": "sprites/SP_PlayerUp/SP_PlayerUp.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
