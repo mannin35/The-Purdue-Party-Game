@@ -64,6 +64,7 @@ if (place_meeting(x, y, OBJ_BMEFinish) && !over) {
 			}
 		}
 	} else {
-		//CPU stuff	
+		//CPU stuff
+		player = id.playerNum-1;	
 	}
 }

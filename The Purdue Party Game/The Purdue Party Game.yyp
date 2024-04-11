@@ -394,6 +394,7 @@
     {"id":{"name":"SP_BoilerUpButton","path":"sprites/SP_BoilerUpButton/SP_BoilerUpButton.yy",},},
     {"id":{"name":"Obj_PlayerOneMed","path":"objects/Obj_PlayerOneMed/Obj_PlayerOneMed.yy",},},
     {"id":{"name":"OBJ_PlayerInfo","path":"objects/OBJ_PlayerInfo/OBJ_PlayerInfo.yy",},},
+    {"id":{"name":"BMECPU","path":"scripts/BMECPU/BMECPU.yy",},},
     {"id":{"name":"OBJ_PlayerSwap2","path":"objects/OBJ_PlayerSwap2/OBJ_PlayerSwap2.yy",},},
     {"id":{"name":"OBJ_BlueSpace","path":"objects/OBJ_BlueSpace/OBJ_BlueSpace.yy",},},
     {"id":{"name":"RM_StreetMinigame","path":"rooms/RM_StreetMinigame/RM_StreetMinigame.yy",},},
