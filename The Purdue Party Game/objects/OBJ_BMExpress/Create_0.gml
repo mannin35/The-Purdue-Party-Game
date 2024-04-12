@@ -5,3 +5,4 @@ lastButton = -1;
 currentButton = -1;
 controller = -1;
 over = false;
+CPUMoved = 0;
