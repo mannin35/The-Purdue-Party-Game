@@ -1,6 +1,6 @@
 //display scoreboard if button pressed
 if (visible) {
-	if(gamepad_button_check(global.playercontrollerindices[0], gp_face1) && OBJ_ViewScoreboardButton.current){
+	if(gamepad_button_check(global.playercontrollerindices[global.currentplayer], gp_face1) && OBJ_ViewScoreboardButton.current){
 		if(room == RM_LocalView) {
 			OBJ_Scoreboard.visible = true;
 		}

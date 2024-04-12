@@ -14,7 +14,7 @@ var dead_zone = .2;
 /*
 TO ADD: ENSURING INPUT ONLY FROM CURRENT PLAYER COUNTS
 */
-var current_player_index = global.playercontrollerindices[0];
+var current_player_index = global.playercontrollerindices[global.currentplayer];
 
 //checks for pressing button
 //var button_x = keyboard_check_pressed(vk_space);
