@@ -65,6 +65,10 @@ if (place_meeting(x, y, OBJ_BMEFinish) && !over) {
 		}
 	} else {
 		//CPU stuff
-		player = id.playerNum-1;	
+		player = id.playerNum-1;
+		if(CPUMoved == 0){
+			CPUMoved = 1;
+			BMECPU(global.CPUSettings[player]);
+		}
 	}
 }
