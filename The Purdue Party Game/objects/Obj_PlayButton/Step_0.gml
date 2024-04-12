@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 var key_left = gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) < -dead_zone;
-var button_x = gamepad_button_check_pressed(global.playercontrollerindices[0], gp_face1);
+var button_x = (gamepad_button_check_pressed(global.playercontrollerindices[0], gp_face1)) || keyboard_check_pressed(vk_right);
 
 if(current){
 	if(key_left){
