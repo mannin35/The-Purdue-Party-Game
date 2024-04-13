@@ -81,7 +81,7 @@ if (!over && !hit && !grab && !grabbed) {
 			alarm[0] = 8;
 		}
 	}
-	if (gamepad_button_check_pressed(global.playercontrollerindices[player],gp_face4) && alarm_get(0) < 0) {
+	if (gamepad_button_check_pressed(global.playercontrollerindices[player],gp_face4) && alarm_get(0) < 0) { // grab
 		if (alarm_get(3) < 0) {
 			grab = true;
 			if (sprite_index = SP_PlayerLeftSSS) { // facing left
@@ -107,7 +107,7 @@ if (!over && !hit && !grab && !grabbed) {
 			} 
 			//grabInst = instance_create(x, y, "Instances_3", oGrab);
 			//grabInst.visible = true;
-			alarm[3] = 1;
+			alarm[3] = 3;
 		}
 	}
 }

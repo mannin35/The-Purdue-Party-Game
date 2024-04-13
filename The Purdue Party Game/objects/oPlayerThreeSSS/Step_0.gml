@@ -107,7 +107,7 @@ if (!over && !hit && !grab && !grabbed) {
 			} 
 			//grabInst = instance_create(x, y, "Instances_3", oGrab);
 			//grabInst.visible = true;
-			alarm[3] = 1;
+			alarm[3] = 3;
 		}
 	}
 }

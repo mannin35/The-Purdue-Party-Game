@@ -73,6 +73,7 @@ if (dir = 0 && grabbedWho == -1) {
 player_one_grab.x = -112;
 grab = false;
 grabbedWho = -1;
+grabTimer = 0;
 dir = -1;
 
 

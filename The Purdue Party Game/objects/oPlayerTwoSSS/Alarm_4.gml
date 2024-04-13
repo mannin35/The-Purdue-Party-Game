@@ -74,6 +74,7 @@ player_two_grab.x = -112;
 grab = false;
 grabbedWho = -1;
 dir = -1;
+grabTimer = 0;
 
 
 

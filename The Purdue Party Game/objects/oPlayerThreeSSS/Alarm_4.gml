@@ -75,6 +75,8 @@ grab = false;
 grabbedWho = -1;
 dir = -1;
 
+grabTimer = 0;
+
 
 
 

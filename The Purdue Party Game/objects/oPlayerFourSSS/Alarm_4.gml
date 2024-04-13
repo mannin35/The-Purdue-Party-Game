@@ -74,6 +74,7 @@ if (dir = 0 && grabbedWho == -1) {
 grab = false;
 grabbedWho = -1;
 dir = -1;
+grabTimer = 0;
 
 
 

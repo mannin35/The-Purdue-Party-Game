@@ -17,3 +17,5 @@ grab = false; // if grabbing set this to true
 grabbed = false; // if being grabbed set this to player index of who grabbed
 grabbedWho = -1 // who did i grab? set this to player index
 
+grabTimer = 0;
+
