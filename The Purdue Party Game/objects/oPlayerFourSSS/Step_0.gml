@@ -45,7 +45,12 @@ if (!over && !hit && !grab && !grabbed) {
 			image_index = index * 3 + irandom(1);
 			//alarm[1] = 4;
 			//image_xscale = -1.6;
-			hsp = -walksp;
+			//hsp = -walksp;
+			if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y) || (x - player_one_SSS.x < 64 && x - player_one_SSS.x >= 0 && y == player_one_SSS.y)) {
+				hsp = 0;
+			} else {
+				hsp = -walksp;
+			}
 			alarm[0] = 8;
 		}
 	} else if (right_input) {
@@ -55,7 +60,12 @@ if (!over && !hit && !grab && !grabbed) {
 			image_index = index * 3 + irandom(1);
 			//alarm[1] = 4;
 			//image_xscale = 1.6;
-			hsp = walksp;
+			//hsp = walksp;
+			if ((x - player_two_SSS.x > -64 && x - player_two_SSS.x <= 0 && y == player_two_SSS.y) || (x - player_one_SSS.x > -64 && x - player_one_SSS.x <= 0 && y == player_one_SSS.y) || (x - player_three_SSS.x > -64 && x - player_three_SSS.x <= 0 && y == player_three_SSS.y)) {
+				hsp = 0;
+			} else {
+				hsp = walksp;
+			}
 			alarm[0] = 8;
 		}
 	} else if (up_input) {
@@ -65,7 +75,12 @@ if (!over && !hit && !grab && !grabbed) {
 			image_index = index * 3 + irandom(1);
 			//alarm[1] = 4;
 			//image_xscale = 1.6;
-			vsp = -walksp;
+			//vsp = -walksp;
+			if ((y - player_two_SSS.y < 64 && y - player_two_SSS.y >= 0 && x == player_two_SSS.x) || (y - player_one_SSS.y < 64 && y - player_one_SSS.y >= 0 && x == player_one_SSS.x) || (y - player_three_SSS.y < 64 && y - player_three_SSS.y >= 0 && x == player_three_SSS.x)) {
+				vsp = 0;
+			} else {
+				vsp = -walksp;	
+			} 
 			alarm[0] = 8;
 		}
 	}
@@ -76,7 +91,11 @@ if (!over && !hit && !grab && !grabbed) {
 			image_index = index * 3 + irandom(1);
 			//alarm[1] = 4;
 			//image_xscale = 1.6;
-			vsp = walksp;
+			if ((y - player_two_SSS.y > -64 && y - player_two_SSS.y <= 0 && x == player_two_SSS.x) || (y - player_one_SSS.y > -64 && y - player_one_SSS.y <= 0 && x == player_one_SSS.x) || (y - player_three_SSS.y > -64 && y - player_three_SSS.y <= 0 && x == player_three_SSS.x)) {
+				vsp = 0;
+			} else {
+				vsp = walksp;	
+			}
 			alarm[0] = 8;
 		}
 	}

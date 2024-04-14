@@ -11,3 +11,4 @@ player_one_SSS.index = global.playerOneIndex;
 player_two_SSS.index = global.playerTwoIndex;
 player_three_SSS.index = global.playerThreeIndex;
 player_four_SSS.index = global.playerFourIndex; // default setup*/
+
