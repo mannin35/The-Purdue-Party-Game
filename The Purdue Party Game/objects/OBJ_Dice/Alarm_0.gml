@@ -1,3 +1,4 @@
+
 /// @Destroy dice and start player movement
 var player = global.localPlayers[global.currentplayer];
 numSpaces += floor(image_index + 1) ;
