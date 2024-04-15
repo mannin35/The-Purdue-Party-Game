@@ -74,25 +74,25 @@ if(global.localPlayers[3].isCPU) {
 } else {
 	if !(over) {
 		if (TTT_Controller.cn_swap = 0) { // controller swap
-			left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padl); // left
-			up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padu)); // up
-			right_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padr); // right
-			down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padd)); // down
+			left_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padl); // left
+			up_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padu)); // up
+			right_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padr); // right
+			down_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padd)); // down
 		} else if (TTT_Controller.cn_swap = 1) { 
-			left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padd)); // down
-			up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padl); // left
-			right_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padu)); // up
-			down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padr); // right
+			left_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padd)); // down
+			up_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padl); // left
+			right_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padu)); // up
+			down_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padr); // right
 		} else if (TTT_Controller.cn_swap = 2) {
-			left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padr); // right
-			up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padd)); // down
-			right_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padl); // left
-			down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padu)); // up 
+			left_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padr); // right
+			up_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padd)); // down
+			right_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padl); // left
+			down_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padu)); // up 
 		}  else if (TTT_Controller.cn_swap = 3) {
-			left_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padu)); // up 
-			up_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padr); // right
-			right_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[2], gp_padd)); // down
-			down_input = (gamepad_axis_value(global.playercontrollerindices[2], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[2], gp_padl); // left
+			left_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) < -dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padu)); // up 
+			up_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) > dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padr); // right
+			right_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislv) > dead_zone || gamepad_button_check(global.playercontrollerindices[3], gp_padd)); // down
+			down_input = (gamepad_axis_value(global.playercontrollerindices[3], gp_axislh) < -dead_zone) || gamepad_button_check(global.playercontrollerindices[3], gp_padl); // left
 		}
 
 
