@@ -38,8 +38,8 @@
     "path": "sprites/SP_PlayerUpSSS/SP_PlayerUpSSS.yy",
   },
   "spriteMaskId": {
-    "name": "SP_PlayerCollision",
-    "path": "sprites/SP_PlayerCollision/SP_PlayerCollision.yy",
+    "name": "SP_PlayerCollisionSSS",
+    "path": "sprites/SP_PlayerCollisionSSS/SP_PlayerCollisionSSS.yy",
   },
   "visible": true,
 }

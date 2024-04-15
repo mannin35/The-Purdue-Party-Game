@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "SP_Finish",
-  "bbox_bottom": 9,
+  "name": "SP_TTTCollisionBox",
+  "bbox_bottom": 17,
   "bbox_left": 0,
-  "bbox_right": 9,
+  "bbox_right": 14,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,17 +13,17 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"49273067-5384-496e-a95a-ae8ba731f5ab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f56e46c9-0f3c-4ccb-8b25-d01069150fa2",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 10,
+  "height": 18,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1613871b-4fb3-4b48-8c74-7ed60b2c1bed","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"aa9648dc-2ffc-4fa8-86cb-3b787a9f370b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Tipsy Tunnel",
     "path": "folders/Sprites/Tipsy Tunnel.yy",
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "SP_Finish",
+    "name": "SP_TTTCollisionBox",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"49273067-5384-496e-a95a-ae8ba731f5ab","path":"sprites/SP_Finish/SP_Finish.yy",},},},"Disabled":false,"id":"a4caa118-d405-4da7-8dd5-fe6f23d2f4c4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f56e46c9-0f3c-4ccb-8b25-d01069150fa2","path":"sprites/SP_TTTCollisionBox/SP_TTTCollisionBox.yy",},},},"Disabled":false,"id":"bcae5b25-521f-4bf1-ba26-c14d2040c5a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 5,
-    "yorigin": 5,
+    "xorigin": 7,
+    "yorigin": 9,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 10,
+  "width": 15,
 }

@@ -1,14 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message("PLAYER 2 X");
+/*show_debug_message("PLAYER 2 X");
 show_debug_message(x);
 show_debug_message("PLAYER 2 X");
-show_debug_message(y);
+show_debug_message(y);*/
 
 if(global.localPlayers[1].isCPU) {
 	//CODE FOR CPU PLAYER
-	
-	if(walksp>0) {
+	mask_index = SP_PlayerCollisionSSS; // sets collision to a perfect box
+	if(walksp > 0) {
 		//see if at finish line
 		if place_meeting(x, y, oFinish) {
 			if !(over) {
@@ -17,30 +17,32 @@ if(global.localPlayers[1].isCPU) {
 				oController.pos++;
 				timer.visible = false;
 			}
-			walksp = 0;
+			//walksp = 0;
 			over = true;
 		} else {
 			//calculate distance to finish
 			dist_to_fin = point_distance(x,y,player_two_finish_TTT.x, player_two_finish_TTT.y);
 			
 			//check if close enough fir direct route
-			if((dist_to_fin<250 && global.CPUSettings[1]==1) || (dist_to_fin<400 && global.CPUSettings[1]==2)) {
-				direct_path = true;	
+			if ((dist_to_fin < 45 && global.CPUSettings[1]==0) || (dist_to_fin < 150 && global.CPUSettings[1]==1) || (dist_to_fin < 240 && global.CPUSettings[1]==2)) {
+			    direct_path = true;	
 			}
+			prevX = x
+			prevY = y
 			if(!direct_path) {
 				//decide next direction
 				choices = [];
 				number_of_choices = 0;
 
 				if(direction!=270) {
-					if(place_meeting(x, y-2, oMaze) == false) {
+					if(place_meeting(x, y-walksp, oMaze) == false) {
 						choices[number_of_choices] = 90;
 						number_of_choices++;
 					}
 				}
 
 				if(direction!=90) {
-					if(place_meeting(x, y+2, oMaze) == false) {
+					if(place_meeting(x, y+walksp, oMaze) == false) {
 						choices[number_of_choices] = 270;
 						number_of_choices++;
 					}
@@ -48,7 +50,7 @@ if(global.localPlayers[1].isCPU) {
 
 
 				if(direction!=0) {
-					if(place_meeting(x-8, y, oMaze) == false) {
+					if(place_meeting(x-walksp, y, oMaze) == false) {
 						choices[number_of_choices] = 180;
 						number_of_choices++;
 					}
@@ -56,12 +58,11 @@ if(global.localPlayers[1].isCPU) {
 
 
 				if(direction!=180) {
-					if(place_meeting(x+8, y, oMaze) == false) {
+					if(place_meeting(x+walksp, y, oMaze) == false) {
 						choices[number_of_choices] = 0;
 						number_of_choices++;
 					}
 				}
-
 				if(number_of_choices==0) {
 					direction = (direction+180)%360;
 					move_contact_solid(direction, walksp);
@@ -70,6 +71,7 @@ if(global.localPlayers[1].isCPU) {
 					direction = new_direction;
 					move_contact_solid(direction, walksp);
 				}
+				calculateSpriteDir();
 			}
 		}
 	}
@@ -149,9 +151,11 @@ if(global.localPlayers[1].isCPU) {
 		hsp = 0;
 		vsp = walksp;
 	}*/
-
+	prevX = x
+	prevY = y
 	x += hsp; // the parts that go each direction
 	y += vsp;
+	calculateSpriteDir(); // draw sprite
 
 	// Horizontal Collision
 	/*if (place_meeting(x + hsp, y ,oMaze))
@@ -164,6 +168,16 @@ if(global.localPlayers[1].isCPU) {
 	{
 		vsp = 0;
 	}*/
+}
+
+if ((dx == 0 && dy == 0) || walksp == 0 || over) { // reset sprite to neutral
+	image_index = global.playerTwoIndex * 3 + 2;	
+	//show_debug_message("reset");
+} else {
+	if (alarm_get(1) < 0) {
+		alarm[1] = 15;	
+	}
+	//show_debug_message("animate");
 }
 
 

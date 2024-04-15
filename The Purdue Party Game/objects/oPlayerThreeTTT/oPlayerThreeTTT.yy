@@ -7,6 +7,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,9 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_Players",
-    "path": "sprites/SP_Players/SP_Players.yy",
+    "name": "SP_PlayerRightSSS",
+    "path": "sprites/SP_PlayerRightSSS/SP_PlayerRightSSS.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "SP_TTTCollisionBox",
+    "path": "sprites/SP_TTTCollisionBox/SP_TTTCollisionBox.yy",
+  },
   "visible": true,
 }

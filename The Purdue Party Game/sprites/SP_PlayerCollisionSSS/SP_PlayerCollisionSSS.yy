@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "SP_PlayerCollision",
+  "name": "SP_PlayerCollisionSSS",
   "bbox_bottom": 19,
   "bbox_left": 0,
   "bbox_right": 19,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "SP_PlayerCollision",
+    "name": "SP_PlayerCollisionSSS",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bedcd8be-940b-45f3-ba7d-e1f1359b4c06","path":"sprites/SP_PlayerCollision/SP_PlayerCollision.yy",},},},"Disabled":false,"id":"04d8dc6f-775c-4c16-bc2f-764d774e0a3f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bedcd8be-940b-45f3-ba7d-e1f1359b4c06","path":"sprites/SP_PlayerCollisionSSS/SP_PlayerCollisionSSS.yy",},},},"Disabled":false,"id":"04d8dc6f-775c-4c16-bc2f-764d774e0a3f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

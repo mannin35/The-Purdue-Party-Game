@@ -23,4 +23,23 @@ right_input =(gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) >
 up_input = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) < -dead_zone);
 down_input = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv) > dead_zone);
 
+prevX = 0
+prevY = 0
+dx = 0 // set these every frame to determine animation
+dy = 0 // 
+
+calculateSpriteDir = function() { // given dy/dx, calculates the sprite to display for player/cpus
+	dx = x - prevX
+	dy = y - prevY
+	if (dx > 0) { // if moving right
+		sprite_index = SP_PlayerRightSSS;
+	} else if (dx < 0) { // if moving left
+		sprite_index = SP_PlayerLeftSSS;
+	} else if (dy > 0) { // if moving down
+		sprite_index = SP_PlayerDownSSS;
+	} else if (dy < 0) { // if moving up
+		sprite_index = SP_PlayerUpSSS;
+	}
+}
+
 //alarm[0] = irandom_range(300, 600);

@@ -6,10 +6,14 @@ p_two = global.playerTwoIndex;
 p_three = global.playerThreeIndex;
 p_four = global.playerFourIndex;
 
-player_one_TTT.image_index = p_one;
-player_two_TTT.image_index = p_two;
-player_three_TTT.image_index = p_three;
-player_four_TTT.image_index = p_four;
+player_one_TTT.image_index = p_one * 3 + 2;
+player_two_TTT.image_index = p_two * 3 + 2;
+player_three_TTT.image_index = p_three * 3 + 2;
+player_four_TTT.image_index = p_four * 3 + 2;
+//player_one_TTT.sprite_index = SP_PlayerCollisionSSS;
+//player_two_TTT.sprite_index = SP_PlayerCollisionSSS;
+
+
 
 global.localPlayers[0].visible = false; // bugfix!!!
 global.localPlayers[1].visible = false;
