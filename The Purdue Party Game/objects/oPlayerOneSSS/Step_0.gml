@@ -43,17 +43,20 @@ if(global.localPlayers[0].isCPU) {
 		//see if at finish line
 		if place_meeting(x, y, oFinish) {
 			if !(over) {
-				global.minigameResults[0] = oSSSControl.pos;
-				show_debug_message("player 1 pos = " + string(oSSSControl.pos));
+				global.minigameResults[0] = oSSSControl.pos++;
+				show_debug_message("player 1 pos = " + global.minigameResults[0]);
 				oSSSControl.pos++;
-				timer.visible = false;
+				sprite_index = SP_PlayerDownSSS;
+				image_index = index * 3 + 2;
 			}
 			walksp = 0;
 			over = true;
 		} else {
 			//calc distance to finish
 			dist_to_fin = point_distance(x,y, x, oFinish.y);
-			
+			if (global.CPUSettings[0]==0) {
+				direction = 90;
+			} else {
 			//check if close enough for direct route
 			if((dist_to_fin<250 && global.CPUSettings[0]==1) || (dist_to_fin<400 && global.CPUSettings[0]==2)) {
 			    direct_path = true;	
@@ -101,6 +104,7 @@ if(global.localPlayers[0].isCPU) {
 					direction = new_direction;
 					move_contact_solid(direction, walksp);
 				}
+			}
 			}
 		}
 	}

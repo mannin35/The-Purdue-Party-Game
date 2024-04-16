@@ -37,6 +37,80 @@ x += hsp;
 y += vsp;
 */
 
+if(global.localPlayers[3].isCPU) {
+	//CODE FOR CPU PLAYER
+	
+	if(walksp>0) {
+		//see if at finish line
+		if place_meeting(x, y, oFinish) {
+			if !(over) {
+				global.minigameResults[3] = oSSSControl.pos++;
+				show_debug_message("player 4 pos = " + global.minigameResults[3]);
+				oSSSControl.pos++;
+				sprite_index = SP_PlayerDownSSS;
+				image_index = index * 3 + 2;
+			}
+			walksp = 0;
+			over = true;
+		} else {
+			//calc distance to finish
+			dist_to_fin = point_distance(x,y, x, oFinish.y);
+			if (global.CPUSettings[3]==0) {
+				direction = 90;
+			} else {
+			//check if close enough for direct route
+			if((dist_to_fin<250 && global.CPUSettings[3]==1) || (dist_to_fin<400 && global.CPUSettings[3]==2)) {
+			    direct_path = true;	
+			}
+			if(!direct_path) {
+				//decide next direction
+				choices = [];
+				number_of_choices = 0;
+
+				if(direction!=270) {
+					if(place_meeting(x, y-20, oVehicle) == false) {
+						choices[number_of_choices] = 90;
+						number_of_choices++;
+					}
+				}
+
+				if(direction!=90) {
+					if(place_meeting(x, y+20, oVehicle) == false) {
+						choices[number_of_choices] = 270;
+						number_of_choices++;
+					}
+				}
+
+
+				if(direction!=0) {
+					if(place_meeting(x-80, y, oVehicle) == false) {
+						choices[number_of_choices] = 180;
+						number_of_choices++;
+					}
+				}
+
+
+				if(direction!=180) {
+					if(place_meeting(x+80, y, oVehicle) == false) {
+						choices[number_of_choices] = 0;
+						number_of_choices++;
+					}
+				}
+
+				if(number_of_choices==0) {
+					direction = (direction+180)%360;
+					move_contact_solid(direction, walksp);
+				} else {
+					new_direction = choices[irandom(number_of_choices-1)];
+					direction = new_direction;
+					move_contact_solid(direction, walksp);
+				}
+			}
+			}
+		}
+	}
+	
+} else {
 if (!over && !hit && !grab && !grabbed) {
 	if (left_input) { // if left or right are pressed
 		if (alarm_get(0) < 0) {
@@ -128,6 +202,7 @@ if (!over && !hit && !grab && !grabbed) {
 			alarm[3] = 3;
 		}
 	}
+}
 }
 
 if (place_meeting(x + hsp, y, oBorder) && !hit) { // horiz border col
