@@ -85,7 +85,7 @@ if(button_x  && Obj_ContinueButton.current) {
 		//room_goto(RM_LocalView);
 		if(!instance_exists(OBJ_Transition)) {
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
-			inst.target_rm = RM_LocalView;
+			inst.target_rm = RM_LocalView
 		}
 	}
 	Obj_ReturnButton.current = false;

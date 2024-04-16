@@ -23,8 +23,8 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
-	minigame = irandom(1);
-	minigame = 2;
+	minigame = irandom(2);
+	//minigame = 0;
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
@@ -32,7 +32,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//ensure same minigame isnt picked twice
 	while (minigame == last_minigame) {
 		//show_debug_message("loop");
-		minigame = irandom(1);	
+		minigame = irandom(2);	
 	}
 	//camera_set_view_size(view_camera[0], 512,288);
 	
@@ -40,7 +40,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//go to corresponding minigame screen
 	if(test_case==0) {
 		last_minigame = minigame;
-		if (minigame == 4) {
+		if (minigame == 2) {
 			//room_goto(RM_BoilermakerExpressInstructions);
 			//transition to RM_BoilermakerExpressInstructions
 			if(!instance_exists(OBJ_Transition)) {
@@ -54,7 +54,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 				inst.target_rm = RM_ElevenFiftyNineInstructions;
 			}
-		} else if (minigame == 2) {
+		} else if (minigame == 4) {
 			//room_goto(RM_StateStreetInstructions);
 			//transition to RM_StateStreetInstructions
 			if(!instance_exists(OBJ_Transition)) {
