@@ -78,6 +78,7 @@
     {"id":{"name":"oPlayerEFN","path":"objects/oPlayerEFN/oPlayerEFN.yy",},},
     {"id":{"name":"oElevenFiftyNineTimer","path":"objects/oElevenFiftyNineTimer/oElevenFiftyNineTimer.yy",},},
     {"id":{"name":"OBJ_TriviaQuestion","path":"objects/OBJ_TriviaQuestion/OBJ_TriviaQuestion.yy",},},
+    {"id":{"name":"SNG_ElevenFiftyNine","path":"sounds/SNG_ElevenFiftyNine/SNG_ElevenFiftyNine.yy",},},
     {"id":{"name":"TS_TimesUpGame","path":"tilesets/TS_TimesUpGame/TS_TimesUpGame.yy",},},
     {"id":{"name":"SP_TimesUpInstructionText","path":"sprites/SP_TimesUpInstructionText/SP_TimesUpInstructionText.yy",},},
     {"id":{"name":"SP_PlayerLookStraight","path":"sprites/SP_PlayerLookStraight/SP_PlayerLookStraight.yy",},},

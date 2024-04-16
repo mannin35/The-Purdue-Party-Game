@@ -3,6 +3,7 @@ player_one_grab.visible = false;
 player_two_grab.visible = false;
 player_three_grab.visible = false;
 player_four_grab.visible = false;
+pos = 1;
 /*player_one_SSS.player = 0;
 player_two_SSS.player = 1;
 player_one_SSS.player = 2;

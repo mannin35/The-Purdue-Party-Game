@@ -36,7 +36,76 @@ if (x + hsp <= 32 || x + hsp >=
 x += hsp;
 y += vsp;
 */
+if(global.localPlayers[0].isCPU) {
+	//CODE FOR CPU PLAYER
+	
+	if(walksp>0) {
+		//see if at finish line
+		if place_meeting(x, y, oFinish) {
+			if !(over) {
+				global.minigameResults[0] = oSSSControl.pos;
+				show_debug_message("player 1 pos = " + string(oSSSControl.pos));
+				oSSSControl.pos++;
+				timer.visible = false;
+			}
+			walksp = 0;
+			over = true;
+		} else {
+			//calc distance to finish
+			dist_to_fin = point_distance(x,y, x, oFinish.y);
+			
+			//check if close enough for direct route
+			if((dist_to_fin<250 && global.CPUSettings[0]==1) || (dist_to_fin<400 && global.CPUSettings[0]==2)) {
+			    direct_path = true;	
+			}
+			if(!direct_path) {
+				//decide next direction
+				choices = [];
+				number_of_choices = 0;
 
+				if(direction!=270) {
+					if(place_meeting(x, y-20, oVehicle) == false) {
+						choices[number_of_choices] = 90;
+						number_of_choices++;
+					}
+				}
+
+				if(direction!=90) {
+					if(place_meeting(x, y+20, oVehicle) == false) {
+						choices[number_of_choices] = 270;
+						number_of_choices++;
+					}
+				}
+
+
+				if(direction!=0) {
+					if(place_meeting(x-80, y, oVehicle) == false) {
+						choices[number_of_choices] = 180;
+						number_of_choices++;
+					}
+				}
+
+
+				if(direction!=180) {
+					if(place_meeting(x+80, y, oVehicle) == false) {
+						choices[number_of_choices] = 0;
+						number_of_choices++;
+					}
+				}
+
+				if(number_of_choices==0) {
+					direction = (direction+180)%360;
+					move_contact_solid(direction, walksp);
+				} else {
+					new_direction = choices[irandom(number_of_choices-1)];
+					direction = new_direction;
+					move_contact_solid(direction, walksp);
+				}
+			}
+		}
+	}
+	
+} else {
 if (!over && !hit && !grab && !grabbed) {
 
 	if (left_input) { // if left or right are pressed
@@ -131,7 +200,7 @@ if (!over && !hit && !grab && !grabbed) {
 		}
 	}
 }
-
+}
 if (place_meeting(x + hsp, y, oBorder) && !hit) { // horiz border col
 	hsp = 0;	
 }
