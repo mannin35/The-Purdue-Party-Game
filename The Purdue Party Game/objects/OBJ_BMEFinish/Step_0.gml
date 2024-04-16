@@ -16,5 +16,7 @@ if(Inst_Player4.over) {
 }
 
 if(finishcount>=3) {
+	
+	Obj_Demo.visible = false;
 	global.minigameOver = 1;	
 }
