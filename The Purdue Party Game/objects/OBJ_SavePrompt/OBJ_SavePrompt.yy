@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "OBJ_Player1Local",
+  "name": "OBJ_SavePrompt",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,14 +9,11 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Players",
-    "path": "folders/Objects/Local View/Players.yy",
+    "name": "Local View",
+    "path": "folders/Objects/Local View.yy",
   },
-  "parentObjectId": {
-    "name": "OBJ_Player",
-    "path": "objects/OBJ_Player/OBJ_Player.yy",
-  },
-  "persistent": true,
+  "parentObjectId": null,
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -32,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_Players",
-    "path": "sprites/SP_Players/SP_Players.yy",
+    "name": "SP_SavePrompt",
+    "path": "sprites/SP_SavePrompt/SP_SavePrompt.yy",
   },
   "spriteMaskId": null,
   "visible": true,

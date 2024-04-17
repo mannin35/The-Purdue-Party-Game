@@ -187,6 +187,7 @@
     {"name":"inst_63C11D55","path":"rooms/RM_LocalView/RM_LocalView.yy",},
     {"name":"inst_15CE049C","path":"rooms/RM_LocalView/RM_LocalView.yy",},
     {"name":"inst_1BC5592F","path":"rooms/RM_LocalView/RM_LocalView.yy",},
+    {"name":"inst_38A942E","path":"rooms/RM_LocalView/RM_LocalView.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -204,6 +205,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2378804A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_BusLocal","path":"objects/OBJ_BusLocal/OBJ_BusLocal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":544.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_590DE79A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_BusQuestion","path":"objects/OBJ_BusQuestion/OBJ_BusQuestion.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":544.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BC5592F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Save","path":"objects/OBJ_Save/OBJ_Save.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_38A942E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_SavePrompt","path":"objects/OBJ_SavePrompt/OBJ_SavePrompt.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":512.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"GUI","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1EE38F47","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Scoreboard","path":"objects/OBJ_Scoreboard/OBJ_Scoreboard.yy",},"properties":[],"rotation":0.0,"scaleX":0.25,"scaleY":0.25,"x":665.0,"y":98.0,},

@@ -16,6 +16,11 @@ function save_game(){
 	file_text_write_real(file, global.playerTwoIndex);
 	file_text_write_real(file, global.playerThreeIndex);
 	file_text_write_real(file, global.playerFourIndex);
+	//Player Colors
+	file_text_write_real(file, OBJ_Player1Local.color);	
+	file_text_write_real(file, OBJ_Player2Local.color);
+	file_text_write_real(file, OBJ_Player3Local.color);
+	file_text_write_real(file, OBJ_Player4Local.color);
 	//Player Degrees
 	file_text_write_real(file, OBJ_Player1Local.degrees);	
 	file_text_write_real(file, OBJ_Player2Local.degrees);
@@ -33,7 +38,7 @@ function save_game(){
 	file_text_write_real(file, OBJ_Player4Local.items[0]); file_text_write_real(file, OBJ_Player4Local.items[1]); file_text_write_real(file, OBJ_Player4Local.items[2]);
 	//Current Turn
 	file_text_write_real(file, global.currentplayer);
-	//Total turns left
+	//Current turn count
 	file_text_write_real(file, global.turns);
 	//Number of real players
 	file_text_write_real(file, global.realPlayerCount);
@@ -42,6 +47,11 @@ function save_game(){
 	file_text_write_real(file, global.difficultyTwo);
 	file_text_write_real(file, global.difficultyThree);
 	file_text_write_real(file, global.difficultyFour);
+	//CPU Array
+	file_text_write_real(file, global.CPUSettings[0]);
+	file_text_write_real(file, global.CPUSettings[1]);
+	file_text_write_real(file, global.CPUSettings[2]);
+	file_text_write_real(file, global.CPUSettings[3]);
 	//Bonus Degree Stats
 	//For red spaces
 	file_text_write_real(file, OBJ_Player1Local.redSpaces);
@@ -59,10 +69,12 @@ function save_game(){
 	file_text_write_real(file, OBJ_Player3Local.triviaCorrect);
 	file_text_write_real(file, OBJ_Player4Local.triviaCorrect);
 	//Minigame wins
-	file_text_write_real(file, OBJ_Player1Local.wins);
-	file_text_write_real(file, OBJ_Player2Local.wins);
-	file_text_write_real(file, OBJ_Player3Local.wins);
-	file_text_write_real(file, OBJ_Player4Local.wins);
+	file_text_write_real(file, global.wins[0]);
+	file_text_write_real(file, global.wins[1]);
+	file_text_write_real(file, global.wins[2]);
+	file_text_write_real(file, global.wins[3]);
+	//Win Index
+	file_text_write_real(file, global.winIndex);
 	//Last Minigame
 	file_text_write_real(file, OBJ_PlayerInfo.last_minigame);
 	//Previously asked trivia
@@ -121,6 +133,11 @@ function load_game(){
 		OBJ_Player2Local.walkingIndex = (3*global.playerTwoIndex);
 		OBJ_Player3Local.walkingIndex = (3*global.playerThreeIndex);
 		OBJ_Player4Local.walkingIndex = (3*global.playerFourIndex);
+		//Player Colors
+		OBJ_Player1Local.color = file_text_read_real(file);	
+		OBJ_Player2Local.color = file_text_read_real(file);
+		OBJ_Player3Local.color = file_text_read_real(file);
+		OBJ_Player4Local.color = file_text_read_real(file);
 		//Player Degrees
 		OBJ_Player1Local.degrees = file_text_read_real(file);
 		OBJ_Player2Local.degrees = file_text_read_real(file);
@@ -147,6 +164,11 @@ function load_game(){
 		global.difficultyTwo = file_text_read_real(file);
 		global.difficultyThree = file_text_read_real(file);
 		global.difficultyFour = file_text_read_real(file);
+		//CPU Array
+		global.CPUSettings[0] = file_text_read_real(file); 
+		global.CPUSettings[1] = file_text_read_real(file); 
+		global.CPUSettings[2] = file_text_read_real(file); 
+		global.CPUSettings[3] = file_text_read_real(file); 
 		//Bonus Degree Stats
 		//For red spaces
 		OBJ_Player1Local.redSpaces = file_text_read_real(file);
@@ -164,10 +186,12 @@ function load_game(){
 		OBJ_Player3Local.triviaCorrect = file_text_read_real(file);
 		OBJ_Player4Local.triviaCorrect = file_text_read_real(file);
 		//Minigame wins
-		OBJ_Player1Local.wins = file_text_read_real(file);
-		OBJ_Player2Local.wins = file_text_read_real(file);
-		OBJ_Player3Local.wins = file_text_read_real(file);
-		OBJ_Player4Local.wins = file_text_read_real(file);
+		global.wins[0] = file_text_read_real(file);
+		global.wins[1] = file_text_read_real(file);
+		global.wins[2] = file_text_read_real(file);
+		global.wins[3] = file_text_read_real(file);
+		//Win Index
+		global.winIndex = file_text_read_real(file);
 		//Last Minigame
 		OBJ_PlayerInfo.last_minigame = file_text_read_real(file);
 		//Previously asked trivia
@@ -195,7 +219,11 @@ function load_game(){
 		//Close File
 		file_text_close(file);
 		ResetButtons(global.currentplayer)
-		
+		global.accoladesCalculated = false;
+		global.winIndex = 0;
+		global.bbIndex = 0;
+		global.triviaIndex = 0;
+		global.loanIndex = 0;
 		//Delete File after Loading
 		//file_delete("save.txt")
 	}
