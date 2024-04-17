@@ -10,8 +10,8 @@ function createRandomDegree() {
 	degreeIndex = newIndex;
 	currentDegreeSpace = degrees[degreeIndex];
 	currentDegreeSpace.hasDegree = true;
-	degreeLocal = instance_create_layer(currentDegreeSpace.x, currentDegreeSpace.y, layer, OBJ_DegreeLocal);
-	degreeFull = instance_create_layer(currentDegreeSpace.x, currentDegreeSpace.y, layer, OBJ_DegreeFull);
+	degreeLocal = instance_create_layer(currentDegreeSpace.x, currentDegreeSpace.y, "Instances", OBJ_DegreeLocal);
+	degreeFull = instance_create_layer(currentDegreeSpace.x, currentDegreeSpace.y, "Instances", OBJ_DegreeFull);
 }
 if(!global.hasLoaded){
 degreeIndex = -1;

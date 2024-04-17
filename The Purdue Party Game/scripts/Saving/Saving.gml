@@ -226,8 +226,8 @@ function load_game(){
 		if(global.hasLoaded){
 		OBJ_DegreeLogic.currentDegreeSpace = OBJ_DegreeLogic.degrees[OBJ_DegreeLogic.degreeIndex];
 		OBJ_DegreeLogic.currentDegreeSpace.hasDegree = true;
-		OBJ_DegreeLogic.degreeLocal = instance_create_layer(OBJ_DegreeLogic.currentDegreeSpace.x, OBJ_DegreeLogic.currentDegreeSpace.y, layer, OBJ_DegreeLocal)
-		OBJ_DegreeLogic.degreeFull = instance_create_layer(OBJ_DegreeLogic.currentDegreeSpace.x, OBJ_DegreeLogic.currentDegreeSpace.y, layer, OBJ_DegreeFull)
+		OBJ_DegreeLogic.degreeLocal = instance_create_layer(OBJ_DegreeLogic.currentDegreeSpace.x, OBJ_DegreeLogic.currentDegreeSpace.y, "Instances", OBJ_DegreeLocal)
+		OBJ_DegreeLogic.degreeFull = instance_create_layer(OBJ_DegreeLogic.currentDegreeSpace.x, OBJ_DegreeLogic.currentDegreeSpace.y, "Instances", OBJ_DegreeFull)
 		}
 		global.hasLoaded = true;
 		ResetButtons(global.currentplayer)
