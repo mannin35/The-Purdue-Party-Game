@@ -38,7 +38,7 @@ if((Obj_ReturnButton.current) && key_up && global.realPlayerCount == 4){
 		inst.target_rm = RM_Title;
 	}
 } else {
-	if(key_up && Obj_ReturnButton.current){
+	if(room != RM_Settings && key_up && Obj_ReturnButton.current){
 		current = false;
 		image_index--;
 		Obj_LeftArrow.current = true;
@@ -47,13 +47,24 @@ if((Obj_ReturnButton.current) && key_up && global.realPlayerCount == 4){
 }
 //show_debug_message("{0}\n", button_x);
 //Moves to continue button
-if((Obj_ReturnButton.current) && (key_right)){
+if((room != RM_Settings && Obj_ReturnButton.current) && (key_right)){
 	image_index = 0;
 	Obj_ContinueButton.current = true;
 	Obj_ContinueButton.image_index = 1;
 	Obj_ReturnButton.current = false;
 }
 
+//NEW STUFF
+if(room == RM_Settings && Obj_ReturnButton.current) {
+	if(key_up) {
+		image_index = 0;
+		Obj_ReturnButton.current = false;
+		Obj_LeftSFX.image_index++;
+		Obj_LeftSFX.current = true;
+		global.isMoving = true;
+	}
+}
+//NEW STUFF
 
 //Return is pressed and goes back to main menu
 	if ((Obj_ReturnButton.current) && button_x) {
@@ -70,6 +81,12 @@ if((Obj_ReturnButton.current) && (key_right)){
 			if(!instance_exists(OBJ_Transition)) {
 				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 				inst.target_rm = RM_CPUSettings;
+			}
+		} else if (room == RM_Settings) {
+			//transition to RM_Title
+			if(!instance_exists(OBJ_Transition)) {
+				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+				inst.target_rm = RM_Title;
 			}
 		}
 		Obj_ReturnButton.current = false;
