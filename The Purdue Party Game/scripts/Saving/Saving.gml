@@ -99,6 +99,8 @@ function save_game(){
 	file_text_write_real(file, real(OBJ_Player2Local.space.id))
 	file_text_write_real(file, real(OBJ_Player3Local.space.id))
 	file_text_write_real(file, real(OBJ_Player4Local.space.id))
+	//Current Degree Space
+	file_text_write_real(file, OBJ_DegreeLogic.degreeIndex)
 	//Close file
 	file_text_close(file);
 }
@@ -216,8 +218,18 @@ function load_game(){
 		OBJ_Player2Local.space = file_text_read_real(file);
 		OBJ_Player3Local.space = file_text_read_real(file);
 		OBJ_Player4Local.space = file_text_read_real(file);
+		//Current Degree
+		OBJ_DegreeLogic.degreeIndex = file_text_read_real(file);
 		//Close File
 		file_text_close(file);
+		OBJ_DegreeLogic.degrees = [Space14, Space35, Space113];
+		if(global.hasLoaded){
+		OBJ_DegreeLogic.currentDegreeSpace = OBJ_DegreeLogic.degrees[OBJ_DegreeLogic.degreeIndex];
+		OBJ_DegreeLogic.currentDegreeSpace.hasDegree = true;
+		OBJ_DegreeLogic.degreeLocal = instance_create_layer(OBJ_DegreeLogic.currentDegreeSpace.x, OBJ_DegreeLogic.currentDegreeSpace.y, layer, OBJ_DegreeLocal)
+		OBJ_DegreeLogic.degreeFull = instance_create_layer(OBJ_DegreeLogic.currentDegreeSpace.x, OBJ_DegreeLogic.currentDegreeSpace.y, layer, OBJ_DegreeFull)
+		}
+		global.hasLoaded = true;
 		ResetButtons(global.currentplayer)
 		global.accoladesCalculated = false;
 		global.winIndex = 0;

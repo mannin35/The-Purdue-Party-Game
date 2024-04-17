@@ -116,7 +116,6 @@
     {"name":"SP_PlayersDown","order":1,"path":"sprites/SP_PlayersDown/SP_PlayersDown.yy",},
     {"name":"SP_Smoke","order":3,"path":"sprites/SP_Smoke/SP_Smoke.yy",},
     {"name":"Saving","order":2,"path":"scripts/Saving/Saving.yy",},
-    {"name":"OBJ_Save","order":17,"path":"objects/OBJ_Save/OBJ_Save.yy",},
     {"name":"SP_Arrow","order":1,"path":"sprites/SP_Arrow/SP_Arrow.yy",},
     {"name":"OBJ_FinalPopUp","order":1,"path":"objects/OBJ_FinalPopUp/OBJ_FinalPopUp.yy",},
     {"name":"OBJ_MGPlacementFinalTwo","order":12,"path":"objects/OBJ_MGPlacementFinalTwo/OBJ_MGPlacementFinalTwo.yy",},

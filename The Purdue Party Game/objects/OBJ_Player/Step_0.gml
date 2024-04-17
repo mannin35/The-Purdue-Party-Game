@@ -6,16 +6,17 @@ button_start = (gamepad_button_check_released(controller, gp_start));
 currentPlayer = global.localPlayers[global.currentplayer];
 
 	// Confirm path if space is pressed
-	if(button_start && OBJ_SavePrompt.visible == false){
+	//show_debug_message("{0} {1} {2}", button_start, OBJ_SavePrompt.visible, global.hasPressed)
+if(numSpaces == 0 && room == RM_LocalView){
+	if(button_start && OBJ_SavePrompt.visible == false && (global.hasPressed == false)){
 		HideButtons()
+		global.hasPressed = true;
+		OBJ_SavePrompt.alarm[0] = 15;
 		OBJ_SavePrompt.visible = true;
 		OBJ_SavePrompt.x = global.localPlayers[global.currentplayer].x;
 		OBJ_SavePrompt.y = global.localPlayers[global.currentplayer].y;
-	} else {
-		button_start = 0;
-		global.hasPressed = false;
 	}
-	
+}
 if (waitForDegree) {
 	exit;
 }
