@@ -1,6 +1,7 @@
 /// @ Update player position as needed
 pathChosen = false;
 index = 0;
+var button_start = 0;
 currentPlayer = global.localPlayers[global.currentplayer];
 if (waitForDegree) {
 	exit;
@@ -33,12 +34,12 @@ if (awaitingInput) {
 			(gamepad_axis_value(controller, gp_axislv) > dead_zone);
 		var button_x =(keyboard_check_pressed(vk_space)) || 
 			(gamepad_button_check_pressed(controller, gp_face1));
-		var button_start = (gamepad_button_check_pressed(controller, gp_start));
+		button_start = (gamepad_button_check_pressed(controller, gp_start));
 	 }
 	// Confirm path if space is pressed
 	if(button_start && OBJ_SavePrompt.visible == false){
 			OBJ_SavePrompt.visible = true;
-			OBJ_SavePrompt.x =OBJ_Player1Local.x;
+			OBJ_SavePrompt.x = OBJ_Player1Local.x;
 			OBJ_SavePrompt.y = OBJ_Player1Local.y;
 	}
 	if (button_x) {
