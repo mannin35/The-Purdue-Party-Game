@@ -37,7 +37,7 @@ if (awaitingInput) {
 	 }
 	 else {
 		var controllerIndex = global.currentplayer;
-		var controller = global.playercontrollerindices[index];
+		var controller = global.playercontrollerindices[controllerIndex];
 		var left_key = (keyboard_check_pressed(vk_left)) || 
 			(gamepad_axis_value(controller, gp_axislh) <  -dead_zone) ;
 		var right_key = (keyboard_check_pressed(vk_right)) ||
