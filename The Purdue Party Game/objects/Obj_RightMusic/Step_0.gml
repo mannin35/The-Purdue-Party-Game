@@ -9,7 +9,10 @@ var key_down = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv)
 if (!global.isMoving) {
 	//Change sfx volume
 	if(current && button_x) {
-	
+		if(OBJ_MusicVol.image_index < 20) {
+			OBJ_MusicVol.image_index++;
+			global.music_volume+=5;
+		}
 	}
 
 	if(key_down && current){

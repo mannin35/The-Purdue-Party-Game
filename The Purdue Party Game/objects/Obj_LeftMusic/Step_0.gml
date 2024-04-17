@@ -8,7 +8,10 @@ var key_down = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislv)
 //Change music volume
 if (!global.isMoving) {
 	if(current && button_x) {
-	
+		if(OBJ_MusicVol.image_index > 0) {
+			OBJ_MusicVol.image_index--;
+			global.music_volume-=5;
+		}
 	}
 
 	if(key_down && current){
