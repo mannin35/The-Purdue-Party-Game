@@ -16,5 +16,4 @@ function createRandomDegree() {
 if(!global.hasLoaded){
 degreeIndex = -1;
 self.createRandomDegree();
-
 }

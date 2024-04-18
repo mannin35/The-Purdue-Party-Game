@@ -11,7 +11,6 @@ if(visible){
 		}
 		game_end()
 	} else if (!global.hasPressed && gamepad_button_check_released(global.playercontrollerindices[global.currentplayer], gp_start)){
-		show_debug_message("Start in start")
 		global.hasPressed = true;
 		alarm[0] = 15;
 		visible = false;

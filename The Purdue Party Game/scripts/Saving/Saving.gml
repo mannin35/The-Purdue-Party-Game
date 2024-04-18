@@ -103,11 +103,36 @@ function save_game(){
 	file_text_write_real(file, OBJ_DegreeLogic.degreeIndex)
 	//Close file
 	file_text_close(file);
+	file = file_text_open_read("save.txt");
+	var content = "";
+    while (!file_text_eof(file)) {
+        content += file_text_readln(file);
+    }
+    show_debug_message("Before encode: {0}", content)
+    // Close the file
+    file_text_close(file);
+	encodedContent = base64_encode(content)
+	file = file_text_open_write("save.txt");
+	file_text_write_string(file, encodedContent)
+	file_text_close(file);
 }
 
 function load_game(){
 	if(file_exists("save.txt")){
-		var file = file_text_open_read("save.txt")
+		file = file_text_open_read("save.txt");
+		var content = "";
+		while (!file_text_eof(file)) {
+			content += file_text_readln(file);
+		}
+		show_debug_message("{0}", content)
+		// Close the file
+		file_text_close(file);
+		decodedContent = base64_decode(content)
+		show_debug_message("Decode: {0}", decodedContent)
+		file = file_text_open_write("temp.txt");
+		file_text_write_string(file, decodedContent)
+		file_text_close(file);
+		var file = file_text_open_read("temp.txt")
 		//Player Sprites
 		
 		OBJ_Player1Local.sprite_index = asset_get_index(file_text_read_string(file))
@@ -237,6 +262,6 @@ function load_game(){
 		global.triviaIndex = 0;
 		global.loanIndex = 0;
 		//Delete File after Loading
-		//file_delete("save.txt")
+		file_delete("temp.txt")
 	}
 }
