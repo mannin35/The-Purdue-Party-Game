@@ -1,11 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_SettingsButton",
+  "name": "Obj_LeftSFX",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -30,12 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "SP_SettingsButton",
-    "path": "sprites/SP_SettingsButton/SP_SettingsButton.yy",
+    "name": "SP_LeftButton",
+    "path": "sprites/SP_LeftButton/SP_LeftButton.yy",
   },
-  "spriteMaskId": {
-    "name": "SP_BoilerUpButton",
-    "path": "sprites/SP_BoilerUpButton/SP_BoilerUpButton.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }
