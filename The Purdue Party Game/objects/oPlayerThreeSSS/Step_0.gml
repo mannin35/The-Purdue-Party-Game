@@ -47,7 +47,7 @@ if (!over && !hit && !grab && !grabbed) {
 			//alarm[1] = 4;
 			//image_xscale = -1.6;
 			//hsp = -walksp;
-			if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y) || (x - player_one_SSS.x < 64 && x - player_one_SSS.x >= 0 && y == player_one_SSS.y) || (x - player_four_SSS.x < 64 && x - player_four_SSS.x >= 0 && y == player_four_SSS.y)) {
+			if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y && !player_two_SSS.hit) || (x - player_one_SSS.x < 64 && x - player_one_SSS.x >= 0 && y == player_one_SSS.y && !player_three_SSS.hit) || (x - player_four_SSS.x < 64 && x - player_four_SSS.x >= 0 && y == player_four_SSS.y && !player_four_SSS.hit)) {
 				hsp = 0;
 			} else {
 				hsp = -walksp;
