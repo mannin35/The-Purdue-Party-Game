@@ -1,6 +1,6 @@
 
 x = irandom_range(4, 28) * 32 + 16; // respawning
-while (x == player_two_SSS.x || x == player_one_SSS.x || x == player_four_SSS.x) {
+while (place_meeting(x, y, player_one_SSS) || place_meeting(x, y, player_two_SSS) || place_meeting(x, y, player_four_SSS)) {
 	x += 32;	
 }
 

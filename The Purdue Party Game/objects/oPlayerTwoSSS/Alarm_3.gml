@@ -3,11 +3,11 @@
 
 // incoming doozy, going to check if someone is in grab box
 if (grabbedWho == -1) {
-	if ((player_two_grab.x == player_one_SSS.x) && (player_two_grab.y == player_one_SSS.y) && !hit && !player_one_SSS.grabbed) { // P2 > P1
+	if ((player_two_grab.x == oPlayerOneSSS.x) && (player_two_grab.y == oPlayerOneSSS.y) && !hit && !oPlayerOneSSS.grabbed) { // P2 > P1
 		//show_debug_message("touched!");
-		player_one_SSS.grabbed = true;
-		player_one_SSS.x = player_two_grab.x;
-		player_one_SSS.y = player_two_grab.y;
+		oPlayerOneSSS.grabbed = true;
+		oPlayerOneSSS.x = player_two_grab.x;
+		oPlayerOneSSS.y = player_two_grab.y;
 		//player_two_SSS.grabbed = true;
 		grabbedWho = 1
 

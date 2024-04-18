@@ -3,25 +3,25 @@
 
 tempX = player_two_SSS.x;
 tempY = player_two_SSS.y;
-if (!hit && !player_one_SSS.hit && grabbedWho == 1) { // P2 > P1
+if (!hit && !oPlayerOneSSS.hit && grabbedWho == 1) { // P2 > P1
 	if (dir = 0) { // facing left
 		player_two_SSS.sprite_index = SP_PlayerRightSSS;
-		player_one_SSS.sprite_index = SP_PlayerLeftSSS;
+		oPlayerOneSSS.sprite_index = SP_PlayerLeftSSS;
 	} else if (dir = 1) { // facing right
 		player_two_SSS.sprite_index = SP_PlayerLeftSSS;
-		player_one_SSS.sprite_index = SP_PlayerRightSSS;
+		oPlayerOneSSS.sprite_index = SP_PlayerRightSSS;
 	} else if (dir = 2) { // facing up
 		player_two_SSS.sprite_index = SP_PlayerDownSSS;
-		player_one_SSS.sprite_index = SP_PlayerUpSSS;
+		oPlayerOneSSS.sprite_index = SP_PlayerUpSSS;
 	} else if (dir = 3) { // facing down
 		player_two_SSS.sprite_index = SP_PlayerUpSSS;
-		player_one_SSS.sprite_index = SP_PlayerDownSSS;
+		oPlayerOneSSS.sprite_index = SP_PlayerDownSSS;
 	}
-	player_two_SSS.x = player_one_SSS.x;
-	player_two_SSS.y = player_one_SSS.y;
-	player_one_SSS.x = tempX;
-	player_one_SSS.y = tempY;
-	player_one_SSS.grabbed = false
+	player_two_SSS.x = oPlayerOneSSS.x;
+	player_two_SSS.y = oPlayerOneSSS.y;
+	oPlayerOneSSS.x = tempX;
+	oPlayerOneSSS.y = tempY;
+	oPlayerOneSSS.grabbed = false
 } else if (!hit && !player_three_SSS.hit && grabbedWho == 3) { // P2 > P3
 	if (dir = 0) { // facing left
 		player_two_SSS.sprite_index = SP_PlayerRightSSS;

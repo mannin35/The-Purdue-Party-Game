@@ -36,9 +36,8 @@ if (x + hsp <= 32 || x + hsp >=
 x += hsp;
 y += vsp;
 */
-if(global.localPlayers[0].isCPU) {
+if(global.localPlayers[0].isCPU && !hit) {
 	//CODE FOR CPU PLAYER
-	
 	if(walksp>0) {
 		//see if at finish line
 		if (y <= 16) {
@@ -93,11 +92,74 @@ if(global.localPlayers[0].isCPU) {
 
 				if(number_of_choices==0) {
 					direction = (direction+180)%360;
-					move_contact_solid(direction, walksp);
 				} else {
 					new_direction = choices[irandom(number_of_choices-1)];
 					direction = new_direction;
-					move_contact_solid(direction, walksp);
+				}
+				if (global.CPUSettings[0] == 0) {
+					direction = 90;
+				}
+				if (direction == 180) { // if left or right are pressed
+					if (alarm_get(0) < 0) {
+						moving = true
+						sprite_index = SP_PlayerLeftSSS;
+						image_index = index * 3 + irandom(1);
+						//alarm[1] = 4;
+						//image_xscale = -1.6;
+						//hsp = -walksp;
+						if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y) || (x - player_four_SSS.x < 64 && x - player_four_SSS.x >= 0 && y == player_four_SSS.y)) { // if other player is moving right while you try to move left don't move
+							hsp = 0;
+						} else {
+							hsp = -walksp;	
+						}
+						alarm[0] = 8;
+					}
+				} else if (direction == 0) {
+					if (alarm_get(0) < 0) {
+						moving = true
+						sprite_index = SP_PlayerRightSSS;
+						image_index = index * 3 + irandom(1);
+						//alarm[1] = 4;
+						//image_xscale = 1.6;
+						//hsp = walksp;
+						if ((x - player_two_SSS.x > -64 && x - player_two_SSS.x <= 0 && y == player_two_SSS.y) || (x - player_three_SSS.x > -64 && x - player_three_SSS.x <= 0 && y == player_three_SSS.y) || (x - player_four_SSS.x > -64 && x - player_four_SSS.x <= 0 && y == player_four_SSS.y)) { // if p2 is moving left while you try to move right don't move
+							hsp = 0;
+						} else {
+							hsp = walksp;	
+						}
+						alarm[0] = 8;
+					}
+				} else if (direction == 90) {
+					if (alarm_get(0) < 0) {
+						moving = true
+						sprite_index = SP_PlayerUpSSS;
+						image_index = index * 3 + irandom(1);
+						//alarm[1] = 4;
+						//image_xscale = 1.6;
+						//vsp = -walksp;
+						if ((y - player_two_SSS.y < 64 && y - player_two_SSS.y >= 0 && x == player_two_SSS.x) || (y - player_three_SSS.y < 64 && y - player_three_SSS.y >= 0 && x == player_three_SSS.x) || (y - player_four_SSS.y < 64 && y - player_four_SSS.y >= 0 && x == player_four_SSS.x)) {
+							vsp = 0;
+						} else {
+							vsp = -walksp;	
+						}
+						alarm[0] = 8;
+					}
+				}
+				 else if (direction == 270) {
+					if (alarm_get(0) < 0) {
+						moving = true
+						sprite_index = SP_PlayerDownSSS;
+						image_index = index * 3 + irandom(1);
+						//alarm[1] = 4;
+						//image_xscale = 1.6;
+						//vsp = walksp;
+						if ((y - player_two_SSS.y > -64 && y - player_two_SSS.y <= 0 && x == player_two_SSS.x) || (y - player_three_SSS.y > -64 && y - player_three_SSS.y <= 0 && x == player_three_SSS.x) || (y - player_four_SSS.y > -64 && y - player_four_SSS.y <= 0 && x == player_four_SSS.x)) {
+							vsp = 0;
+						} else {
+							vsp = walksp;	
+						}
+						alarm[0] = 8;
+					}
 				}
 			
 			}
@@ -234,10 +296,10 @@ if (place_meeting(x, y, oVehicle)) { // collision !!!
 	}
 }
 
-if ((place_meeting(x + hsp, y, player_two_SSS) || place_meeting(x + hsp, y, player_three_SSS) || place_meeting(x + hsp, y, player_four_SSS)) && !hit) { // player collision horiz
+if (((place_meeting(x + hsp, y, player_two_SSS) && !player_two_SSS.hit) || (place_meeting(x + hsp, y, player_four_SSS) && !player_four_SSS.hit) || (place_meeting(x + hsp, y, player_three_SSS) && !player_three_SSS.hit)) && !hit) { // player collision horiz
 	hsp = 0;
 }
-if ((place_meeting(x, y + vsp, player_two_SSS) || place_meeting(x, y + vsp, player_three_SSS) || place_meeting(x, y + vsp, player_four_SSS)) && !hit) { // player collision vert
+if (((place_meeting(x, y + vsp, player_two_SSS) && !player_two_SSS.hit) || (place_meeting(x, y + vsp, player_four_SSS) && !player_four_SSS.hit) || (place_meeting(x, y + vsp, player_three_SSS) && !player_three_SSS.hit)) && !hit) { // player collision vert
 	vsp = 0;
 }
 
