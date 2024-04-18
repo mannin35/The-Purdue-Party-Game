@@ -55,13 +55,8 @@ if(global.localPlayers[2].isCPU) {
 		} else {
 			//calc distance to finish
 			dist_to_fin = y - 16;
-			if (global.CPUSettings[2]==0) {
-				direction = 90;
-			} else {
 			//check if close enough for direct route
-			if((dist_to_fin<250 && global.CPUSettings[2]==1) || (dist_to_fin<400 && global.CPUSettings[2]==2)) {
-			    direct_path = true;	
-			}
+
 			if(!direct_path) {
 				//decide next direction
 				choices = [];
@@ -105,7 +100,7 @@ if(global.localPlayers[2].isCPU) {
 					direction = new_direction;
 					move_contact_solid(direction, walksp);
 				}
-			}
+		
 			}
 		}
 	}

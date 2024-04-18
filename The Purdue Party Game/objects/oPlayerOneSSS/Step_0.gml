@@ -54,27 +54,22 @@ if(global.localPlayers[0].isCPU) {
 		} else {
 			//calc distance to finish
 			dist_to_fin = y - 16;
-			if (global.CPUSettings[0]==0) {
-				direction = 90;
-			} else {
-			//check if close enough for direct route
-			if((dist_to_fin<250 && global.CPUSettings[0]==1) || (dist_to_fin<400 && global.CPUSettings[0]==2)) {
-			    direct_path = true;	
-			}
+			
+		
 			if(!direct_path) {
 				//decide next direction
 				choices = [];
 				number_of_choices = 0;
 
 				if(direction!=270) {
-					if(place_meeting(x, y-20, oVehicle) == false) {
+					if(place_meeting(x, y-20, oVehicle) == false && place_meeting(x,y-20, oBorder)==false) {
 						choices[number_of_choices] = 90;
 						number_of_choices++;
 					}
 				}
 
 				if(direction!=90) {
-					if(place_meeting(x, y+20, oVehicle) == false) {
+					if(place_meeting(x, y+20, oVehicle) == false && place_meeting(x,y+20, oBorder)==false) {
 						choices[number_of_choices] = 270;
 						number_of_choices++;
 					}
@@ -82,7 +77,7 @@ if(global.localPlayers[0].isCPU) {
 
 
 				if(direction!=0) {
-					if(place_meeting(x-80, y, oVehicle) == false) {
+					if(place_meeting(x-80, y, oVehicle) == false && place_meeting(x-80,y, oBorder)==false) {
 						choices[number_of_choices] = 180;
 						number_of_choices++;
 					}
@@ -90,7 +85,7 @@ if(global.localPlayers[0].isCPU) {
 
 
 				if(direction!=180) {
-					if(place_meeting(x+80, y, oVehicle) == false) {
+					if(place_meeting(x+80, y, oVehicle) == false && place_meeting(x+80,y, oBorder)==false) {
 						choices[number_of_choices] = 0;
 						number_of_choices++;
 					}
@@ -104,7 +99,7 @@ if(global.localPlayers[0].isCPU) {
 					direction = new_direction;
 					move_contact_solid(direction, walksp);
 				}
-			}
+			
 			}
 		}
 	}
