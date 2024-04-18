@@ -41,7 +41,7 @@ if(global.localPlayers[0].isCPU) {
 	
 	if(walksp>0) {
 		//see if at finish line
-		if place_meeting(x, y, oFinish) {
+		if (y <= 16) {
 			if !(over) {
 				global.minigameResults[0] = oSSSControl.pos++;
 				show_debug_message("player 1 pos = " + global.minigameResults[0]);
@@ -53,7 +53,7 @@ if(global.localPlayers[0].isCPU) {
 			over = true;
 		} else {
 			//calc distance to finish
-			dist_to_fin = point_distance(x,y, x, oFinish.y);
+			dist_to_fin = y - 16;
 			if (global.CPUSettings[0]==0) {
 				direction = 90;
 			} else {
