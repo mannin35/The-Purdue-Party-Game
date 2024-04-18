@@ -20,3 +20,4 @@ grabbedWho = -1 // who did i grab? set this to player index
 grabTimer = 0;
 //hasMoved = 0; // this is for analog control, make it so the stick needs to be pressed each time 
 
+direct_path = false;

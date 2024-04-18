@@ -19,3 +19,4 @@ grabbedWho = -1 // who did i grab? set this to player index
 
 grabTimer = 0;
 
+direct_path = false;
