@@ -29,7 +29,7 @@
   "origin": 0,
   "parent": {
     "name": "Results",
-    "path": "folders/Sprites/Results.yy",
+    "path": "folders/Sprites/Player Sprites/Results.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -80,7 +80,7 @@ if(button_x  && Obj_ContinueButton.current) {
 			inst.target_rm = RM_GameSettings;
 		}
 	} else if(room == RM_GameSettings) {
-		global.turns = 5 + (5 * Obj_TurnNumber.image_index);
+		global.turns = 10 + (5 * Obj_TurnNumber.image_index);
 		//transition to RM_LocalView
 		//room_goto(RM_LocalView);
 		if(!instance_exists(OBJ_Transition)) {

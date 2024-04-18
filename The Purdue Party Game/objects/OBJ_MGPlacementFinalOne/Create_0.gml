@@ -3,6 +3,7 @@
 //
 show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees)
 awardsGiven = [0,0,0,0];
+global.bbIndex = 0;
 indexArray = [global.playerOneIndex, global.playerTwoIndex, global.playerThreeIndex, global.playerFourIndex];
 redSpacesArray = [OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces];
 totalBoilerBuckArray = [OBJ_Player1Local.totalBoilerBucks, OBJ_Player2Local.totalBoilerBucks, OBJ_Player3Local.totalBoilerBucks, OBJ_Player4Local.totalBoilerBucks];

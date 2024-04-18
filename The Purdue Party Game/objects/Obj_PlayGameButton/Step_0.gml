@@ -33,12 +33,18 @@ if (Obj_PlayGameButton.current) {
 	}*/
 }
 if (Obj_PlayGameButton.current && button_x) {
-	Obj_PlayGameButton.current = false;
-	//transition to RM_CPUSettings
-	//room_goto(RM_CPUSettings);
-	if(!instance_exists(OBJ_Transition)) {
-		var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
-		inst.target_rm = RM_CPUSettings;
+	if(file_exists("save.txt")){
+		//Prompt
+		current = false;
+		OBJ_LoadPrompt.visible = true;
+	} else {
+		Obj_PlayGameButton.current = false;
+		//transition to RM_CPUSettings
+		//room_goto(RM_CPUSettings);
+		if(!instance_exists(OBJ_Transition)) {
+			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
+			inst.target_rm = RM_CPUSettings;
+		}	
 	}
 }
 

@@ -12,4 +12,8 @@ buttonCombo = newButton;
 
 image_index = buttonCombo;
 
+OBJ_GearShift.visible = true;
+
+alarm[1] = 60;
+
 alarm[0] = irandom_range(120, 300);

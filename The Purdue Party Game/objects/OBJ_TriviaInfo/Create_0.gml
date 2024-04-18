@@ -664,7 +664,7 @@ TriviaAnswerIncorrectOne[5] = PurdueIncorrect1;
 TriviaAnswerIncorrectOne[6] = MusicIncorrect1;
 TriviaAnswerIncorrectOne[7] = GeographyIncorrect1;
 TriviaAnswerIncorrectOne[8] = CSIncorrect1;
-TriviaAnswerIncorrectOne[9] = ScienceIncorrect1;
+TriviaAnswerIncorrectOne[9] = HealthIncorrect1;
 TriviaAnswerIncorrectOne[10] = IndianaIncorrect1;
 
 //Incorrect2 answer placement into 2d array
@@ -677,7 +677,7 @@ TriviaAnswerIncorrectTwo[5] = PurdueIncorrect2;
 TriviaAnswerIncorrectTwo[6] = MusicIncorrect2;
 TriviaAnswerIncorrectTwo[7] = GeographyIncorrect2;
 TriviaAnswerIncorrectTwo[8] = CSIncorrect2;
-TriviaAnswerIncorrectTwo[9] = ScienceIncorrect2;
+TriviaAnswerIncorrectTwo[9] = HealthIncorrect2;
 TriviaAnswerIncorrectTwo[10] = IndianaIncorrect2;
 
 //Incorrect3 answer placement into 2d array
@@ -690,5 +690,5 @@ TriviaAnswerIncorrectThree[5] = PurdueIncorrect3;
 TriviaAnswerIncorrectThree[6] = MusicIncorrect3;
 TriviaAnswerIncorrectThree[7] = GeographyIncorrect3;
 TriviaAnswerIncorrectThree[8] = CSIncorrect3;
-TriviaAnswerIncorrectThree[9] = ScienceIncorrect3;
+TriviaAnswerIncorrectThree[9] = HealthIncorrect3;
 TriviaAnswerIncorrectThree[10] = IndianaIncorrect3;
