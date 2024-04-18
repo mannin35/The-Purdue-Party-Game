@@ -68,14 +68,14 @@ if(global.localPlayers[2].isCPU) {
 				number_of_choices = 0;
 
 				if(direction!=270) {
-					if(place_meeting(x, y-20, oVehicle) == false) {
+					if(!place_meeting(x, y-20, oVehicle) && !place_meeting(x, y-20, oBorder)) {
 						choices[number_of_choices] = 90;
 						number_of_choices++;
 					}
 				}
 
 				if(direction!=90) {
-					if(place_meeting(x, y+20, oVehicle) == false) {
+					if(!place_meeting(x, y+20, oVehicle) && !place_meeting(x, y+20, oBorder)) {
 						choices[number_of_choices] = 270;
 						number_of_choices++;
 					}
@@ -83,7 +83,7 @@ if(global.localPlayers[2].isCPU) {
 
 
 				if(direction!=0) {
-					if(place_meeting(x-80, y, oVehicle) == false) {
+					if(place_meeting(x-80, y, oVehicle) && !place_meeting(x-80, y, oBorder)) {
 						choices[number_of_choices] = 180;
 						number_of_choices++;
 					}
@@ -91,7 +91,7 @@ if(global.localPlayers[2].isCPU) {
 
 
 				if(direction!=180) {
-					if(place_meeting(x+80, y, oVehicle) == false) {
+					if(place_meeting(x+80, y, oVehicle) && !place_meeting(x+80, y, oBorder)) {
 						choices[number_of_choices] = 0;
 						number_of_choices++;
 					}
