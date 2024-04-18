@@ -108,7 +108,6 @@ function save_game(){
     while (!file_text_eof(file)) {
         content += file_text_readln(file);
     }
-    show_debug_message("Before encode: {0}", content)
     // Close the file
     file_text_close(file);
 	encodedContent = base64_encode(content)
@@ -124,11 +123,9 @@ function load_game(){
 		while (!file_text_eof(file)) {
 			content += file_text_readln(file);
 		}
-		show_debug_message("{0}", content)
 		// Close the file
 		file_text_close(file);
 		decodedContent = base64_decode(content)
-		show_debug_message("Decode: {0}", decodedContent)
 		file = file_text_open_write("temp.txt");
 		file_text_write_string(file, decodedContent)
 		file_text_close(file);
