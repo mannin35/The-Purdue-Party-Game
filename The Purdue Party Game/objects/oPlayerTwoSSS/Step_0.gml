@@ -177,7 +177,7 @@ if (!over && !hit && !grab && !grabbed) {
 			//alarm[1] = 4;
 			//image_xscale = -1.6;
 			//hsp = -walksp;
-			if ((x - oPlayerOneSSS.x < 64 && x - oPlayerOneSSS.x >= 0 && y == oPlayerOneSSS.y) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y) || (x - player_four_SSS.x < 64 && x - player_four_SSS.x >= 0 && y == player_four_SSS.y)) { // if p1 is moving right while you try to move left don't move
+			if ((x - player_one_SSS.x < 64 && x - player_one_SSS.x >= 0 && y == player_one_SSS.y && !player_one_SSS.hit) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y && !player_three_SSS.hit) || (x - player_four_SSS.x < 64 && x - player_four_SSS.x >= 0 && y == player_four_SSS.y && !player_four_SSS.hit)) { // if p1 is moving right while you try to move left don't move
 				hsp = 0;
 			} else {
 				hsp = -walksp;	

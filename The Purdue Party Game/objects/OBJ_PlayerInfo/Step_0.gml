@@ -23,8 +23,8 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
-	minigame = irandom(2);
-	minigame = 4;
+	minigame = irandom(1);
+	minigame = 2;
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	

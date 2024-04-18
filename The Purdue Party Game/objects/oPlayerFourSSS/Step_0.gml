@@ -31,7 +31,7 @@ down_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axis
 	vsp = 0;
 }
 
-if (x + hsp <= 32 || x + hsp >= 
+if x + hsp <= 32 || x + hsp >= 
 
 x += hsp;
 y += vsp;
@@ -176,7 +176,7 @@ if (!over && !hit && !grab && !grabbed) {
 			//alarm[1] = 4;
 			//image_xscale = -1.6;
 			//hsp = -walksp;
-			if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y) || (x - oPlayerOneSSS.x < 64 && x - oPlayerOneSSS.x >= 0 && y == oPlayerOneSSS.y)) {
+			if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y && !player_two_SSS.hit) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y && !player_three_SSS.hit) || (x - player_one_SSS.x < 64 && x - player_one_SSS.x >= 0 && y == player_one_SSS.y && !player_four_SSS.hit)) {
 				hsp = 0;
 			} else {
 				hsp = -walksp;
