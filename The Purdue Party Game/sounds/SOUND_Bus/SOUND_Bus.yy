@@ -1,23 +1,23 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Boilermaker",
+  "name": "SOUND_Bus",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
   "bitRate": 128,
-  "compression": 0,
+  "compression": 1,
   "conversionMode": 0,
-  "duration": 13.16575,
+  "duration": 38.243294,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "Boilermaker.mp3",
+  "soundFile": "SOUND_Bus.mp3",
   "type": 0,
   "volume": 1.0,
 }
