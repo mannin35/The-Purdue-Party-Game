@@ -16,7 +16,7 @@ if(current){
 		Obj_PlayButton.image_index++;
 	}
 	if(button_x){
-		global.isDemo = 0;
+		global.isDemo = 1;
 			if(room == RM_TipsyTunnelInstructions){
 				//room_goto(RM_TipsyTunnel);
 				//transition to RM_TipsyTunnel
