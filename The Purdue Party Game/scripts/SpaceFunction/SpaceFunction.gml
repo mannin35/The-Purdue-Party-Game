@@ -33,6 +33,7 @@ function SpaceFunction(type){
 			}*/
 			OBJ_Points.alarm[0] = 120;
 			currentPlayer.alarm[0] = 120;
+			audio_play_sound(SFX_Scholarship, 2, false);
 		//}
 	}
 	if (type == "BlueStriped") {
@@ -48,6 +49,7 @@ function SpaceFunction(type){
 	}
 	if(type == "red"){
 		//if(global.playercontrollerindices[global.currentplayer] != -1){
+		audio_play_sound(SFX_StudentLoan, 2, false);
 		current = currentPlayer;
 		current.redSpaces++;
 		OBJ_Points.x = current.x + 6;

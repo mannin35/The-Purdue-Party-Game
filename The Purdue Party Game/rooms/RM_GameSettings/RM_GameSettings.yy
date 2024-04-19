@@ -16,6 +16,7 @@
     {"name":"inst_8FF1BF1","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
     {"name":"inst_78C00589","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
     {"name":"inst_3EB14D9D","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
+    {"name":"inst_D395CBF","path":"rooms/RM_GameSettings/RM_GameSettings.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -24,6 +25,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_778C5618","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_PlayerTwoGS","path":"objects/Obj_PlayerTwoGS/Obj_PlayerTwoGS.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":199.0,"y":165.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_414028DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":2,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_PlayerThreeGS","path":"objects/Obj_PlayerThreeGS/Obj_PlayerThreeGS.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":322.0,"y":165.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50941D3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":3,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_PlayerFourGS","path":"objects/Obj_PlayerFourGS/Obj_PlayerFourGS.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":448.0,"y":165.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D395CBF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Controller","path":"objects/OBJ_Controller/OBJ_Controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Buttons","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1EDE57E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_ReturnButton","path":"objects/Obj_ReturnButton/Obj_ReturnButton.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":192.0,},
