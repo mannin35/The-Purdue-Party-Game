@@ -24,7 +24,13 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	randomize();
 	//randomly select minigame
 	minigame = irandom(4);
-	//minigame = 4;
+	minigame = 0;
+
+	
+	/* RANDOMIZATION HERE
+	
+	minigame = irandom(4);
+	//minigame = 3;
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
@@ -34,6 +40,8 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 		//show_debug_message("loop");
 		minigame = irandom(4);	
 	}
+	
+	*/
 	//camera_set_view_size(view_camera[0], 512,288);
 	
 	

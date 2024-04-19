@@ -25,11 +25,11 @@ if (grabbedWho == -1) {
 		grabbedWho = 1
 	}
 }
-if (grabTimer < 7) {
+if (grabTimer < 8) {
 	grabTimer++;
 	alarm[3] = 1;
 } else {
-	alarm[4] = 15;
+	alarm[4] = 1;
 }
 
 

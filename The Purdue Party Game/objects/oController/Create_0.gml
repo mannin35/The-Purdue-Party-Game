@@ -43,6 +43,10 @@ player_three_maze.sprite_index = mazes[maze];
 player_four_maze.sprite_index = mazes[maze];
 
 // finish spawns
+player_one_finish_TTT.visible = true;
+player_two_finish_TTT.visible = true;
+player_three_finish_TTT.visible = true;
+player_four_finish_TTT.visible = true;
 if (maze = 2 || maze = 9) { // maze 3/10, finish on bottom left
 	player_one_finish_TTT.x -= 540;
 	player_two_finish_TTT.x -= 540;

@@ -7,7 +7,7 @@ respawn_time = 10 * (row % 5 + 1); // semi random respawn time for alarm
 if (row % 2 == 0) { // go left
 	dir = -1;
 	x += oSSSControl.offset;
-	spd = 3.75
+	spd = 3.8
 } else {
 	image_xscale = -3;
 	x += oSSSControl.offset + irandom(5) * 32;

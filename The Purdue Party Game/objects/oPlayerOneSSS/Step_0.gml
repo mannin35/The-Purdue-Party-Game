@@ -5,7 +5,7 @@ left_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axis
 up_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv) < -dead_zone || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padu)); // up
 right_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislh) > dead_zone) || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padr); // right
 down_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv) > dead_zone || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padd)); // down
-
+//show_debug_message("P1 pos = " + string(x) + " " + string(y));
 //show_debug_message(alarm_get(0));
 /*if (up_input) {
 	if (alarm[0] < 0) {
@@ -43,7 +43,6 @@ if(global.localPlayers[0].isCPU && !hit) {
 		if (y <= 16) {
 			if !(over) {
 				global.minigameResults[0] = oSSSControl.pos++;
-				show_debug_message("player 1 pos = " + global.minigameResults[0]);
 				oSSSControl.final--;
 				sprite_index = SP_PlayerDownSSS;
 				image_index = index * 3 + 2;
@@ -51,54 +50,41 @@ if(global.localPlayers[0].isCPU && !hit) {
 			walksp = 0;
 			over = true;
 		} else {
-			//calc distance to finish
-			dist_to_fin = y - 16;
-			
-		
-			if(!direct_path) {
-				//decide next direction
-				choices = [];
-				number_of_choices = 0;
-
-				if(direction!=270) {
-					if(place_meeting(x, y-20, oVehicle) == false && place_meeting(x,y-20, oBorder)==false) {
-						choices[number_of_choices] = 90;
-						number_of_choices++;
-					}
-				}
-
-				if(direction!=90) {
-					if(place_meeting(x, y+20, oVehicle) == false && place_meeting(x,y+20, oBorder)==false) {
-						choices[number_of_choices] = 270;
-						number_of_choices++;
-					}
-				}
-
-
-				if(direction!=0) {
-					if(place_meeting(x-80, y, oVehicle) == false && place_meeting(x-80,y, oBorder)==false) {
-						choices[number_of_choices] = 180;
-						number_of_choices++;
-					}
-				}
-
-
-				if(direction!=180) {
-					if(place_meeting(x+80, y, oVehicle) == false && place_meeting(x+80,y, oBorder)==false) {
-						choices[number_of_choices] = 0;
-						number_of_choices++;
-					}
-				}
-
-				if(number_of_choices==0) {
-					direction = (direction+180)%360;
-				} else {
-					new_direction = choices[irandom(number_of_choices-1)];
-					direction = new_direction;
-				}
 				if (global.CPUSettings[0] == 0) {
+					//Easy CPU always goes straight
 					direction = 90;
+				} else if (global.CPUSettings[0] == 2) {
+					if((place_meeting(x+32, y-32, oVehicle) == false && place_meeting(x,y-32, oBorder)==false) &&
+					(place_meeting(x-32, y-32, oVehicle) == false) &&
+					(place_meeting(x, y-32, oVehicle) == false)){
+						direction = 90;
+					} else if(y!=560) {
+						if(((y - 560)/32)%2 == 0 && (place_meeting(x+32, y, oBorder) == false)) {
+							direction = 0;	
+						} else if ( (place_meeting(x-32, y, oBorder) == false)){
+							direction = 180;
+						} else {
+							direction = -999;	
+						}
+					} else {
+						direction = -999;	
+					}
+				} else {
+					if((place_meeting(x, y-32, oVehicle) == false && place_meeting(x,y-32, oBorder)==false)){
+						direction = 90;
+					} else if(y!=560) {
+						if(((y - 560)/32)%2 == 0) {
+							direction = 0;	
+						} else {
+							direction = 180;
+						}
+					} else {
+						direction = -999;	
+					}
 				}
+				
+				
+				//ACTUAL MOVEMENT
 				if (direction == 180) { // if left or right are pressed
 					if (alarm_get(0) < 0) {
 						moving = true
@@ -162,7 +148,6 @@ if(global.localPlayers[0].isCPU && !hit) {
 					}
 				}
 			
-			}
 		}
 	}
 	
@@ -177,7 +162,7 @@ if (!over && !hit && !grab && !grabbed) {
 			//alarm[1] = 4;
 			//image_xscale = -1.6;
 			//hsp = -walksp;
-			if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y) || (x - player_four_SSS.x < 64 && x - player_four_SSS.x >= 0 && y == player_four_SSS.y)) { // if other player is moving right while you try to move left don't move
+			if ((x - player_two_SSS.x < 64 && x - player_two_SSS.x >= 0 && y == player_two_SSS.y && !player_two_SSS.hit) || (x - player_three_SSS.x < 64 && x - player_three_SSS.x >= 0 && y == player_three_SSS.y && !player_three_SSS.hit) || (x - player_four_SSS.x < 64 && x - player_four_SSS.x >= 0 && y == player_four_SSS.y) && !player_four_SSS.hit) { // if other player is moving right while you try to move left don't move
 				hsp = 0;
 			} else {
 				hsp = -walksp;	
@@ -192,7 +177,7 @@ if (!over && !hit && !grab && !grabbed) {
 			//alarm[1] = 4;
 			//image_xscale = 1.6;
 			//hsp = walksp;
-			if ((x - player_two_SSS.x > -64 && x - player_two_SSS.x <= 0 && y == player_two_SSS.y) || (x - player_three_SSS.x > -64 && x - player_three_SSS.x <= 0 && y == player_three_SSS.y) || (x - player_four_SSS.x > -64 && x - player_four_SSS.x <= 0 && y == player_four_SSS.y)) { // if p2 is moving left while you try to move right don't move
+			if ((x - player_two_SSS.x > -64 && x - player_two_SSS.x <= 0 && y == player_two_SSS.y && !player_two_SSS.hit) || (x - player_three_SSS.x > -64 && x - player_three_SSS.x <= 0 && y == player_three_SSS.y && !player_three_SSS.hit) || (x - player_four_SSS.x > -64 && x - player_four_SSS.x <= 0 && y == player_four_SSS.y && !player_four_SSS.hit)) { // if p2 is moving left while you try to move right don't move
 				hsp = 0;
 			} else {
 				hsp = walksp;	
@@ -257,7 +242,7 @@ if (!over && !hit && !grab && !grabbed) {
 			} 
 			//grabInst = instance_create(x, y, "Instances_3", oGrab);
 			//grabInst.visible = true;
-			alarm[3] = 3;
+			alarm[3] = 1;
 		}
 	}
 }
@@ -339,7 +324,6 @@ if (!over) {
 	moving = true;
 	alarm[2] = 30; // vert
 }*/
-
 
 
 
