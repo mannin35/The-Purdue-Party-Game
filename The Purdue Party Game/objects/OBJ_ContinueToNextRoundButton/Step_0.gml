@@ -11,9 +11,20 @@ else {
 var dead_zone = .2;
 
 //var button_x = gamepad_button_check_pressed(global.playercontrollerindices[0], gp_face1);
-var button_x = 0;
+button_x = 0;
 if(BJ_MGBoilerBucks.counterTwo > 240){
 button_x = gamepad_button_check_pressed(0, gp_face1);
+if(global.realPlayerCount == 0){
+	if(!xSet){
+		button_x = 0;
+	} else {
+		button_x = 1	
+	}
+	if(notSet){
+		alarm[0] = 120
+		notSet = false
+	}
+}
 }
 if (button_x && room == RM_MinigameResults) {
 	
@@ -26,7 +37,8 @@ if (button_x && room == RM_MinigameResults) {
 			inst.target_rm = RM_FinalResults;
 		}
 	} else if (global.turns > 1) {
-		global.turns--;
+		show_debug_message("Turns: {0}", global.turns)
+		global.turns = newTurn
 		OBJ_PlayerInfo.end_of_round = false;
 		OBJ_PlayerInfo.occured = false;
 		//room = RM_LocalView;

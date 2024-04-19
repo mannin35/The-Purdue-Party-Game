@@ -3,7 +3,7 @@
 //
 show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees)
 awardsGiven = [0,0,0,0];
-global.bbIndex = 0;
+//global.bbIndex = 0;
 indexArray = [global.playerOneIndex, global.playerTwoIndex, global.playerThreeIndex, global.playerFourIndex];
 redSpacesArray = [OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces];
 totalBoilerBuckArray = [OBJ_Player1Local.totalBoilerBucks, OBJ_Player2Local.totalBoilerBucks, OBJ_Player3Local.totalBoilerBucks, OBJ_Player4Local.totalBoilerBucks];
@@ -51,7 +51,8 @@ OBJ_LilPlayerPopUp1.image_index = indexArray[global.winIndex];
 OBJ_LilPlayerPopUp2.image_index = indexArray[global.bbIndex];
 OBJ_LilPlayerPopUp3.image_index = indexArray[global.triviaIndex];
 OBJ_LilPlayerPopUp4.image_index = indexArray[global.loanIndex];
-//show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees)
+show_debug_message("PlayerDegree: {0} {1} {2} {3}", OBJ_Player1Local.totalBoilerBucks , OBJ_Player2Local.totalBoilerBucks, OBJ_Player3Local.totalBoilerBucks, OBJ_Player4Local.totalBoilerBucks)
+show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces)
 alarm[0] = 60 * 12;
 //Sorts array given so we can determine which players will be placed where
 //Uses bubble sort
