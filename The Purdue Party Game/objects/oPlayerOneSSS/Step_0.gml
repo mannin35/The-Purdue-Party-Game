@@ -44,7 +44,7 @@ if(global.localPlayers[0].isCPU && !hit) {
 			if !(over) {
 				global.minigameResults[0] = oSSSControl.pos++;
 				show_debug_message("player 1 pos = " + global.minigameResults[0]);
-				oSSSControl.pos++;
+				oSSSControl.final--;
 				sprite_index = SP_PlayerDownSSS;
 				image_index = index * 3 + 2;
 			}
@@ -304,10 +304,12 @@ if (((place_meeting(x, y + vsp, player_two_SSS) && !player_two_SSS.hit) || (plac
 }
 
 
-if (y <= 16) {
+if (y <= 16 && !over) {
 	over = true;
 	sprite_index = SP_PlayerDownSSS;
 	image_index = index * 3 + 2;
+	oSSSControl.final--;
+	global.minigameResults[0] = oSSSControl.pos++;
 }
 
 if (!over) {
