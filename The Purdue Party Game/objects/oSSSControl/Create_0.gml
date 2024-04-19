@@ -13,3 +13,4 @@ player_two_SSS.index = global.playerTwoIndex;
 player_three_SSS.index = global.playerThreeIndex;
 player_four_SSS.index = global.playerFourIndex; // default setup*/
 
+alarm[2] = 60*60;
