@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 67,
+  "duration": 66.72,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "SOUND_Menu.m4a",
+  "soundFile": "SOUND_Menu.mp3",
   "type": 0,
   "volume": 1.0,
 }
