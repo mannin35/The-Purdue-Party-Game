@@ -1,15 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSSSControl",
+  "name": "OBJ_FallingClock",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"OBJ_PlayerTimesUp","path":"objects/OBJ_PlayerTimesUp/OBJ_PlayerTimesUp.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "StateStreetScramble",
-    "path": "folders/Objects/Minigame Results/StateStreetScramble.yy",
+    "name": "TimesUp",
+    "path": "folders/Objects/TimesUp.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "SP_FallingClock",
+    "path": "sprites/SP_FallingClock/SP_FallingClock.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

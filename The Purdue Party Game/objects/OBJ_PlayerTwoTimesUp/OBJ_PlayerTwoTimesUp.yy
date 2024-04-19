@@ -13,7 +13,10 @@
     "name": "TimesUp",
     "path": "folders/Objects/TimesUp.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "OBJ_PlayerTimesUp",
+    "path": "objects/OBJ_PlayerTimesUp/OBJ_PlayerTimesUp.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

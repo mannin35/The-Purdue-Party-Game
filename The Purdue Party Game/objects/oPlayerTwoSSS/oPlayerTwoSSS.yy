@@ -15,7 +15,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "StateStreetScramble",
-    "path": "folders/Objects/StateStreetScramble.yy",
+    "path": "folders/Objects/Minigame Results/StateStreetScramble.yy",
   },
   "parentObjectId": null,
   "persistent": false,
