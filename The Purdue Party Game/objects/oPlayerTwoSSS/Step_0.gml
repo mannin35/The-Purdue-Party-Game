@@ -44,7 +44,6 @@ if(global.localPlayers[1].isCPU && !hit) {
 		if (y <= 16) {
 			if !(over) {
 				global.minigameResults[1] = oSSSControl.pos++;
-				show_debug_message("player 2 pos = " + global.minigameResults[1]);
 				oSSSControl.final--;
 				sprite_index = SP_PlayerDownSSS;
 				image_index = index * 3 + 2;
