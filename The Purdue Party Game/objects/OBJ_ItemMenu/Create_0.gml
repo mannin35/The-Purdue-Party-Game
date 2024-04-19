@@ -1,3 +1,5 @@
+audio_stop_all()
+audio_play_sound(SOUND_Map, 1, true);
 visible = false;
 calculated = false;
 var vx = camera_get_view_x(view_camera[0]);

@@ -3,5 +3,5 @@
 
 current = true;
 audio_pause_all()
-audio_play_sound(SOUND_Map, 0, true)
+audio_play_sound(SOUND_Menu, 0, true)
 audio_group_load(audiogroup1)
