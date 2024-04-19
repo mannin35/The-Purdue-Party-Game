@@ -27,7 +27,7 @@ var players = global.realPlayerCount
 
 if (t_sec >= 50 || t_sec <= 5) {
 	if (players >= 1) {
-		if gamepad_button_check_pressed(global.playercontrollerindices[0],gp_face4) {
+		if gamepad_button_check_pressed(global.playercontrollerindices[0],gp_face1) {
 			if !(player_one.over) {
 				player_one.end_time = t
 				player_one.end_time += ":" + string(t_msec)
@@ -56,7 +56,7 @@ if (t_sec >= 50 || t_sec <= 5) {
 		}
 	}
 	if (players >= 2) {
-		if gamepad_button_check_pressed(global.playercontrollerindices[1],gp_face4) {
+		if gamepad_button_check_pressed(global.playercontrollerindices[1],gp_face1) {
 			if !(player_two.over) {
 				player_two.end_time = t
 				player_two.end_time += ":" + string(t_msec)
@@ -85,7 +85,7 @@ if (t_sec >= 50 || t_sec <= 5) {
 		}
 	}
 	if (players >= 3) {
-		if gamepad_button_check_pressed(global.playercontrollerindices[2],gp_face4) {
+		if gamepad_button_check_pressed(global.playercontrollerindices[2],gp_face1) {
 			if !(player_three.over) {
 				player_three.end_time = t
 				player_three.end_time += ":" + string(t_msec)
@@ -114,7 +114,7 @@ if (t_sec >= 50 || t_sec <= 5) {
 		}
 	}
 	if (players == 4) {
-		if gamepad_button_check_pressed(global.playercontrollerindices[3],gp_face4) {
+		if gamepad_button_check_pressed(global.playercontrollerindices[3],gp_face1) {
 			if !(player_four.over) {
 				player_four.end_time = t
 				player_four.end_time += ":" + string(t_msec)

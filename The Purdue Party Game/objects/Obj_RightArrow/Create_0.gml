@@ -5,5 +5,5 @@ if(room == RM_CPUSettings){
 }
 dead_zone = .2;
 current = false;
-//global.turns = 10;
-global.turns = 5;
+global.turns = 10;
+
