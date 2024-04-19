@@ -83,6 +83,9 @@ function SpaceFunction(type){
 		// Reset spaces
 		space.alarm[0] = 120;
 	}
+	if ( type == "start"){
+		currentPlayer.alarm[0] = 120;	
+	}
 	//Add else statements to help with what you want the space to do and make up your own keywords
 	//Set spaceType in each space to represent the type of space you have and in the if, add what you want
 	//to happen in the event the player ends on that space

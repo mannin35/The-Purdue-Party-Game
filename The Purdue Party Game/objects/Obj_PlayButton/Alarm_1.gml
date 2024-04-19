@@ -1,22 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var key_right = gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) > dead_zone;
-var button_x = gamepad_button_check_pressed(global.playercontrollerindices[0], gp_face1);
-
-if(global.realPlayerCount == 0){
-	key_right = 0;
-	button_x = 0;
-}
-
-if(current){
-	if(key_right){
-		current = false;
-		Obj_PlayButton.current = true
-		Obj_DemoButton.image_index--;
-		Obj_PlayButton.image_index++;
-	}
-	if(button_x){
-		global.isDemo = 1;
+global.isDemo = 0;
 		if(room == RM_TipsyTunnelInstructions){
 			//room_goto(RM_TipsyTunnel);
 			//transition to RM_TipsyTunnel
@@ -53,6 +37,8 @@ if(current){
 				inst.target_rm = RM_StreetMinigame;
 			}	
 		}
-	}
-}
+
+
+
+
 

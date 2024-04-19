@@ -1,7 +1,22 @@
 /// @ Update player position as needed
 pathChosen = false;
 index = 0;
+var controller = global.playercontrollerindices[global.currentplayer];
+button_start = (gamepad_button_check_released(controller, gp_start));
 currentPlayer = global.localPlayers[global.currentplayer];
+
+	// Confirm path if space is pressed
+	//show_debug_message("{0} {1} {2}", button_start, OBJ_SavePrompt.visible, global.hasPressed)
+if(numSpaces == 0 && room == RM_LocalView){
+	if(button_start && OBJ_SavePrompt.visible == false && (global.hasPressed == false)){
+		HideButtons()
+		global.hasPressed = true;
+		OBJ_SavePrompt.alarm[0] = 15;
+		OBJ_SavePrompt.visible = true;
+		OBJ_SavePrompt.x = global.localPlayers[global.currentplayer].x;
+		OBJ_SavePrompt.y = global.localPlayers[global.currentplayer].y;
+	}
+}
 if (waitForDegree) {
 	exit;
 }
@@ -22,7 +37,7 @@ if (awaitingInput) {
 	 }
 	 else {
 		var controllerIndex = global.currentplayer;
-		var controller = global.playercontrollerindices[index];
+		var controller = global.playercontrollerindices[controllerIndex];
 		var left_key = (keyboard_check_pressed(vk_left)) || 
 			(gamepad_axis_value(controller, gp_axislh) <  -dead_zone) ;
 		var right_key = (keyboard_check_pressed(vk_right)) ||
@@ -34,7 +49,6 @@ if (awaitingInput) {
 		var button_x =(keyboard_check_pressed(vk_space)) || 
 			(gamepad_button_check_pressed(controller, gp_face1));
 	 }
-	// Confirm path if space is pressed
 	if (button_x) {
 		pathChosen = true;
 		awaitingInput = false;
