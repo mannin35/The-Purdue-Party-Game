@@ -6,7 +6,7 @@ up_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv
 right_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislh) > dead_zone) || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padr); // right
 down_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv) > dead_zone || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padd)); // down
 
-//show_debug_message(alarm_get(0));
+//show_debug_message("P2 pos = " + string(x) + " " + string(y));
 /*if (up_input) {
 	if (alarm[0] < 0) {
 		vsp = -walksp;
@@ -240,7 +240,7 @@ if (!over && !hit && !grab && !grabbed) {
 			} 
 			//grabInst = instance_create(x, y, "Instances_3", oGrab);
 			//grabInst.visible = true;
-			alarm[3] = 3;
+			alarm[3] = 1;
 		}
 	}
 }
@@ -251,6 +251,8 @@ if (place_meeting(x + hsp, y, oBorder) && !hit) { // horiz border col
 if (place_meeting(x, y + vsp, oBorder) && !hit) { // vert border col
 	vsp = 0;	
 }
+
+
 
 if (place_meeting(x, y, oVehicle)) { // collision !!!
 	if (alarm_get(2) < 0) {
@@ -320,7 +322,6 @@ if (!over) {
 	moving = true;
 	alarm[2] = 30; // vert
 }*/
-
 
 
 

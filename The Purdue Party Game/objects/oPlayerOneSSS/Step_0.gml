@@ -5,7 +5,7 @@ left_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axis
 up_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv) < -dead_zone || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padu)); // up
 right_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislh) > dead_zone) || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padr); // right
 down_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv) > dead_zone || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padd)); // down
-
+//show_debug_message("P1 pos = " + string(x) + " " + string(y));
 //show_debug_message(alarm_get(0));
 /*if (up_input) {
 	if (alarm[0] < 0) {
@@ -243,7 +243,7 @@ if (!over && !hit && !grab && !grabbed) {
 			} 
 			//grabInst = instance_create(x, y, "Instances_3", oGrab);
 			//grabInst.visible = true;
-			alarm[3] = 3;
+			alarm[3] = 1;
 		}
 	}
 }
@@ -323,7 +323,6 @@ if (!over) {
 	moving = true;
 	alarm[2] = 30; // vert
 }*/
-
 
 
 

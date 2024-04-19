@@ -1,7 +1,8 @@
 
-x = irandom_range(4, 28) * 32 + 16; // respawning
+x = irandom_range(8, 20) * 32 + 16; // respawning
 while (place_meeting(x, y, player_one_SSS) || place_meeting(x, y, player_two_SSS) || place_meeting(x, y, player_four_SSS)) {
-	x += 32;	
+	x += 64;	
+	show_debug_message("3 moved");
 }
 
 image_xscale = 1.6;
