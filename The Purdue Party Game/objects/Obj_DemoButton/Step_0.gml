@@ -3,7 +3,10 @@
 var key_right = (gamepad_axis_value(global.playercontrollerindices[0], gp_axislh) > dead_zone) || keyboard_check_pressed(vk_right);
 var button_x = (gamepad_button_check_pressed(global.playercontrollerindices[0], gp_face1)) || keyboard_check_pressed(vk_space);
 
-
+if(global.realPlayerCount == 0){
+	key_right = 0;
+	button_x = 0;
+}
 
 if(current){
 	if(key_right){
