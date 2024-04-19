@@ -57,7 +57,10 @@ if(global.localPlayers[1].isCPU && !hit) {
 				} else if (global.CPUSettings[1] == 2) {
 					if((place_meeting(x+32, y-32, oVehicle) == false && place_meeting(x,y-32, oBorder)==false) &&
 					(place_meeting(x-32, y-32, oVehicle) == false) &&
-					(place_meeting(x, y-32, oVehicle) == false)){
+					(place_meeting(x, y-32, oVehicle) == false)&&
+					(place_meeting(x, y-32, oPlayerOneSSS) == false) &&
+					(place_meeting(x, y-32, oPlayerThreeSSS) == false) &&
+					(place_meeting(x, y-32, oPlayerFourSSS) == false)){
 						direction = 90;
 					} else if(y!=560) {
 						if(((y - 560)/32)%2 == 0 && (place_meeting(x+32, y, oBorder) == false)) {
