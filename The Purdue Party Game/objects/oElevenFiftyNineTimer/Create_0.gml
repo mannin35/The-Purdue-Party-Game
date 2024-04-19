@@ -7,7 +7,6 @@ t_min = 59
 t_sec = 45
 t_msec = 0 // 1/60 of a frame
 
-audio_play_sound(SNG_ElevenFiftyNine, 20, true);
 
 p_one = global.playerOneIndex;
 p_two = global.playerTwoIndex;

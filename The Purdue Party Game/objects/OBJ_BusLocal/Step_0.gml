@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(visible && counter != 550){
+	if(!soundSet){
+		audio_pause_all()
+		audio_play_sound(SOUND_Bus, 1, false);
+		soundSet = true
+	}
 	if(OBJ_BusLocal.x = global.localPlayers[global.currentplayer].x){
 		counterTwo++;	
 		global.localPlayers[global.currentplayer].visible = false;
@@ -39,6 +44,9 @@ if(counter == 550 && done){
 	counterTwo = 0;
 	done = false;
 	global.localPlayers[global.currentplayer].alarm[0] = 120;
+	audio_pause_all()
+	audio_play_sound(SOUND_Map, 1, true)
+	soundSet = false;
 	visible = false;
 }
 

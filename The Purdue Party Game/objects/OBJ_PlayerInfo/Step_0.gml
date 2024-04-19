@@ -23,8 +23,8 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
-	minigame = irandom(2);
-	minigame = 4;
+	minigame = irandom(4);
+	//minigame = 4;
 	//show_debug_message("MINIGAME:");
 	//show_debug_message(minigame);
 	
@@ -32,7 +32,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//ensure same minigame isnt picked twice
 	while (minigame == last_minigame) {
 		//show_debug_message("loop");
-		minigame = irandom(2);	
+		minigame = irandom(4);	
 	}
 	//camera_set_view_size(view_camera[0], 512,288);
 	
@@ -40,14 +40,17 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	//go to corresponding minigame screen
 	if(test_case==0) {
 		last_minigame = minigame;
+		audio_pause_sound(SOUND_Map)
 		if (minigame == 2) {
 			//room_goto(RM_BoilermakerExpressInstructions);
 			//transition to RM_BoilermakerExpressInstructions
+			audio_play_sound(SOUND_Boilermaker, 1, true)
 			if(!instance_exists(OBJ_Transition)) {
 				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 				inst.target_rm = RM_BoilermakerExpressInstructions;
 			}
 		} else if (minigame == 1) {
+			audio_play_sound(SOUND_ElevenFiftyNine, 1, true)
 			//room_goto(RM_ElevenFiftyNineInstructions);
 			//transition to RM_ElevenFiftyNineInstructions
 			if(!instance_exists(OBJ_Transition)) {
@@ -55,6 +58,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 				inst.target_rm = RM_ElevenFiftyNineInstructions;
 			}
 		} else if (minigame == 4) {
+			audio_play_sound(SOUND_SSS, 1, true)
 			//room_goto(RM_StateStreetInstructions);
 			//transition to RM_StateStreetInstructions
 			if(!instance_exists(OBJ_Transition)) {
@@ -62,6 +66,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 				inst.target_rm = RM_StateStreetInstructions;
 			}
 		} else if (minigame == 3) {
+			audio_play_sound(SOUND_TimesUp, 1, true)
 			//room_goto(RM_TimesUpInstructions);
 			//transition to RM_TimesUpInstructions
 			if(!instance_exists(OBJ_Transition)) {
@@ -70,6 +75,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 			}
 		} else if (minigame == 0) {
 			room_goto(RM_TipsyTunnelInstructions);
+			audio_play_sound(SOUND_TTT, 1, true)
 			//transition to RM_TipsyTunnelInstructions
 			if(!instance_exists(OBJ_Transition)) {
 				var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
