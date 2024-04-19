@@ -1,4 +1,4 @@
-
+y = 560;
 x = irandom_range(8, 20) * 32 + 16; // respawning
 while (place_meeting(x, y, player_one_SSS) || place_meeting(x, y, player_two_SSS) || place_meeting(x, y, player_four_SSS)) {
 	x += 64;	
