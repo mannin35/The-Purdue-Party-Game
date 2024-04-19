@@ -66,7 +66,7 @@ if (awaitingInput) {
 			index = path;
 		}
 		//START SOUND
-		audio_play_sound(SFX_Walk, 2, false);
+		audio_play_sound(SFX_Walk, 2, true);
 	}
 	// Else change active arrow if any direction is pressed
 	else if (left_key || right_key || up_key || down_key) {

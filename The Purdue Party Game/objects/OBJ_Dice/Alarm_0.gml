@@ -28,7 +28,7 @@ else {
 	*/
 	player.numSpaces = numSpaces + 1;
 	// START WALKING SOUND
-	audio_play_sound(SFX_Walk, 2, false);
+	audio_play_sound(SFX_Walk, 2, true);
 	numSpaces = 0;
 	HideButtons();
 	instance_destroy();
