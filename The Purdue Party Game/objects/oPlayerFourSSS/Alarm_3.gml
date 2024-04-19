@@ -17,11 +17,11 @@ if (grabbedWho == -1) {
 		player_three_SSS.x = player_four_grab.x;
 		player_three_SSS.y = player_four_grab.y;
 		grabbedWho = 3
-	} else if ((player_four_grab.x == player_one_SSS.x) && (player_four_grab.y == player_one_SSS.y) && !hit && !player_one_SSS.grabbed) { // P4 > P1
+	} else if ((player_four_grab.x == oPlayerOneSSS.x) && (player_four_grab.y == oPlayerOneSSS.y) && !hit && !oPlayerOneSSS.grabbed) { // P4 > P1
 		//show_debug_message("touched!");
-		player_one_SSS.grabbed = true;
-		player_one_SSS.x = player_four_grab.x;
-		player_one_SSS.y = player_four_grab.y;
+		oPlayerOneSSS.grabbed = true;
+		oPlayerOneSSS.x = player_four_grab.x;
+		oPlayerOneSSS.y = player_four_grab.y;
 		grabbedWho = 1
 	}
 }
