@@ -3,14 +3,14 @@
   "resourceVersion": "1.0",
   "name": "SFX_Walk",
   "audioGroupId": {
-    "name": "audiogroup1",
-    "path": "audiogroups/audiogroup1",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.54125,
+  "duration": 0.3135,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
