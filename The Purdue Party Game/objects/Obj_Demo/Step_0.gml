@@ -46,6 +46,8 @@ if(global.minigameOver == 1){
 		//OBJ_PlayerInfo.occured = false;
 		//room_goto(RM_MinigameResults);	
 		//transition to RM_MinigameResults
+		audio_pause_all()
+		audio_play_sound(SOUND_Results, 1, false)
 		if(!instance_exists(OBJ_Transition)) {
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 			inst.target_rm = RM_MinigameResults;

@@ -32,12 +32,14 @@ if (button_x && room == RM_MinigameResults) {
 		//room = RM_FinalResults;
 		//room_goto(RM_FinalResults);
 		//transition to RM_FinalResults
+		audio_pause_all()
+		audio_play_sound(SOUND_Results, 1, false);
 		if(!instance_exists(OBJ_Transition)) {
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 			inst.target_rm = RM_FinalResults;
 		}
 	} else if (global.turns > 1) {
-		show_debug_message("Turns: {0}", global.turns)
+		//show_debug_message("Turns: {0}", global.turns)
 		global.turns = newTurn
 		OBJ_PlayerInfo.end_of_round = false;
 		OBJ_PlayerInfo.occured = false;
@@ -45,6 +47,8 @@ if (button_x && room == RM_MinigameResults) {
 		//room_goto(RM_LocalView
 		OBJ_Player.visible = true;
 		//transition to RM_LocalView
+		audio_pause_all()
+		audio_play_sound(SOUND_Map,1, true)
 		if(!instance_exists(OBJ_Transition)) {
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 			inst.target_rm = RM_LocalView;

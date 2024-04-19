@@ -2,3 +2,5 @@
 // Puede escribir su código en este editor
 
 current = true;
+audio_pause_all()
+audio_play_sound(SOUND_Map, 1, true)
