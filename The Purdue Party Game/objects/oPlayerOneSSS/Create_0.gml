@@ -20,5 +20,3 @@ grabbedWho = -1 // who did i grab? set this to player index
 //hasMoved = 0; // this is for analog control, make it so the stick needs to be pressed each time 
 
 grabTimer = 0; // this should be set to 0 by default; when grab initiated increment this til certain value then do finish move
-
-direct_path = false;

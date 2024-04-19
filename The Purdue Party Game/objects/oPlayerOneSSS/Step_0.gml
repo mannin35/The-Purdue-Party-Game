@@ -43,7 +43,7 @@ if(global.localPlayers[0].isCPU && !hit) {
 		if (y <= 16) {
 			if !(over) {
 				global.minigameResults[0] = oSSSControl.pos++;
-				show_debug_message("player 1 pos = " + global.minigameResults[0]);
+				//show_debug_message("player 1 pos = " + global.minigameResults[0]);
 				oSSSControl.pos++;
 				sprite_index = SP_PlayerDownSSS;
 				image_index = index * 3 + 2;
@@ -51,54 +51,41 @@ if(global.localPlayers[0].isCPU && !hit) {
 			walksp = 0;
 			over = true;
 		} else {
-			//calc distance to finish
-			dist_to_fin = y - 16;
-			
-		
-			if(!direct_path) {
-				//decide next direction
-				choices = [];
-				number_of_choices = 0;
-
-				if(direction!=270) {
-					if(place_meeting(x, y-20, oVehicle) == false && place_meeting(x,y-20, oBorder)==false) {
-						choices[number_of_choices] = 90;
-						number_of_choices++;
-					}
-				}
-
-				if(direction!=90) {
-					if(place_meeting(x, y+20, oVehicle) == false && place_meeting(x,y+20, oBorder)==false) {
-						choices[number_of_choices] = 270;
-						number_of_choices++;
-					}
-				}
-
-
-				if(direction!=0) {
-					if(place_meeting(x-80, y, oVehicle) == false && place_meeting(x-80,y, oBorder)==false) {
-						choices[number_of_choices] = 180;
-						number_of_choices++;
-					}
-				}
-
-
-				if(direction!=180) {
-					if(place_meeting(x+80, y, oVehicle) == false && place_meeting(x+80,y, oBorder)==false) {
-						choices[number_of_choices] = 0;
-						number_of_choices++;
-					}
-				}
-
-				if(number_of_choices==0) {
-					direction = (direction+180)%360;
-				} else {
-					new_direction = choices[irandom(number_of_choices-1)];
-					direction = new_direction;
-				}
 				if (global.CPUSettings[0] == 0) {
+					//Easy CPU always goes straight
 					direction = 90;
+				} else if (global.CPUSettings[0] == 2) {
+					if((place_meeting(x+32, y-32, oVehicle) == false && place_meeting(x,y-32, oBorder)==false) &&
+					(place_meeting(x-32, y-32, oVehicle) == false) &&
+					(place_meeting(x, y-32, oVehicle) == false)){
+						direction = 90;
+					} else if(y!=560) {
+						if(((y - 560)/32)%2 == 0 && (place_meeting(x+32, y, oBorder) == false)) {
+							direction = 0;	
+						} else if ( (place_meeting(x-32, y, oBorder) == false)){
+							direction = 180;
+						} else {
+							direction = -999;	
+						}
+					} else {
+						direction = -999;	
+					}
+				} else {
+					if((place_meeting(x, y-32, oVehicle) == false && place_meeting(x,y-32, oBorder)==false)){
+						direction = 90;
+					} else if(y!=560) {
+						if(((y - 560)/32)%2 == 0) {
+							direction = 0;	
+						} else {
+							direction = 180;
+						}
+					} else {
+						direction = -999;	
+					}
 				}
+				
+				
+				//ACTUAL MOVEMENT
 				if (direction == 180) { // if left or right are pressed
 					if (alarm_get(0) < 0) {
 						moving = true
@@ -162,7 +149,6 @@ if(global.localPlayers[0].isCPU && !hit) {
 					}
 				}
 			
-			}
 		}
 	}
 	
