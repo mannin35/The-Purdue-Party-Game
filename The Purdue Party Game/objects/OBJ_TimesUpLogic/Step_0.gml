@@ -1,9 +1,11 @@
 finished = true;
 for (i = 0; i <4; i++) {
 	if (players[i].y <= 100) {
-		players[i].over = true;
-		global.minigameResults[i] = place;
-		updated = true;
+		if (!players[i].over) {
+			players[i].over = true;
+			global.minigameResults[i] = place;
+			updated = true;
+		}
 	}
 	else {
 		finished = false;
