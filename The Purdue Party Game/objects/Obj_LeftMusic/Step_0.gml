@@ -11,6 +11,7 @@ if (!global.isMoving) {
 		if(OBJ_MusicVol.image_index > 0) {
 			OBJ_MusicVol.image_index--;
 			global.music_volume-=5;
+			audio_group_set_gain(audiogroup_default, global.music_volume * .01, 0 )
 		}
 	}
 
