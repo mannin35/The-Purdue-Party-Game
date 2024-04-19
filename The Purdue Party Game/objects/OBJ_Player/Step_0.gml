@@ -65,6 +65,8 @@ if (awaitingInput) {
 		if (path != -1) {
 			index = path;
 		}
+		//START SOUND
+		audio_play_sound(SFX_Walk, 2, true);
 	}
 	// Else change active arrow if any direction is pressed
 	else if (left_key || right_key || up_key || down_key) {
@@ -101,6 +103,8 @@ if (numSpaces > 0 && !awaitingInput) {
 					inactiveArrow.visible = true;
 				}
 				awaitingInput = true;
+				// STOP SOUND
+				audio_stop_sound(SFX_Walk);
 			}
 			// If landing on space which branches, continue to execution for ending player turn
 			else {
@@ -142,6 +146,8 @@ if (numSpaces > 0 && !awaitingInput) {
 				currentPlayer.image_index = currentPlayer.walkingIndex + numWalkingFrames;
 				sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 				SpaceFunction(string(space.spaceType));
+				//STOP SOUND
+				audio_stop_sound(SFX_Walk);
 			}
 		}
 	}

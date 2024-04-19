@@ -13,6 +13,7 @@ if (!global.isMoving) {
 		if(OBJ_SFXVol.image_index < 20) {
 			OBJ_SFXVol.image_index++;
 			global.SFX_volume+=5;
+			audio_group_set_gain(audiogroup1, global.SFX_volume * .01, 0 )
 		}
 	}
 

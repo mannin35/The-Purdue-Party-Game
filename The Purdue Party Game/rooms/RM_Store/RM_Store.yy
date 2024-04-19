@@ -12,12 +12,14 @@
     {"name":"inst_3D03DCBA","path":"rooms/RM_Store/RM_Store.yy",},
     {"name":"inst_4340FFB4","path":"rooms/RM_Store/RM_Store.yy",},
     {"name":"inst_677E2EB2","path":"rooms/RM_Store/RM_Store.yy",},
+    {"name":"inst_2080500F","path":"rooms/RM_Store/RM_Store.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_2","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4340FFB4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Cursor","path":"objects/OBJ_Cursor/OBJ_Cursor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":284.0,"y":66.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_677E2EB2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_StoreText","path":"objects/OBJ_StoreText/OBJ_StoreText.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":192.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2080500F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"OBJ_Controller","path":"objects/OBJ_Controller/OBJ_Controller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_6","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_60AFB108","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"spriteId":{"name":"SP_BBBox","path":"sprites/SP_BBBox/SP_BBBox.yy",},"x":10.0,"y":16.0,},

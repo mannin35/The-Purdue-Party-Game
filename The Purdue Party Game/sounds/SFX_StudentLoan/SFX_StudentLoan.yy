@@ -1,23 +1,23 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "SOUND_Menu",
+  "name": "SFX_StudentLoan",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audiogroup1",
+    "path": "audiogroups/audiogroup1",
   },
   "bitDepth": 1,
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 66.72,
+  "duration": 0.303084,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "SOUND_Menu.mp3",
+  "soundFile": "SFX_StudentLoan.wav",
   "type": 0,
   "volume": 1.0,
 }
