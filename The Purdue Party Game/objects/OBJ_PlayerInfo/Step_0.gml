@@ -20,6 +20,7 @@ if(!end_of_round){
 if (end_of_round && !occured && (room==RM_LocalView)) {
 	//TODO: add if condition for if end of game is reached
 	
+	/* RANDOMIZATION HERE
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
@@ -28,7 +29,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	minigame = 0;
 =======
 	
-	/* RANDOMIZATION HERE
+	 RANDOMIZATION HERE
 	
 	minigame = irandom(2);
 	minigame = 3;
