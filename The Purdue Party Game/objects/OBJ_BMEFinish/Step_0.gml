@@ -19,4 +19,8 @@ if(finishcount>=3) {
 	
 	Obj_Demo.visible = false;
 	global.minigameOver = 1;	
+	global.localPlayers[0].visible = true; // bugfix!!!
+global.localPlayers[1].visible = true;
+global.localPlayers[2].visible = true;
+global.localPlayers[3].visible = true;
 }

@@ -259,6 +259,10 @@ if (player_one.over && player_two.over && player_three.over && player_four.over)
 	//alarm[1] = 180
 	
 	global.minigameOver = 1;
+	global.localPlayers[0].visible = true; // bugfix!!!
+global.localPlayers[1].visible = true;
+global.localPlayers[2].visible = true;
+global.localPlayers[3].visible = true;
 }
 	
 	

@@ -25,6 +25,11 @@ clock = pointer_null;
 // Start spawning clocks after one second
 alarm[0] = 60;
 
+global.localPlayers[0].visible = false; // bugfix!!!
+global.localPlayers[1].visible = false;
+global.localPlayers[2].visible = false;
+global.localPlayers[3].visible = false;
+
 function dropThemClocks(xpos) {
 	for (i = 0; i < 4; i++) {
 		var clockY = players[i].y - (192);
@@ -52,4 +57,8 @@ function generateRandomSide() {
 
 function endGame() {
 	global.minigameOver = true;
+	global.localPlayers[0].visible = true; // bugfix!!!
+global.localPlayers[1].visible = true;
+global.localPlayers[2].visible = true;
+global.localPlayers[3].visible = true;
 }

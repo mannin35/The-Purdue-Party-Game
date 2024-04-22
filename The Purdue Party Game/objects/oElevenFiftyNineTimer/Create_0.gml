@@ -7,6 +7,11 @@ t_min = 59
 t_sec = 45
 t_msec = 0 // 1/60 of a frame
 
+global.localPlayers[0].visible = false; // bugfix!!!
+global.localPlayers[1].visible = false;
+global.localPlayers[2].visible = false;
+global.localPlayers[3].visible = false;
+
 
 p_one = global.playerOneIndex;
 p_two = global.playerTwoIndex;
