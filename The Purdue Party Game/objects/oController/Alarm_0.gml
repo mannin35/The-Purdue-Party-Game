@@ -55,7 +55,7 @@ if !(player_four_TTT.over) {
 while (cn_swap = swap_prev) { // makes sure same roll cant happen twice
 	cn_swap = irandom_range(0, 3);
 }
-show_debug_message(string(cn_swap));
+//show_debug_message(string(cn_swap));
 swap_prev = cn_swap; // save prev swap
 
 alarm[0] = irandom_range(300, 600);

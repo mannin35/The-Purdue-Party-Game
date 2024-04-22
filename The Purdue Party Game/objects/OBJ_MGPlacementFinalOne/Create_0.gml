@@ -152,5 +152,5 @@ for(k = 0; k < 4; k++){
 		increase[k] = 1;	
 	}
 }*/
-show_debug_message("here");
+//show_debug_message("here");
 calculated = true;

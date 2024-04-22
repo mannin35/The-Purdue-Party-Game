@@ -5,7 +5,7 @@
 if (place_meeting(x, y, OBJ_BMEFinish) && !over) {
 	over = true;
 	global.minigameResults[id.playerNum-1] = OBJ_BMEFinish.pos;
-	show_debug_message("player " + string(id.playerNum ) +  " pos = " + string(OBJ_BMEFinish.pos));
+	//show_debug_message("player " + string(id.playerNum ) +  " pos = " + string(OBJ_BMEFinish.pos));
 	OBJ_BMEFinish.pos++;
 } else if (OBJ_BMEFinish.started && !over){
 	//check if current instance is real player

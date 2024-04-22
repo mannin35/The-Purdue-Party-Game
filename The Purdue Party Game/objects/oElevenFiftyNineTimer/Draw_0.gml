@@ -50,8 +50,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 			instance_destroy(player_one.sweat);
 			}
 			player_one.over = true;
-			show_debug_message("PLAYER 1 DONE");
-			show_debug_message(player_one.end_time);
+			//show_debug_message("PLAYER 1 DONE");
+			//show_debug_message(player_one.end_time);
 			}
 		}
 	}
@@ -79,8 +79,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 			instance_destroy(player_two.sweat);
 			}
 			player_two.over = true;
-			show_debug_message("PLAYER 2 DONE");
-			show_debug_message(player_two.end_time);
+			//show_debug_message("PLAYER 2 DONE");
+			//show_debug_message(player_two.end_time);
 			}
 		}
 	}
@@ -108,8 +108,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 			instance_destroy(player_three.sweat);
 			}
 			player_three.over = true;
-			show_debug_message("PLAYER 3 DONE");
-			show_debug_message(player_three.end_time);
+			//show_debug_message("PLAYER 3 DONE");
+			//show_debug_message(player_three.end_time);
 			}
 		}
 	}
@@ -137,8 +137,8 @@ if (t_sec >= 50 || t_sec <= 5) {
 			instance_destroy(player_four.sweat);
 			}
 			player_four.over = true;
-			show_debug_message("PLAYER 4 DONE");
-			show_debug_message(player_four.end_time);
+			//show_debug_message("PLAYER 4 DONE");
+			//show_debug_message(player_four.end_time);
 			}
 		}
 	}

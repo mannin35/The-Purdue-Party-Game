@@ -3,6 +3,7 @@
 
 if(global.minigameOver == 1){
 	global.minigameOver = 0
+	visible = false;
 	if(global.isDemo == 1){
 		visible = false;
 		if(room == RM_TipsyTunnel){

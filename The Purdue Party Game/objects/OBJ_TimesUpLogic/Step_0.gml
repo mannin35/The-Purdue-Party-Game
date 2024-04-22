@@ -37,7 +37,7 @@ for (i = 0; i <4; i++) {
 			exit;
 		}
 		if (i == 3) {
-			show_debug_message("PLayer 4");
+			//show_debug_message("PLayer 4");
 		}
 		// Easy = 0, Med = 1, Hard = 2
 		var chance = 1;

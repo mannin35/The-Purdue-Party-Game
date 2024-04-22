@@ -80,7 +80,7 @@
 			}*/
 		}
 		if(playerToSwap != -1){
-		show_debug_message(playerToSwap)
+		//show_debug_message(playerToSwap)
 		tempX = players[playerToSwap].x
 		tempY = players[playerToSwap].y
 		players[playerToSwap].x = players[global.currentplayer].x;

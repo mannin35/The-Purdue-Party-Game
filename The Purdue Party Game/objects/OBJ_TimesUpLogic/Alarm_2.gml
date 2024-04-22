@@ -12,7 +12,7 @@ for (i = 0; i < 4; i++) {
 }
 if (timer != 0) {
 	timer--;
-	show_debug_message("Timer = " + string(timer));
+	//show_debug_message("Timer = " + string(timer));
 	for (i = 0; i < 4; i++) {
 		players[i].timer.image_index = timer; // Subtract from timers
 	}

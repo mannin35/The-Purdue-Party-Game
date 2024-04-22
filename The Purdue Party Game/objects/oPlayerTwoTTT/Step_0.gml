@@ -13,7 +13,7 @@ if(global.localPlayers[1].isCPU) {
 		if place_meeting(x, y, oFinish) {
 			if !(over) {
 				global.minigameResults[1] = oController.pos;
-				show_debug_message("player 2 pos = " + string(oController.pos));
+				//show_debug_message("player 2 pos = " + string(oController.pos));
 				oController.pos++;
 				timer.visible = false;
 			}
@@ -128,7 +128,7 @@ if(global.localPlayers[1].isCPU) {
 	if place_meeting(x, y, oFinish) {
 		if !(over) {
 			global.minigameResults[1] = oController.pos;
-			show_debug_message("player 2 pos = " + string(oController.pos));
+			//show_debug_message("player 2 pos = " + string(oController.pos));
 			oController.pos++;
 			timer.visible = false;
 		}

@@ -18,7 +18,7 @@
 	}
 	if (timer != 0) {
 		timer--;
-		show_debug_message("Timer = " + string(timer));
+		//show_debug_message("Timer = " + string(timer));
 		player_one_TTT.timer.image_index = timer; // subtract from timers
 		player_two_TTT.timer.image_index = timer;
 		player_three_TTT.timer.image_index = timer;
