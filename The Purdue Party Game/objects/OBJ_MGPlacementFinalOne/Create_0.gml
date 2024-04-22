@@ -1,7 +1,7 @@
 //Temp remove after merge
 //global.minigameResults = [2,2,1,4];
 //
-show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees)
+//show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.degrees, OBJ_Player2Local.degrees, OBJ_Player3Local.degrees, OBJ_Player4Local.degrees)
 awardsGiven = [0,0,0,0];
 //global.bbIndex = 0;
 indexArray = [global.playerOneIndex, global.playerTwoIndex, global.playerThreeIndex, global.playerFourIndex];
@@ -39,7 +39,7 @@ for (i = 1; i < 4; i++) {
 	}
 }
 if (awardsGiven[global.loanIndex] < 2) awardsGiven[global.loanIndex]++;
-show_debug_message("awardsGiven: {0} {1} {2} {3}", awardsGiven[0], awardsGiven[1], awardsGiven[2], awardsGiven[3])
+//show_debug_message("awardsGiven: {0} {1} {2} {3}", awardsGiven[0], awardsGiven[1], awardsGiven[2], awardsGiven[3])
 // gives bonus degrees to 
 OBJ_Player1Local.degrees += awardsGiven[0];
 OBJ_Player2Local.degrees += awardsGiven[1];
@@ -51,8 +51,8 @@ OBJ_LilPlayerPopUp1.image_index = indexArray[global.winIndex];
 OBJ_LilPlayerPopUp2.image_index = indexArray[global.bbIndex];
 OBJ_LilPlayerPopUp3.image_index = indexArray[global.triviaIndex];
 OBJ_LilPlayerPopUp4.image_index = indexArray[global.loanIndex];
-show_debug_message("PlayerDegree: {0} {1} {2} {3}", OBJ_Player1Local.totalBoilerBucks , OBJ_Player2Local.totalBoilerBucks, OBJ_Player3Local.totalBoilerBucks, OBJ_Player4Local.totalBoilerBucks)
-show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces)
+//show_debug_message("PlayerDegree: {0} {1} {2} {3}", OBJ_Player1Local.totalBoilerBucks , OBJ_Player2Local.totalBoilerBucks, OBJ_Player3Local.totalBoilerBucks, OBJ_Player4Local.totalBoilerBucks)
+//show_debug_message("PlayerDegree: {0} {1} {2} {3}",OBJ_Player1Local.redSpaces, OBJ_Player2Local.redSpaces, OBJ_Player3Local.redSpaces, OBJ_Player4Local.redSpaces)
 alarm[0] = 60 * 12;
 //Sorts array given so we can determine which players will be placed where
 //Uses bubble sort

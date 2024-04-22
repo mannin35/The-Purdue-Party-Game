@@ -20,7 +20,7 @@ if(!end_of_round){
 if (end_of_round && !occured && (room==RM_LocalView)) {
 	//TODO: add if condition for if end of game is reached
 	
-	/* RANDOMIZATION HERE
+	
 	//set random seed for randomization of minigames
 	randomize();
 	//randomly select minigame
@@ -28,7 +28,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	minigame = 0;
 
 	
-	 RANDOMIZATION HERE
+
 	
 	minigame = irandom(4);
 	//minigame = 3;
@@ -42,7 +42,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 		minigame = irandom(4);	
 	}
 	
-	*/
+	
 	//camera_set_view_size(view_camera[0], 512,288);
 	
 	
@@ -91,7 +91,7 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 				inst.target_rm = RM_TipsyTunnelInstructions;
 			}
 		} else {
-			show_debug_message("ERROR: Invalid number generated for minigame selection");
+			//show_debug_message("ERROR: Invalid number generated for minigame selection");
 		}
 		occured = true;
 		// Return to local view
@@ -102,12 +102,12 @@ if (end_of_round && !occured && (room==RM_LocalView)) {
 	}
 	else {
 		if(last_minigame==minigame) {
-			show_debug_message("ERROR: chose same minigame twice in a row");	
+			//show_debug_message("ERROR: chose same minigame twice in a row");	
 		} else if (minigame < 0 || minigame > 4) {
-			show_debug_message("ERROR: Invalid minigame number generated");
+			//show_debug_message("ERROR: Invalid minigame number generated");
 		} else {
-			show_debug_message("Valid Minigame:");
-			show_debug_message(minigame);
+			//show_debug_message("Valid Minigame:");
+			//show_debug_message(minigame);
 		}
 		last_minigame = minigame;
 }

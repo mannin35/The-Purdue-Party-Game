@@ -6,7 +6,6 @@ up_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv
 right_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislh) > dead_zone) || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padr); // right
 down_input = (gamepad_axis_value(global.playercontrollerindices[player], gp_axislv) > dead_zone || gamepad_button_check_pressed(global.playercontrollerindices[player], gp_padd)); // down
 
-//show_debug_message("P2 pos = " + string(x) + " " + string(y));
 /*if (up_input) {
 	if (alarm[0] < 0) {
 		vsp = -walksp;
