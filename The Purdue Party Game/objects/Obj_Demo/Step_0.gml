@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(global.isDemo == 0){
+	visible = false;	
+}
 
 if(global.minigameOver == 1){
 	global.minigameOver = 0
-	visible = false;
 	if(global.isDemo == 1){
 		visible = false;
 		if(room == RM_TipsyTunnel){
@@ -53,6 +55,6 @@ if(global.minigameOver == 1){
 			var inst = instance_create_depth(0,0,-9999, OBJ_Transition);
 			inst.target_rm = RM_MinigameResults;
 		}
-	}
+	} 
 }
 

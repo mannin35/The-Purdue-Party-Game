@@ -23,11 +23,10 @@ EngineeringQuestions = ["What does force equal?",
 							"What is Newton\'s first law?",
 							"What does CAD stand for?", 
 							"What are ohms used to measure?", 
-							"Which is not a basic bridge type?", 
-							"Which is not a basic bridge type?", 
+							"Which is not a basic bridge type?",  
 							"Which of these is not a type of simple machine?", 
 							"Which of these is not a type of Engineering?", 
-							"What is the world\'s largest engineering project?", 
+							"What is the world's largest engineering project?", 
 							"In what month is National Engineer Week in the US?"];
 
 SportQuestions = ["How many players are on a baseball team", 
