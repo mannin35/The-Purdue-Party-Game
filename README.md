@@ -6,9 +6,13 @@ This local multiplayer party game offers an exciting and immersive gaming experi
 
 To navigate and play The Purdue Party Game, 1-4 external controllers need to be connected. The game supports PlayStation and Xbox controllers, but all game instructions are given based on PlayStation button mappings.
 
+
+
 Download Instructions
 
 Download the folder 'The Purdue Party Game.zip' from this GitHub Repo. After unzipping the folder, you will see it contains 1 audio file, 3 data/options files, and an executable application named 'The Purdue Party Game.' Connect 1-4 external controllers to your computer and double-click on this executable application. The game's main menu screen should appear. If you are not able to navigate the menu, it may be that your controllers are not properly connected. You can try closing and reopening the program or trying with a different game controller.
+
+
 
 Project Motivation
 
@@ -17,6 +21,8 @@ Video games like the one we’re making are an immersive and interactive solutio
 Users can explore worlds, beat fun challenges, experience narratives, and, most importantly, foster connection with each other. 
 Party games are a great way to deliver all of these experiences to users. 
 The main difference compared to other party games currently on the market is that ours will be Purdue-inspired: the ‘game board’ will be the campus with minigames focused on different aspects of Purdue’s culture and student experience.
+
+
 
 Project Goals
 
@@ -27,6 +33,8 @@ Design gameplay akin to a party game: a main ‘game-board’ with different typ
 Implement a system for saving and reloading an in-progress game
 Develop a menu system for creating new games, resuming previous games, and adjusting game settings 
 Create algorithms for CPUs to determine behavior and interactions with real players
+
+
 
 Development Team
 
